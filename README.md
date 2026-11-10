@@ -1,5 +1,7 @@
 # Afritech Tournament Desk
 
+> **Working rules for Claude (all runs):** follow `CLAUDE.md`. Anything that goes out (briefings, emails, WhatsApp, posts) is a copy-ready block, one per channel; notes for Andrew go in a separate section after it. Deliver complete packages in one reply.
+
 Public, customer-facing tournament scouting coverage from Afritech Sports Technology and Innovation Group Limited.
 
 Live address (GitHub Pages, `main`, root folder): https://afritech-advisory.github.io/Afritech-Advisory-afritech-tournament-desk/
