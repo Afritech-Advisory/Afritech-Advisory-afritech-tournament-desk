@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Player Radars, Qatar 2026 | Afritech Tournament Desk</title>
+<meta name="description" content="Player radars for Africa's prospects at the FIFA U-17 World Cup Qatar 2026, each set against the average for his role at the tournament. Updated after every matchday.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Player radars: Africa's prospects at the U-17 World Cup Qatar 2026">
+<meta property="og:description" content="Each player set against the average for his role at the tournament. Updated after every matchday by Afritech Sports.">
+<meta property="og:image" content="https://afritech-advisory.github.io/Afritech-Advisory-afritech-tournament-desk/qatar-u17-2026/share.png">
+<meta property="og:url" content="https://afritech-advisory.github.io/Afritech-Advisory-afritech-tournament-desk/qatar-u17-2026/radars/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://afritech-advisory.github.io/Afritech-Advisory-afritech-tournament-desk/qatar-u17-2026/radars/">
+<style>
+{{FONTS}}
+/* Layout: navy bar, short masthead with the reading key, then a grid of radar cards, one per player. */
+:root{
+  --navy:#1A365D;--navy-2:#122847;--teal:#0D9488;--orange:#E8701A;--orange-text:#B5530A;
+  --bg:#F6F8FB;--card:#FFFFFF;--soft:#EDF2F7;--ring:#F3F7FA;--line:#D6DEE8;--fg:#1B2A41;--muted:#55627A;--on-navy:#F4F7FB;--on-navy-muted:#B9C6D8;
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;--body:"Source Sans 3","Segoe UI",system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--teal:#2CC2B3;--orange:#F08A3A;--orange-text:#F5A465;--bg:#0C1626;--card:#132139;--soft:#1A2A45;--ring:#16253F;--line:#2A3D5A;--fg:#E4EBF4;--muted:#9EAEC4;color-scheme:dark}}
+:root[data-theme="dark"]{--teal:#2CC2B3;--orange:#F08A3A;--orange-text:#F5A465;--bg:#0C1626;--card:#132139;--soft:#1A2A45;--ring:#16253F;--line:#2A3D5A;--fg:#E4EBF4;--muted:#9EAEC4;color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.55 var(--body)}
+a{color:var(--teal)}
+h1,h2,h3{font-family:var(--display);margin:0;text-wrap:balance}
+p{margin:0}
+.wrap{max-width:1140px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.eyebrow{font-family:var(--mono);font-weight:500;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.bar{position:sticky;top:0;z-index:5;background:var(--navy-2);color:var(--on-navy);padding-top:env(safe-area-inset-top,0px)}
+.bar .wrap{display:flex;align-items:center;gap:14px;min-height:56px}
+.bar .brand{display:flex;align-items:center;gap:10px;color:var(--on-navy);text-decoration:none;font-family:var(--display);font-weight:700;font-size:1.15rem;white-space:nowrap}
+.bar .brand img{width:36px;height:39px;background:#fff;border-radius:6px;padding:2px;object-fit:contain}
+.bar nav{display:flex;gap:2px;margin-left:auto}
+.bar nav a{color:var(--on-navy-muted);text-decoration:none;font-family:var(--display);font-weight:600;font-size:1rem;letter-spacing:.04em;text-transform:uppercase;padding:8px 10px;white-space:nowrap}
+.bar nav a.cta{color:#1B1206;background:var(--orange);border-radius:6px;margin-left:6px}
+.mast{background:var(--navy);color:var(--on-navy)}
+.mast .wrap{padding-block:30px 28px;display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:24px;align-items:end}
+.mast .eyebrow{color:var(--on-navy-muted)}
+.mast h1{font-size:clamp(2.2rem,5.5vw,3.4rem);line-height:1;margin:8px 0 12px}
+.mast h1 em{font-style:normal;color:var(--orange)}
+.mast p.lead{color:#DCE5F0;max-width:60ch}
+.key{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);border-radius:10px;padding:14px 16px;display:grid;gap:8px;font-size:.95rem;color:#DCE5F0}
+.key div{display:flex;gap:10px;align-items:center}
+.sw{width:30px;height:14px;flex:none;border-radius:3px}
+.sw.p{background:rgba(44,194,179,.35);border:2.5px solid #2CC2B3}
+.sw.a{border-top:3px dashed #F08A3A;height:0;border-radius:0}
+.status{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;padding-block:22px 6px}
+.pill{font:500 .78rem var(--mono);letter-spacing:.06em;text-transform:uppercase;border-radius:4px;padding:4px 8px;background:color-mix(in srgb,var(--orange) 16%,transparent);color:var(--orange-text)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips button{font:600 .88rem var(--body);border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:99px;padding:5px 12px;cursor:pointer}
+.chips button[aria-pressed="true"]{background:var(--teal);border-color:var(--teal);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:14px;padding-block:12px 10px}
+.rc{background:var(--card);border:1px solid var(--line);border-top:5px solid var(--teal);border-radius:12px;padding:16px;display:grid;gap:10px;align-content:start}
+.rc.pending{border-top-color:var(--line)}
+.rc header{display:flex;gap:12px;align-items:center}
+.rc h3{font-size:1.45rem;line-height:1.1}
+.rc .meta{color:var(--muted);font-size:.92rem}
+.rc svg{width:100%;height:auto;display:block}
+.rc .read{font-weight:600}
+.rc .cap{font-size:.84rem;color:var(--muted)}
+.rc .rec{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:baseline;border-top:1px solid var(--line);padding-top:10px;font-size:.93rem}
+.verdict{font-family:var(--display);font-weight:700;letter-spacing:.06em;color:var(--orange-text);font-size:1.05rem}
+.norole{min-height:200px;display:grid;place-items:center;text-align:center;color:var(--muted);background:var(--soft);border-radius:10px;padding:20px}
+.fl{display:inline-block;width:36px;height:27px;border-radius:3px;background-size:cover;background-position:center;box-shadow:0 0 0 1px rgba(0,0,0,.12);flex:none}
+{{FLAGS}}
+.how{margin-top:26px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.how div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;display:grid;gap:6px;align-content:start}
+.how h3{font-size:1.15rem}
+.how p{font-size:.95rem;color:var(--muted)}
+.cta-band{margin-top:22px;background:var(--navy);color:var(--on-navy);border-radius:12px;padding:20px;display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between}
+.cta-band a.btn{background:var(--orange);color:#1B1206;font-weight:700;text-decoration:none;border-radius:8px;padding:10px 16px}
+footer{margin-top:36px;border-top:1px solid var(--line);padding-block:20px 28px;font-size:.88rem;color:var(--muted);text-align:center}
+@media (max-width:820px){.mast .wrap{grid-template-columns:1fr}.how{grid-template-columns:1fr}}
+@media (max-width:640px){.bar nav a:not(.cta){display:none}.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="bar"><div class="wrap">
+  <a class="brand" href="../../"><img src="{{EMBLEM}}" alt="Afritech Sports emblem" width="36" height="39">Tournament Desk</a>
+  <nav aria-label="Sections"><a href="../">Qatar 2026</a><a href="../#players">Players</a><a href="../#nations">Nations</a><a class="cta" href="../#contact">Book a briefing</a></nav>
+</div></header>
+
+<section class="mast"><div class="wrap">
+  <div>
+    <p class="eyebrow">FIFA U-17 World Cup Qatar 2026 · Updated {{UPDATED}}</p>
+    <h1>Player radars. <em>Measured against the tournament.</em></h1>
+    <p class="lead">Each player's game across the eight areas that matter for his role, set against the average for that role at this tournament. Updated after every matchday.</p>
+  </div>
+  <div class="key" aria-label="How to read the radars">
+    <div><span class="sw p"></span>The player, scored 1 to 10 from full matches</div>
+    <div><span class="sw a"></span>Average for his role at this tournament</div>
+    <div><span style="width:30px;text-align:center;font-family:var(--mono)">7.0</span>Dashed grey ring: a strong level for the role</div>
+  </div>
+</div></section>
+
+<main class="wrap">
+  <div class="status"><span class="pill">{{STATUS}}</span><div class="chips" id="chips" hidden><button type="button" data-f="" aria-pressed="true">All roles</button>{{CHIPS}}</div></div>
+  <div class="grid" id="grid">
+{{CARDS}}
+  </div>
+
+  <div class="how">
+    <div><p class="eyebrow">What we score</p><h3>Eight areas for each role</h3><p>A striker is scored on finishing, movement and pressing from the front. A goalkeeper on shot stopping, command and distribution. Each player is judged on the role he plays for his team.</p></div>
+    <div><p class="eyebrow">Who he is compared with</p><h3>Peers at the same tournament</h3><p>The orange line is the average of every player we have rated in the same role in Qatar. It appears once three players in that role have been rated.</p></div>
+    <div><p class="eyebrow">What it rests on</p><h3>Full matches, watched in full</h3><p>Scores come from complete matches, not highlights. Each card states how much of the player we have seen.</p></div>
+  </div>
+
+  <div class="cta-band"><p>Want the full picture on a player, with match-by-match evidence and our recommendation?</p><a class="btn" href="mailto:Advisory@afritechsports.com?subject=U-17%20World%20Cup%20private%20pack">Request the private pack</a></div>
+</main>
+
+<footer><div class="wrap">All players shown are under 18. We follow FIFA's rules on minors, and every conversation runs through the player's family and federation.<br>Independent coverage by Afritech. Not affiliated with or endorsed by FIFA.<br>Produced by Afritech Sports Technology and Innovation Group Limited</div></footer>
+<script>
+(function(){var c=document.getElementById('chips');if(!c)return;var b=c.querySelectorAll('button');if(b.length<3)return;c.hidden=false;
+b.forEach(function(x){x.addEventListener('click',function(){var f=x.getAttribute('data-f');b.forEach(function(y){y.setAttribute('aria-pressed',y===x?'true':'false')});
+document.querySelectorAll('#grid .rc').forEach(function(card){card.hidden=!!f&&card.getAttribute('data-role')!==f})})})})();
+</script>
+</body>
+</html>
