@@ -110,6 +110,13 @@ section.s{padding-block:52px 8px}
 .pl .next{font-size:.93rem;color:var(--muted)}
 .note{margin-top:14px;font-size:.95rem;color:var(--muted);background:var(--card);border:1px dashed var(--line);border-radius:10px;padding:14px 16px}
 
+/* flags */
+.fl{display:inline-block;width:24px;height:18px;border-radius:2px;background-size:cover;background-position:center;box-shadow:0 0 0 1px rgba(0,0,0,.12);vertical-align:-3px;flex:none}
+.nat .fl{width:32px;height:24px}
+.fl-blank{background:repeating-linear-gradient(45deg,var(--soft) 0 4px,var(--line) 4px 8px)}
+.g .fl{width:20px;height:15px;margin-right:6px;vertical-align:-2px}
+.pl .meta .fl{margin-right:6px}
+{{FLAGS}}
 /* nations */
 .nations{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:12px}
 .nat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;display:grid;gap:8px;align-content:start}
@@ -254,19 +261,19 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-block:20px 28px;
   <p>Our opening board, built from the U-17 Africa Cup of Nations and the squad announcements. It grows during the tournament as top scorers, standout goalkeepers, captains and decisive knockout performers from all ten squads emerge.</p></div>
   <div class="board">
     <article class="pl"><div class="sil" aria-hidden="true"><svg viewBox="0 0 40 40"><circle cx="20" cy="14" r="8" fill="var(--line)"/><path d="M4 38c2-9 9-13 16-13s14 4 16 13z" fill="var(--line)"/></svg></div><div>
-      <h3>Ziyad Baha</h3><p class="meta">Morocco · Striker</p>
+      <h3>Ziyad Baha</h3><p class="meta"><i class="fl fl-ma" role="img" aria-label="Morocco flag"></i>Morocco · Striker</p>
       <p class="why">Playing his second U-17 World Cup in a row, a rare level of tournament experience at this age. Leads the line for the U-17 Africa Cup of Nations hosts, who topped their group.</p>
       <p class="rec"><span class="verdict">MONITOR</span><span class="next">Follow all three group matches, including Spain. A full scout card follows the group stage.</span></p></div></article>
     <article class="pl"><div class="sil" aria-hidden="true"><svg viewBox="0 0 40 40"><circle cx="20" cy="14" r="8" fill="var(--line)"/><path d="M4 38c2-9 9-13 16-13s14 4 16 13z" fill="var(--line)"/></svg></div><div>
-      <h3>Ahmed Safwat</h3><p class="meta">Egypt · Attacking midfielder · Captain · Zamalek</p>
+      <h3>Ahmed Safwat</h3><p class="meta"><i class="fl fl-eg" role="img" aria-label="Egypt flag"></i>Egypt · Attacking midfielder · Captain · Zamalek</p>
       <p class="why">Egypt's captain and creator. Impressed at the U-17 Africa Cup of Nations with his passing and the chances he made against set defences.</p>
       <p class="rec"><span class="verdict">MONITOR</span><span class="next">Follow every Group A match, including the meeting with hosts Qatar. A full scout card follows the group stage.</span></p></div></article>
     <article class="pl"><div class="sil" aria-hidden="true"><svg viewBox="0 0 40 40"><circle cx="20" cy="14" r="8" fill="var(--line)"/><path d="M4 38c2-9 9-13 16-13s14 4 16 13z" fill="var(--line)"/></svg></div><div>
-      <h3>Diego Elias Pelembe</h3><p class="meta">Mozambique · Midfielder · Captain</p>
+      <h3>Diego Elias Pelembe</h3><p class="meta"><i class="fl fl-mz" role="img" aria-label="Mozambique flag"></i>Mozambique · Midfielder · Captain</p>
       <p class="why">Scored twice at the U-17 Africa Cup of Nations and leads a side that qualified through a play-off. Son of former Mozambique international Elias "Domingues" Pelembe.</p>
       <p class="rec"><span class="verdict">MONITOR</span><span class="next">Follow all three group matches. A full scout card follows the group stage.</span></p></div></article>
     <article class="pl"><div class="sil" aria-hidden="true"><svg viewBox="0 0 40 40"><circle cx="20" cy="14" r="8" fill="var(--line)"/><path d="M4 38c2-9 9-13 16-13s14 4 16 13z" fill="var(--line)"/></svg></div><div>
-      <h3>Chris Karel</h3><p class="meta">Cameroon · Captain</p>
+      <h3>Chris Karel</h3><p class="meta"><i class="fl fl-cm" role="img" aria-label="Cameroon flag"></i>Cameroon · Captain</p>
       <p class="why">Captains a Cameroon squad that travelled to Doha early, on 7 November, to prepare on site. A core of 17 players comes from the domestic youth championship.</p>
       <p class="rec"><span class="verdict">MONITOR</span><span class="next">Follow every Group K match, including Mexico. A full scout card follows the group stage.</span></p></div></article>
   </div>
@@ -277,43 +284,43 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-block:20px 28px;
   <div class="s-head"><p class="eyebrow">The ten nations</p><h2>Every African squad, one view</h2>
   <p>Group, opponents, coach and squad status for each nation, with the line we will be watching. Status as of 8 November 2026.</p></div>
   <div class="nations">
-    <article class="nat"><header><span class="code">EGY</span><h3>Egypt</h3><span class="grp">Group A</span></header>
+    <article class="nat"><header><i class="fl fl-eg" role="img" aria-label="Egypt flag"></i><span class="code">EGY</span><h3>Egypt</h3><span class="grp">Group A</span></header>
       <div class="opp"><span>Qatar (hosts)</span><span>Panama</span><span>Greece</span></div>
       <dl><dt>Coach</dt><dd>Hussein Abdel-Latif</dd><dt>Squad</dt><dd><span class="pill ok">Final 21 named</span> 7 November</dd><dt>Route</dt><dd>U-17 AFCON quarter-finalist</dd></dl>
       <p class="watch"><b>Watch</b>Captain Ahmed Safwat setting the tempo against the hosts in front of a home crowd.</p></article>
-    <article class="nat"><header><span class="code">CIV</span><h3>Côte d'Ivoire</h3><span class="grp">Group E</span></header>
+    <article class="nat"><header><i class="fl fl-ci" role="img" aria-label="Côte d'Ivoire flag"></i><span class="code">CIV</span><h3>Côte d'Ivoire</h3><span class="grp">Group E</span></header>
       <div class="opp"><span>Italy</span><span>Jamaica</span><span>Uzbekistan</span></div>
       <dl><dt>Coach</dt><dd>To be confirmed</dd><dt>Squad</dt><dd><span class="pill due">Due</span> camps in Europe and Dubai</dd><dt>Route</dt><dd>Topped their U-17 AFCON group</dd></dl>
       <p class="watch"><b>Watch</b>Italy is the group's reference test for a side that won its continental group.</p></article>
-    <article class="nat"><header><span class="code">SEN</span><h3>Senegal</h3><span class="grp">Group F</span></header>
+    <article class="nat"><header><i class="fl fl-sn" role="img" aria-label="Senegal flag"></i><span class="code">SEN</span><h3>Senegal</h3><span class="grp">Group F</span></header>
       <div class="opp"><span>Croatia</span><span>Cuba</span><span>Tajikistan</span></div>
       <dl><dt>Coach</dt><dd>Lamine Sané</dd><dt>Squad</dt><dd><span class="pill due">Due</span> 26 in camp, 2 to 8 November</dd><dt>Route</dt><dd>U-17 AFCON quarter-finalist</dd></dl>
       <p class="watch"><b>Watch</b>Several players in camp have already played for Senegal's U-20 team.</p></article>
-    <article class="nat"><header><span class="code">MLI</span><h3>Mali</h3><span class="grp">Group G</span></header>
+    <article class="nat"><header><i class="fl fl-ml" role="img" aria-label="Mali flag"></i><span class="code">MLI</span><h3>Mali</h3><span class="grp">Group G</span></header>
       <div class="opp"><span>Belgium</span><span>New Zealand</span><span>Vietnam</span></div>
       <dl><dt>Coach</dt><dd>To be confirmed</dd><dt>Squad</dt><dd><span class="pill due">Due</span> final list not yet published</dd><dt>Route</dt><dd>U-17 AFCON quarter-finalist</dd></dl>
       <p class="watch"><b>Watch</b>Belgium is the group's benchmark, and the match most European scouts will attend.</p></article>
-    <article class="nat"><header><span class="code">MAR</span><h3>Morocco</h3><span class="grp">Group H</span></header>
+    <article class="nat"><header><i class="fl fl-ma" role="img" aria-label="Morocco flag"></i><span class="code">MAR</span><h3>Morocco</h3><span class="grp">Group H</span></header>
       <div class="opp"><span>Spain</span><span>China PR</span><span>Fiji</span></div>
       <dl><dt>Coach</dt><dd>Ahmed Kantari</dd><dt>Squad</dt><dd><span class="pill ok">Final 21 named</span> 3 November</dd><dt>Route</dt><dd>U-17 AFCON hosts, topped Group A</dd></dl>
       <p class="watch"><b>Watch</b>Spain against Morocco is one of the headline matches of the group stage.</p></article>
-    <article class="nat"><header><span class="code">TAN</span><h3>Tanzania</h3><span class="grp">Group I</span></header>
+    <article class="nat"><header><i class="fl fl-tz" role="img" aria-label="Tanzania flag"></i><span class="code">TAN</span><h3>Tanzania</h3><span class="grp">Group I</span></header>
       <div class="opp"><span>Brazil</span><span>Republic of Ireland</span><span>Costa Rica</span></div>
       <dl><dt>Coach</dt><dd>Elieneza Nsanganzelu</dd><dt>Squad</dt><dd><span class="pill due">Due</span></dd><dt>Route</dt><dd>U-17 AFCON finalists</dd></dl>
       <p class="watch"><b>Watch</b>A first U-17 World Cup, and Brazil in the group. Few clubs have seen these players live.</p></article>
-    <article class="nat"><header><span class="code">ALG</span><h3>Algeria</h3><span class="grp">Group J</span></header>
+    <article class="nat"><header><i class="fl fl-dz" role="img" aria-label="Algeria flag"></i><span class="code">ALG</span><h3>Algeria</h3><span class="grp">Group J</span></header>
       <div class="opp"><span>USA</span><span>Montenegro</span><span>Chile</span></div>
       <dl><dt>Coach</dt><dd>Amine Ghimouz</dd><dt>Squad</dt><dd><span class="pill ok">Final 21 named</span> 6 November</dd><dt>Route</dt><dd>U-17 AFCON quarter-finalist</dd></dl>
       <p class="watch"><b>Watch</b>Back at the U-17 World Cup after 17 years, so this is a squad most scouts are seeing for the first time.</p></article>
-    <article class="nat"><header><span class="code">CMR</span><h3>Cameroon</h3><span class="grp">Group K</span></header>
+    <article class="nat"><header><i class="fl fl-cm" role="img" aria-label="Cameroon flag"></i><span class="code">CMR</span><h3>Cameroon</h3><span class="grp">Group K</span></header>
       <div class="opp"><span>Mexico</span><span>Romania</span><span>Venezuela</span></div>
       <dl><dt>Coach</dt><dd>Thomas Libiih</dd><dt>Squad</dt><dd><span class="pill due">Due</span> 29-strong party in Doha since 7 November</dd><dt>Route</dt><dd>U-17 AFCON quarter-finalist</dd></dl>
       <p class="watch"><b>Watch</b>Captain Chris Karel and a core of 17 players from the domestic youth championship.</p></article>
-    <article class="nat"><header><span class="code">MOZ</span><h3>Mozambique</h3><span class="grp tbc">Group B or C</span></header>
+    <article class="nat"><header><i class="fl fl-mz" role="img" aria-label="Mozambique flag"></i><span class="code">MOZ</span><h3>Mozambique</h3><span class="grp tbc">Group B or C</span></header>
       <div class="opp"><span>Group to be confirmed by FIFA</span></div>
       <dl><dt>Coach</dt><dd>To be confirmed</dd><dt>Squad</dt><dd><span class="pill due">Due</span></dd><dt>Route</dt><dd>Play-off: 1-1 with Ethiopia, won 5-4 on penalties</dd></dl>
       <p class="watch"><b>Watch</b>Captain Diego Elias Pelembe, who scored twice at the U-17 AFCON.</p></article>
-    <article class="nat"><header><span class="code">UGA</span><h3>Uganda</h3><span class="grp tbc">Group B or C</span></header>
+    <article class="nat"><header><i class="fl fl-ug" role="img" aria-label="Uganda flag"></i><span class="code">UGA</span><h3>Uganda</h3><span class="grp tbc">Group B or C</span></header>
       <div class="opp"><span>Group to be confirmed by FIFA</span></div>
       <dl><dt>Coach</dt><dd>Laryea Kingston</dd><dt>Squad</dt><dd><span class="pill due">Due</span> 35 in the preliminary pool</dd><dt>Route</dt><dd>Play-off: 2-2 with Ghana, won 8-7 on penalties</dd></dl>
       <p class="watch"><b>Watch</b>Uganda U-17 international Seb Fisher (Partick Thistle Academy) already has an <a href="https://afritech-advisory.github.io/afritech-sports-cv-desk/seb-fisher/">Afritech Player CV</a>. Uganda's final 21 is still to be named.</p></article>
@@ -332,18 +339,18 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-block:20px 28px;
     <div><span class="eyebrow">13 Dec</span><b>Final</b><span class="fine" style="margin:0">Khalifa International Stadium</span></div>
   </div>
   <div class="groups" aria-label="All twelve groups">
-    <div class="g"><b>Group A</b>Qatar<br>Panama<br><span class="af">Egypt</span><br>Greece</div>
-    <div class="g"><b>Group B</b>Korea Republic<br><span class="tb">Mozambique or Uganda</span><br>New Caledonia<br>Ecuador</div>
-    <div class="g"><b>Group C</b>Argentina<br>Australia<br><span class="tb">Uganda or Mozambique</span><br>Denmark</div>
-    <div class="g"><b>Group D</b>France<br>Haiti<br>Saudi Arabia<br>Uruguay</div>
-    <div class="g"><b>Group E</b>Italy<br>Jamaica<br><span class="af">Côte d'Ivoire</span><br>Uzbekistan</div>
-    <div class="g"><b>Group F</b><span class="af">Senegal</span><br>Croatia<br>Cuba<br>Tajikistan</div>
-    <div class="g"><b>Group G</b><span class="af">Mali</span><br>New Zealand<br>Belgium<br>Vietnam</div>
-    <div class="g"><b>Group H</b>Spain<br>China PR<br>Fiji<br><span class="af">Morocco</span></div>
-    <div class="g"><b>Group I</b>Brazil<br>Republic of Ireland<br><span class="af">Tanzania</span><br>Costa Rica</div>
-    <div class="g"><b>Group J</b>USA<br>Montenegro<br>Chile<br><span class="af">Algeria</span></div>
-    <div class="g"><b>Group K</b>Mexico<br>Romania<br><span class="af">Cameroon</span><br>Venezuela</div>
-    <div class="g"><b>Group L</b>Japan<br>Colombia<br>Serbia<br>Honduras</div>
+    <div class="g"><b>Group A</b><i class="fl fl-qa" role="img" aria-label="Qatar flag"></i>Qatar<br><i class="fl fl-pa" role="img" aria-label="Panama flag"></i>Panama<br><i class="fl fl-eg" role="img" aria-label="Egypt flag"></i><span class="af">Egypt</span><br><i class="fl fl-gr" role="img" aria-label="Greece flag"></i>Greece</div>
+    <div class="g"><b>Group B</b><i class="fl fl-kr" role="img" aria-label="Korea Republic flag"></i>Korea Republic<br><i class="fl fl-blank" aria-hidden="true"></i><span class="tb">Mozambique or Uganda</span><br><i class="fl fl-nc" role="img" aria-label="New Caledonia flag"></i>New Caledonia<br><i class="fl fl-ec" role="img" aria-label="Ecuador flag"></i>Ecuador</div>
+    <div class="g"><b>Group C</b><i class="fl fl-ar" role="img" aria-label="Argentina flag"></i>Argentina<br><i class="fl fl-au" role="img" aria-label="Australia flag"></i>Australia<br><i class="fl fl-blank" aria-hidden="true"></i><span class="tb">Uganda or Mozambique</span><br><i class="fl fl-dk" role="img" aria-label="Denmark flag"></i>Denmark</div>
+    <div class="g"><b>Group D</b><i class="fl fl-fr" role="img" aria-label="France flag"></i>France<br><i class="fl fl-ht" role="img" aria-label="Haiti flag"></i>Haiti<br><i class="fl fl-sa" role="img" aria-label="Saudi Arabia flag"></i>Saudi Arabia<br><i class="fl fl-uy" role="img" aria-label="Uruguay flag"></i>Uruguay</div>
+    <div class="g"><b>Group E</b><i class="fl fl-it" role="img" aria-label="Italy flag"></i>Italy<br><i class="fl fl-jm" role="img" aria-label="Jamaica flag"></i>Jamaica<br><i class="fl fl-ci" role="img" aria-label="Côte d'Ivoire flag"></i><span class="af">Côte d'Ivoire</span><br><i class="fl fl-uz" role="img" aria-label="Uzbekistan flag"></i>Uzbekistan</div>
+    <div class="g"><b>Group F</b><i class="fl fl-sn" role="img" aria-label="Senegal flag"></i><span class="af">Senegal</span><br><i class="fl fl-hr" role="img" aria-label="Croatia flag"></i>Croatia<br><i class="fl fl-cu" role="img" aria-label="Cuba flag"></i>Cuba<br><i class="fl fl-tj" role="img" aria-label="Tajikistan flag"></i>Tajikistan</div>
+    <div class="g"><b>Group G</b><i class="fl fl-ml" role="img" aria-label="Mali flag"></i><span class="af">Mali</span><br><i class="fl fl-nz" role="img" aria-label="New Zealand flag"></i>New Zealand<br><i class="fl fl-be" role="img" aria-label="Belgium flag"></i>Belgium<br><i class="fl fl-vn" role="img" aria-label="Vietnam flag"></i>Vietnam</div>
+    <div class="g"><b>Group H</b><i class="fl fl-es" role="img" aria-label="Spain flag"></i>Spain<br><i class="fl fl-cn" role="img" aria-label="China PR flag"></i>China PR<br><i class="fl fl-fj" role="img" aria-label="Fiji flag"></i>Fiji<br><i class="fl fl-ma" role="img" aria-label="Morocco flag"></i><span class="af">Morocco</span></div>
+    <div class="g"><b>Group I</b><i class="fl fl-br" role="img" aria-label="Brazil flag"></i>Brazil<br><i class="fl fl-ie" role="img" aria-label="Republic of Ireland flag"></i>Republic of Ireland<br><i class="fl fl-tz" role="img" aria-label="Tanzania flag"></i><span class="af">Tanzania</span><br><i class="fl fl-cr" role="img" aria-label="Costa Rica flag"></i>Costa Rica</div>
+    <div class="g"><b>Group J</b><i class="fl fl-us" role="img" aria-label="USA flag"></i>USA<br><i class="fl fl-me" role="img" aria-label="Montenegro flag"></i>Montenegro<br><i class="fl fl-cl" role="img" aria-label="Chile flag"></i>Chile<br><i class="fl fl-dz" role="img" aria-label="Algeria flag"></i><span class="af">Algeria</span></div>
+    <div class="g"><b>Group K</b><i class="fl fl-mx" role="img" aria-label="Mexico flag"></i>Mexico<br><i class="fl fl-ro" role="img" aria-label="Romania flag"></i>Romania<br><i class="fl fl-cm" role="img" aria-label="Cameroon flag"></i><span class="af">Cameroon</span><br><i class="fl fl-ve" role="img" aria-label="Venezuela flag"></i>Venezuela</div>
+    <div class="g"><b>Group L</b><i class="fl fl-jp" role="img" aria-label="Japan flag"></i>Japan<br><i class="fl fl-co" role="img" aria-label="Colombia flag"></i>Colombia<br><i class="fl fl-rs" role="img" aria-label="Serbia flag"></i>Serbia<br><i class="fl fl-hn" role="img" aria-label="Honduras flag"></i>Honduras</div>
   </div>
   <p class="fine">African nations in teal. Draw held in Zurich on 21 May 2026. Qatar hosts the tournament every year from 2025 to 2029.</p>
 </section>
@@ -401,7 +408,7 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-block:20px 28px;
 </section>
 </main>
 
-<footer><div class="wrap">Produced by Afritech Sports Technology and Innovation Group Limited · Built from public sources up to 10 November 2026 · Updated 10 November 2026</div></footer>
+<footer><div class="wrap">Independent coverage by Afritech. Not affiliated with or endorsed by FIFA.<br>Produced by Afritech Sports Technology and Innovation Group Limited · Built from public sources up to 10 November 2026 · Updated 10 November 2026</div></footer>
 <script>
 document.querySelectorAll('.copy').forEach(function(b){b.hidden=false;b.addEventListener('click',function(){var t=b.getAttribute('data-copy');var done=function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy'},1800)};if(navigator.clipboard){navigator.clipboard.writeText(t).then(done,function(){var r=document.createRange();r.selectNodeContents(document.getElementById('em'));var s=getSelection();s.removeAllRanges();s.addRange(r)})}})});
 </script>
