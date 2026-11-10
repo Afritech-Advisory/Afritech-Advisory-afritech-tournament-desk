@@ -12,3 +12,5 @@ Live address (GitHub Pages, `main`, root folder): https://afritech-advisory.gith
 | `src/` | Page sources. Run `python3 build.py` to rebuild the published pages (inlines fonts and the emblem) |
 
 Everything in this repo is public. Customer-safe material only.
+
+Flag images: `src/flags/`, rendered from [flag-icons](https://github.com/lipis/flag-icons) v7.2.3 (MIT licence, © Panayiotis Lipiridis).
