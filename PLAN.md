@@ -31,7 +31,7 @@ Afritech's assessment models, scoring methods, internal ratings, internal outcom
 | After 13 Dec | Tournament review and talent report teaser |
 
 ## 5. Open items
-1. Create the GitHub repo `Afritech-Advisory/afritech-tournament-desk` (public) and turn on Pages from `main`, root.
+1. ~~Repo and Pages.~~ Live 2026-11-10 at https://afritech-advisory.github.io/Afritech-Advisory-afritech-tournament-desk/ (repo kept under its created name).
 2. Confirm Mozambique's and Uganda's groups (B or C) on FIFA's group page.
 3. Add kick-off times when FIFA publishes them.
 4. Confirm whether Seb Fisher is in Uganda's final 21.

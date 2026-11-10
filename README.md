@@ -2,7 +2,7 @@
 
 Public, customer-facing tournament scouting coverage from Afritech Sports Technology and Innovation Group Limited.
 
-Live address (GitHub Pages, `main`, root folder): https://afritech-advisory.github.io/afritech-tournament-desk/
+Live address (GitHub Pages, `main`, root folder): https://afritech-advisory.github.io/Afritech-Advisory-afritech-tournament-desk/
 
 | Path | What it is |
 |---|---|
