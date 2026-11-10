@@ -1,0 +1,32 @@
+{
+  "updated": "10 November 2026",
+  "board": [
+    {
+      "name": "Ziyad Baha",
+      "nation": "Morocco",
+      "flag": "ma",
+      "role": "st"
+    },
+    {
+      "name": "Ahmed Safwat",
+      "nation": "Egypt",
+      "flag": "eg",
+      "role": "am"
+    },
+    {
+      "name": "Diego Elias Pelembe",
+      "nation": "Mozambique",
+      "flag": "mz",
+      "role": "cm"
+    },
+    {
+      "name": "Chris Karel",
+      "nation": "Cameroon",
+      "flag": "cm",
+      "role": ""
+    }
+  ],
+  "players": [],
+  "averages": {},
+  "_note": "Public file. 'players' holds only Afritech-approved players shown on the page. 'averages' holds role averages computed privately from all graded players in that role (count = number of players), so no individual peer score is published."
+}

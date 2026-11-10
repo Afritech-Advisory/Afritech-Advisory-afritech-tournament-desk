@@ -36,3 +36,12 @@ Afritech's assessment models, scoring methods, internal ratings, internal outcom
 3. Add kick-off times when FIFA publishes them.
 4. Confirm whether Seb Fisher is in Uganda's final 21.
 5. Player photos: none used. Add only verified photos Afritech may publish.
+
+## 6. Player radars (added 2026-11-10)
+- Public page: `qatar-u17-2026/radars/`, built from `src/data/qatar-u17-2026-radars.json` by `build.py` (static SVG, works with scripts off; role filter is an optional script).
+- Each player is shown against the **role average only**. The public data file holds only approved players and pre-computed role averages with a count. No individual peer score is ever published.
+- Source of scores: the private tracker's "Tournament role radar" (eight areas per role, matches and minutes watched, "Approved by Afritech" tick). After each matchday Claude reads the approved entries, computes role averages from all rated players in each role, updates the JSON, rebuilds and publishes.
+- A role average appears once 3 players in that role are rated. Under-18 safeguards: club signal stays MONITOR; footer states FIFA minors rules.
+
+## 7. Photos
+- Use a player photo only with a recorded permission basis in the tracker: supplied by the player or family with consent, a federation or club media release whose terms allow our use, a licensed agency photo, or our own photo taken with consent. A photo appearing in public media is not permission.
