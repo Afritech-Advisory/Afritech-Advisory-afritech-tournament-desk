@@ -147,6 +147,15 @@ section.s{padding-block:52px 8px}
 .g .af{color:var(--teal);font-weight:700}
 .g .tb{color:var(--orange-text);font-weight:700}
 .fine{font-size:.9rem;color:var(--muted);margin-top:10px}
+.fxh{font-family:var(--display);font-size:1.25rem;margin:22px 0 0}
+.fx{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:10px}
+.fxd{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:.92rem;line-height:1.4;min-width:0}
+.fxd b{font-family:var(--display);font-size:1.05rem;display:block;margin-bottom:4px}
+.fxd ul{list-style:none;margin:0;padding:0}
+.fxd li{display:grid;grid-template-columns:3.2em minmax(0,1fr) auto;gap:6px;padding:4px 0;border-top:1px solid var(--line)}
+.fxd .t{font-family:var(--mono);font-size:.85rem;color:var(--muted);padding-top:1px}
+.fxd .gr{font-family:var(--mono);font-size:.8rem;color:var(--muted)}
+.fxd .af{color:var(--teal);font-weight:700}
 
 /* approach */
 .approach{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
@@ -181,6 +190,7 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-block:20px 28px;
   .kpis{grid-template-columns:repeat(3,minmax(0,1fr))}
   .aud,.approach,.offer{grid-template-columns:repeat(2,minmax(0,1fr))}
   .groups{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .fx{grid-template-columns:repeat(2,minmax(0,1fr))}
   .phases{grid-template-columns:repeat(2,minmax(0,1fr))}
   .phases div{border-bottom:1px solid var(--line)}
 }
@@ -191,6 +201,7 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-block:20px 28px;
   .kpis .kpi:last-child{grid-column:1/-1}
   .aud,.approach,.offer,.board,.ladder{grid-template-columns:1fr}
   .groups{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .fx{grid-template-columns:1fr}
   .phases{grid-template-columns:1fr}
   .takeaway{grid-template-columns:1fr;gap:4px}
   .nations{grid-template-columns:1fr}
@@ -206,7 +217,7 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-block:20px 28px;
 
 <section class="hero" id="top"><div class="wrap">
   <div>
-    <p class="eyebrow">FIFA U-17 World Cup Qatar 2026 · Updated 10 November 2026</p>
+    <p class="eyebrow">FIFA U-17 World Cup Qatar 2026 · Updated 12 November 2026</p>
     <h1>Africa's ten in Qatar. <em>Seen first.</em></h1>
     <p class="lead">Ten African nations, 30 group matches and one venue complex in Doha. Afritech covers every African squad from the opening match on 19 November to the final on 13 December, so clubs, agents and federations see the players who matter early, with a clear recommendation on each.</p>
     <div class="btns"><a class="btn primary" href="mailto:Advisory@afritechsports.com?subject=U-17%20World%20Cup%20briefing">Book a briefing</a><a class="btn ghost" href="#players">See the players to watch</a></div>
@@ -228,7 +239,7 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-block:20px 28px;
   <div class="kpis" aria-label="Tournament at a glance">
     <div class="kpi"><b class="num">10</b><span>African nations qualified</span></div>
     <div class="kpi"><b class="num">30</b><span>group matches with an African side</span></div>
-    <div class="kpi"><b class="num">3 of 10</b><span>final squads named by 8 November</span></div>
+    <div class="kpi"><b class="num">10 of 10</b><span>final squads named by 12 November</span></div>
     <div class="kpi"><b class="num">19 Nov</b><span>kick-off at the Aspire Zone</span></div>
     <div class="kpi"><b class="num">13 Dec</b><span>final, Ahmad bin Ali Stadium</span></div>
   </div>
@@ -274,7 +285,7 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-block:20px 28px;
       <p class="rec"><span class="verdict">MONITOR</span><span class="next">Follow all three group matches. A full scout card follows the group stage.</span></p></div></article>
     <article class="pl"><div class="sil" aria-hidden="true"><svg viewBox="0 0 40 40"><circle cx="20" cy="14" r="8" fill="var(--line)"/><path d="M4 38c2-9 9-13 16-13s14 4 16 13z" fill="var(--line)"/></svg></div><div>
       <h3>Chris Karel</h3><p class="meta"><i class="fl fl-cm" role="img" aria-label="Cameroon flag"></i>Cameroon · Captain</p>
-      <p class="why">Captains a Cameroon squad that travelled to Doha early, on 7 November, to prepare on site. A core of 17 players comes from the domestic youth championship.</p>
+      <p class="why">Captained Cameroon to the quarter-finals of the U-17 Africa Cup of Nations. The squad has been in Doha since 7 November, preparing on site.</p>
       <p class="rec"><span class="verdict">MONITOR</span><span class="next">Follow every Group K match, including Mexico. A full scout card follows the group stage.</span></p></div></article>
   </div>
   <p class="fine" style="margin-top:12px"><a class="btn primary" href="radars/" style="display:inline-block">See the player radars</a> Each player against the average for his role at the tournament, updated after every matchday.</p>
@@ -283,7 +294,7 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-block:20px 28px;
 
 <section class="s" id="nations">
   <div class="s-head"><p class="eyebrow">The ten nations</p><h2>Every African squad, one view</h2>
-  <p>Group, opponents, coach and squad status for each nation, with the line we will be watching. Status as of 8 November 2026.</p></div>
+  <p>Group, opponents, coach and squad status for each nation, with the line we will be watching. Status as of 12 November 2026.</p></div>
   <div class="nations">
     <article class="nat"><header><i class="fl fl-eg" role="img" aria-label="Egypt flag"></i><span class="code">EGY</span><h3>Egypt</h3><span class="grp">Group A</span></header>
       <div class="opp"><span>Qatar (hosts)</span><span>Panama</span><span>Greece</span></div>
@@ -291,23 +302,23 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-block:20px 28px;
       <p class="watch"><b>Watch</b>Captain Ahmed Safwat setting the tempo against the hosts in front of a home crowd: Qatar v Egypt, Sunday 22 November, 18:00 Doha time.</p></article>
     <article class="nat"><header><i class="fl fl-ci" role="img" aria-label="Côte d'Ivoire flag"></i><span class="code">CIV</span><h3>Côte d'Ivoire</h3><span class="grp">Group E</span></header>
       <div class="opp"><span>Italy</span><span>Jamaica</span><span>Uzbekistan</span></div>
-      <dl><dt>Coach</dt><dd>To be confirmed</dd><dt>Squad</dt><dd><span class="pill due">Due</span> camps in Europe and Dubai</dd><dt>Route</dt><dd>Topped their U-17 AFCON group</dd></dl>
-      <p class="watch"><b>Watch</b>Italy is the group's reference test for a side that won its continental group.</p></article>
+      <dl><dt>Coach</dt><dd>Bassiriki Diabaté</dd><dt>Squad</dt><dd><span class="pill ok">Final 21 named</span> 3 goalkeepers, 7 defenders, 6 midfielders, 5 forwards</dd><dt>Route</dt><dd>Topped their U-17 AFCON group</dd></dl>
+      <p class="watch"><b>Watch</b>Italy is the group's reference test for a side that won its continental group: Italy v Côte d'Ivoire, Monday 23 November, 17:30 Doha time.</p></article>
     <article class="nat"><header><i class="fl fl-sn" role="img" aria-label="Senegal flag"></i><span class="code">SEN</span><h3>Senegal</h3><span class="grp">Group F</span></header>
       <div class="opp"><span>Croatia</span><span>Cuba</span><span>Tajikistan</span></div>
-      <dl><dt>Coach</dt><dd>Lamine Sané</dd><dt>Squad</dt><dd><span class="pill due">Due</span> 26 in camp, 2 to 8 November</dd><dt>Route</dt><dd>U-17 AFCON quarter-finalist</dd></dl>
-      <p class="watch"><b>Watch</b>Several players in camp have already played for Senegal's U-20 team.</p></article>
+      <dl><dt>Coach</dt><dd>Lamine Sané</dd><dt>Squad</dt><dd><span class="pill ok">Final 21 named</span> 11 November</dd><dt>Route</dt><dd>U-17 AFCON quarter-finalist</dd></dl>
+      <p class="watch"><b>Watch</b>Lamine Sané's 21 open against Croatia on Friday 20 November, 18:30 Doha time.</p></article>
     <article class="nat"><header><i class="fl fl-ml" role="img" aria-label="Mali flag"></i><span class="code">MLI</span><h3>Mali</h3><span class="grp">Group G</span></header>
       <div class="opp"><span>Belgium</span><span>New Zealand</span><span>Vietnam</span></div>
-      <dl><dt>Coach</dt><dd>To be confirmed</dd><dt>Squad</dt><dd><span class="pill due">Due</span> final list not yet published</dd><dt>Route</dt><dd>U-17 AFCON quarter-finalist</dd></dl>
-      <p class="watch"><b>Watch</b>Belgium is the group's benchmark, and the match most European scouts will attend.</p></article>
+      <dl><dt>Coach</dt><dd>Soumaïla Coulibaly</dd><dt>Squad</dt><dd><span class="pill ok">Final 21 named</span> registered with FIFA, 11 November</dd><dt>Route</dt><dd>U-17 AFCON quarter-finalist</dd></dl>
+      <p class="watch"><b>Watch</b>Belgium is the group's benchmark, and the match most European scouts will attend: Monday 23 November, 18:30 Doha time.</p></article>
     <article class="nat"><header><i class="fl fl-ma" role="img" aria-label="Morocco flag"></i><span class="code">MAR</span><h3>Morocco</h3><span class="grp">Group H</span></header>
       <div class="opp"><span>Spain</span><span>China PR</span><span>Fiji</span></div>
       <dl><dt>Coach</dt><dd>Ahmed Kantari</dd><dt>Squad</dt><dd><span class="pill ok">Final 21 named</span> 3 November</dd><dt>Route</dt><dd>U-17 AFCON hosts, topped Group A</dd></dl>
       <p class="watch"><b>Watch</b>Spain against Morocco is one of the headline matches of the group stage: Thursday 26 November, 18:00 Doha time.</p></article>
     <article class="nat"><header><i class="fl fl-tz" role="img" aria-label="Tanzania flag"></i><span class="code">TAN</span><h3>Tanzania</h3><span class="grp">Group I</span></header>
       <div class="opp"><span>Brazil</span><span>Republic of Ireland</span><span>Costa Rica</span></div>
-      <dl><dt>Coach</dt><dd>Elieneza Nsanganzelu</dd><dt>Squad</dt><dd><span class="pill due">Due</span></dd><dt>Route</dt><dd>U-17 AFCON finalists</dd></dl>
+      <dl><dt>Coach</dt><dd>Elieneza Nsanganzelu</dd><dt>Squad</dt><dd><span class="pill ok">Final 21 named</span> home-based and foreign-based players</dd><dt>Route</dt><dd>U-17 AFCON finalists</dd></dl>
       <p class="watch"><b>Watch</b>A first U-17 World Cup, and Brazil in the group. Few clubs have seen these players live.</p></article>
     <article class="nat"><header><i class="fl fl-dz" role="img" aria-label="Algeria flag"></i><span class="code">ALG</span><h3>Algeria</h3><span class="grp">Group J</span></header>
       <div class="opp"><span>USA</span><span>Montenegro</span><span>Chile</span></div>
@@ -315,23 +326,23 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-block:20px 28px;
       <p class="watch"><b>Watch</b>Back at the U-17 World Cup after 17 years, so this is a squad most scouts are seeing for the first time.</p></article>
     <article class="nat"><header><i class="fl fl-cm" role="img" aria-label="Cameroon flag"></i><span class="code">CMR</span><h3>Cameroon</h3><span class="grp">Group K</span></header>
       <div class="opp"><span>Mexico</span><span>Romania</span><span>Venezuela</span></div>
-      <dl><dt>Coach</dt><dd>Thomas Libiih</dd><dt>Squad</dt><dd><span class="pill due">Due</span> 29-strong party in Doha since 7 November</dd><dt>Route</dt><dd>U-17 AFCON quarter-finalist</dd></dl>
-      <p class="watch"><b>Watch</b>Captain Chris Karel and a core of 17 players from the domestic youth championship.</p></article>
+      <dl><dt>Coach</dt><dd>Thomas Libiih</dd><dt>Squad</dt><dd><span class="pill ok">Final 21 named</span> registered with FIFA; in Doha since 7 November</dd><dt>Route</dt><dd>U-17 AFCON quarter-finalist</dd></dl>
+      <p class="watch"><b>Watch</b>Thomas Libiih's side open against Venezuela on Saturday 21 November, 16:30 Doha time, then meet Mexico three days later.</p></article>
     <article class="nat"><header><i class="fl fl-mz" role="img" aria-label="Mozambique flag"></i><span class="code">MOZ</span><h3>Mozambique</h3><span class="grp">Group C</span></header>
       <div class="opp"><span>Argentina</span><span>Australia</span><span>Denmark</span></div>
-      <dl><dt>Coach</dt><dd>To be confirmed</dd><dt>Squad</dt><dd><span class="pill due">Due</span></dd><dt>Route</dt><dd>Play-off: 1-1 with Ethiopia, won 5-4 on penalties</dd></dl>
-      <p class="watch"><b>Watch</b>Captain Diego Elias Pelembe, who scored twice at the U-17 AFCON.</p></article>
+      <dl><dt>Coach</dt><dd>Luís Guerreiro</dd><dt>Squad</dt><dd><span class="pill ok">Final 21 named</span> 12 November, in camp in Dubai</dd><dt>Route</dt><dd>Play-off: 1-1 with Ethiopia, won 5-4 on penalties</dd></dl>
+      <p class="watch"><b>Watch</b>Captain Diego Elias Pelembe, who scored twice at the U-17 AFCON, in Mozambique's first U-17 World Cup match: Denmark, Thursday 19 November, 18:00 Doha time.</p></article>
     <article class="nat"><header><i class="fl fl-ug" role="img" aria-label="Uganda flag"></i><span class="code">UGA</span><h3>Uganda</h3><span class="grp">Group B</span></header>
       <div class="opp"><span>Korea Republic</span><span>New Caledonia</span><span>Ecuador</span></div>
-      <dl><dt>Coach</dt><dd>Laryea Kingston</dd><dt>Squad</dt><dd><span class="pill due">Due</span> 35 in the preliminary pool</dd><dt>Route</dt><dd>Play-off: 2-2 with Ghana, won 8-7 on penalties</dd></dl>
-      <p class="watch"><b>Watch</b>Uganda U-17 international Seb Fisher (Partick Thistle Academy) already has an <a href="https://afritech-advisory.github.io/afritech-sports-cv-desk/seb-fisher/">Afritech Player CV</a>. Uganda's final 21 is still to be named.</p></article>
+      <dl><dt>Coach</dt><dd>Laryea Kingston</dd><dt>Squad</dt><dd><span class="pill ok">Final 21 named</span> 11 November</dd><dt>Route</dt><dd>Play-off: 2-2 with Ghana, won 8-7 on penalties</dd></dl>
+      <p class="watch"><b>Watch</b>Laryea Kingston's 21 open Africa's tournament against Korea Republic on Thursday 19 November, 16:30 Doha time. Seb Fisher (Partick Thistle Academy), part of Uganda's preliminary pool, has an <a href="https://afritech-advisory.github.io/afritech-sports-cv-desk/seb-fisher/">Afritech Player CV</a>.</p></article>
   </div>
-  <p class="fine">Status as of 10 November 2026. Uganda play in Group B and Mozambique in Group C.</p>
+  <p class="fine">Status as of 12 November 2026. All ten final squads are in FIFA's official squad lists.</p>
 </section>
 
 <section class="s" id="matches">
   <div class="s-head"><p class="eyebrow">Match centre</p><h2>The road to 13 December</h2>
-  <p>Group A to D open on 19 November, E to H on 20 November and I to L on 21 November. Kick-offs run from 15:30 to 18:30 Doha time, Saturday to Wednesday, and 16:00 to 19:00 on Thursdays and Fridays. In 2025, FIFA+ streamed matches free in many countries. Where a TV partner holds the rights, the match is on that partner's channels instead.</p></div>
+  <p>Group A to D open on 19 November, E to H on 20 November and I to L on 21 November. African sides kick off between 15:30 and 19:00 Doha time; every match is listed below. In 2025, FIFA+ streamed matches free in many countries. Where a TV partner holds the rights, the match is on that partner's channels instead.</p></div>
   <div class="phases">
     <div class="now"><span class="eyebrow">10 to 18 Nov</span><b>Final squads</b><span class="fine" style="margin:0">Now</span></div>
     <div><span class="eyebrow">19 to 27 Nov</span><b>Group stage</b></div>
@@ -339,6 +350,19 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-block:20px 28px;
     <div><span class="eyebrow">Early December</span><b>Round of 16 to semi-finals</b></div>
     <div><span class="eyebrow">13 Dec</span><b>Final</b><span class="fine" style="margin:0">Ahmad bin Ali Stadium, 19:00</span></div>
   </div>
+  <h3 class="fxh">Africa's 30 group matches, Doha time</h3>
+  <div class="fx" aria-label="African group matches by day">
+    <div class="fxd"><b>Thursday 19 November</b><ul><li><span class="t num">16:30</span><span>Korea Republic v <span class="af">Uganda</span></span><span class="gr">B</span></li><li><span class="t num">18:00</span><span><span class="af">Mozambique</span> v Denmark</span><span class="gr">C</span></li><li><span class="t num">19:00</span><span><span class="af">Egypt</span> v Greece</span><span class="gr">A</span></li></ul></div>
+    <div class="fxd"><b>Friday 20 November</b><ul><li><span class="t num">16:30</span><span><span class="af">Mali</span> v New Zealand</span><span class="gr">G</span></li><li><span class="t num">18:30</span><span><span class="af">Senegal</span> v Croatia</span><span class="gr">F</span></li><li><span class="t num">19:00</span><span><span class="af">Côte d'Ivoire</span> v Uzbekistan</span><span class="gr">E</span></li><li><span class="t num">19:00</span><span>Fiji v <span class="af">Morocco</span></span><span class="gr">H</span></li></ul></div>
+    <div class="fxd"><b>Saturday 21 November</b><ul><li><span class="t num">16:00</span><span><span class="af">Tanzania</span> v Costa Rica</span><span class="gr">I</span></li><li><span class="t num">16:30</span><span><span class="af">Cameroon</span> v Venezuela</span><span class="gr">K</span></li><li><span class="t num">16:30</span><span>Chile v <span class="af">Algeria</span></span><span class="gr">J</span></li></ul></div>
+    <div class="fxd"><b>Sunday 22 November</b><ul><li><span class="t num">16:00</span><span>Ecuador v <span class="af">Uganda</span></span><span class="gr">B</span></li><li><span class="t num">18:00</span><span>Qatar v <span class="af">Egypt</span></span><span class="gr">A</span></li><li><span class="t num">18:30</span><span>Argentina v <span class="af">Mozambique</span></span><span class="gr">C</span></li></ul></div>
+    <div class="fxd"><b>Monday 23 November</b><ul><li><span class="t num">16:30</span><span><span class="af">Senegal</span> v Cuba</span><span class="gr">F</span></li><li><span class="t num">17:30</span><span>Italy v <span class="af">Côte d'Ivoire</span></span><span class="gr">E</span></li><li><span class="t num">18:00</span><span><span class="af">Morocco</span> v China PR</span><span class="gr">H</span></li><li><span class="t num">18:30</span><span><span class="af">Mali</span> v Belgium</span><span class="gr">G</span></li></ul></div>
+    <div class="fxd"><b>Tuesday 24 November</b><ul><li><span class="t num">16:30</span><span>Mexico v <span class="af">Cameroon</span></span><span class="gr">K</span></li><li><span class="t num">16:30</span><span><span class="af">Algeria</span> v Montenegro</span><span class="gr">J</span></li><li><span class="t num">18:00</span><span>Brazil v <span class="af">Tanzania</span></span><span class="gr">I</span></li></ul></div>
+    <div class="fxd"><b>Wednesday 25 November</b><ul><li><span class="t num">15:30</span><span><span class="af">Uganda</span> v New Caledonia</span><span class="gr">B</span></li><li><span class="t num">17:30</span><span>Panama v <span class="af">Egypt</span></span><span class="gr">A</span></li><li><span class="t num">18:30</span><span><span class="af">Mozambique</span> v Australia</span><span class="gr">C</span></li></ul></div>
+    <div class="fxd"><b>Thursday 26 November</b><ul><li><span class="t num">16:00</span><span><span class="af">Mali</span> v Vietnam</span><span class="gr">G</span></li><li><span class="t num">17:00</span><span>Jamaica v <span class="af">Côte d'Ivoire</span></span><span class="gr">E</span></li><li><span class="t num">18:00</span><span>Spain v <span class="af">Morocco</span></span><span class="gr">H</span></li><li><span class="t num">19:00</span><span>Tajikistan v <span class="af">Senegal</span></span><span class="gr">F</span></li></ul></div>
+    <div class="fxd"><b>Friday 27 November</b><ul><li><span class="t num">17:00</span><span>Republic of Ireland v <span class="af">Tanzania</span></span><span class="gr">I</span></li><li><span class="t num">18:00</span><span><span class="af">Algeria</span> v USA</span><span class="gr">J</span></li><li><span class="t num">19:00</span><span>Romania v <span class="af">Cameroon</span></span><span class="gr">K</span></li></ul></div>
+  </div>
+  <p class="fine">Kick-off times from FIFA's match schedule, shown in Doha time (the same as Nairobi). Group letter on the right. All matches at the Aspire Zone. We re-check every time on matchday.</p>
   <div class="groups" aria-label="All twelve groups">
     <div class="g"><b>Group A</b><i class="fl fl-qa" role="img" aria-label="Qatar flag"></i>Qatar<br><i class="fl fl-pa" role="img" aria-label="Panama flag"></i>Panama<br><i class="fl fl-eg" role="img" aria-label="Egypt flag"></i><span class="af">Egypt</span><br><i class="fl fl-gr" role="img" aria-label="Greece flag"></i>Greece</div>
     <div class="g"><b>Group B</b><i class="fl fl-kr" role="img" aria-label="Korea Republic flag"></i>Korea Republic<br><i class="fl fl-ug" role="img" aria-label="Uganda flag"></i><span class="af">Uganda</span><br><i class="fl fl-nc" role="img" aria-label="New Caledonia flag"></i>New Caledonia<br><i class="fl fl-ec" role="img" aria-label="Ecuador flag"></i>Ecuador</div>
@@ -406,13 +430,23 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-block:20px 28px;
     <li><a href="https://thepeninsulaqatar.com/article/26/10/2026/fifa-u-17-world-cup-qatar-2026-tickets-now-on-sale">The Peninsula, 26 October 2026: tickets on sale, final at Ahmad bin Ali Stadium</a></li>
     <li><a href="https://qna.org.qa/en/news/news-details?id=fifa-reveals-u-17-world-cup-schedule&amp;date=1%2F06%2F2026">QNA, 1 June 2026: FIFA reveals U-17 World Cup schedule</a></li>
     <li><a href="https://africasoccer.com/qatar-2026-africas-10-teams-learn-their-u17-world-cup-group-opponents/">AfricaSoccer, 8 November 2026: Africa's 10 teams learn their group opponents</a></li>
+    <li><a href="https://www.fifa.com/en/tournaments/mens/u17worldcup/qatar-2026/articles/squad-lists-revealed">FIFA: squad lists revealed for the FIFA U-17 World Cup Qatar 2026</a></li>
+    <li><a href="https://www.fifa.com/en/tournaments/mens/u17worldcup/qatar-2026/articles/score-fixtures-match-schedule">FIFA: FIFA U-17 World Cup 2026 scores and fixtures</a></li>
+    <li><a href="https://www.ami-sportif.com/2026/11/12/mondial-u17-qatar-2026-la-cote-divoire-devoile-sa-liste-de-21-joueurs-pour-la-competition">Ami-Sportif, 12 November 2026: Côte d'Ivoire names its 21</a></li>
+    <li><a href="https://www.seneweb.com/fr/news/Sport/mondial-u-17-2026-lamine-sane-devoile-sa-liste-de-21-lionceaux-un-grand-absent-se-fait-remarquer_n_999003324.html">Seneweb: Lamine Sané names Senegal's 21</a></li>
+    <li><a href="https://kawowo.com/2026/11/11/kingston-unleashes-his-cubs-for-fifa-u-17-world-cup/">Kawowo Sports, 11 November 2026: Kingston names Uganda's 21</a></li>
+    <li><a href="https://www.jornaldesafio.co.mz/index.php/2026/11/12/mambinhas-definem-lista-para-o-mundial-do-qatar/">Jornal Desafio, 12 November 2026: Mozambique settle their list for Qatar</a></li>
+    <li><a href="https://panafricafootball.com/article/serengeti-boys-u17-world-cup">Pan Africa Football: Serengeti Boys squad named for U-17 World Cup debut</a></li>
+    <li><a href="https://www.fifa.com/en/tournaments/mens/u17worldcup/qatar-2026/articles/team-profiles-mali-new-zealand-belgium-vietnam">FIFA: Group G team profiles</a></li>
+    <li><a href="https://www.fifa.com/en/tournaments/mens/u17worldcup/qatar-2026/articles/team-profiles-italy-jamaica-cote-divoire-uzbekistan">FIFA: Group E team profiles</a></li>
+    <li><a href="https://www.fifa.com/en/tournaments/mens/u17worldcup/qatar-2026/articles/team-profiles-argentina-australia-mozambique-denmark">FIFA: Group C team profiles</a></li>
     <li><a href="https://www.fifa.com/en/tournaments/mens/u17worldcup/qatar-2026/articles/qualified-teams-dates-venue">FIFA: FIFA U-17 World Cup Qatar 2026, qualified teams, dates and venue</a></li>
     <li><a href="https://www.fifa.com/en/tournaments/mens/u17worldcup/qatar-2025/articles/watch-live-streams">FIFA: how to watch the FIFA U-17 World Cup live</a></li>
   </ol></details>
 </section>
 </main>
 
-<footer><div class="wrap">Independent coverage by Afritech. Not affiliated with or endorsed by FIFA.<br>Produced by Afritech Sports Technology and Innovation Group Limited · Built from public sources up to 10 November 2026 · Updated 10 November 2026</div></footer>
+<footer><div class="wrap">Independent coverage by Afritech. Not affiliated with or endorsed by FIFA.<br>Produced by Afritech Sports Technology and Innovation Group Limited · Built from public sources up to 12 November 2026 · Updated 12 November 2026</div></footer>
 <script>
 document.querySelectorAll('.copy').forEach(function(b){b.hidden=false;b.addEventListener('click',function(){var t=b.getAttribute('data-copy');var done=function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy'},1800)};if(navigator.clipboard){navigator.clipboard.writeText(t).then(done,function(){var r=document.createRange();r.selectNodeContents(document.getElementById('em'));var s=getSelection();s.removeAllRanges();s.addRange(r)})}})});
 </script>

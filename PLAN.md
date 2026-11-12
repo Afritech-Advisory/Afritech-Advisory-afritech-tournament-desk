@@ -32,9 +32,9 @@ Afritech's assessment models, scoring methods, internal ratings, internal outcom
 
 ## 5. Open items
 1. ~~Repo and Pages.~~ Live 2026-11-10 at https://afritech-advisory.github.io/Afritech-Advisory-afritech-tournament-desk/ (repo kept under its created name).
-2. Confirm Mozambique's and Uganda's groups (B or C) on FIFA's group page.
-3. Add kick-off times when FIFA publishes them.
-4. Confirm whether Seb Fisher is in Uganda's final 21.
+2. ~~Confirm Mozambique's and Uganda's groups.~~ Uganda B, Mozambique C.
+3. ~~Add kick-off times.~~ All 30 African group matches listed in the match centre, 2026-11-12; re-check on each matchday.
+4. ~~Seb Fisher and Uganda's final 21.~~ Not in the 21 named on 2026-11-11 (Kawowo, Chimp Sport); he was in the preliminary pool.
 5. Player photos: none used. Add only verified photos Afritech may publish.
 
 ## 6. Player radars (added 2026-11-10)
