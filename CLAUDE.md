@@ -1,5 +1,12 @@
 # Working rules for Claude on Afritech projects
 
+## Run cadence before the tournament (Andrew's rule, 14 Nov 2026) — check this first
+- To save usage, scheduled runs are reduced until the eve of the tournament. Dates are Qatar time (UTC+3).
+- **Runs that do the full work:** the morning run on 16 November 2026, then every scheduled run from 18 November 2026 onward (morning and evening).
+- **Every other scheduled run on 14, 15, 16 and 17 November 2026** (both evening runs included, and the morning runs of 15 and 17 November): reply with the single line `Tournament Desk: reduced cadence before the tournament, nothing to do` and stop. Do not load skills, search, read the tracker, open a pull request or send a notification.
+- A message typed by Andrew himself is never skipped; this rule covers scheduled runs only.
+- From 19 November 2026 this section no longer applies and can be removed.
+
 ## Output format (Andrew's standing rule, 10 Nov 2026)
 - Anything meant to go out (email, WhatsApp, post, briefing, client text) is given as a **copy-ready block**: final wording, links and dates filled in, nothing to edit except clearly marked [brackets]. One block per channel.
 - Notes for Andrew (what changed, decisions, checks, instructions) go in a **separate section**, after the copy-ready blocks, and never inside them.
