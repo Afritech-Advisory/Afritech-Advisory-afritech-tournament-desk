@@ -40,7 +40,7 @@ Afritech's assessment models, scoring methods, internal ratings, internal outcom
 ## 6. Player radars (added 2026-11-10)
 - Public page: `qatar-u17-2026/radars/`, built from `src/data/qatar-u17-2026-radars.json` by `build.py` (static SVG, works with scripts off; role filter is an optional script).
 - Each player is shown against the **role average only**. The public data file holds only approved players and pre-computed role averages with a count. No individual peer score is ever published.
-- Source of scores: the private tracker's "Tournament role radar" (eight areas per role, matches and minutes watched, "Approved by Afritech" tick). After each matchday Claude reads the approved entries, computes role averages from all rated players in each role, updates the JSON, rebuilds and publishes.
+- Source of scores: the private tracker's "Tournament role radar" (eight areas per role, matches and minutes watched, "Approved by Afritech" tick). After each matchday Claude reads the approved entries, computes role averages from all rated players in each role, updates the JSON, rebuilds and publishes. Provisional scores (system drafts marked `provisional: true`) never enter a role average or the public file until Andrew approves them.
 - A role average appears once 3 players in that role are rated. Under-18 safeguards: club signal stays MONITOR; footer states FIFA minors rules.
 
 ## 7. Photos
