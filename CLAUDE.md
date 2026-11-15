@@ -46,3 +46,9 @@ Every tag in the `videos` collection answers who, what, when and where. When the
 **Agreement test (once, before 19 Nov, then each new assistant).** Two viewers tag the same 2025 U-17 World Cup match on FIFA+. A tag agrees when it names the same player and action within 2 seconds. Report the share that agree and the actions where they differ; tighten the exact-moment line for any action below 70%.
 
 Also keep everything else current without waiting for anyone: kick-off times, venues, squads, standings lines on nation cards, knockout fixtures, the timeline phase, and public fact updates prepared for approval.
+
+## Four Sentences first (Andrew's rule, 15 Nov 2026)
+- Before writing or changing any page, card, invite, briefing or tracker text, read the Afritech Four Sentences (the afritech-four-sentences skill and memory file): who it's for, what they get, why they'd believe us, the one action.
+- Every public page's first screen passes the stranger test: someone outside football can say who it's for and what to do next.
+- When desk work shows a sharper way to say one of the four sentences for this desk's readers (participants, scouts, clubs), put it to Andrew as a lettered Gatekeeper question. Don't change the master yourself.
+- Scheduled runs on reduced cadence (see the first section) still skip this; it applies whenever real work runs.
