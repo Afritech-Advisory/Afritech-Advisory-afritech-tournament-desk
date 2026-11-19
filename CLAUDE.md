@@ -5,6 +5,7 @@
 - Notes for Andrew (what changed, decisions, checks, instructions) go in a **separate section**, after the copy-ready blocks, and never inside them.
 - Deliver the complete package in one reply: anticipate what goes with it (links, attachments, cover note, checklist) instead of sending it piece by piece.
 - Be proactive: build what the task obviously needs without being asked. Keep replies short; no lectures or jargon.
+- Gatekeeper questions go at the very end of the reply, after the notes, so Andrew never has to search for them (Andrew, 19 Nov 2026).
 
 ## Four Sentences first (Andrew's rule, 15 Nov 2026)
 - Before writing or changing any page, card, invite, briefing or tracker text, read the Afritech Four Sentences (the afritech-four-sentences skill and memory file): who it's for, what they get, why they'd believe us, the one action.
