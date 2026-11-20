@@ -238,7 +238,9 @@ JS = [
 ("'Replay'", "'Revoir'", "'Rudia'", "'Ver de novo'"),
 ("next:'Next goal'", "next:'But suivant'", "next:'Bao linalofuata'", "next:'Próximo gol'"),
 ("done:'Clip finished.'", "done:'Extrait terminé.'", "done:'Video imeisha.'", "done:'Clipe encerrado.'"),
-("'The clip could not load on this connection.'", "'L’extrait n’a pas pu se charger sur cette connexion.'", "'Video haikuweza kufunguka kwenye mtandao huu.'", "'O clipe não carregou nesta conexão.'"),
+("'This clip cannot be shown here right now.'", "'Cet extrait ne peut pas être affiché ici pour le moment.'", "'Video hii haiwezi kuonyeshwa hapa kwa sasa.'", "'Este clipe não pode ser exibido aqui no momento.'"),
+("'Sound on'", "'Activer le son'", "'Washa sauti'", "'Ativar som'"),
+("'Sound off'", "'Couper le son'", "'Zima sauti'", "'Desativar som'"),
 ("'Try again'", "'Réessayer'", "'Jaribu tena'", "'Tentar de novo'"),
 ("'Pause or play the clip'", "'Mettre en pause ou lire l’extrait'", "'Simamisha au cheza video'", "'Pausar ou reproduzir o clipe'"),
 
