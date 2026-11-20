@@ -154,6 +154,7 @@ def rule(lang, s, names, tr):
         (r"(.+) \((.+)\)", lambda m: c(m[2]) and (m[1] in names or re.fullmatch(r"[A-ZÀ-Ý][\w'’.-]*(?: [A-ZÀ-Ý\w][\w'’.-]*)*", m[1])) and f"{m[1]} ({c(m[2])})"),
         (r"(\d+-\d+) (.+)", lambda m: c(m[2]) and f"{m[1]} {c(m[2])}"),
         (r"(.+) (\d+-\d+)", lambda m: c(m[1]) and f"{c(m[1])} {m[2]}"),
+        (r"(.+): match by match\.", lambda m: c(m[1]) and {"fr": c(m[1]) + "\u00a0: match après match.", "sw": c(m[1]) + ": mechi baada ya mechi.", "pt": c(m[1]) + ", jogo a jogo."}[lang]),
         (r"Coach: (.+)", lambda m: t["coach"].format(x=m[1])),
         (r"(.+): (.+) radar, awaiting first scores", lambda m: m[2] in ROLES[lang] and t["radar"].format(x=m[1], r=ROLES[lang][m[2]].lower() if lang != "sw" else ROLES[lang][m[2]].lower())),
         (r"First match: (.+) v (.+), (\w+ \d+ \w+), (\d\d:\d\d) Doha time\. The match report, goals and our read go up here after the final whistle\.", lambda m: c(m[1]) and c(m[2]) and t["first"].format(c=c(m[1]), c2=c(m[2]), d=date(lang, m[3]), t=m[4])),

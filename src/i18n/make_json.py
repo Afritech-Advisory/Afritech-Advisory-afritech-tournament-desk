@@ -10,8 +10,8 @@ SW_WORDS = {"Croatia": "Kroatia", "Cuba": "Kuba", "Ecuador": "Ekwado", "Mexico":
             "Denmark": "Denmaki", "Costa Rica": "Kosta Rika", "Venezuela": "Venezuela",
             "mwamba wa karibu": "nguzo ya karibu ya goli", "muda wa nyongeza": "dakika za majeruhi",
             "Dunia nzima": "Nje ya Afrika", "Kadi za uskauti": "Ripoti fupi za ufuatiliaji"}
-PT_WORDS = {"à fase de 32": "aos 16 avos de final", "na fase de 32": "nos 16 avos de final", "Fase de 32": "16 avos de final",
-            "fase de 32": "16 avos de final", "CAN Sub-17": "Copa Africana de Nações Sub-17", "Fichas de scouting": "Relatórios de observação"}
+PT_WORDS = {"à fase de 32": "à fase eliminatória com 32 seleções", "na fase de 32": "na fase eliminatória com 32 seleções",
+            "Fase de 32": "Fase eliminatória com 32 seleções", "fase de 32": "fase eliminatória com 32 seleções", "CAN Sub-17": "Copa Africana de Nações Sub-17", "Fichas de scouting": "Relatórios de observação"}
 FR_WORDS = {"Fiches de scouting": "Fiches d'observation", "fiches de scouting": "fiches d'observation", "contre Danemark": "contre le Danemark"}
 FIXW = {"sw": SW_WORDS, "pt": PT_WORDS, "fr": FR_WORDS}
 
