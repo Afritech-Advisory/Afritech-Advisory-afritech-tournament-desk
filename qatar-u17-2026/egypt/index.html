@@ -308,6 +308,29 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-block:20px 28px;
 .gtype{display:inline-block;font:600 .7rem var(--mono);letter-spacing:.06em;text-transform:uppercase;background:var(--soft);border-radius:4px;padding:2px 6px;margin-left:6px;vertical-align:1px}
 .cta-box{background:var(--navy);color:var(--on-navy);border-radius:12px;padding:22px;display:grid;gap:10px;margin-top:8px}
 .cta-box h2{color:#fff}.cta-box p{color:#DCE5F0}
+
+.scard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;display:grid;gap:10px;scroll-margin-top:70px}
+.scard header{display:flex;gap:12px;align-items:center}
+.scard .sil{width:52px;height:52px;flex:none;border-radius:50%;background:var(--soft);display:grid;place-items:center}
+.scard h3{font-size:1.35rem}
+.scard .meta{color:var(--muted);font-size:.92rem}
+.cap{font:600 .68rem var(--mono);letter-spacing:.06em;background:var(--navy);color:#fff;border-radius:4px;padding:2px 6px;margin-left:6px;vertical-align:2px}
+.sig{display:flex;flex-wrap:wrap;gap:6px}
+.sig span{font:600 .74rem var(--mono);letter-spacing:.04em;text-transform:uppercase;border-radius:6px;padding:4px 8px;background:var(--soft)}
+.sig span b{color:var(--orange-text)}
+.nums{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+.nums div{background:var(--soft);border-radius:8px;padding:8px;text-align:center}
+.nums b{display:block;font-family:var(--display);font-size:1.6rem;line-height:1}
+.nums span{font-size:.74rem;color:var(--muted)}
+.seen{margin:0;padding-left:18px;display:grid;gap:4px;font-size:.96rem}
+.ladder2{display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:.9rem}
+.ladder2 div{border-radius:8px;padding:8px 10px;border:1px solid var(--line)}
+.ladder2 .u{border-left:4px solid var(--teal)} .ladder2 .d{border-left:4px solid var(--rose)}
+.ladder2 b{display:block;font-family:var(--display);text-transform:uppercase;letter-spacing:.04em;font-size:.85rem}
+.gl{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:6px}
+.peer{width:100%;height:auto;display:block;max-width:640px}
+.scards{display:grid;gap:12px}
+@media (max-width:420px){.nums b{font-size:1.35rem}.ladder2{grid-template-columns:1fr}}
 </style>
 </head>
 <body><!-- afs-bar:start --><style id="afs-bar-css">
@@ -361,8 +384,11 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-block:20px 28px;
   <div class="next"><div class="fxd"><b>Qatar v <span class="af">Egypt</span></b><span class="num">18:00 Doha</span><span>Sunday 22 November · Aspire Zone, Pitch 2</span></div><div class="fxd"><b>Panama v <span class="af">Egypt</span></b><span class="num">17:30 Doha</span><span>Wednesday 25 November · Aspire Zone, Pitch 3</span></div></div>
 </section>
 <section class="s" id="players">
-  <div class="s-head"><p class="eyebrow">Players to watch</p><h2>Who clubs should follow</h2></div>
-  <ul class="ptw"><li>Ahmed Safwat: captain and creator, attacking midfielder (Zamalek). Best player of the U-17 Gulf Cup in Qatar this autumn.</li></ul>
+  <div class="s-head"><p class="eyebrow">Scout cards</p><h2>Who clubs should follow</h2>
+  <p>Every Egypt player with a goal or assist, plus the players we tracked before the tournament. Each card carries our recommendation, his numbers so far, his goals as clips and what would move him up or down.</p></div>
+  <div class="scards"><article class="scard" id="ziad-saudi"><header><div class="sil"><svg viewBox="0 0 40 40" width="40" height="40" aria-hidden="true"><circle cx="20" cy="14" r="8" fill="var(--line)"/><path d="M4 38c2-9 9-13 16-13s14 4 16 13z" fill="var(--line)"/></svg></div><div><h3>Ziad Saudi</h3><p class="meta"><i class="fl fl-eg" role="img" aria-label="Egypt flag"></i> Egypt · No. 14</p></div></header><div class="sig"><span>Club: <b>MONITOR</b></span><span>Agent: <b>DEVELOP FIRST</b></span><span>Federation: <b>WATCHLIST</b></span></div><p><b>Next:</b> Follow his minutes and shots against Qatar and Panama.</p><div class="nums"><div><b>1</b><span>Goals</span></div><div><b>0</b><span>Assists</span></div><div><b>1</b><span>Team matches</span></div><div><b>1</b><span>Clips</span></div></div><ul class=gl><li><button class="clipbtn" type="button" data-m="egy-gre" data-i="0">&#9654; Goal v Greece, 71&#x27;</button></li></ul><h4 style="margin:2px 0 0;font-family:var(--display);font-size:1.1rem">What we have seen</h4><ul class="seen"><li>Scored Egypt&#x27;s goal against Greece from outside the box while Egypt played with ten men.</li></ul><div class="ladder2"><div class="u"><b>Moves him up</b>A second goal or a start in the next match.</div><div class="d"><b>Moves him down</b>Limited minutes in the remaining group matches.</div></div><p class="fine" style="margin:0">Built from match reports, FIFA's official highlights and published sources. His full four-area and position profile follows after his group matches.</p></article><article class="scard" id="ahmed-safwat"><header><div class="sil"><svg viewBox="0 0 40 40" width="40" height="40" aria-hidden="true"><circle cx="20" cy="14" r="8" fill="var(--line)"/><path d="M4 38c2-9 9-13 16-13s14 4 16 13z" fill="var(--line)"/></svg></div><div><h3>Ahmed Safwat<span class="cap">CAPTAIN</span></h3><p class="meta"><i class="fl fl-eg" role="img" aria-label="Egypt flag"></i> Egypt · Attacking midfielder · Zamalek · No. 10</p></div></header><div class="sig"><span>Club: <b>MONITOR</b></span><span>Agent: <b>DEVELOP FIRST</b></span><span>Federation: <b>WATCHLIST</b></span></div><p><b>Next:</b> Watch him set the tempo against hosts Qatar on 22 November.</p><div class="nums"><div><b>0</b><span>Goals</span></div><div><b>0</b><span>Assists</span></div><div><b>1</b><span>Team matches</span></div><div><b>0</b><span>Clips</span></div></div><h4 style="margin:2px 0 0;font-family:var(--display);font-size:1.1rem">What we have seen</h4><ul class="seen"><li>Best player of the U-17 Gulf Cup in Qatar this autumn, with two assists in the 3-1 final win over the UAE.</li><li>Started in midfield against Greece and led a ten-man side for over an hour.</li></ul><div class="ladder2"><div class="u"><b>Moves him up</b>A goal or assist against Qatar or Panama.</div><div class="d"><b>Moves him down</b>Little influence on the ball in a must-win match.</div></div><p class="fine" style="margin:0">Built from match reports, FIFA's official highlights and published sources. His full four-area and position profile follows after his group matches.</p></article></div>
+  <h3 style="margin-top:22px">How they compare across Africa's ten</h3>
+  <svg class="peer" viewBox="0 0 360 206" role="img" aria-label="Goal involvements of Africa's players at the tournament so far"><text x="0" y="31" font-size="12.5" fill="var(--muted)" font-family="Source Sans 3,Segoe UI,sans-serif" font-weight="400">Alírio Cuna Júnior (MOZ)</text><circle cx="178" cy="26" r="8" fill="var(--teal)" opacity="0.45"/><circle cx="202" cy="26" r="8" fill="var(--teal)" opacity="0.45"/><text x="0" y="61" font-size="12.5" fill="var(--muted)" font-family="Source Sans 3,Segoe UI,sans-serif" font-weight="400">Chausson Nhabanga (MOZ)</text><circle cx="178" cy="56" r="8" fill="var(--purple)" opacity="0.45"/><text x="0" y="91" font-size="12.5" fill="var(--muted)" font-family="Source Sans 3,Segoe UI,sans-serif" font-weight="400">Joaquim Mubai (MOZ)</text><circle cx="178" cy="86" r="8" fill="var(--teal)" opacity="0.45"/><text x="0" y="121" font-size="12.5" fill="var(--muted)" font-family="Source Sans 3,Segoe UI,sans-serif" font-weight="400">Khensane Machel (MOZ)</text><circle cx="178" cy="116" r="8" fill="var(--teal)" opacity="0.45"/><text x="0" y="151" font-size="12.5" fill="var(--fg)" font-family="Source Sans 3,Segoe UI,sans-serif" font-weight="700">Ziad Saudi (EGY)</text><circle cx="178" cy="146" r="8" fill="var(--teal)" opacity="1"/><circle cx="6" cy="194" r="6" fill="var(--teal)"/><text x="16" y="198" font-size="12" fill="var(--muted)">Goal</text><circle cx="66" cy="194" r="6" fill="var(--purple)"/><text x="76" y="198" font-size="12" fill="var(--muted)">Assist</text><text x="360" y="198" text-anchor="end" font-size="12" fill="var(--muted)">One dot = one goal or assist</text></svg><p class="fine">How to read: each row is one African player on our board with a goal or assist so far; teal dots are goals, purple dots assists. Counts from final match reports, all ten African squads, updated after every matchday.</p>
   <p class="note fine">All players at this tournament are under 18. We follow FIFA's rules on minors, and every conversation runs through the player's family and federation. This page carries only information already in the public domain.</p>
 </section>
 <section class="s" id="contact">
@@ -400,7 +426,7 @@ function play(m,i){var el=document.getElementById('pl-'+m),clips=JSON.parse(el.g
      if(st.all&&st.i+1<clips.length){play(m,st.i+1)}
      else{st.all=false;mark(m,-1);now.textContent=clips.length>1?'Clip finished. Press Play all or pick another goal.':'Clip finished.'}}}}})})}
 document.querySelectorAll('.playall').forEach(function(b){b.addEventListener('click',function(){var m=b.getAttribute('data-m');state[m]=state[m]||{};state[m].all=true;play(m,0)})});
-document.querySelectorAll('.clipbtn').forEach(function(b){b.addEventListener('click',function(){var m=b.getAttribute('data-m');state[m]=state[m]||{};state[m].all=false;
+document.querySelectorAll('button.clipbtn').forEach(function(b){b.addEventListener('click',function(){var m=b.getAttribute('data-m');state[m]=state[m]||{};state[m].all=false;
  document.getElementById('pl-'+m).scrollIntoView({behavior:'smooth',block:'center'});play(m,+b.getAttribute('data-i'))})});
 })();
 </script>

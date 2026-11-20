@@ -2,6 +2,7 @@
 official highlights), next fixtures, players to watch and a briefing call to action.
 Data: src/data/qatar-u17-2026-nations.json. Styles come from the main desk page so the look stays one system."""
 import json, html as H
+import scouting
 
 BASE = "https://afritech-advisory.github.io/Afritech-Advisory-afritech-tournament-desk/qatar-u17-2026/"
 WA = "https://wa.me/qr/JU7PO5B5ADCOI1"
@@ -139,7 +140,7 @@ def match_report(m, nation):
             f'<p class="fine" style="margin:0">Clips play from FIFA\'s official highlights on YouTube. <a href="{m["video"]}" target="_blank" rel="noopener">Open on YouTube</a></p></article>')
 
 
-def page(n, all_nations, head, emblem, updated):
+def page(n, all_nations, head, emblem, updated, scout=None):
     name = n["name"]
     played = [m for m in n["matches"] if m.get("score")]
     upcoming = [m for m in n["matches"] if not m.get("score")]
@@ -155,8 +156,12 @@ def page(n, all_nations, head, emblem, updated):
         '<p class="fine">No match played yet. The report goes up here after the final whistle, with every goal and our read.</p>'
     nxt = "".join(f'<div class="fxd"><b>{team(m["home"], name)} v {team(m["away"], name)}</b>'
                   f'<span class="num">{m["time"]} Doha</span><span>{m["date"]} · {H.escape(m["venue"])}</span></div>' for m in upcoming)
-    players = "".join(f"<li>{H.escape(p)}</li>" for p in n["players"]) or \
-        f"<li>Our board for {H.escape(name)} is built from the group matches: the standouts are added here after each matchday.</li>"
+    sc = scout or {"players": []}
+    mine = [p for p in sc["players"] if p["nation"] == n["slug"]]
+    mine.sort(key=lambda p: -sum(len(x) for x in scouting.numbers(p["id"], {"nations": all_nations})))
+    cards = "".join(scouting.card(p, {"nations": all_nations}, n["slug"]) for p in mine) or \
+        f'<p class="fine">Our scout cards for {H.escape(name)} are built from the group matches: every goal scorer and standout is added here after each matchday.</p>'
+    peer = scouting.peer_svg({"nations": all_nations}, sc, n["slug"]) or '<p class="fine">The comparison fills in after the first matchday.</p>'
     others = "".join(f'<a href="../{o["slug"]}/">{flag(o["flag"], o["name"])}{H.escape(o["name"])}</a>'
                      for o in all_nations if o["slug"] != n["slug"])
     subj = f'{name}%20U-17%20World%20Cup%20briefing'.replace(" ", "%20").replace("'", "%27")
@@ -168,7 +173,7 @@ def page(n, all_nations, head, emblem, updated):
                   f'content="{H.escape(desc)}"')
     h = h.replace('<meta property="og:title" content="Africa\'s ten at the FIFA U-17 World Cup Qatar 2026">',
                   f'<meta property="og:title" content="{H.escape(name)} at the FIFA U-17 World Cup Qatar 2026">')
-    h = h.replace(BASE + '"', url + '"').replace("</style>", EXTRA_CSS + "</style>", 1)
+    h = h.replace(BASE + '"', url + '"').replace("</style>", EXTRA_CSS + scouting.CSS + "</style>", 1)
     return f"""{h}
 <body>
 <header class="bar"><div class="wrap">
@@ -196,8 +201,11 @@ def page(n, all_nations, head, emblem, updated):
   <div class="next">{nxt or '<p class="fine">Group stage complete. Knockout fixtures follow on the main desk page.</p>'}</div>
 </section>
 <section class="s" id="players">
-  <div class="s-head"><p class="eyebrow">Players to watch</p><h2>Who clubs should follow</h2></div>
-  <ul class="ptw">{players}</ul>
+  <div class="s-head"><p class="eyebrow">Scout cards</p><h2>Who clubs should follow</h2>
+  <p>Every {H.escape(name)} player with a goal or assist, plus the players we tracked before the tournament. Each card carries our recommendation, his numbers so far, his goals as clips and what would move him up or down.</p></div>
+  <div class="scards">{cards}</div>
+  <h3 style="margin-top:22px">How they compare across Africa's ten</h3>
+  {peer}
   <p class="note fine">All players at this tournament are under 18. We follow FIFA's rules on minors, and every conversation runs through the player's family and federation. This page carries only information already in the public domain.</p>
 </section>
 <section class="s" id="contact">
@@ -235,7 +243,7 @@ function play(m,i){{var el=document.getElementById('pl-'+m),clips=JSON.parse(el.
      if(st.all&&st.i+1<clips.length){{play(m,st.i+1)}}
      else{{st.all=false;mark(m,-1);now.textContent=clips.length>1?'Clip finished. Press Play all or pick another goal.':'Clip finished.'}}}}}}}}}})}})}}
 document.querySelectorAll('.playall').forEach(function(b){{b.addEventListener('click',function(){{var m=b.getAttribute('data-m');state[m]=state[m]||{{}};state[m].all=true;play(m,0)}})}});
-document.querySelectorAll('.clipbtn').forEach(function(b){{b.addEventListener('click',function(){{var m=b.getAttribute('data-m');state[m]=state[m]||{{}};state[m].all=false;
+document.querySelectorAll('button.clipbtn').forEach(function(b){{b.addEventListener('click',function(){{var m=b.getAttribute('data-m');state[m]=state[m]||{{}};state[m].all=false;
  document.getElementById('pl-'+m).scrollIntoView({{behavior:'smooth',block:'center'}});play(m,+b.getAttribute('data-i'))}})}});
 }})();
 </script>
@@ -245,10 +253,10 @@ document.querySelectorAll('.clipbtn').forEach(function(b){{b.addEventListener('c
 
 
 def build(root, fonts, emblem, flags):
-    data = json.loads((root / "src/data/qatar-u17-2026-nations.json").read_text())
+    data, scout = scouting.load(root)
     src = (root / "src/qatar-u17-2026.html").read_text()
     head = src[:src.index("</head>") + len("</head>")].replace("{{FONTS}}", fonts).replace("{{FLAGS}}", flags)
     out = {}
     for n in data["nations"]:
-        out["qatar-u17-2026/%s/index.html" % n["slug"]] = page(n, data["nations"], head, emblem, data["updated"])
+        out["qatar-u17-2026/%s/index.html" % n["slug"]] = page(n, data["nations"], head, emblem, data["updated"], scout)
     return out, data
