@@ -26,6 +26,7 @@ for src, (out, extra) in pages.items():
         html = html.replace('<p class="note">All players on this board are under 18.',
                             '<h3 style="margin-top:22px">Goal involvements so far</h3>' + scouting.peer_svg(nd, sd) + '<p class="note">All players on this board are under 18.', 1)
         html = html.replace("</style>", scouting.CSS + "</style>", 1)
+        html = html.replace("</body>", scouting.YT_LOADER + scouting.CARD_JS + "</body>", 1)
     html = sitebar.inject(html, "desk", "desk")
     (root / out).parent.mkdir(parents=True, exist_ok=True)
     (root / out).write_text(html)
