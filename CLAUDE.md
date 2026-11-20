@@ -15,3 +15,9 @@
 
 ## The desk's other working rules are private
 Run cadence, tracker stamps, approval alerts, automatic catch-up, the tag standard and the nightly tag check are kept in Afritech Sports' private files: `internal/tournament-desk/CLAUDE.md` in the private repository `Afritech-Advisory/afritech-matchiq-clients` (moved 16 Nov 2026). The scheduled runs carry them in their own instructions. In a session Andrew starts himself, attach that private repository and read the file before any desk work.
+
+## Nation pages: every match goes under its country (Andrew, 20 Nov 2026)
+- Each of Africa's ten has its own page at `qatar-u17-2026/<nation>/`, built from `src/data/qatar-u17-2026-nations.json` by `src/nations.py`.
+- When a match result is approved for the desk, add it to that nation's entry in the same pull request: `id` (the tracker match id), `score`, `video` (FIFA's official highlights URL), `goals` (minute, team, scorer, how, and `t` = seconds into the official highlights where the goal is clearly seen), `story` and `scout` (one sales-first line: what a club should take from the match). Then the nation card's link label and the Match centre result link to `<nation>/#<id>`.
+- Final scores only. Never publish scout scores or anything provisional. Never download, clip or re-upload match video: link to FIFA's official video only.
+- Any News item about a match links to its nation page and match, e.g. `qatar-u17-2026/mozambique/#moz-den`.
