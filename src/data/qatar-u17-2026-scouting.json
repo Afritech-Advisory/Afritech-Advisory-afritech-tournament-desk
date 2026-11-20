@@ -1,0 +1,173 @@
+{
+ "updated": "20 November 2026",
+ "_note": "Public scout cards (Stage 1, public-domain evidence). Every player is under 18: club signal capped at MONITOR, agent at DEVELOP FIRST, no valuation. Numeric grades are published only after Andrew approves them in the private tracker.",
+ "players": [
+  {
+   "id": "ziyad-baha",
+   "nation": "morocco",
+   "name": "Ziyad Baha",
+   "role": "Striker",
+   "club": "Olympique de Marseille",
+   "shirt": "9",
+   "board": true,
+   "facts": [
+    "Playing his second U-17 World Cup in a row, a rare level of tournament experience at this age.",
+    "Leads the line for Morocco, U-17 AFCON hosts and Group A winners."
+   ],
+   "fed": "WATCHLIST",
+   "next": "Follow all three group matches, including Spain on 26 November.",
+   "up": "Goals or decisive moments against Spain or China PR.",
+   "down": "No shot on target across the group."
+  },
+  {
+   "id": "ahmed-safwat",
+   "nation": "egypt",
+   "name": "Ahmed Safwat",
+   "role": "Attacking midfielder",
+   "club": "Zamalek",
+   "shirt": "10",
+   "captain": true,
+   "board": true,
+   "facts": [
+    "Best player of the U-17 Gulf Cup in Qatar this autumn, with two assists in the 3-1 final win over the UAE.",
+    "Started in midfield against Greece and led a ten-man side for over an hour."
+   ],
+   "fed": "WATCHLIST",
+   "next": "Watch him set the tempo against hosts Qatar on 22 November.",
+   "up": "A goal or assist against Qatar or Panama.",
+   "down": "Little influence on the ball in a must-win match."
+  },
+  {
+   "id": "ziad-saudi",
+   "nation": "egypt",
+   "name": "Ziad Saudi",
+   "role": "",
+   "club": "",
+   "shirt": "14",
+   "facts": [
+    "Scored Egypt's goal against Greece from outside the box while Egypt played with ten men."
+   ],
+   "fed": "WATCHLIST",
+   "next": "Follow his minutes and shots against Qatar and Panama.",
+   "up": "A second goal or a start in the next match.",
+   "down": "Limited minutes in the remaining group matches."
+  },
+  {
+   "id": "diego-pelembe",
+   "nation": "mozambique",
+   "name": "Diego Elias Pelembe",
+   "role": "Midfielder",
+   "club": "Black Bulls",
+   "shirt": "15",
+   "captain": true,
+   "board": true,
+   "facts": [
+    "Captain. Two goals at the U-17 AFCON.",
+    "Red Bull Bragantino have announced his signing, to start in Brazil in June 2027 when he turns 18.",
+    "Ran midfield in the 4-0 win over Denmark and hit the woodwork."
+   ],
+   "fed": "WATCHLIST",
+   "next": "Watch how he controls midfield against Argentina on 22 November.",
+   "up": "A goal or assist against Argentina or Australia.",
+   "down": "Mozambique lose control of midfield against Argentina."
+  },
+  {
+   "id": "alirio-cuna",
+   "nation": "mozambique",
+   "name": "Alírio Cuna Júnior",
+   "role": "Winger",
+   "club": "Black Bulls",
+   "shirt": "",
+   "board": true,
+   "facts": [
+    "Two goals against Denmark: the first African player to score twice at this tournament.",
+    "Both goals came inside the box, the first from a counter-attack."
+   ],
+   "fed": "WATCHLIST",
+   "next": "Follow his runs in behind against Argentina on 22 November.",
+   "up": "A third goal, or a goal against Argentina.",
+   "down": "No shots against stronger defences."
+  },
+  {
+   "id": "khensane-machel",
+   "nation": "mozambique",
+   "name": "Khensane Machel",
+   "role": "Midfielder",
+   "club": "",
+   "shirt": "5",
+   "facts": [
+    "Scored Africa's first goal of the tournament, four minutes into the 4-0 win over Denmark.",
+    "Started in midfield beside captain Diego Elias Pelembe."
+   ],
+   "fed": "WATCHLIST",
+   "next": "Follow his arrival into the box against Argentina.",
+   "up": "A second goal or assist in the group.",
+   "down": "Fewer forward runs against Argentina's midfield."
+  },
+  {
+   "id": "chausson-nhabanga",
+   "nation": "mozambique",
+   "name": "Chausson Nhabanga",
+   "role": "",
+   "club": "",
+   "shirt": "10",
+   "facts": [
+    "Set up Mozambique's opening goal against Denmark."
+   ],
+   "fed": "WATCHLIST",
+   "next": "Follow his final passes against Argentina and Australia.",
+   "up": "A second assist in the group.",
+   "down": "No chances created in the next two matches."
+  },
+  {
+   "id": "joaquim-mubai",
+   "nation": "mozambique",
+   "name": "Joaquim Mubai",
+   "role": "",
+   "club": "Costa do Sol",
+   "shirt": "",
+   "facts": [
+    "Scored Mozambique's fourth goal against Denmark in added time."
+   ],
+   "fed": "WATCHLIST",
+   "next": "Follow his minutes against Argentina and Australia.",
+   "up": "A start or a second goal.",
+   "down": "No minutes in the next two matches."
+  },
+  {
+   "id": "chris-karel",
+   "nation": "cameroon",
+   "name": "Chris Karel",
+   "role": "Midfielder",
+   "club": "",
+   "shirt": "6",
+   "captain": true,
+   "board": true,
+   "facts": [
+    "Captained Cameroon to the U-17 AFCON quarter-finals; CAF called him the side's midfield engine."
+   ],
+   "fed": "WATCHLIST",
+   "next": "Follow every Group K match, including Mexico on 24 November.",
+   "up": "Control of midfield in the opener against Venezuela.",
+   "down": "Cameroon outnumbered in midfield against Mexico."
+  },
+  {
+   "id": "dismas-athanasi",
+   "nation": "tanzania",
+   "name": "Dismas Athanasi",
+   "role": "Forward",
+   "club": "",
+   "shirt": "",
+   "age": 14,
+   "board": true,
+   "facts": [
+    "Age 14: the youngest player in FIFA's squad lists for Qatar 2026.",
+    "Top scorer at the U-17 AFCON with three goals as Tanzania reached the final."
+   ],
+   "fed": "WATCHLIST",
+   "next": "Watch his first World Cup minutes against Costa Rica on 21 November. At 14 his route runs through his family and federation for years yet.",
+   "up": "A goal at this World Cup.",
+   "down": "Few minutes off the bench."
+  }
+ ]
+}

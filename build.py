@@ -3,7 +3,7 @@ and render the player radars from src/data/qatar-u17-2026-radars.json."""
 import base64, pathlib, sys
 root = pathlib.Path(__file__).parent
 sys.path.insert(0, str(root / "src"))
-import radar, sitebar, nations
+import radar, sitebar, nations, scouting
 
 fonts = (root / "src/fonts.css").read_text()
 emblem = "data:image/png;base64," + base64.b64encode((root / "src/emblem.png").read_bytes()).decode()
@@ -18,6 +18,14 @@ for src, (out, extra) in pages.items():
     html = (root / src).read_text().replace("{{FONTS}}", fonts).replace("{{EMBLEM}}", emblem).replace("{{FLAGS}}", flags)
     for k, v in extra.items():
         html = html.replace(k, v)
+    if src == "src/qatar-u17-2026.html":
+        nd, sd = scouting.load(root)
+        a = html.index('<div class="board">') + len('<div class="board">')
+        b = html.index('</div>\n  <p class="fine" style="margin-top:12px"><a class="btn primary" href="radars/"', a)
+        html = html[:a] + scouting.board_html(nd, sd) + html[b:]
+        html = html.replace('<p class="note">All players on this board are under 18.',
+                            '<h3 style="margin-top:22px">Goal involvements so far</h3>' + scouting.peer_svg(nd, sd) + '<p class="note">All players on this board are under 18.', 1)
+        html = html.replace("</style>", scouting.CSS + "</style>", 1)
     html = sitebar.inject(html, "desk", "desk")
     (root / out).parent.mkdir(parents=True, exist_ok=True)
     (root / out).write_text(html)
