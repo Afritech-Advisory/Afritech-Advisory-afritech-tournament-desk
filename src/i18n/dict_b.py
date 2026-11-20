@@ -232,4 +232,14 @@ JS = [
 ('Open the clip on FIFA&rsquo;s YouTube', 'Ouvrir l&rsquo;extrait sur le YouTube de la FIFA', 'Fungua video kwenye YouTube ya FIFA', 'Abrir o clipe no YouTube da FIFA'),
 ("textContent='Copied'", "textContent='Copié'", "textContent='Imenakiliwa'", "textContent='Copiado'"),
 ("textContent='Copy'", "textContent='Copier'", "textContent='Nakili'", "textContent='Copiar'"),
+("'Tap to play'", "'Touchez pour lire'", "'Gusa kucheza'", "'Toque para assistir'"),
+("'Paused'", "'En pause'", "'Imesimamishwa'", "'Pausado'"),
+("'Continue'", "'Continuer'", "'Endelea'", "'Continuar'"),
+("'Replay'", "'Revoir'", "'Rudia'", "'Ver de novo'"),
+("next:'Next goal'", "next:'But suivant'", "next:'Bao linalofuata'", "next:'Próximo gol'"),
+("done:'Clip finished.'", "done:'Extrait terminé.'", "done:'Video imeisha.'", "done:'Clipe encerrado.'"),
+("'The clip could not load on this connection.'", "'L’extrait n’a pas pu se charger sur cette connexion.'", "'Video haikuweza kufunguka kwenye mtandao huu.'", "'O clipe não carregou nesta conexão.'"),
+("'Try again'", "'Réessayer'", "'Jaribu tena'", "'Tentar de novo'"),
+("'Pause or play the clip'", "'Mettre en pause ou lire l’extrait'", "'Simamisha au cheza video'", "'Pausar ou reproduzir o clipe'"),
+
 ]

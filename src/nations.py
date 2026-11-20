@@ -143,7 +143,7 @@ def match_report(m, nation):
             f'<h3>The goals</h3>{player}{timeline(m, nation)}<ul class="goals">{"".join(goals)}</ul>'
             f'{f"<h3>Our analysis</h3><div class=an>{an}</div>" if an else ""}'
             f'<p class="scout"><b>For clubs</b>{H.escape(m["scout"])}</p>'
-            + (f'<p class="fine" style="margin:0">Clips play from FIFA\'s official highlights on YouTube. <a href="{m["video"]}" target="_blank" rel="noopener">Open on YouTube</a></p>' if m.get("video") else '<p class="fine" style="margin:0">Goal clips are added once FIFA\'s official highlights are checked on video.</p>') + '</article>')
+            + (f'<p class="fine" style="margin:0">Clips play from FIFA\'s official highlights on YouTube.</p>' if m.get("video") else '<p class="fine" style="margin:0">Goal clips are added once FIFA\'s official highlights are checked on video.</p>') + '</article>')
 
 
 def page(n, all_nations, head, emblem, updated, scout=None):
@@ -230,24 +230,17 @@ def page(n, all_nations, head, emblem, updated, scout=None):
 {scouting.YT_LOADER}
 <script>
 (function(){{
-var players={{}},state={{}},ready=false,queue=[];
-function api(cb){{window.afYT(cb,fail)}}
-function fail(){{document.querySelectorAll('.player').forEach(function(p){{var v=p.getAttribute('data-v');
- p.innerHTML='<div class="ph"><a style="color:#fff" href="https://www.youtube.com/watch?v='+v+'" target="_blank" rel="noopener">The clip player could not load here. Open FIFA&rsquo;s official highlights on YouTube</a></div>'}})}}
+var state={{}};
 function mark(m,i){{document.querySelectorAll('.clipbtn[data-m="'+m+'"]').forEach(function(b){{b.classList.toggle('on',+b.getAttribute('data-i')===i)}})}}
 function play(m,i){{var el=document.getElementById('pl-'+m),clips=JSON.parse(el.getAttribute('data-clips')),v=el.getAttribute('data-v'),st=state[m];
- var now=document.getElementById('now-'+m);
- var go=function(){{var c=clips[i];
-  if(c){{players[m].loadVideoById({{videoId:v,startSeconds:c.s,endSeconds:c.e}});now.textContent='Now playing: '+c.l+(st.all?' ('+(i+1)+' of '+clips.length+')':'');mark(m,i)}}
-  else{{players[m].loadVideoById({{videoId:v}});now.textContent='Official highlights';mark(m,-1)}}
-  st.i=i}};
- if(players[m])return go();
- api(function(){{var host=document.createElement('div');el.innerHTML='';el.appendChild(host);
-  players[m]=new YT.Player(host,{{videoId:v,playerVars:{{playsinline:1,rel:0,modestbranding:1}},
-   events:{{onReady:go,onError:function(){{fail()}},onStateChange:function(e){{
-    if(e.data===YT.PlayerState.ENDED&&clips.length){{
-     if(st.all&&st.i+1<clips.length){{play(m,st.i+1)}}
-     else{{st.all=false;mark(m,-1);now.textContent=clips.length>1?'Clip finished. Press Play all or pick another goal.':'Clip finished.'}}}}}}}}}})}})}}
+ var now=document.getElementById('now-'+m),c=clips[i];st.i=i;
+ if(!c){{now.textContent='Official highlights';mark(m,-1);window.afClip(el,{{v:v,s:0,e:0}});return}}
+ now.textContent='Now playing: '+c.l+(st.all?' ('+(i+1)+' of '+clips.length+')':'');mark(m,i);
+ var last=i+1>=clips.length;
+ window.afClip(el,{{v:v,s:c.s,e:c.e,
+  next:last?null:function(){{st.all=false;play(m,i+1)}},
+  onEnd:function(){{if(st.all&&!last){{setTimeout(function(){{if(st.all&&st.i===i)play(m,i+1)}},1200)}}
+   else{{st.all=false;mark(m,-1);now.textContent=clips.length>1?'Clip finished. Press Play all or pick another goal.':'Clip finished.'}}}}}})}}
 document.querySelectorAll('.playall').forEach(function(b){{b.addEventListener('click',function(){{var m=b.getAttribute('data-m');state[m]=state[m]||{{}};state[m].all=true;play(m,0)}})}});
 document.querySelectorAll('button.clipbtn[data-m]').forEach(function(b){{b.addEventListener('click',function(){{var m=b.getAttribute('data-m');state[m]=state[m]||{{}};state[m].all=false;
  document.getElementById('pl-'+m).scrollIntoView({{behavior:'smooth',block:'center'}});play(m,+b.getAttribute('data-i'))}})}});
