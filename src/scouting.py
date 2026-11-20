@@ -10,6 +10,7 @@ grades until Andrew approves them in the private tracker."""
 import json, re, html as H
 
 CSS = """
+html[lang=sw] .nums div{display:flex;flex-direction:column-reverse;justify-content:flex-end;gap:2px}
 .scard .clipbtn,.gl .clipbtn{white-space:normal;max-width:100%;min-height:44px;text-align:left;overflow-wrap:anywhere}
 .scard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;display:grid;gap:10px;scroll-margin-top:70px;align-content:start}
 .scard header{display:flex;gap:12px;align-items:center}

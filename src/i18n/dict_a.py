@@ -159,7 +159,7 @@ E = [
 ('Open the tournament desk', 'Ouvrir le Tournament Desk', 'Fungua Dawati la Mashindano', 'Abrir a Central de Análise do Torneio'),
 ('Our analysis', 'Notre analyse', 'Tathmini yetu', 'Nossa análise'),
 ('Our approach', 'Notre approche', 'Mbinu yetu', 'Nossa abordagem'),
-('Our desks', 'Nos desks', 'Madawati yetu', 'Nossas centrais de análise'),
+('Our desks', "Nos pôles d'analyse", 'Madawati yetu', 'Nossas centrais de análise'),
 ('Our view', 'Notre avis', 'Maoni yetu', 'Nossa visão'),
 ('PLACES', 'PLACES', 'NAFASI', 'VAGAS'),
 ('Peers at the same tournament', 'Comparés aux joueurs du même tournoi', 'Wenzao katika mashindano hayo hayo', 'Pares no mesmo torneio'),
