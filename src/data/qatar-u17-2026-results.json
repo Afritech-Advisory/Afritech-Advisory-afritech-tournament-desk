@@ -218,6 +218,90 @@
      "who": "B. Radzhabzod"
     }
    ]
+  },
+  {
+   "id": "ita-jam",
+   "date": "20 Nov",
+   "group": "E",
+   "home": "Italy",
+   "away": "Jamaica",
+   "score": "6-0",
+   "goals": [
+    {
+     "min": "7'",
+     "team": "Italy",
+     "who": "Federico Croci",
+     "pid": "federico-croci"
+    },
+    {
+     "min": "15'",
+     "team": "Italy",
+     "who": "Federico Croci",
+     "how": "Assist Francesco Gasparello",
+     "pid": "federico-croci"
+    },
+    {
+     "min": "34'",
+     "team": "Italy",
+     "who": "Diego Perillo"
+    },
+    {
+     "min": "43'",
+     "team": "Italy",
+     "who": "Own goal (J. Nolan)"
+    },
+    {
+     "min": "56'",
+     "team": "Italy",
+     "who": "Gioele Giammattei",
+     "how": "Overhead kick"
+    },
+    {
+     "min": "78'",
+     "team": "Italy",
+     "who": "Thomas Corigliano",
+     "how": "Off the bench"
+    }
+   ]
+  },
+  {
+   "id": "esp-chn",
+   "date": "20 Nov",
+   "group": "H",
+   "home": "Spain",
+   "away": "China PR",
+   "score": "5-0",
+   "goals": [
+    {
+     "min": "40'",
+     "team": "Spain",
+     "who": "Jordi Pesquer",
+     "type": "Penalty"
+    },
+    {
+     "min": "45+2'",
+     "team": "Spain",
+     "who": "Ebrima Tunkara",
+     "how": "Free kick"
+    },
+    {
+     "min": "73'",
+     "team": "Spain",
+     "who": "Owen Mira Chukwuemeka",
+     "pid": "owen-mira"
+    },
+    {
+     "min": "79'",
+     "team": "Spain",
+     "who": "Owen Mira Chukwuemeka",
+     "pid": "owen-mira"
+    },
+    {
+     "min": "85'",
+     "team": "Spain",
+     "who": "Guillermo Trujillano"
+    }
+   ]
   }
  ]
 }

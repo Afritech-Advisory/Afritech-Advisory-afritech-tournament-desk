@@ -112,7 +112,63 @@
      "time": "19:00",
      "home": "Côte d'Ivoire",
      "away": "Uzbekistan",
-     "venue": "Aspire Zone"
+     "venue": "Aspire Zone",
+     "id": "civ-uzb",
+     "score": "2-1",
+     "goals": [
+      {
+       "min": "7'",
+       "team": "Côte d'Ivoire",
+       "who": "Hubert Yao",
+       "how": "Captain's opener",
+       "type": "Open play",
+       "pid": "hubert-yao"
+      },
+      {
+       "min": "51'",
+       "team": "Uzbekistan",
+       "who": "Mukhammad Khakimov",
+       "type": "Open play"
+      },
+      {
+       "min": "88'",
+       "team": "Côte d'Ivoire",
+       "who": "Abass Luc Diarrassouba",
+       "how": "Off the bench",
+       "type": "Open play",
+       "pid": "abass-diarrassouba"
+      }
+     ],
+     "story": "Captain Hubert Yao put Côte d'Ivoire ahead after seven minutes. Uzbekistan levelled through Mukhammad Khakimov six minutes after half-time, and substitute Abass Luc Diarrassouba won it two minutes from time. Three points to open Group E.",
+     "keyNumbers": [
+      [
+       "7'",
+       "captain Hubert Yao's opener"
+      ],
+      [
+       "88'",
+       "the winner, from a substitute"
+      ],
+      [
+       "3",
+       "points from the opening match"
+      ]
+     ],
+     "analysis": [
+      {
+       "h": "Captain sets the tone",
+       "p": "Hubert Yao scored inside the first ten minutes, the start a side wants against a well-organised Asian team."
+      },
+      {
+       "h": "The bench decided it",
+       "p": "Uzbekistan were level from the 51st minute. Abass Luc Diarrassouba, on as a substitute, scored the winner in the 88th minute."
+      },
+      {
+       "h": "What it means for the group",
+       "p": "Italy also won, 6-0 against Jamaica, so Italy v Côte d'Ivoire on 23 November is likely to decide first place in Group E."
+      }
+     ],
+     "scout": "Follow captain Hubert Yao and match-winner Abass Luc Diarrassouba against Italy on 23 November, the group's benchmark match."
     },
     {
      "date": "Monday 23 November",
