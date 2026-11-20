@@ -191,7 +191,7 @@ def page(n, all_nations, head, emblem, updated, scout=None):
   <div>
     <p class="crumb"><a href="../">Africa's ten in Qatar</a> › {H.escape(name)}</p>
     <p class="eyebrow">FIFA U-17 World Cup Qatar 2026 · Group {n["group"]} · Updated {updated}</p>
-    <h1>{flag(n["flag"], name)}{H.escape(name)}<em>: match by match.</em></h1>
+    <h1>{flag(n["flag"], name)}{H.escape(name)}: match by match.</h1>
     <p class="lead">{summary}</p>
     <div class="btns"><a class="btn primary" href="mailto:Advisory@afritechsports.com?subject={subj}">Book a briefing on {H.escape(name)}</a><a class="btn ghost" href="#results">See the results</a></div>
     <div class="chips"><span>Coach: {H.escape(n["coach"])}</span><span>{H.escape(n["route"])}</span></div>
