@@ -3,7 +3,7 @@ and render the player radars from src/data/qatar-u17-2026-radars.json."""
 import base64, pathlib, sys
 root = pathlib.Path(__file__).parent
 sys.path.insert(0, str(root / "src"))
-import radar, sitebar
+import radar, sitebar, nations
 
 fonts = (root / "src/fonts.css").read_text()
 emblem = "data:image/png;base64," + base64.b64encode((root / "src/emblem.png").read_bytes()).decode()
@@ -18,6 +18,12 @@ for src, (out, extra) in pages.items():
     html = (root / src).read_text().replace("{{FONTS}}", fonts).replace("{{EMBLEM}}", emblem).replace("{{FLAGS}}", flags)
     for k, v in extra.items():
         html = html.replace(k, v)
+    html = sitebar.inject(html, "desk", "desk")
+    (root / out).parent.mkdir(parents=True, exist_ok=True)
+    (root / out).write_text(html)
+    print(out, len(html))
+pages_n, _ = nations.build(root, fonts, emblem, flags)
+for out, html in pages_n.items():
     html = sitebar.inject(html, "desk", "desk")
     (root / out).parent.mkdir(parents=True, exist_ok=True)
     (root / out).write_text(html)
