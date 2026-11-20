@@ -1,0 +1,223 @@
+{
+ "_note": "Final results of matches without an African side, for the whole-tournament scan. Goals carry pid/apid for carded players so numbers compute themselves.",
+ "matches": [
+  {
+   "id": "qat-pan",
+   "date": "19 Nov",
+   "group": "A",
+   "home": "Qatar",
+   "away": "Panama",
+   "score": "2-0",
+   "goals": [
+    {
+     "min": "90+1'",
+     "team": "Qatar",
+     "who": "Taha Nassir",
+     "type": "Penalty"
+    },
+    {
+     "min": "90+5'",
+     "team": "Qatar",
+     "who": "Ndiaye"
+    }
+   ]
+  },
+  {
+   "id": "ncl-ecu",
+   "date": "19 Nov",
+   "group": "B",
+   "home": "New Caledonia",
+   "away": "Ecuador",
+   "score": "0-1",
+   "goals": [
+    {
+     "min": "45+1'",
+     "team": "Ecuador",
+     "who": "Guerrero"
+    }
+   ]
+  },
+  {
+   "id": "arg-aus",
+   "date": "19 Nov",
+   "group": "C",
+   "home": "Argentina",
+   "away": "Australia",
+   "score": "0-2",
+   "goals": [
+    {
+     "min": "60'",
+     "team": "Australia",
+     "who": "Own goal (Álvaro Güich) from Akol Akon's low ball across the box"
+    },
+    {
+     "min": "71'",
+     "team": "Australia",
+     "who": "Akol Akon",
+     "how": "Assist Emmett Shaw",
+     "pid": "akol-akon"
+    }
+   ]
+  },
+  {
+   "id": "fra-hai",
+   "date": "19 Nov",
+   "group": "D",
+   "home": "France",
+   "away": "Haiti",
+   "score": "3-1",
+   "goals": [
+    {
+     "min": "4'",
+     "team": "France",
+     "who": "Loan Merrifield",
+     "pid": "loan-merrifield"
+    },
+    {
+     "min": "41'",
+     "team": "France",
+     "who": "Loan Merrifield",
+     "pid": "loan-merrifield"
+    },
+    {
+     "min": "47'",
+     "team": "France",
+     "who": "N. Tiehi"
+    },
+    {
+     "min": "88'",
+     "team": "Haiti",
+     "who": "M. Prophète"
+    }
+   ]
+  },
+  {
+   "id": "ksa-uru",
+   "date": "19 Nov",
+   "group": "D",
+   "home": "Saudi Arabia",
+   "away": "Uruguay",
+   "score": "2-3",
+   "goals": [
+    {
+     "min": "38'",
+     "team": "Saudi Arabia",
+     "who": "Faris Bu Shaqraa",
+     "type": "Penalty",
+     "pid": "faris-bu-shaqraa"
+    },
+    {
+     "min": "43'",
+     "team": "Uruguay",
+     "who": "P. Barreiro"
+    },
+    {
+     "min": "58'",
+     "team": "Saudi Arabia",
+     "who": "Faris Bu Shaqraa",
+     "type": "Penalty",
+     "pid": "faris-bu-shaqraa"
+    },
+    {
+     "min": "68'",
+     "team": "Uruguay",
+     "who": "Own goal"
+    },
+    {
+     "min": "86'",
+     "team": "Uruguay",
+     "who": "F. Rodríguez"
+    }
+   ]
+  },
+  {
+   "id": "bel-vie",
+   "date": "20 Nov",
+   "group": "G",
+   "home": "Belgium",
+   "away": "Vietnam",
+   "score": "3-2",
+   "goals": [
+    {
+     "min": "4'",
+     "team": "Vietnam",
+     "who": "S. Lê"
+    },
+    {
+     "min": "39'",
+     "team": "Belgium",
+     "who": "T. Moorthamer"
+    },
+    {
+     "min": "42'",
+     "team": "Belgium",
+     "who": "Kiyan Achahbar"
+    },
+    {
+     "min": "60'",
+     "team": "Belgium",
+     "who": "A. Philips"
+    },
+    {
+     "min": "84'",
+     "team": "Vietnam",
+     "who": "N. Chu Ngoc"
+    }
+   ]
+  },
+  {
+   "id": "cub-tjk",
+   "date": "20 Nov",
+   "group": "F",
+   "home": "Cuba",
+   "away": "Tajikistan",
+   "score": "3-5",
+   "goals": [
+    {
+     "min": "44'",
+     "team": "Cuba",
+     "who": "Y. González Jiménez",
+     "pid": "y-gonzalez-jimenez"
+    },
+    {
+     "min": "48'",
+     "team": "Tajikistan",
+     "who": "K. Sharipov"
+    },
+    {
+     "min": "57'",
+     "team": "Tajikistan",
+     "who": "P. Bobonazarov"
+    },
+    {
+     "min": "61'",
+     "team": "Tajikistan",
+     "who": "A. Makhtumov",
+     "pid": "a-makhtumov"
+    },
+    {
+     "min": "64'",
+     "team": "Tajikistan",
+     "who": "A. Makhtumov",
+     "pid": "a-makhtumov"
+    },
+    {
+     "min": "67'",
+     "team": "Cuba",
+     "who": "Y. González Jiménez",
+     "pid": "y-gonzalez-jimenez"
+    },
+    {
+     "min": "70'",
+     "team": "Cuba",
+     "who": "Y. Iglesias Maneiro"
+    },
+    {
+     "min": "76'",
+     "team": "Tajikistan",
+     "who": "B. Radzhabzod"
+    }
+   ]
+  }
+ ]
+}

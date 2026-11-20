@@ -11,13 +11,13 @@
    "shirt": "9",
    "board": true,
    "facts": [
-    "Playing his second U-17 World Cup in a row, a rare level of tournament experience at this age.",
-    "Leads the line for Morocco, U-17 AFCON hosts and Group A winners."
+    "Two goals against Fiji in six minutes after the break, one from the penalty spot.",
+    "Playing his second U-17 World Cup in a row, a rare level of tournament experience at this age."
    ],
    "fed": "WATCHLIST",
-   "next": "Follow all three group matches, including Spain on 26 November.",
-   "up": "Goals or decisive moments against Spain or China PR.",
-   "down": "No shot on target across the group."
+   "next": "Follow him against China PR on 23 November and Spain on 26 November.",
+   "up": "A goal or decisive moment against Spain.",
+   "down": "No shot on target against Spain or China PR."
   },
   {
    "id": "ahmed-safwat",
@@ -168,6 +168,295 @@
    "next": "Watch his first World Cup minutes against Costa Rica on 21 November. At 14 his route runs through his family and federation for years yet.",
    "up": "A goal at this World Cup.",
    "down": "Few minutes off the bench."
+  },
+  {
+   "id": "ismail-el-aoud",
+   "nation": "morocco",
+   "name": "Ismail El Aoud",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "facts": [
+    "Scored after three minutes against Fiji and set up the second two minutes later."
+   ],
+   "next": "Follow his involvement against China PR on 23 November.",
+   "up": "A goal or assist against Spain.",
+   "down": "No goal involvement in the next two matches.",
+   "fed": "WATCHLIST"
+  },
+  {
+   "id": "ibrahim-rabbaj",
+   "nation": "morocco",
+   "name": "Ibrahim Rabbaj",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "facts": [
+    "Scored Morocco's second goal against Fiji in the fifth minute."
+   ],
+   "next": "Follow his minutes against China PR and Spain.",
+   "up": "A second goal in the group.",
+   "down": "Limited minutes in the next two matches.",
+   "fed": "WATCHLIST"
+  },
+  {
+   "id": "imran-talai",
+   "nation": "morocco",
+   "name": "Imran Talai",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "facts": [
+    "Scored Morocco's third goal against Fiji, three minutes before half-time."
+   ],
+   "next": "Follow his minutes against China PR and Spain.",
+   "up": "A second goal in the group.",
+   "down": "Limited minutes in the next two matches.",
+   "fed": "WATCHLIST"
+  },
+  {
+   "id": "rami-lougmani",
+   "nation": "morocco",
+   "name": "Rami Lougmani",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "facts": [
+    "Came off the bench and scored Morocco's sixth goal against Fiji."
+   ],
+   "next": "Follow whether he earns a start against China PR.",
+   "up": "A start and another goal.",
+   "down": "No minutes in the next two matches.",
+   "fed": "WATCHLIST"
+  },
+  {
+   "id": "mohamed-zinbi",
+   "nation": "morocco",
+   "name": "Mohamed Zinbi",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "facts": [
+    "Set up Morocco's opening goal against Fiji after three minutes."
+   ],
+   "next": "Follow his final passes against China PR and Spain.",
+   "up": "A second assist in the group.",
+   "down": "No chances created in the next two matches.",
+   "fed": "WATCHLIST"
+  },
+  {
+   "id": "halidou-maiga",
+   "nation": "mali",
+   "name": "Halidou Maiga",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "facts": [
+    "Two goals against New Zealand: the opener after 11 minutes and Mali's second just after half-time."
+   ],
+   "next": "Follow him against Belgium on 23 November, the group's benchmark match.",
+   "up": "A goal against Belgium.",
+   "down": "No shots against Belgium's defence.",
+   "fed": "WATCHLIST"
+  },
+  {
+   "id": "makan-sacko",
+   "nation": "mali",
+   "name": "Makan Sacko",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "facts": [
+    "Scored Mali's third goal against New Zealand, four minutes after their second."
+   ],
+   "next": "Follow his minutes against Belgium on 23 November.",
+   "up": "A second goal in the group.",
+   "down": "Limited minutes in the next two matches.",
+   "fed": "WATCHLIST"
+  },
+  {
+   "id": "sega-mbodji",
+   "nation": "senegal",
+   "name": "Sega Mbodji",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "facts": [
+    "Equalised against Croatia just before half-time, with Senegal down to ten men."
+   ],
+   "next": "Follow him against Cuba on 23 November.",
+   "up": "A goal or assist against Cuba or Tajikistan.",
+   "down": "No shots in the next two matches.",
+   "fed": "WATCHLIST"
+  },
+  {
+   "id": "e-sadio",
+   "nation": "senegal",
+   "name": "E. Sadio",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "facts": [
+    "Set up Sega Mbodji's equaliser against Croatia."
+   ],
+   "next": "Follow his final passes against Cuba on 23 November.",
+   "up": "A second assist in the group.",
+   "down": "No chances created in the next two matches.",
+   "fed": "WATCHLIST"
+  },
+  {
+   "id": "akol-akon",
+   "country": "Australia",
+   "code": "AUS",
+   "flag": "au",
+   "name": "Akol Akon",
+   "role": "Winger",
+   "club": "Sydney FC",
+   "shirt": "",
+   "age": 17,
+   "facts": [
+    "Player of the Match as Australia beat Argentina 2-0: his low ball across the box forced the first goal and he rounded the keeper for the second."
+   ],
+   "next": "Follow him against Denmark on 22 November, then Mozambique on 25 November.",
+   "up": "Another goal against Mozambique's defence.",
+   "down": "Few chances against a deeper block.",
+   "fed": "WATCHLIST"
+  },
+  {
+   "id": "kim-jiho",
+   "country": "Korea Republic",
+   "code": "KOR",
+   "flag": "kr",
+   "name": "Kim Jiho",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "facts": [
+    "Player of the Match against Uganda; scored the opener in the 8th minute."
+   ],
+   "next": "Follow him against New Caledonia on 22 November.",
+   "up": "A second goal in the group.",
+   "down": "No goal involvement in the next two matches.",
+   "fed": "WATCHLIST"
+  },
+  {
+   "id": "loan-merrifield",
+   "country": "France",
+   "code": "FRA",
+   "flag": "fr",
+   "name": "Loan Merrifield",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "facts": [
+    "Two goals against Haiti, after four minutes and just before half-time."
+   ],
+   "next": "Follow France's second group match.",
+   "up": "A third goal in the group.",
+   "down": "No shot on target in the next match.",
+   "fed": "WATCHLIST"
+  },
+  {
+   "id": "faris-bu-shaqraa",
+   "country": "Saudi Arabia",
+   "code": "KSA",
+   "flag": "sa",
+   "name": "Faris Bu Shaqraa",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "facts": [
+    "Scored twice from the penalty spot against Uruguay."
+   ],
+   "next": "Follow Saudi Arabia's second group match.",
+   "up": "An open-play goal in the group.",
+   "down": "No shots outside set pieces.",
+   "fed": "WATCHLIST"
+  },
+  {
+   "id": "a-makhtumov",
+   "country": "Tajikistan",
+   "code": "TJK",
+   "flag": "tj",
+   "name": "A. Makhtumov",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "facts": [
+    "Two goals in three minutes as Tajikistan came from behind to beat Cuba 5-3."
+   ],
+   "next": "Follow him against Croatia on 23 November.",
+   "up": "A goal against Croatia.",
+   "down": "No shots against Croatia.",
+   "fed": "WATCHLIST"
+  },
+  {
+   "id": "y-gonzalez-jimenez",
+   "country": "Cuba",
+   "code": "CUB",
+   "flag": "cu",
+   "name": "Y. González Jiménez",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "facts": [
+    "Scored twice for Cuba in a 5-3 defeat by Tajikistan."
+   ],
+   "next": "Follow him against Senegal on 23 November.",
+   "up": "A goal against Senegal.",
+   "down": "No shots against Senegal.",
+   "fed": "WATCHLIST"
+  },
+  {
+   "id": "panagiotis-biniaris",
+   "country": "Greece",
+   "code": "GRE",
+   "flag": "gr",
+   "name": "Panagiotis Biniaris",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "facts": [
+    "Player of the Match as Greece beat Egypt 2-1."
+   ],
+   "next": "Follow Greece's second group match.",
+   "up": "A goal involvement in the group.",
+   "down": "Less influence in the next match.",
+   "fed": "WATCHLIST"
+  },
+  {
+   "id": "dhiaeddine-benyatla",
+   "country": "Qatar",
+   "code": "QAT",
+   "flag": "qa",
+   "name": "Dhiaeddine Benyatla",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "facts": [
+    "Player of the Match as hosts Qatar beat Panama 2-0."
+   ],
+   "next": "Follow him against Egypt on 22 November.",
+   "up": "A goal involvement against Egypt.",
+   "down": "Less influence in the next match.",
+   "fed": "WATCHLIST"
+  },
+  {
+   "id": "sylvain-ipeze",
+   "country": "New Caledonia",
+   "code": "NCL",
+   "flag": "nc",
+   "name": "Sylvain Ipeze",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "facts": [
+    "Player of the Match even in a 1-0 defeat by Ecuador."
+   ],
+   "next": "Follow him against Korea Republic on 22 November.",
+   "up": "Another standout display against Korea Republic.",
+   "down": "Less influence in the next match.",
+   "fed": "WATCHLIST"
   }
  ]
 }

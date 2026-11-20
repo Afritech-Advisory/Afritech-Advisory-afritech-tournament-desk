@@ -145,7 +145,53 @@
      "time": "18:30",
      "home": "Senegal",
      "away": "Croatia",
-     "venue": "Aspire Zone"
+     "venue": "Aspire Zone",
+     "id": "sen-cro",
+     "score": "1-1",
+     "goals": [
+      {
+       "min": "8'",
+       "team": "Croatia",
+       "who": "Luka Bartolović",
+       "how": "Assist Jona Benkotić",
+       "type": "Open play"
+      },
+      {
+       "min": "45'",
+       "team": "Senegal",
+       "who": "Sega Mbodji",
+       "how": "Assist E. Sadio",
+       "type": "Open play",
+       "pid": "sega-mbodji",
+       "apid": "e-sadio"
+      }
+     ],
+     "story": "Croatia scored after eight minutes and Senegal went down to ten men three minutes before half-time, when a player was sent off for a last-man foul. Senegal still equalised before the break through Sega Mbodji and held 1-1 for the whole second half.",
+     "keyNumbers": [
+      [
+       "10",
+       "men for the whole second half"
+      ],
+      [
+       "45'",
+       "Mbodji's equaliser, seconds before half-time"
+      ],
+      [
+       "1",
+       "point from a group opener against a European side"
+      ]
+     ],
+     "analysis": [
+      {
+       "h": "Character under pressure",
+       "p": "Behind early and a man down before half-time, Senegal found an equaliser almost immediately and then kept Croatia out for 45 minutes with ten players. That says as much about the group's organisation as its talent."
+      },
+      {
+       "h": "What it means for the group",
+       "p": "A point against Croatia, the group's main European test, leaves Senegal in control: Cuba and Tajikistan remain, and the eight best third-placed teams also reach the round of 32."
+      }
+     ],
+     "scout": "Sega Mbodji is the name to follow against Cuba on 23 November: he scored the goal that saved a point with ten men."
     },
     {
      "date": "Monday 23 November",
@@ -178,7 +224,59 @@
      "time": "16:30",
      "home": "Mali",
      "away": "New Zealand",
-     "venue": "Aspire Zone"
+     "venue": "Aspire Zone",
+     "id": "mli-nzl",
+     "score": "3-0",
+     "goals": [
+      {
+       "min": "11'",
+       "team": "Mali",
+       "who": "Halidou Maiga",
+       "how": "Swept in from about ten yards after New Zealand failed to clear",
+       "type": "Inside the box",
+       "pid": "halidou-maiga"
+      },
+      {
+       "min": "50'",
+       "team": "Mali",
+       "who": "Halidou Maiga",
+       "type": "Open play",
+       "pid": "halidou-maiga"
+      },
+      {
+       "min": "54'",
+       "team": "Mali",
+       "who": "Makan Sacko",
+       "type": "Open play",
+       "pid": "makan-sacko"
+      }
+     ],
+     "story": "Mali led through Halidou Maiga after 11 minutes and settled the match with two goals in four minutes after half-time, Maiga's second and Makan Sacko's. A clean sheet against the Oceania champions to open Group G.",
+     "keyNumbers": [
+      [
+       "2",
+       "goals for Halidou Maiga"
+      ],
+      [
+       "4",
+       "minutes between the second and third goals"
+      ],
+      [
+       "0",
+       "goals conceded"
+      ]
+     ],
+     "analysis": [
+      {
+       "h": "A fast start after the break",
+       "p": "Mali led 1-0 at half-time, then scored twice in four minutes early in the second half. The match was over before the hour."
+      },
+      {
+       "h": "What it means for the group",
+       "p": "Three points and +3 put Mali top of Group G before the meeting with Belgium on 23 November, the match most European scouts will attend."
+      }
+     ],
+     "scout": "Halidou Maiga, with two goals, is the player to follow against Belgium on 23 November."
     },
     {
      "date": "Monday 23 November",
@@ -211,7 +309,92 @@
      "time": "19:00",
      "home": "Fiji",
      "away": "Morocco",
-     "venue": "Aspire Zone, Pitch 7"
+     "venue": "Aspire Zone, Pitch 7",
+     "id": "mar-fij",
+     "score": "0-6",
+     "goals": [
+      {
+       "min": "3'",
+       "team": "Morocco",
+       "who": "Ismail El Aoud",
+       "how": "Assist Mohamed Zinbi",
+       "type": "Open play",
+       "pid": "ismail-el-aoud",
+       "apid": "mohamed-zinbi"
+      },
+      {
+       "min": "5'",
+       "team": "Morocco",
+       "who": "Ibrahim Rabbaj",
+       "how": "Assist Ismail El Aoud",
+       "type": "Open play",
+       "pid": "ibrahim-rabbaj",
+       "apid": "ismail-el-aoud"
+      },
+      {
+       "min": "42'",
+       "team": "Morocco",
+       "who": "Imran Talai",
+       "type": "Open play",
+       "pid": "imran-talai"
+      },
+      {
+       "min": "49'",
+       "team": "Morocco",
+       "who": "Ziyad Baha",
+       "type": "Open play",
+       "pid": "ziyad-baha"
+      },
+      {
+       "min": "55'",
+       "team": "Morocco",
+       "who": "Ziyad Baha",
+       "type": "Penalty",
+       "pid": "ziyad-baha"
+      },
+      {
+       "min": "85'",
+       "team": "Morocco",
+       "who": "Rami Lougmani",
+       "how": "Off the bench",
+       "type": "Open play",
+       "pid": "rami-lougmani"
+      }
+     ],
+     "story": "Morocco were 2-0 up inside five minutes and 3-0 at half-time. Ziyad Baha scored twice early in the second half, one a penalty, and substitute Rami Lougmani added the sixth. Morocco top Group H after the first round.",
+     "keyNumbers": [
+      [
+       "2-0",
+       "inside five minutes"
+      ],
+      [
+       "5",
+       "different scorers"
+      ],
+      [
+       "2",
+       "goals for Ziyad Baha"
+      ],
+      [
+       "+6",
+       "goal difference"
+      ]
+     ],
+     "analysis": [
+      {
+       "h": "Goals from everywhere",
+       "p": "Five different players scored, including a substitute. Ismail El Aoud scored one and set up another in the first five minutes."
+      },
+      {
+       "h": "Baha delivers again",
+       "p": "Playing his second U-17 World Cup, Ziyad Baha scored twice in six minutes after the break, the kind of tournament experience clubs pay attention to."
+      },
+      {
+       "h": "What it means for the group",
+       "p": "Morocco lead Group H on goal difference before China PR on 23 November and Spain on 26 November, the match that will likely decide first place."
+      }
+     ],
+     "scout": "Follow Ziyad Baha and Ismail El Aoud against China PR on 23 November, then the headline meeting with Spain."
     },
     {
      "date": "Monday 23 November",
@@ -473,7 +656,8 @@
        "min": "8'",
        "team": "Korea Republic",
        "who": "Kim Jiho",
-       "type": "Open play"
+       "type": "Open play",
+       "pid": "kim-jiho"
       },
       {
        "min": "50'",

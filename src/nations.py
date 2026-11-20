@@ -3,6 +3,7 @@ official highlights), next fixtures, players to watch and a briefing call to act
 Data: src/data/qatar-u17-2026-nations.json. Styles come from the main desk page so the look stays one system."""
 import json, html as H
 import scouting
+FULL = {}
 
 BASE = "https://afritech-advisory.github.io/Afritech-Advisory-afritech-tournament-desk/qatar-u17-2026/"
 WA = "https://wa.me/qr/JU7PO5B5ADCOI1"
@@ -92,15 +93,19 @@ def timeline(m, nation):
              f'<text x="{x(45)}" y="96" text-anchor="middle" font-size="11" fill="var(--muted)" font-family="IBM Plex Mono,monospace">HT</text>']
     for t in (0, 90):
         parts.append(f'<text x="{x(t)}" y="96" text-anchor="middle" font-size="12" fill="var(--muted)" font-family="IBM Plex Mono,monospace">{t}\'</text>')
+    last = {True: -99, False: -99}
+    lift = {True: 0, False: 0}
     for g in m.get("goals", []):
         mine = g["team"] == nation
         cx, cy = x(minute_num(g["min"])), (30 if mine else 70)
+        lift[mine] = (lift[mine] + 1) % 2 if cx - last[mine] < 22 else 0
+        last[mine] = cx
         col = "var(--teal)" if mine else "var(--rose)"
         parts.append(f'<line x1="{cx}" y1="50" x2="{cx}" y2="{cy}" stroke="{col}" stroke-width="2"/>'
                      f'<circle cx="{cx}" cy="{cy}" r="7" fill="{col}"/>'
-                     f'<text x="{cx}" y="{cy - 14 if mine else cy + 24}" text-anchor="middle" font-size="11" font-weight="700" fill="{col}" font-family="IBM Plex Mono,monospace">{g["min"]}</text>')
+                     f'<text x="{cx}" y="{(cy - 14 - 12 * lift[mine]) if mine else (cy + 24 + 12 * lift[mine])}" text-anchor="middle" font-size="11" font-weight="700" fill="{col}" font-family="IBM Plex Mono,monospace">{g["min"]}</text>')
     label = H.escape(f'Goal timeline: {nation} goals above the line, opponent goals below')
-    return f'<svg class="tl" viewBox="0 0 {W} 104" role="img" aria-label="{label}">{"".join(parts)}</svg>'
+    return f'<svg class="tl" viewBox="0 -12 {W} 128" role="img" aria-label="{label}">{"".join(parts)}</svg>'
 
 
 def match_report(m, nation):
@@ -137,7 +142,7 @@ def match_report(m, nation):
             f'<h3>The goals</h3>{player}{timeline(m, nation)}<ul class="goals">{"".join(goals)}</ul>'
             f'{f"<h3>Our analysis</h3><div class=an>{an}</div>" if an else ""}'
             f'<p class="scout"><b>For clubs</b>{H.escape(m["scout"])}</p>'
-            f'<p class="fine" style="margin:0">Clips play from FIFA\'s official highlights on YouTube. <a href="{m["video"]}" target="_blank" rel="noopener">Open on YouTube</a></p></article>')
+            + (f'<p class="fine" style="margin:0">Clips play from FIFA\'s official highlights on YouTube. <a href="{m["video"]}" target="_blank" rel="noopener">Open on YouTube</a></p>' if m.get("video") else '<p class="fine" style="margin:0">Goal clips are added once FIFA\'s official highlights are checked on video.</p>') + '</article>')
 
 
 def page(n, all_nations, head, emblem, updated, scout=None):
@@ -157,11 +162,12 @@ def page(n, all_nations, head, emblem, updated, scout=None):
     nxt = "".join(f'<div class="fxd"><b>{team(m["home"], name)} v {team(m["away"], name)}</b>'
                   f'<span class="num">{m["time"]} Doha</span><span>{m["date"]} · {H.escape(m["venue"])}</span></div>' for m in upcoming)
     sc = scout or {"players": []}
-    mine = [p for p in sc["players"] if p["nation"] == n["slug"]]
-    mine.sort(key=lambda p: -sum(len(x) for x in scouting.numbers(p["id"], {"nations": all_nations})))
-    cards = "".join(scouting.card(p, {"nations": all_nations}, n["slug"]) for p in mine) or \
+    ND = FULL
+    mine = [p for p in sc["players"] if p.get("nation") == n["slug"]]
+    mine.sort(key=lambda p: -sum(len(x) for x in scouting.numbers(p["id"], ND)))
+    cards = "".join(scouting.card(p, ND, n["slug"]) for p in mine) or \
         f'<p class="fine">Our scout cards for {H.escape(name)} are built from the group matches: every goal scorer and standout is added here after each matchday.</p>'
-    peer = scouting.peer_svg({"nations": all_nations}, sc, n["slug"]) or '<p class="fine">The comparison fills in after the first matchday.</p>'
+    peer = scouting.peer_svg(ND, sc, n["slug"]) or '<p class="fine">The comparison fills in after the first matchday.</p>'
     others = "".join(f'<a href="../{o["slug"]}/">{flag(o["flag"], o["name"])}{H.escape(o["name"])}</a>'
                      for o in all_nations if o["slug"] != n["slug"])
     subj = f'{name}%20U-17%20World%20Cup%20briefing'.replace(" ", "%20").replace("'", "%27")
@@ -220,12 +226,11 @@ def page(n, all_nations, head, emblem, updated, scout=None):
 </section>
 </main>
 <footer><div class="wrap">Independent coverage by Afritech. Not affiliated with or endorsed by FIFA.<br>Produced by Afritech Sports Technology and Innovation Group Limited · Updated {updated}</div></footer>
+{scouting.YT_LOADER}
 <script>
 (function(){{
 var players={{}},state={{}},ready=false,queue=[];
-function api(cb){{if(ready)return cb();queue.push(cb);if(window._ytl)return;window._ytl=1;
- window.onYouTubeIframeAPIReady=function(){{ready=true;queue.forEach(function(f){{f()}});queue=[]}};
- var s=document.createElement('script');s.src='https://www.youtube.com/iframe_api';s.onerror=fail;document.head.appendChild(s)}}
+function api(cb){{window.afYT(cb,fail)}}
 function fail(){{document.querySelectorAll('.player').forEach(function(p){{var v=p.getAttribute('data-v');
  p.innerHTML='<div class="ph"><a style="color:#fff" href="https://www.youtube.com/watch?v='+v+'" target="_blank" rel="noopener">The clip player could not load here. Open FIFA&rsquo;s official highlights on YouTube</a></div>'}})}}
 function mark(m,i){{document.querySelectorAll('.clipbtn[data-m="'+m+'"]').forEach(function(b){{b.classList.toggle('on',+b.getAttribute('data-i')===i)}})}}
@@ -243,17 +248,20 @@ function play(m,i){{var el=document.getElementById('pl-'+m),clips=JSON.parse(el.
      if(st.all&&st.i+1<clips.length){{play(m,st.i+1)}}
      else{{st.all=false;mark(m,-1);now.textContent=clips.length>1?'Clip finished. Press Play all or pick another goal.':'Clip finished.'}}}}}}}}}})}})}}
 document.querySelectorAll('.playall').forEach(function(b){{b.addEventListener('click',function(){{var m=b.getAttribute('data-m');state[m]=state[m]||{{}};state[m].all=true;play(m,0)}})}});
-document.querySelectorAll('button.clipbtn').forEach(function(b){{b.addEventListener('click',function(){{var m=b.getAttribute('data-m');state[m]=state[m]||{{}};state[m].all=false;
+document.querySelectorAll('button.clipbtn[data-m]').forEach(function(b){{b.addEventListener('click',function(){{var m=b.getAttribute('data-m');state[m]=state[m]||{{}};state[m].all=false;
  document.getElementById('pl-'+m).scrollIntoView({{behavior:'smooth',block:'center'}});play(m,+b.getAttribute('data-i'))}})}});
 }})();
 </script>
+{scouting.CARD_JS}
 </body>
 </html>
 """
 
 
 def build(root, fonts, emblem, flags):
+    global FULL
     data, scout = scouting.load(root)
+    FULL = data
     src = (root / "src/qatar-u17-2026.html").read_text()
     head = src[:src.index("</head>") + len("</head>")].replace("{{FONTS}}", fonts).replace("{{FLAGS}}", flags)
     out = {}
