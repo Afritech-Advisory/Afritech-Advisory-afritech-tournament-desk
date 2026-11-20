@@ -7,9 +7,10 @@ multi-goal scorer, Player of the Match or decisive performer. One record per pla
 never typed by hand, so the main board, nation pages and peer comparison always agree.
 Every player is under 18: club signal MONITOR, agent DEVELOP FIRST, no valuation, and no published
 grades until Andrew approves them in the private tracker."""
-import json, html as H
+import json, re, html as H
 
 CSS = """
+.scard .clipbtn,.gl .clipbtn{white-space:normal;max-width:100%;min-height:44px;text-align:left;overflow-wrap:anywhere}
 .scard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;display:grid;gap:10px;scroll-margin-top:70px;align-content:start}
 .scard header{display:flex;gap:12px;align-items:center}
 .scard .sil{width:52px;height:52px;flex:none;border-radius:50%;background:var(--soft);display:grid;place-items:center}
@@ -145,8 +146,10 @@ def card(p, nations, here_slug=None):
             moments.append(f'<li><a class="clipbtn" href="{href}">{H.escape(label)} &rsaquo;</a></li>')
         else:
             moments.append(f'<li class="tm">{H.escape(label)}</li>')
-    nums = (f'<div class="nums"><div><b>{len(goals)}</b><span>Goals</span></div><div><b>{len(assists)}</b><span>Assists</span></div>'
-            f'<div><b>{team_matches(t, nations)}</b><span>Team matches</span></div><div><b>{clips}</b><span>Clips</span></div></div>')
+    pl = lambda n, one, many: f'<div><b>{n}</b><span>{one if n == 1 else many}</span></div>'
+    tm = team_matches(t, nations)
+    nums = ('<div class="nums">' + pl(len(goals), "Goal", "Goals") + pl(len(assists), "Assist", "Assists")
+            + pl(tm, "Team match", "Team matches") + pl(clips, "Clip", "Clips") + '</div>')
     seen = "".join(f"<li>{H.escape(f)}</li>" for f in p["facts"])
     page_link = ""
     if t["slug"] and here_slug is None:
@@ -209,3 +212,52 @@ def board_html(nations, scout):
             f'<button type="button" data-r="africa" aria-pressed="false">Africa ({na})</button>'
             f'<button type="button" data-r="world" aria-pressed="false">Rest of the world ({len(ps) - na})</button></div>')
     return filt + '<div class="scards" id="board-cards">' + "".join(card(p, nations) for p in ps) + "</div>"
+
+
+def results_html(nations, flag):
+    """Results first on the main page: every finished African match with scorers and key numbers,
+    linking to the full match report on the nation page, then the other results at the tournament."""
+    seen, cards = set(), []
+    order = lambda m: int(re.search(r"(\d+)", m["date"]).group(1))
+    rows = []
+    for n in nations["nations"]:
+        for m in n["matches"]:
+            if m.get("score") and m["id"] not in seen:
+                seen.add(m["id"]); rows.append((n, m))
+    rows.sort(key=lambda r: (-order(r[1]), r[0]["group"]))
+    for n, m in rows:
+        side = lambda x: (flag(n["flag"], x) if x == n["name"] else "") + H.escape(x)
+        goals = "".join(f'<li><span class="m">{g["min"]}</span><span>{H.escape(g["who"])} ({H.escape(g["team"])})</span></li>' for g in m.get("goals", []))
+        kn = "".join(f'<div><b>{H.escape(a)}</b><span>{H.escape(b)}</span></div>' for a, b in m.get("keyNumbers", [])[:3])
+        cards.append(f'<article class="rc"><p class="when">{H.escape(m["date"])} · Group {n["group"]}</p>'
+                     f'<p class="sc2"><span>{side(m["home"])}</span><b>{m["score"]}</b><span class="r">{side(m["away"])}</span></p>'
+                     f'{f"<ul class=rg>{goals}</ul>" if goals else ""}{f"<div class=kn>{kn}</div>" if kn else ""}'
+                     f'<a class="btn primary" href="{n["slug"]}/#{m["id"]}">Match report, goal clips and analysis &rsaquo;</a></article>')
+    other = "".join(f'<li><span>{H.escape(m["home"])}</span> <b>{m["score"]}</b> <span>{H.escape(m["away"])}</span> <i>Group {m["group"]}</i></li>'
+                    for m in nations.get("_results", []))
+    return (f'<section class="s" id="results"><div class="s-head"><p class="eyebrow">Results</p><h2>Every African match so far</h2>'
+            f'<p class="sub">Final scores, the goals and the numbers that tell each match. Tap a match for every goal as a clip and our full analysis.</p></div>'
+            f'<div class="rgrid">{"".join(cards)}</div>'
+            + (f'<h3 style="margin-top:22px">Other results at the tournament</h3><ul class="ores">{other}</ul>' if other else "")
+            + '</section>')
+
+RESULTS_CSS = """
+.rgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.rc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;display:grid;gap:10px;align-content:start}
+.rc .when{font-family:var(--mono);font-size:.8rem;color:var(--muted);margin:0}
+.sc2{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:10px;margin:0;font-family:var(--display);font-weight:700;font-size:1.3rem;line-height:1.15}
+.sc2 .r{text-align:right}.sc2 b{background:var(--navy);color:#fff;border-radius:8px;padding:4px 12px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.sc2 .fl{width:26px;height:19px;vertical-align:-2px;margin-right:6px}
+.rg{list-style:none;margin:0;padding:0;display:grid;gap:4px;font-size:.95rem}
+.rg li{display:grid;grid-template-columns:3.4em minmax(0,1fr);gap:6px;border-top:1px solid var(--line);padding-top:4px}
+.rg .m{font-family:var(--mono);font-weight:600;color:var(--orange-text)}
+.rc .kn{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.rc .kn div{background:var(--soft);border-radius:8px;padding:8px}
+.rc .kn b{display:block;font-family:var(--display);font-size:1.4rem;line-height:1;color:var(--navy)}
+@media (prefers-color-scheme:dark){.rc .kn b{color:var(--orange-text)}}
+.rc .kn span{font-size:.78rem;color:var(--muted);overflow-wrap:anywhere}
+.rc .btn{justify-self:stretch;text-align:center;white-space:normal}
+.ores{list-style:none;padding:0;margin:8px 0 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:6px}
+.ores li{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 12px;font-size:.95rem}
+.ores b{font-variant-numeric:tabular-nums;margin:0 4px}.ores i{font-style:normal;color:var(--muted);font-size:.82rem;margin-left:6px}
+"""
