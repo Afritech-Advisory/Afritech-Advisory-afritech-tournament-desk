@@ -25,7 +25,7 @@ EXTRA_CSS = """
 .goals li{display:grid;grid-template-columns:3.6em minmax(0,1fr);gap:8px;padding:8px 0;border-top:1px solid var(--line);font-size:.97rem}
 .goals .m{font-family:var(--mono);font-weight:600;color:var(--orange-text)}
 .goals .tm{color:var(--muted);font-size:.88rem}
-.goals a{white-space:nowrap;font-weight:600}
+.goals a{font-weight:600;overflow-wrap:anywhere}
 .mr .scout{border-left:4px solid var(--orange);padding:6px 0 6px 12px;font-size:.98rem}
 .mr .scout b{font-family:var(--display);text-transform:uppercase;letter-spacing:.04em;color:var(--orange-text);margin-right:6px}
 .next{display:grid;gap:8px}
@@ -50,7 +50,8 @@ EXTRA_CSS = """
 .player iframe,.player>div{position:absolute;inset:0;width:100%;height:100%;border:0}
 .player .ph{display:grid;place-items:center;color:#fff;text-align:center;padding:16px;font-size:.95rem;background:linear-gradient(135deg,#0F2442,#1A365D)}
 .now{font-family:var(--mono);font-size:.82rem;color:var(--muted);min-height:1.2em}
-.clipbtn{font:700 .9rem var(--body);border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:99px;padding:6px 12px;cursor:pointer;white-space:nowrap}
+.clipbtn{font:700 .9rem var(--body);border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:22px;padding:8px 14px;cursor:pointer;white-space:normal;max-width:100%;min-height:44px;text-align:left;overflow-wrap:anywhere}
+.goals li>span:last-child,.goals li>div{min-width:0;overflow-wrap:anywhere}
 .clipbtn.on{background:var(--orange);color:#1B1206;border-color:var(--orange)}
 .playall{font:700 1rem var(--body);background:var(--orange);color:#1B1206;border:0;border-radius:8px;padding:10px 16px;cursor:pointer;justify-self:start}
 .gtype{display:inline-block;font:600 .7rem var(--mono);letter-spacing:.06em;text-transform:uppercase;background:var(--soft);border-radius:4px;padding:2px 6px;margin-left:6px;vertical-align:1px}
@@ -190,7 +191,7 @@ def page(n, all_nations, head, emblem, updated, scout=None):
   <div>
     <p class="crumb"><a href="../">Africa's ten in Qatar</a> › {H.escape(name)}</p>
     <p class="eyebrow">FIFA U-17 World Cup Qatar 2026 · Group {n["group"]} · Updated {updated}</p>
-    <h1>{flag(n["flag"], name)}{H.escape(name)} <em>match by match.</em></h1>
+    <h1>{flag(n["flag"], name)}{H.escape(name)}<em>: match by match.</em></h1>
     <p class="lead">{summary}</p>
     <div class="btns"><a class="btn primary" href="mailto:Advisory@afritechsports.com?subject={subj}">Book a briefing on {H.escape(name)}</a><a class="btn ghost" href="#results">See the results</a></div>
     <div class="chips"><span>Coach: {H.escape(n["coach"])}</span><span>{H.escape(n["route"])}</span></div>

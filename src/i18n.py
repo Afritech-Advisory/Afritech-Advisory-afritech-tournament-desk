@@ -6,6 +6,7 @@ src/i18n/missing-<lang>.txt, so no English slips onto a translated page. Article
 list stay in their original language. Pages are written under /fr/, /sw/ and /pt/ with the same paths."""
 import json, re, pathlib
 from bs4 import BeautifulSoup, NavigableString, Comment
+from bs4.element import PreformattedString
 import i18n_rules
 
 NAMES = set()  # player, scorer, coach and club names, kept as written
@@ -21,6 +22,7 @@ def lookup(k, lang, d):
 
 BASE = "https://afritech-advisory.github.io/Afritech-Advisory-afritech-tournament-desk/"
 HOME = "https://afritechsports.github.io/"
+LABEL = {"en": "Language", "fr": "Langue", "sw": "Lugha", "pt": "Idioma"}
 LANGS = [("en", "English", "en"), ("fr", "Français", "fr"), ("sw", "Kiswahili", "sw"), ("pt", "Português", "pt-BR")]
 ATTRS = ("alt", "title", "aria-label", "placeholder")
 META = {("name", "description"), ("property", "og:title"), ("property", "og:description"), ("name", "twitter:title"), ("name", "twitter:description")}
@@ -41,7 +43,9 @@ def skip_node(node):
     for p in node.parents:
         if p.name in ("script", "style"):
             return True
-        if p.get("translate") == "no" or "src" in (p.get("class") or []) and p.name == "details":
+        if p.get("translate") == "no":
+            return True
+        if p.name == "details" and "src" in (p.get("class") or []) and node.parent.name != "summary":
             return True
     return False
 
@@ -51,7 +55,7 @@ def keys(html):
     soup = BeautifulSoup(html, "html.parser")
     out = []
     for s in soup.find_all(string=True):
-        if isinstance(s, Comment) or skip_node(s):
+        if isinstance(s, PreformattedString) or skip_node(s):
             continue
         t = norm(s)
         if t and needs(t):
@@ -74,7 +78,7 @@ def switcher(rel, lang):
     for code, name, _ in LANGS:
         href = BASE + ("" if code == "en" else code + "/") + rel
         links.append(f'<a href="{href}" hreflang="{code}"{" class=on" if code == lang else ""}>{name}</a>')
-    return f'<!-- afs-lang:start -->{SWITCH_CSS}<nav class="afs-lang" aria-label="Language">' + "".join(links) + "</nav><!-- afs-lang:end -->"
+    return f'<!-- afs-lang:start -->{SWITCH_CSS}<nav class="afs-lang" aria-label="' + LABEL[lang] + '">' + "".join(links) + "</nav><!-- afs-lang:end -->"
 
 
 def alternates(rel):
@@ -104,7 +108,7 @@ def translate(html, rel, lang, d, missing):
         missing.add(k)
         return t
     for s in soup.find_all(string=True):
-        if isinstance(s, Comment) or skip_node(s):
+        if isinstance(s, PreformattedString) or skip_node(s):
             continue
         t = norm(s)
         if t and needs(t):

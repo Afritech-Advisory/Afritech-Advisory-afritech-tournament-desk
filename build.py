@@ -26,7 +26,8 @@ for src, (out, extra) in pages.items():
         html = html[:a] + scouting.board_html(nd, sd) + html[b:]
         html = html.replace('<p class="note">All players on this board are under 18.',
                             '<h3 style="margin-top:22px">Goal involvements so far</h3>' + scouting.peer_svg(nd, sd) + '<p class="note">All players on this board are under 18.', 1)
-        html = html.replace("</style>", scouting.CSS + "</style>", 1)
+        html = html.replace("{{RESULTS}}", scouting.results_html(nd, nations.flag))
+        html = html.replace("</style>", scouting.CSS + scouting.RESULTS_CSS + "</style>", 1)
         html = html.replace("</body>", scouting.YT_LOADER + scouting.CARD_JS + "</body>", 1)
     built[out] = sitebar.inject(html, "desk", "desk")
 pages_n, _ = nations.build(root, fonts, emblem, flags)

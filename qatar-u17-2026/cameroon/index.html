@@ -249,7 +249,10 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-block:20px 28px;
 }
 @media (max-width:640px){
   body{font-size:16px}
-  .bar nav a:not(.cta){display:none}
+  .bar .wrap{flex-wrap:wrap;gap:0 10px;padding-bottom:4px}
+  .bar nav{order:3;width:100%;margin-left:0;-webkit-overflow-scrolling:touch}
+  .bar nav a{font-size:.92rem;padding:8px 9px}
+  .bar nav a.cta{display:none}
   .kpis{grid-template-columns:repeat(2,minmax(0,1fr))}
   .kpis .kpi:last-child{grid-column:1/-1}
   .aud,.approach,.offer,.board,.ladder{grid-template-columns:1fr}
@@ -277,7 +280,7 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-block:20px 28px;
 .goals li{display:grid;grid-template-columns:3.6em minmax(0,1fr);gap:8px;padding:8px 0;border-top:1px solid var(--line);font-size:.97rem}
 .goals .m{font-family:var(--mono);font-weight:600;color:var(--orange-text)}
 .goals .tm{color:var(--muted);font-size:.88rem}
-.goals a{white-space:nowrap;font-weight:600}
+.goals a{font-weight:600;overflow-wrap:anywhere}
 .mr .scout{border-left:4px solid var(--orange);padding:6px 0 6px 12px;font-size:.98rem}
 .mr .scout b{font-family:var(--display);text-transform:uppercase;letter-spacing:.04em;color:var(--orange-text);margin-right:6px}
 .next{display:grid;gap:8px}
@@ -302,13 +305,15 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-block:20px 28px;
 .player iframe,.player>div{position:absolute;inset:0;width:100%;height:100%;border:0}
 .player .ph{display:grid;place-items:center;color:#fff;text-align:center;padding:16px;font-size:.95rem;background:linear-gradient(135deg,#0F2442,#1A365D)}
 .now{font-family:var(--mono);font-size:.82rem;color:var(--muted);min-height:1.2em}
-.clipbtn{font:700 .9rem var(--body);border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:99px;padding:6px 12px;cursor:pointer;white-space:nowrap}
+.clipbtn{font:700 .9rem var(--body);border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:22px;padding:8px 14px;cursor:pointer;white-space:normal;max-width:100%;min-height:44px;text-align:left;overflow-wrap:anywhere}
+.goals li>span:last-child,.goals li>div{min-width:0;overflow-wrap:anywhere}
 .clipbtn.on{background:var(--orange);color:#1B1206;border-color:var(--orange)}
 .playall{font:700 1rem var(--body);background:var(--orange);color:#1B1206;border:0;border-radius:8px;padding:10px 16px;cursor:pointer;justify-self:start}
 .gtype{display:inline-block;font:600 .7rem var(--mono);letter-spacing:.06em;text-transform:uppercase;background:var(--soft);border-radius:4px;padding:2px 6px;margin-left:6px;vertical-align:1px}
 .cta-box{background:var(--navy);color:var(--on-navy);border-radius:12px;padding:22px;display:grid;gap:10px;margin-top:8px}
 .cta-box h2{color:#fff}.cta-box p{color:#DCE5F0}
 
+.scard .clipbtn,.gl .clipbtn{white-space:normal;max-width:100%;min-height:44px;text-align:left;overflow-wrap:anywhere}
 .scard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;display:grid;gap:10px;scroll-margin-top:70px;align-content:start}
 .scard header{display:flex;gap:12px;align-items:center}
 .scard .sil{width:52px;height:52px;flex:none;border-radius:50%;background:var(--soft);display:grid;place-items:center}
@@ -377,7 +382,7 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-block:20px 28px;
   <div>
     <p class="crumb"><a href="../">Africa's ten in Qatar</a> › Cameroon</p>
     <p class="eyebrow">FIFA U-17 World Cup Qatar 2026 · Group K · Updated 20 November 2026</p>
-    <h1><i class="fl fl-cm" role="img" aria-label="Cameroon flag"></i>Cameroon <em>match by match.</em></h1>
+    <h1><i class="fl fl-cm" role="img" aria-label="Cameroon flag"></i>Cameroon<em>: match by match.</em></h1>
     <p class="lead">First match: Cameroon v Venezuela, Saturday 21 November, 16:30 Doha time. The match report, goals and our read go up here after the final whistle.</p>
     <div class="btns"><a class="btn primary" href="mailto:Advisory@afritechsports.com?subject=Cameroon%20U-17%20World%20Cup%20briefing">Book a briefing on Cameroon</a><a class="btn ghost" href="#results">See the results</a></div>
     <div class="chips"><span>Coach: Thomas Libiih</span><span>U-17 AFCON quarter-finalist</span></div>

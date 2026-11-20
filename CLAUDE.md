@@ -22,6 +22,9 @@ Run cadence, tracker stamps, approval alerts, automatic catch-up, the tag standa
 - Final scores only. Never publish scout scores or anything provisional. Never download, clip or re-upload match video: link to FIFA's official video only.
 - Any News item about a match links to its nation page and match, e.g. `qatar-u17-2026/mozambique/#moz-den`.
 
+## Results first on the main page (Andrew, 20 Nov 2026)
+- The main page opens with **Results**: every finished African match (score, scorers, three key numbers, link to the full report on the nation page), then the other results at the tournament. It is built automatically from the nations and results data files by `scouting.results_html`, so a new match report appears there in the same build. The section menu stays visible on phones.
+
 ## Scouting merged into the desk: scout cards (Andrew, 20 Nov 2026)
 The desk is a scouting system, so every nation page and the main board run on the Afritech-TSA scouting method (afritech-scouting skill, Stage 1 public-domain evidence, minors rules).
 - **Who gets a card (whole-tournament exception scan of all 48 teams, after every matchday, automatically):** every African player with a goal or assist, every captain with real impact, standout goalkeepers, unusually young starters, decisive performers, plus the pre-tournament board; and from the other 38 teams every multi-goal scorer, every Player of the Match and every decisive performer. Each one goes into `src/data/qatar-u17-2026-scouting.json` (African players with `nation`, others with `country`, `code`, `flag`) and appears as a full scout card on the main board (filter: All / Africa / Rest of the world) and, for African players, on the nation page too. Final results of matches without an African side go in `src/data/qatar-u17-2026-results.json` with `pid`/`apid`, so every player's numbers compute themselves.
