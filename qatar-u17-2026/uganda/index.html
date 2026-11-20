@@ -289,6 +289,23 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-block:20px 28px;
 .ptw li{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 14px}
 .others{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
 .others a{display:inline-flex;align-items:center;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:99px;padding:6px 12px;text-decoration:none;color:var(--fg);font-weight:600}
+.kn{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px}
+.kn div{background:var(--soft);border-radius:8px;padding:10px 12px}
+.kn b{display:block;font-family:var(--display);font-size:1.7rem;line-height:1;color:var(--navy)}
+@media (prefers-color-scheme:dark){.kn b{color:var(--orange-text)}}
+.kn span{font-size:.86rem;color:var(--muted)}
+.tl{width:100%;max-width:560px;height:auto;display:block}
+.an{display:grid;gap:10px}
+.an div{border-top:1px solid var(--line);padding-top:10px}
+.an h4{font-family:var(--display);font-size:1.15rem;margin:0 0 4px}
+.player{position:relative;aspect-ratio:16/9;background:#000;border-radius:10px;overflow:hidden}
+.player iframe,.player>div{position:absolute;inset:0;width:100%;height:100%;border:0}
+.player .ph{display:grid;place-items:center;color:#fff;text-align:center;padding:16px;font-size:.95rem;background:linear-gradient(135deg,#0F2442,#1A365D)}
+.now{font-family:var(--mono);font-size:.82rem;color:var(--muted);min-height:1.2em}
+.clipbtn{font:700 .9rem var(--body);border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:99px;padding:6px 12px;cursor:pointer;white-space:nowrap}
+.clipbtn.on{background:var(--orange);color:#1B1206;border-color:var(--orange)}
+.playall{font:700 1rem var(--body);background:var(--orange);color:#1B1206;border:0;border-radius:8px;padding:10px 16px;cursor:pointer;justify-self:start}
+.gtype{display:inline-block;font:600 .7rem var(--mono);letter-spacing:.06em;text-transform:uppercase;background:var(--soft);border-radius:4px;padding:2px 6px;margin-left:6px;vertical-align:1px}
 .cta-box{background:var(--navy);color:var(--on-navy);border-radius:12px;padding:22px;display:grid;gap:10px;margin-top:8px}
 .cta-box h2{color:#fff}.cta-box p{color:#DCE5F0}
 </style>
@@ -328,7 +345,7 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-block:20px 28px;
     <p class="crumb"><a href="../">Africa's ten in Qatar</a> › Uganda</p>
     <p class="eyebrow">FIFA U-17 World Cup Qatar 2026 · Group B · Updated 20 November 2026</p>
     <h1><i class="fl fl-ug" role="img" aria-label="Uganda flag"></i>Uganda <em>match by match.</em></h1>
-    <p class="lead">1 played: 0 won, 0 drawn, 1 lost. Every goal with its minute, the official highlight and our read for clubs, agents and federations.</p>
+    <p class="lead">1 played: 0 won, 0 drawn, 1 lost. Watch every goal as its own clip, then read our analysis of what each match tells clubs, agents and federations.</p>
     <div class="btns"><a class="btn primary" href="mailto:Advisory@afritechsports.com?subject=Uganda%20U-17%20World%20Cup%20briefing">Book a briefing on Uganda</a><a class="btn ghost" href="#results">See the results</a></div>
     <div class="chips"><span>Coach: Laryea Kingston</span><span>Play-off: 2-2 with Ghana, won 8-7 on penalties</span></div>
   </div>
@@ -336,8 +353,8 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-block:20px 28px;
 <main class="wrap">
 <section class="s" id="results">
   <div class="s-head"><p class="eyebrow">Match reports</p><h2>Results and goals</h2>
-  <p>Final scores only, after the whistle. Goal times link to FIFA's official highlights on YouTube.</p></div>
-  <article class="mr" id="uga-kor"><p class="when">Thursday 19 November · 16:30 Doha · Aspire Zone</p><span class="res L">Defeat</span><div class="sc"><span class="r">Korea Republic</span><b>3-0</b><span><span class="af">Uganda</span></span></div><p>A hard opener against an Asian side that scored early. Uganda were 1-0 down at half-time and created a clear chance of their own before Korea pulled away.</p><h3>Goals</h3><ul class="goals"><li><span class="m">8'</span><span><b>Kim Jiho</b> <span class="tm">(Korea Republic)</span></span></li><li><span class="m">50'</span><span><b>Nam Ian</b> <span class="tm">(Korea Republic)</span>, shot deflected in</span></li><li><span class="m">84'</span><span><b>Kim Ji-woo</b> <span class="tm">(Korea Republic)</span></span></li></ul><p class="scout"><b>Our read</b>Ecuador on Sunday is the match that decides Uganda&#x27;s group, and the one to watch their squad in.</p><p class="fine" style="margin:0"><a href="https://www.youtube.com/watch?v=zvEq38Io-mk" target="_blank" rel="noopener">FIFA's official highlights on YouTube</a></p></article>
+  <p>Final scores, every goal as its own clip from FIFA's official highlights, and our analysis of what the match tells clubs, agents and federations.</p></div>
+  <article class="mr" id="uga-kor"><p class="when">Thursday 19 November · 16:30 Doha · Aspire Zone</p><span class="res L">Defeat</span><div class="sc"><span class="r">Korea Republic</span><b>3-0</b><span><span class="af">Uganda</span></span></div><p>A hard opener against an Asian side that scored early. Uganda were 1-0 down at half-time and created a clear chance of their own before Korea pulled away.</p><div class=kn><div><b>8&#x27;</b><span>Korea&#x27;s opening goal</span></div><div><b>1-0</b><span>at half-time: still in the match</span></div><div><b>2</b><span>matches left: Ecuador and New Caledonia</span></div></div><h3>The goals</h3><div class="player" id="pl-uga-kor" data-v="zvEq38Io-mk" data-clips="[]"><div class="ph"><p>Official FIFA highlights. Goal-by-goal clips follow once each goal is checked on video.</p></div></div><button class="playall" type="button" data-m="uga-kor">&#9654; Play the official highlights</button><p class="now" id="now-uga-kor" aria-live="polite"></p><svg class="tl" viewBox="0 0 360 104" role="img" aria-label="Goal timeline: Uganda goals above the line, opponent goals below"><line x1="16" y1="50" x2="344" y2="50" stroke="var(--line)" stroke-width="3"/><line x1="173.0212765957447" y1="38" x2="173.0212765957447" y2="62" stroke="var(--muted)" stroke-dasharray="3 3"/><text x="173.0212765957447" y="96" text-anchor="middle" font-size="11" fill="var(--muted)" font-family="IBM Plex Mono,monospace">HT</text><text x="16.0" y="96" text-anchor="middle" font-size="12" fill="var(--muted)" font-family="IBM Plex Mono,monospace">0'</text><text x="330.0425531914894" y="96" text-anchor="middle" font-size="12" fill="var(--muted)" font-family="IBM Plex Mono,monospace">90'</text><line x1="43.91489361702128" y1="50" x2="43.91489361702128" y2="70" stroke="var(--rose)" stroke-width="2"/><circle cx="43.91489361702128" cy="70" r="7" fill="var(--rose)"/><text x="43.91489361702128" y="94" text-anchor="middle" font-size="11" font-weight="700" fill="var(--rose)" font-family="IBM Plex Mono,monospace">8'</text><line x1="190.46808510638297" y1="50" x2="190.46808510638297" y2="70" stroke="var(--rose)" stroke-width="2"/><circle cx="190.46808510638297" cy="70" r="7" fill="var(--rose)"/><text x="190.46808510638297" y="94" text-anchor="middle" font-size="11" font-weight="700" fill="var(--rose)" font-family="IBM Plex Mono,monospace">50'</text><line x1="309.1063829787234" y1="50" x2="309.1063829787234" y2="70" stroke="var(--rose)" stroke-width="2"/><circle cx="309.1063829787234" cy="70" r="7" fill="var(--rose)"/><text x="309.1063829787234" y="94" text-anchor="middle" font-size="11" font-weight="700" fill="var(--rose)" font-family="IBM Plex Mono,monospace">84'</text></svg><ul class="goals"><li><span class="m">8'</span><span><b>Kim Jiho</b> <span class="tm">(Korea Republic)</span><span class="gtype">Open play</span></span></li><li><span class="m">50'</span><span><b>Nam Ian</b> <span class="tm">(Korea Republic)</span><span class="gtype">Deflection</span><br>Shot deflected in.</span></li><li><span class="m">84'</span><span><b>Kim Ji-woo</b> <span class="tm">(Korea Republic)</span><span class="gtype">Open play</span></span></li></ul><h3>Our analysis</h3><div class=an><div><h4>An early goal set the tone</h4><p>Korea Republic scored in the 8th minute and Uganda spent the match chasing. They stayed in it until half-time at 1-0 and created a clear chance of their own before a deflected shot made it 2-0 early in the second half.</p></div><div><h4>What it means for the group</h4><p>Uganda are bottom of Group B after the opener, but two matches remain against Ecuador and New Caledonia, and the eight best third-placed teams also reach the round of 32. Ecuador on Sunday is the match that decides their tournament.</p></div></div><p class="scout"><b>For clubs</b>Ecuador on Sunday is the match that decides Uganda&#x27;s group, and the one to watch their squad in.</p><p class="fine" style="margin:0">Clips play from FIFA's official highlights on YouTube. <a href="https://www.youtube.com/watch?v=zvEq38Io-mk" target="_blank" rel="noopener">Open on YouTube</a></p></article>
 </section>
 <section class="s" id="next">
   <div class="s-head"><p class="eyebrow">Next</p><h2>Coming up for Uganda</h2></div>
@@ -360,5 +377,32 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-block:20px 28px;
 </section>
 </main>
 <footer><div class="wrap">Independent coverage by Afritech. Not affiliated with or endorsed by FIFA.<br>Produced by Afritech Sports Technology and Innovation Group Limited · Updated 20 November 2026</div></footer>
+<script>
+(function(){
+var players={},state={},ready=false,queue=[];
+function api(cb){if(ready)return cb();queue.push(cb);if(window._ytl)return;window._ytl=1;
+ window.onYouTubeIframeAPIReady=function(){ready=true;queue.forEach(function(f){f()});queue=[]};
+ var s=document.createElement('script');s.src='https://www.youtube.com/iframe_api';s.onerror=fail;document.head.appendChild(s)}
+function fail(){document.querySelectorAll('.player').forEach(function(p){var v=p.getAttribute('data-v');
+ p.innerHTML='<div class="ph"><a style="color:#fff" href="https://www.youtube.com/watch?v='+v+'" target="_blank" rel="noopener">The clip player could not load here. Open FIFA&rsquo;s official highlights on YouTube</a></div>'})}
+function mark(m,i){document.querySelectorAll('.clipbtn[data-m="'+m+'"]').forEach(function(b){b.classList.toggle('on',+b.getAttribute('data-i')===i)})}
+function play(m,i){var el=document.getElementById('pl-'+m),clips=JSON.parse(el.getAttribute('data-clips')),v=el.getAttribute('data-v'),st=state[m];
+ var now=document.getElementById('now-'+m);
+ var go=function(){var c=clips[i];
+  if(c){players[m].loadVideoById({videoId:v,startSeconds:c.s,endSeconds:c.e});now.textContent='Now playing: '+c.l+(st.all?' ('+(i+1)+' of '+clips.length+')':'');mark(m,i)}
+  else{players[m].loadVideoById({videoId:v});now.textContent='Official highlights';mark(m,-1)}
+  st.i=i};
+ if(players[m])return go();
+ api(function(){var host=document.createElement('div');el.innerHTML='';el.appendChild(host);
+  players[m]=new YT.Player(host,{videoId:v,playerVars:{playsinline:1,rel:0,modestbranding:1},
+   events:{onReady:go,onError:function(){fail()},onStateChange:function(e){
+    if(e.data===YT.PlayerState.ENDED&&clips.length){
+     if(st.all&&st.i+1<clips.length){play(m,st.i+1)}
+     else{st.all=false;mark(m,-1);now.textContent=clips.length>1?'Clip finished. Press Play all or pick another goal.':'Clip finished.'}}}}})})}
+document.querySelectorAll('.playall').forEach(function(b){b.addEventListener('click',function(){var m=b.getAttribute('data-m');state[m]=state[m]||{};state[m].all=true;play(m,0)})});
+document.querySelectorAll('.clipbtn').forEach(function(b){b.addEventListener('click',function(){var m=b.getAttribute('data-m');state[m]=state[m]||{};state[m].all=false;
+ document.getElementById('pl-'+m).scrollIntoView({behavior:'smooth',block:'center'});play(m,+b.getAttribute('data-i'))})});
+})();
+</script>
 </body>
 </html>
