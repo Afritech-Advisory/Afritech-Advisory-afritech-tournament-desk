@@ -1,106 +1,551 @@
 {
-  "updated": "20 November 2026",
-  "highlightsNote": "Goal times link to FIFA's official highlights on YouTube.",
-  "nations": [
-    {"slug": "egypt", "name": "Egypt", "code": "EGY", "flag": "eg", "group": "A", "coach": "Hussein Abdel-Latif", "route": "U-17 AFCON quarter-finalist",
-     "squad": "Final 21 named 7 November; in Doha since 15 November",
-     "players": ["Ahmed Safwat: captain and creator, attacking midfielder (Zamalek). Best player of the U-17 Gulf Cup in Qatar this autumn."],
-     "matches": [
-       {"id": "egy-gre", "date": "Thursday 19 November", "time": "19:00", "home": "Egypt", "away": "Greece", "score": "1-2", "venue": "Aspire Zone, Pitch 7",
-        "video": "https://www.youtube.com/watch?v=z-n9heuQxLo",
-        "goals": [
-          {"min": "54'", "team": "Greece", "who": "Konstantinos Souflatzis"},
-          {"min": "62'", "team": "Greece", "who": "Konstantinos Karangelis"},
-          {"min": "71'", "team": "Egypt", "who": "Ziad Saudi", "how": "strike from outside the box", "t": 98}
-        ],
-        "story": "Egypt played from the 23rd minute with ten men and still pulled a goal back: Ziad Saudi's strike from distance, with the keeper at full stretch. Captain Ahmed Safwat started in midfield.",
-        "scout": "Saudi's goal is the clip clubs will ask for: a clean strike under pressure, in a match Egypt were chasing a man down."},
-       {"date": "Sunday 22 November", "time": "18:00", "home": "Qatar", "away": "Egypt", "venue": "Aspire Zone, Pitch 2"},
-       {"date": "Wednesday 25 November", "time": "17:30", "home": "Panama", "away": "Egypt", "venue": "Aspire Zone, Pitch 3"}
-     ]},
-    {"slug": "cote-divoire", "name": "Côte d'Ivoire", "code": "CIV", "flag": "ci", "group": "E", "coach": "Bassiriki Diabaté", "route": "Topped their U-17 AFCON group",
-     "squad": "Final 21 named: 3 goalkeepers, 7 defenders, 6 midfielders, 5 forwards", "players": [],
-     "matches": [
-       {"date": "Friday 20 November", "time": "19:00", "home": "Côte d'Ivoire", "away": "Uzbekistan", "venue": "Aspire Zone"},
-       {"date": "Monday 23 November", "time": "17:30", "home": "Italy", "away": "Côte d'Ivoire", "venue": "Aspire Zone, Pitch 3"},
-       {"date": "Thursday 26 November", "time": "17:00", "home": "Jamaica", "away": "Côte d'Ivoire", "venue": "Aspire Zone, Pitch 1"}
-     ]},
-    {"slug": "senegal", "name": "Senegal", "code": "SEN", "flag": "sn", "group": "F", "coach": "Lamine Sané", "route": "U-17 AFCON quarter-finalist",
-     "squad": "Final 21 named 11 November", "players": [],
-     "matches": [
-       {"date": "Friday 20 November", "time": "18:30", "home": "Senegal", "away": "Croatia", "venue": "Aspire Zone"},
-       {"date": "Monday 23 November", "time": "16:30", "home": "Senegal", "away": "Cuba", "venue": "Aspire Zone, Pitch 5"},
-       {"date": "Thursday 26 November", "time": "19:00", "home": "Tajikistan", "away": "Senegal", "venue": "Aspire Zone"}
-     ]},
-    {"slug": "mali", "name": "Mali", "code": "MLI", "flag": "ml", "group": "G", "coach": "Soumaïla Coulibaly", "route": "U-17 AFCON quarter-finalist",
-     "squad": "Final 21 registered with FIFA, 11 November", "players": [],
-     "matches": [
-       {"date": "Friday 20 November", "time": "16:30", "home": "Mali", "away": "New Zealand", "venue": "Aspire Zone"},
-       {"date": "Monday 23 November", "time": "18:30", "home": "Mali", "away": "Belgium", "venue": "Aspire Zone, Pitch 7"},
-       {"date": "Thursday 26 November", "time": "16:00", "home": "Mali", "away": "Vietnam", "venue": "Aspire Zone, Pitch 9"}
-     ]},
-    {"slug": "morocco", "name": "Morocco", "code": "MAR", "flag": "ma", "group": "H", "coach": "Ahmed Kantari", "route": "U-17 AFCON hosts, topped Group A",
-     "squad": "Final 21 named 3 November",
-     "players": ["Ziyad Baha: striker, playing his second U-17 World Cup in a row."],
-     "matches": [
-       {"date": "Friday 20 November", "time": "19:00", "home": "Fiji", "away": "Morocco", "venue": "Aspire Zone, Pitch 7"},
-       {"date": "Monday 23 November", "time": "18:00", "home": "Morocco", "away": "China PR", "venue": "Aspire Zone, Pitch 2"},
-       {"date": "Thursday 26 November", "time": "18:00", "home": "Spain", "away": "Morocco", "venue": "Aspire Zone, Pitch 2"}
-     ]},
-    {"slug": "tanzania", "name": "Tanzania", "code": "TAN", "flag": "tz", "group": "I", "coach": "Elieneza Nsanganzelu", "route": "U-17 AFCON finalists",
-     "squad": "Final 21 named, home-based and foreign-based players",
-     "players": ["Dismas Athanasi: forward, 14, the youngest player at the tournament and top scorer at the U-17 AFCON."],
-     "matches": [
-       {"date": "Saturday 21 November", "time": "16:00", "home": "Tanzania", "away": "Costa Rica", "venue": "Aspire Zone, Pitch 1"},
-       {"date": "Tuesday 24 November", "time": "18:00", "home": "Brazil", "away": "Tanzania", "venue": "Aspire Zone, Pitch 2"},
-       {"date": "Friday 27 November", "time": "17:00", "home": "Republic of Ireland", "away": "Tanzania", "venue": "Aspire Zone, Pitch 1"}
-     ]},
-    {"slug": "algeria", "name": "Algeria", "code": "ALG", "flag": "dz", "group": "J", "coach": "Amine Ghimouz", "route": "U-17 AFCON quarter-finalist",
-     "squad": "Final 21 named 6 November", "players": [],
-     "matches": [
-       {"date": "Saturday 21 November", "time": "18:30", "home": "Chile", "away": "Algeria", "venue": "Aspire Zone, Pitch 7"},
-       {"date": "Tuesday 24 November", "time": "18:30", "home": "Algeria", "away": "Montenegro", "venue": "Aspire Zone"},
-       {"date": "Friday 27 November", "time": "18:00", "home": "Algeria", "away": "Dominican Republic", "venue": "Aspire Zone, Pitch 2"}
-     ]},
-    {"slug": "cameroon", "name": "Cameroon", "code": "CMR", "flag": "cm", "group": "K", "coach": "Thomas Libiih", "route": "U-17 AFCON quarter-finalist",
-     "squad": "Final 21 registered with FIFA; in Doha since 7 November",
-     "players": ["Chris Karel: captain, led Cameroon to the U-17 AFCON quarter-finals."],
-     "matches": [
-       {"date": "Saturday 21 November", "time": "16:30", "home": "Cameroon", "away": "Venezuela", "venue": "Aspire Zone, Pitch 5"},
-       {"date": "Tuesday 24 November", "time": "16:30", "home": "Mexico", "away": "Cameroon", "venue": "Aspire Zone, Pitch 5"},
-       {"date": "Friday 27 November", "time": "19:00", "home": "Romania", "away": "Cameroon", "venue": "Aspire Zone, Pitch 8"}
-     ]},
-    {"slug": "mozambique", "name": "Mozambique", "code": "MOZ", "flag": "mz", "group": "C", "coach": "Luís Guerreiro", "route": "Play-off: 1-1 with Ethiopia, won 5-4 on penalties",
-     "squad": "Final 21 named 12 November",
-     "players": ["Diego Elias Pelembe: midfielder and captain, two goals at the U-17 AFCON.", "Alírio Cuna Júnior: winger (Black Bulls), two goals against Denmark."],
-     "matches": [
-       {"id": "moz-den", "date": "Thursday 19 November", "time": "18:00", "home": "Mozambique", "away": "Denmark", "score": "4-0", "venue": "Aspire Zone",
-        "video": "https://www.youtube.com/watch?v=q2mJhZKfF28",
-        "goals": [
-          {"min": "4'", "team": "Mozambique", "who": "Khensane Machel", "how": "finish from the edge of the box after a break; assist Chausson Nhabanga", "t": 17},
-          {"min": "32'", "team": "Mozambique", "who": "Alírio Cuna Júnior", "how": "sliding finish at the near post on the counter", "t": 54},
-          {"min": "44'", "team": "Mozambique", "who": "Alírio Cuna Júnior", "how": "close-range finish", "t": 76},
-          {"min": "90+1'", "team": "Mozambique", "who": "Joaquim Mubai", "how": "into an empty net after the keeper was beaten", "t": 105}
-        ],
-        "story": "Africa's first win of the tournament, in Mozambique's first U-17 World Cup match. They led inside four minutes and were 3-0 up at half-time. Captain Diego Elias Pelembe ran midfield with Khensane Machel and Valentim Pacane. Mozambique top Group C after Australia beat Argentina 2-0.",
-        "scout": "Two of the first three goals came on the break: a side that is dangerous in transition, and the profile Argentina will have to manage on Sunday."},
-       {"date": "Sunday 22 November", "time": "18:30", "home": "Argentina", "away": "Mozambique", "venue": "Aspire Zone, Pitch 7"},
-       {"date": "Wednesday 25 November", "time": "18:30", "home": "Mozambique", "away": "Australia", "venue": "Aspire Zone, Pitch 8"}
-     ]},
-    {"slug": "uganda", "name": "Uganda", "code": "UGA", "flag": "ug", "group": "B", "coach": "Laryea Kingston", "route": "Play-off: 2-2 with Ghana, won 8-7 on penalties",
-     "squad": "Final 21 named 11 November", "players": [],
-     "matches": [
-       {"id": "uga-kor", "date": "Thursday 19 November", "time": "16:30", "home": "Korea Republic", "away": "Uganda", "score": "3-0", "venue": "Aspire Zone",
-        "video": "https://www.youtube.com/watch?v=zvEq38Io-mk",
-        "goals": [
-          {"min": "8'", "team": "Korea Republic", "who": "Kim Jiho"},
-          {"min": "50'", "team": "Korea Republic", "who": "Nam Ian", "how": "shot deflected in"},
-          {"min": "84'", "team": "Korea Republic", "who": "Kim Ji-woo"}
-        ],
-        "story": "A hard opener against an Asian side that scored early. Uganda were 1-0 down at half-time and created a clear chance of their own before Korea pulled away.",
-        "scout": "Ecuador on Sunday is the match that decides Uganda's group, and the one to watch their squad in."},
-       {"date": "Sunday 22 November", "time": "16:00", "home": "Ecuador", "away": "Uganda", "venue": "Aspire Zone"},
-       {"date": "Wednesday 25 November", "time": "15:30", "home": "Uganda", "away": "New Caledonia", "venue": "Aspire Zone"}
-     ]}
-  ]
+ "updated": "20 November 2026",
+ "highlightsNote": "Goal times link to FIFA's official highlights on YouTube.",
+ "nations": [
+  {
+   "slug": "egypt",
+   "name": "Egypt",
+   "code": "EGY",
+   "flag": "eg",
+   "group": "A",
+   "coach": "Hussein Abdel-Latif",
+   "route": "U-17 AFCON quarter-finalist",
+   "squad": "Final 21 named 7 November; in Doha since 15 November",
+   "players": [
+    "Ahmed Safwat: captain and creator, attacking midfielder (Zamalek). Best player of the U-17 Gulf Cup in Qatar this autumn."
+   ],
+   "matches": [
+    {
+     "id": "egy-gre",
+     "date": "Thursday 19 November",
+     "time": "19:00",
+     "home": "Egypt",
+     "away": "Greece",
+     "score": "1-2",
+     "venue": "Aspire Zone, Pitch 7",
+     "video": "https://www.youtube.com/watch?v=z-n9heuQxLo",
+     "goals": [
+      {
+       "min": "54'",
+       "team": "Greece",
+       "who": "Konstantinos Souflatzis",
+       "type": "Open play"
+      },
+      {
+       "min": "62'",
+       "team": "Greece",
+       "who": "Konstantinos Karangelis",
+       "type": "Open play"
+      },
+      {
+       "min": "71'",
+       "team": "Egypt",
+       "who": "Ziad Saudi",
+       "how": "Strike from outside the box",
+       "t": 98,
+       "s": 88,
+       "e": 108,
+       "type": "Long range"
+      }
+     ],
+     "story": "Egypt played from the 23rd minute with ten men and still pulled a goal back: Ziad Saudi's strike from distance, with the keeper at full stretch. Captain Ahmed Safwat started in midfield.",
+     "scout": "Saudi's goal is the clip clubs will ask for: a clean strike under pressure, in a match Egypt were chasing a man down.",
+     "keyNumbers": [
+      [
+       "67",
+       "minutes played with ten men"
+      ],
+      [
+       "8",
+       "minutes in which Greece scored twice after the break"
+      ],
+      [
+       "71'",
+       "Ziad Saudi's goal from distance"
+      ],
+      [
+       "0",
+       "points: Qatar on Sunday is a must-not-lose"
+      ]
+     ],
+     "analysis": [
+      {
+       "h": "The red card shaped the match",
+       "p": "Egypt lost a player to a second yellow card in the 23rd minute and held 0-0 to half-time. After the break Greece made the extra player count, scoring twice in eight minutes."
+      },
+      {
+       "h": "Still a threat with ten men",
+       "p": "Ziad Saudi's strike from outside the box at 71 minutes kept the match alive. A clean finish under pressure, chasing the game a man down, is exactly the kind of moment clubs ask to see."
+      },
+      {
+       "h": "What it means for the group",
+       "p": "Egypt are on zero points with two matches left. With the eight best third-placed teams also going through, a win against hosts Qatar on Sunday keeps the round of 32 in Egypt's hands."
+      }
+     ]
+    },
+    {
+     "date": "Sunday 22 November",
+     "time": "18:00",
+     "home": "Qatar",
+     "away": "Egypt",
+     "venue": "Aspire Zone, Pitch 2"
+    },
+    {
+     "date": "Wednesday 25 November",
+     "time": "17:30",
+     "home": "Panama",
+     "away": "Egypt",
+     "venue": "Aspire Zone, Pitch 3"
+    }
+   ]
+  },
+  {
+   "slug": "cote-divoire",
+   "name": "Côte d'Ivoire",
+   "code": "CIV",
+   "flag": "ci",
+   "group": "E",
+   "coach": "Bassiriki Diabaté",
+   "route": "Topped their U-17 AFCON group",
+   "squad": "Final 21 named: 3 goalkeepers, 7 defenders, 6 midfielders, 5 forwards",
+   "players": [],
+   "matches": [
+    {
+     "date": "Friday 20 November",
+     "time": "19:00",
+     "home": "Côte d'Ivoire",
+     "away": "Uzbekistan",
+     "venue": "Aspire Zone"
+    },
+    {
+     "date": "Monday 23 November",
+     "time": "17:30",
+     "home": "Italy",
+     "away": "Côte d'Ivoire",
+     "venue": "Aspire Zone, Pitch 3"
+    },
+    {
+     "date": "Thursday 26 November",
+     "time": "17:00",
+     "home": "Jamaica",
+     "away": "Côte d'Ivoire",
+     "venue": "Aspire Zone, Pitch 1"
+    }
+   ]
+  },
+  {
+   "slug": "senegal",
+   "name": "Senegal",
+   "code": "SEN",
+   "flag": "sn",
+   "group": "F",
+   "coach": "Lamine Sané",
+   "route": "U-17 AFCON quarter-finalist",
+   "squad": "Final 21 named 11 November",
+   "players": [],
+   "matches": [
+    {
+     "date": "Friday 20 November",
+     "time": "18:30",
+     "home": "Senegal",
+     "away": "Croatia",
+     "venue": "Aspire Zone"
+    },
+    {
+     "date": "Monday 23 November",
+     "time": "16:30",
+     "home": "Senegal",
+     "away": "Cuba",
+     "venue": "Aspire Zone, Pitch 5"
+    },
+    {
+     "date": "Thursday 26 November",
+     "time": "19:00",
+     "home": "Tajikistan",
+     "away": "Senegal",
+     "venue": "Aspire Zone"
+    }
+   ]
+  },
+  {
+   "slug": "mali",
+   "name": "Mali",
+   "code": "MLI",
+   "flag": "ml",
+   "group": "G",
+   "coach": "Soumaïla Coulibaly",
+   "route": "U-17 AFCON quarter-finalist",
+   "squad": "Final 21 registered with FIFA, 11 November",
+   "players": [],
+   "matches": [
+    {
+     "date": "Friday 20 November",
+     "time": "16:30",
+     "home": "Mali",
+     "away": "New Zealand",
+     "venue": "Aspire Zone"
+    },
+    {
+     "date": "Monday 23 November",
+     "time": "18:30",
+     "home": "Mali",
+     "away": "Belgium",
+     "venue": "Aspire Zone, Pitch 7"
+    },
+    {
+     "date": "Thursday 26 November",
+     "time": "16:00",
+     "home": "Mali",
+     "away": "Vietnam",
+     "venue": "Aspire Zone, Pitch 9"
+    }
+   ]
+  },
+  {
+   "slug": "morocco",
+   "name": "Morocco",
+   "code": "MAR",
+   "flag": "ma",
+   "group": "H",
+   "coach": "Ahmed Kantari",
+   "route": "U-17 AFCON hosts, topped Group A",
+   "squad": "Final 21 named 3 November",
+   "players": [
+    "Ziyad Baha: striker, playing his second U-17 World Cup in a row."
+   ],
+   "matches": [
+    {
+     "date": "Friday 20 November",
+     "time": "19:00",
+     "home": "Fiji",
+     "away": "Morocco",
+     "venue": "Aspire Zone, Pitch 7"
+    },
+    {
+     "date": "Monday 23 November",
+     "time": "18:00",
+     "home": "Morocco",
+     "away": "China PR",
+     "venue": "Aspire Zone, Pitch 2"
+    },
+    {
+     "date": "Thursday 26 November",
+     "time": "18:00",
+     "home": "Spain",
+     "away": "Morocco",
+     "venue": "Aspire Zone, Pitch 2"
+    }
+   ]
+  },
+  {
+   "slug": "tanzania",
+   "name": "Tanzania",
+   "code": "TAN",
+   "flag": "tz",
+   "group": "I",
+   "coach": "Elieneza Nsanganzelu",
+   "route": "U-17 AFCON finalists",
+   "squad": "Final 21 named, home-based and foreign-based players",
+   "players": [
+    "Dismas Athanasi: forward, 14, the youngest player at the tournament and top scorer at the U-17 AFCON."
+   ],
+   "matches": [
+    {
+     "date": "Saturday 21 November",
+     "time": "16:00",
+     "home": "Tanzania",
+     "away": "Costa Rica",
+     "venue": "Aspire Zone, Pitch 1"
+    },
+    {
+     "date": "Tuesday 24 November",
+     "time": "18:00",
+     "home": "Brazil",
+     "away": "Tanzania",
+     "venue": "Aspire Zone, Pitch 2"
+    },
+    {
+     "date": "Friday 27 November",
+     "time": "17:00",
+     "home": "Republic of Ireland",
+     "away": "Tanzania",
+     "venue": "Aspire Zone, Pitch 1"
+    }
+   ]
+  },
+  {
+   "slug": "algeria",
+   "name": "Algeria",
+   "code": "ALG",
+   "flag": "dz",
+   "group": "J",
+   "coach": "Amine Ghimouz",
+   "route": "U-17 AFCON quarter-finalist",
+   "squad": "Final 21 named 6 November",
+   "players": [],
+   "matches": [
+    {
+     "date": "Saturday 21 November",
+     "time": "18:30",
+     "home": "Chile",
+     "away": "Algeria",
+     "venue": "Aspire Zone, Pitch 7"
+    },
+    {
+     "date": "Tuesday 24 November",
+     "time": "18:30",
+     "home": "Algeria",
+     "away": "Montenegro",
+     "venue": "Aspire Zone"
+    },
+    {
+     "date": "Friday 27 November",
+     "time": "18:00",
+     "home": "Algeria",
+     "away": "Dominican Republic",
+     "venue": "Aspire Zone, Pitch 2"
+    }
+   ]
+  },
+  {
+   "slug": "cameroon",
+   "name": "Cameroon",
+   "code": "CMR",
+   "flag": "cm",
+   "group": "K",
+   "coach": "Thomas Libiih",
+   "route": "U-17 AFCON quarter-finalist",
+   "squad": "Final 21 registered with FIFA; in Doha since 7 November",
+   "players": [
+    "Chris Karel: captain, led Cameroon to the U-17 AFCON quarter-finals."
+   ],
+   "matches": [
+    {
+     "date": "Saturday 21 November",
+     "time": "16:30",
+     "home": "Cameroon",
+     "away": "Venezuela",
+     "venue": "Aspire Zone, Pitch 5"
+    },
+    {
+     "date": "Tuesday 24 November",
+     "time": "16:30",
+     "home": "Mexico",
+     "away": "Cameroon",
+     "venue": "Aspire Zone, Pitch 5"
+    },
+    {
+     "date": "Friday 27 November",
+     "time": "19:00",
+     "home": "Romania",
+     "away": "Cameroon",
+     "venue": "Aspire Zone, Pitch 8"
+    }
+   ]
+  },
+  {
+   "slug": "mozambique",
+   "name": "Mozambique",
+   "code": "MOZ",
+   "flag": "mz",
+   "group": "C",
+   "coach": "Luís Guerreiro",
+   "route": "Play-off: 1-1 with Ethiopia, won 5-4 on penalties",
+   "squad": "Final 21 named 12 November",
+   "players": [
+    "Diego Elias Pelembe: midfielder and captain, two goals at the U-17 AFCON.",
+    "Alírio Cuna Júnior: winger (Black Bulls), two goals against Denmark."
+   ],
+   "matches": [
+    {
+     "id": "moz-den",
+     "date": "Thursday 19 November",
+     "time": "18:00",
+     "home": "Mozambique",
+     "away": "Denmark",
+     "score": "4-0",
+     "venue": "Aspire Zone",
+     "video": "https://www.youtube.com/watch?v=q2mJhZKfF28",
+     "goals": [
+      {
+       "min": "4'",
+       "team": "Mozambique",
+       "who": "Khensane Machel",
+       "how": "Finish from the edge of the box after a break; assist Chausson Nhabanga",
+       "t": 17,
+       "s": 5,
+       "e": 24,
+       "type": "Transition"
+      },
+      {
+       "min": "32'",
+       "team": "Mozambique",
+       "who": "Alírio Cuna Júnior",
+       "how": "Sliding finish at the near post on the counter",
+       "t": 54,
+       "s": 42,
+       "e": 60,
+       "type": "Counter-attack"
+      },
+      {
+       "min": "44'",
+       "team": "Mozambique",
+       "who": "Alírio Cuna Júnior",
+       "how": "Close-range finish",
+       "t": 76,
+       "s": 66,
+       "e": 82,
+       "type": "Inside the box"
+      },
+      {
+       "min": "90+1'",
+       "team": "Mozambique",
+       "who": "Joaquim Mubai",
+       "how": "Into an empty net after the keeper was beaten",
+       "t": 105,
+       "s": 95,
+       "e": 110,
+       "type": "Late break"
+      }
+     ],
+     "story": "Africa's first win of the tournament, in Mozambique's first U-17 World Cup match. They led inside four minutes and were 3-0 up at half-time. Captain Diego Elias Pelembe ran midfield with Khensane Machel and Valentim Pacane. Mozambique top Group C after Australia beat Argentina 2-0.",
+     "scout": "Machel and Cuna Júnior are the names to follow against Argentina on Sunday: both scored from fast breaks against a European side.",
+     "keyNumbers": [
+      [
+       "4'",
+       "the opening goal"
+      ],
+      [
+       "3-0",
+       "at half-time"
+      ],
+      [
+       "3",
+       "different scorers"
+      ],
+      [
+       "+4",
+       "goal difference after one match"
+      ]
+     ],
+     "analysis": [
+      {
+       "h": "Built to hurt teams on the break",
+       "p": "Two of the first three goals came from fast breaks: Machel finishing from the edge of the box four minutes in, then Cuna Júnior sliding in at the near post on a counter. Denmark had to commit players forward and Mozambique punished the space behind them."
+      },
+      {
+       "h": "The game was won before half-time",
+       "p": "Goals at 4, 32 and 44 minutes meant Mozambique could manage the second half, and they still added a fourth in added time. For a side in its first U-17 World Cup, controlling a European opponent for 90 minutes is the headline."
+      },
+      {
+       "h": "Goals from three different players",
+       "p": "Machel, Cuna Júnior and Mubai all scored: the threat is spread across the team, which makes Mozambique harder to plan against."
+      },
+      {
+       "h": "What it means for the group",
+       "p": "Three points and a +4 goal difference put Mozambique top of Group C. The group winners, the runners-up and the eight best third-placed teams reach the round of 32, so another result against Argentina or Australia would all but secure a place. Argentina lost 2-0 to Australia and must now come at Mozambique, which suits a side this quick on the break."
+      }
+     ]
+    },
+    {
+     "date": "Sunday 22 November",
+     "time": "18:30",
+     "home": "Argentina",
+     "away": "Mozambique",
+     "venue": "Aspire Zone, Pitch 7"
+    },
+    {
+     "date": "Wednesday 25 November",
+     "time": "18:30",
+     "home": "Mozambique",
+     "away": "Australia",
+     "venue": "Aspire Zone, Pitch 8"
+    }
+   ]
+  },
+  {
+   "slug": "uganda",
+   "name": "Uganda",
+   "code": "UGA",
+   "flag": "ug",
+   "group": "B",
+   "coach": "Laryea Kingston",
+   "route": "Play-off: 2-2 with Ghana, won 8-7 on penalties",
+   "squad": "Final 21 named 11 November",
+   "players": [],
+   "matches": [
+    {
+     "id": "uga-kor",
+     "date": "Thursday 19 November",
+     "time": "16:30",
+     "home": "Korea Republic",
+     "away": "Uganda",
+     "score": "3-0",
+     "venue": "Aspire Zone",
+     "video": "https://www.youtube.com/watch?v=zvEq38Io-mk",
+     "goals": [
+      {
+       "min": "8'",
+       "team": "Korea Republic",
+       "who": "Kim Jiho",
+       "type": "Open play"
+      },
+      {
+       "min": "50'",
+       "team": "Korea Republic",
+       "who": "Nam Ian",
+       "how": "Shot deflected in",
+       "type": "Deflection"
+      },
+      {
+       "min": "84'",
+       "team": "Korea Republic",
+       "who": "Kim Ji-woo",
+       "type": "Open play"
+      }
+     ],
+     "story": "A hard opener against an Asian side that scored early. Uganda were 1-0 down at half-time and created a clear chance of their own before Korea pulled away.",
+     "scout": "Ecuador on Sunday is the match that decides Uganda's group, and the one to watch their squad in.",
+     "keyNumbers": [
+      [
+       "8'",
+       "Korea's opening goal"
+      ],
+      [
+       "1-0",
+       "at half-time: still in the match"
+      ],
+      [
+       "2",
+       "matches left: Ecuador and New Caledonia"
+      ]
+     ],
+     "analysis": [
+      {
+       "h": "An early goal set the tone",
+       "p": "Korea Republic scored in the 8th minute and Uganda spent the match chasing. They stayed in it until half-time at 1-0 and created a clear chance of their own before a deflected shot made it 2-0 early in the second half."
+      },
+      {
+       "h": "What it means for the group",
+       "p": "Uganda are bottom of Group B after the opener, but two matches remain against Ecuador and New Caledonia, and the eight best third-placed teams also reach the round of 32. Ecuador on Sunday is the match that decides their tournament."
+      }
+     ]
+    },
+    {
+     "date": "Sunday 22 November",
+     "time": "16:00",
+     "home": "Ecuador",
+     "away": "Uganda",
+     "venue": "Aspire Zone"
+    },
+    {
+     "date": "Wednesday 25 November",
+     "time": "15:30",
+     "home": "Uganda",
+     "away": "New Caledonia",
+     "venue": "Aspire Zone"
+    }
+   ]
+  }
+ ]
 }

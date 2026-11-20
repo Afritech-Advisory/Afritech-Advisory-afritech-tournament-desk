@@ -289,6 +289,23 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-block:20px 28px;
 .ptw li{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 14px}
 .others{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
 .others a{display:inline-flex;align-items:center;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:99px;padding:6px 12px;text-decoration:none;color:var(--fg);font-weight:600}
+.kn{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px}
+.kn div{background:var(--soft);border-radius:8px;padding:10px 12px}
+.kn b{display:block;font-family:var(--display);font-size:1.7rem;line-height:1;color:var(--navy)}
+@media (prefers-color-scheme:dark){.kn b{color:var(--orange-text)}}
+.kn span{font-size:.86rem;color:var(--muted)}
+.tl{width:100%;max-width:560px;height:auto;display:block}
+.an{display:grid;gap:10px}
+.an div{border-top:1px solid var(--line);padding-top:10px}
+.an h4{font-family:var(--display);font-size:1.15rem;margin:0 0 4px}
+.player{position:relative;aspect-ratio:16/9;background:#000;border-radius:10px;overflow:hidden}
+.player iframe,.player>div{position:absolute;inset:0;width:100%;height:100%;border:0}
+.player .ph{display:grid;place-items:center;color:#fff;text-align:center;padding:16px;font-size:.95rem;background:linear-gradient(135deg,#0F2442,#1A365D)}
+.now{font-family:var(--mono);font-size:.82rem;color:var(--muted);min-height:1.2em}
+.clipbtn{font:700 .9rem var(--body);border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:99px;padding:6px 12px;cursor:pointer;white-space:nowrap}
+.clipbtn.on{background:var(--orange);color:#1B1206;border-color:var(--orange)}
+.playall{font:700 1rem var(--body);background:var(--orange);color:#1B1206;border:0;border-radius:8px;padding:10px 16px;cursor:pointer;justify-self:start}
+.gtype{display:inline-block;font:600 .7rem var(--mono);letter-spacing:.06em;text-transform:uppercase;background:var(--soft);border-radius:4px;padding:2px 6px;margin-left:6px;vertical-align:1px}
 .cta-box{background:var(--navy);color:var(--on-navy);border-radius:12px;padding:22px;display:grid;gap:10px;margin-top:8px}
 .cta-box h2{color:#fff}.cta-box p{color:#DCE5F0}
 </style>
@@ -328,7 +345,7 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-block:20px 28px;
     <p class="crumb"><a href="../">Africa's ten in Qatar</a> › Mozambique</p>
     <p class="eyebrow">FIFA U-17 World Cup Qatar 2026 · Group C · Updated 20 November 2026</p>
     <h1><i class="fl fl-mz" role="img" aria-label="Mozambique flag"></i>Mozambique <em>match by match.</em></h1>
-    <p class="lead">1 played: 1 won, 0 drawn, 0 lost. Every goal with its minute, the official highlight and our read for clubs, agents and federations.</p>
+    <p class="lead">1 played: 1 won, 0 drawn, 0 lost. Watch every goal as its own clip, then read our analysis of what each match tells clubs, agents and federations.</p>
     <div class="btns"><a class="btn primary" href="mailto:Advisory@afritechsports.com?subject=Mozambique%20U-17%20World%20Cup%20briefing">Book a briefing on Mozambique</a><a class="btn ghost" href="#results">See the results</a></div>
     <div class="chips"><span>Coach: Luís Guerreiro</span><span>Play-off: 1-1 with Ethiopia, won 5-4 on penalties</span></div>
   </div>
@@ -336,8 +353,8 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-block:20px 28px;
 <main class="wrap">
 <section class="s" id="results">
   <div class="s-head"><p class="eyebrow">Match reports</p><h2>Results and goals</h2>
-  <p>Final scores only, after the whistle. Goal times link to FIFA's official highlights on YouTube.</p></div>
-  <article class="mr" id="moz-den"><p class="when">Thursday 19 November · 18:00 Doha · Aspire Zone</p><span class="res W">Win</span><div class="sc"><span class="r"><span class="af">Mozambique</span></span><b>4-0</b><span>Denmark</span></div><p>Africa&#x27;s first win of the tournament, in Mozambique&#x27;s first U-17 World Cup match. They led inside four minutes and were 3-0 up at half-time. Captain Diego Elias Pelembe ran midfield with Khensane Machel and Valentim Pacane. Mozambique top Group C after Australia beat Argentina 2-0.</p><h3>Goals</h3><ul class="goals"><li><span class="m">4'</span><span><b>Khensane Machel</b> <span class="tm">(Mozambique)</span>, finish from the edge of the box after a break; assist Chausson Nhabanga · <a href="https://www.youtube.com/watch?v=q2mJhZKfF28&amp;t=17s" target="_blank" rel="noopener">Watch the goal (0:17)</a></span></li><li><span class="m">32'</span><span><b>Alírio Cuna Júnior</b> <span class="tm">(Mozambique)</span>, sliding finish at the near post on the counter · <a href="https://www.youtube.com/watch?v=q2mJhZKfF28&amp;t=54s" target="_blank" rel="noopener">Watch the goal (0:54)</a></span></li><li><span class="m">44'</span><span><b>Alírio Cuna Júnior</b> <span class="tm">(Mozambique)</span>, close-range finish · <a href="https://www.youtube.com/watch?v=q2mJhZKfF28&amp;t=76s" target="_blank" rel="noopener">Watch the goal (1:16)</a></span></li><li><span class="m">90+1'</span><span><b>Joaquim Mubai</b> <span class="tm">(Mozambique)</span>, into an empty net after the keeper was beaten · <a href="https://www.youtube.com/watch?v=q2mJhZKfF28&amp;t=105s" target="_blank" rel="noopener">Watch the goal (1:45)</a></span></li></ul><p class="scout"><b>Our read</b>Two of the first three goals came on the break: a side that is dangerous in transition, and the profile Argentina will have to manage on Sunday.</p><p class="fine" style="margin:0"><a href="https://www.youtube.com/watch?v=q2mJhZKfF28" target="_blank" rel="noopener">FIFA's official highlights on YouTube</a></p></article>
+  <p>Final scores, every goal as its own clip from FIFA's official highlights, and our analysis of what the match tells clubs, agents and federations.</p></div>
+  <article class="mr" id="moz-den"><p class="when">Thursday 19 November · 18:00 Doha · Aspire Zone</p><span class="res W">Win</span><div class="sc"><span class="r"><span class="af">Mozambique</span></span><b>4-0</b><span>Denmark</span></div><p>Africa&#x27;s first win of the tournament, in Mozambique&#x27;s first U-17 World Cup match. They led inside four minutes and were 3-0 up at half-time. Captain Diego Elias Pelembe ran midfield with Khensane Machel and Valentim Pacane. Mozambique top Group C after Australia beat Argentina 2-0.</p><div class=kn><div><b>4&#x27;</b><span>the opening goal</span></div><div><b>3-0</b><span>at half-time</span></div><div><b>3</b><span>different scorers</span></div><div><b>+4</b><span>goal difference after one match</span></div></div><h3>The goals</h3><div class="player" id="pl-moz-den" data-v="q2mJhZKfF28" data-clips='[{&quot;s&quot;: 5, &quot;e&quot;: 24, &quot;l&quot;: &quot;4&#x27; Khensane Machel&quot;}, {&quot;s&quot;: 42, &quot;e&quot;: 60, &quot;l&quot;: &quot;32&#x27; Al\u00edrio Cuna J\u00fanior&quot;}, {&quot;s&quot;: 66, &quot;e&quot;: 82, &quot;l&quot;: &quot;44&#x27; Al\u00edrio Cuna J\u00fanior&quot;}, {&quot;s&quot;: 95, &quot;e&quot;: 110, &quot;l&quot;: &quot;90+1&#x27; Joaquim Mubai&quot;}]'><div class="ph"><p>Play all 4 goals: each goal plays as its own clip, stops, and moves to the next.</p></div></div><button class="playall" type="button" data-m="moz-den">&#9654; Play all 4 goals</button><p class="now" id="now-moz-den" aria-live="polite"></p><svg class="tl" viewBox="0 0 360 104" role="img" aria-label="Goal timeline: Mozambique goals above the line, opponent goals below"><line x1="16" y1="50" x2="344" y2="50" stroke="var(--line)" stroke-width="3"/><line x1="173.0212765957447" y1="38" x2="173.0212765957447" y2="62" stroke="var(--muted)" stroke-dasharray="3 3"/><text x="173.0212765957447" y="96" text-anchor="middle" font-size="11" fill="var(--muted)" font-family="IBM Plex Mono,monospace">HT</text><text x="16.0" y="96" text-anchor="middle" font-size="12" fill="var(--muted)" font-family="IBM Plex Mono,monospace">0'</text><text x="330.0425531914894" y="96" text-anchor="middle" font-size="12" fill="var(--muted)" font-family="IBM Plex Mono,monospace">90'</text><line x1="29.95744680851064" y1="50" x2="29.95744680851064" y2="30" stroke="var(--teal)" stroke-width="2"/><circle cx="29.95744680851064" cy="30" r="7" fill="var(--teal)"/><text x="29.95744680851064" y="16" text-anchor="middle" font-size="11" font-weight="700" fill="var(--teal)" font-family="IBM Plex Mono,monospace">4'</text><line x1="127.65957446808511" y1="50" x2="127.65957446808511" y2="30" stroke="var(--teal)" stroke-width="2"/><circle cx="127.65957446808511" cy="30" r="7" fill="var(--teal)"/><text x="127.65957446808511" y="16" text-anchor="middle" font-size="11" font-weight="700" fill="var(--teal)" font-family="IBM Plex Mono,monospace">32'</text><line x1="169.53191489361703" y1="50" x2="169.53191489361703" y2="30" stroke="var(--teal)" stroke-width="2"/><circle cx="169.53191489361703" cy="30" r="7" fill="var(--teal)"/><text x="169.53191489361703" y="16" text-anchor="middle" font-size="11" font-weight="700" fill="var(--teal)" font-family="IBM Plex Mono,monospace">44'</text><line x1="331.78723404255317" y1="50" x2="331.78723404255317" y2="30" stroke="var(--teal)" stroke-width="2"/><circle cx="331.78723404255317" cy="30" r="7" fill="var(--teal)"/><text x="331.78723404255317" y="16" text-anchor="middle" font-size="11" font-weight="700" fill="var(--teal)" font-family="IBM Plex Mono,monospace">90+1'</text></svg><ul class="goals"><li><span class="m">4'</span><span><b>Khensane Machel</b> <span class="tm">(Mozambique)</span><span class="gtype">Transition</span><br>Finish from the edge of the box after a break; assist Chausson Nhabanga. <button class="clipbtn" type="button" data-m="moz-den" data-i="0">&#9654; Watch the goal</button></span></li><li><span class="m">32'</span><span><b>Alírio Cuna Júnior</b> <span class="tm">(Mozambique)</span><span class="gtype">Counter-attack</span><br>Sliding finish at the near post on the counter. <button class="clipbtn" type="button" data-m="moz-den" data-i="1">&#9654; Watch the goal</button></span></li><li><span class="m">44'</span><span><b>Alírio Cuna Júnior</b> <span class="tm">(Mozambique)</span><span class="gtype">Inside the box</span><br>Close-range finish. <button class="clipbtn" type="button" data-m="moz-den" data-i="2">&#9654; Watch the goal</button></span></li><li><span class="m">90+1'</span><span><b>Joaquim Mubai</b> <span class="tm">(Mozambique)</span><span class="gtype">Late break</span><br>Into an empty net after the keeper was beaten. <button class="clipbtn" type="button" data-m="moz-den" data-i="3">&#9654; Watch the goal</button></span></li></ul><h3>Our analysis</h3><div class=an><div><h4>Built to hurt teams on the break</h4><p>Two of the first three goals came from fast breaks: Machel finishing from the edge of the box four minutes in, then Cuna Júnior sliding in at the near post on a counter. Denmark had to commit players forward and Mozambique punished the space behind them.</p></div><div><h4>The game was won before half-time</h4><p>Goals at 4, 32 and 44 minutes meant Mozambique could manage the second half, and they still added a fourth in added time. For a side in its first U-17 World Cup, controlling a European opponent for 90 minutes is the headline.</p></div><div><h4>Goals from three different players</h4><p>Machel, Cuna Júnior and Mubai all scored: the threat is spread across the team, which makes Mozambique harder to plan against.</p></div><div><h4>What it means for the group</h4><p>Three points and a +4 goal difference put Mozambique top of Group C. The group winners, the runners-up and the eight best third-placed teams reach the round of 32, so another result against Argentina or Australia would all but secure a place. Argentina lost 2-0 to Australia and must now come at Mozambique, which suits a side this quick on the break.</p></div></div><p class="scout"><b>For clubs</b>Machel and Cuna Júnior are the names to follow against Argentina on Sunday: both scored from fast breaks against a European side.</p><p class="fine" style="margin:0">Clips play from FIFA's official highlights on YouTube. <a href="https://www.youtube.com/watch?v=q2mJhZKfF28" target="_blank" rel="noopener">Open on YouTube</a></p></article>
 </section>
 <section class="s" id="next">
   <div class="s-head"><p class="eyebrow">Next</p><h2>Coming up for Mozambique</h2></div>
@@ -360,5 +377,32 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-block:20px 28px;
 </section>
 </main>
 <footer><div class="wrap">Independent coverage by Afritech. Not affiliated with or endorsed by FIFA.<br>Produced by Afritech Sports Technology and Innovation Group Limited · Updated 20 November 2026</div></footer>
+<script>
+(function(){
+var players={},state={},ready=false,queue=[];
+function api(cb){if(ready)return cb();queue.push(cb);if(window._ytl)return;window._ytl=1;
+ window.onYouTubeIframeAPIReady=function(){ready=true;queue.forEach(function(f){f()});queue=[]};
+ var s=document.createElement('script');s.src='https://www.youtube.com/iframe_api';s.onerror=fail;document.head.appendChild(s)}
+function fail(){document.querySelectorAll('.player').forEach(function(p){var v=p.getAttribute('data-v');
+ p.innerHTML='<div class="ph"><a style="color:#fff" href="https://www.youtube.com/watch?v='+v+'" target="_blank" rel="noopener">The clip player could not load here. Open FIFA&rsquo;s official highlights on YouTube</a></div>'})}
+function mark(m,i){document.querySelectorAll('.clipbtn[data-m="'+m+'"]').forEach(function(b){b.classList.toggle('on',+b.getAttribute('data-i')===i)})}
+function play(m,i){var el=document.getElementById('pl-'+m),clips=JSON.parse(el.getAttribute('data-clips')),v=el.getAttribute('data-v'),st=state[m];
+ var now=document.getElementById('now-'+m);
+ var go=function(){var c=clips[i];
+  if(c){players[m].loadVideoById({videoId:v,startSeconds:c.s,endSeconds:c.e});now.textContent='Now playing: '+c.l+(st.all?' ('+(i+1)+' of '+clips.length+')':'');mark(m,i)}
+  else{players[m].loadVideoById({videoId:v});now.textContent='Official highlights';mark(m,-1)}
+  st.i=i};
+ if(players[m])return go();
+ api(function(){var host=document.createElement('div');el.innerHTML='';el.appendChild(host);
+  players[m]=new YT.Player(host,{videoId:v,playerVars:{playsinline:1,rel:0,modestbranding:1},
+   events:{onReady:go,onError:function(){fail()},onStateChange:function(e){
+    if(e.data===YT.PlayerState.ENDED&&clips.length){
+     if(st.all&&st.i+1<clips.length){play(m,st.i+1)}
+     else{st.all=false;mark(m,-1);now.textContent=clips.length>1?'Clip finished. Press Play all or pick another goal.':'Clip finished.'}}}}})})}
+document.querySelectorAll('.playall').forEach(function(b){b.addEventListener('click',function(){var m=b.getAttribute('data-m');state[m]=state[m]||{};state[m].all=true;play(m,0)})});
+document.querySelectorAll('.clipbtn').forEach(function(b){b.addEventListener('click',function(){var m=b.getAttribute('data-m');state[m]=state[m]||{};state[m].all=false;
+ document.getElementById('pl-'+m).scrollIntoView({behavior:'smooth',block:'center'});play(m,+b.getAttribute('data-i'))})});
+})();
+</script>
 </body>
 </html>

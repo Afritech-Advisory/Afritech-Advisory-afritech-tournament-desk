@@ -35,6 +35,23 @@ EXTRA_CSS = """
 .ptw li{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 14px}
 .others{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
 .others a{display:inline-flex;align-items:center;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:99px;padding:6px 12px;text-decoration:none;color:var(--fg);font-weight:600}
+.kn{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px}
+.kn div{background:var(--soft);border-radius:8px;padding:10px 12px}
+.kn b{display:block;font-family:var(--display);font-size:1.7rem;line-height:1;color:var(--navy)}
+@media (prefers-color-scheme:dark){.kn b{color:var(--orange-text)}}
+.kn span{font-size:.86rem;color:var(--muted)}
+.tl{width:100%;max-width:560px;height:auto;display:block}
+.an{display:grid;gap:10px}
+.an div{border-top:1px solid var(--line);padding-top:10px}
+.an h4{font-family:var(--display);font-size:1.15rem;margin:0 0 4px}
+.player{position:relative;aspect-ratio:16/9;background:#000;border-radius:10px;overflow:hidden}
+.player iframe,.player>div{position:absolute;inset:0;width:100%;height:100%;border:0}
+.player .ph{display:grid;place-items:center;color:#fff;text-align:center;padding:16px;font-size:.95rem;background:linear-gradient(135deg,#0F2442,#1A365D)}
+.now{font-family:var(--mono);font-size:.82rem;color:var(--muted);min-height:1.2em}
+.clipbtn{font:700 .9rem var(--body);border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:99px;padding:6px 12px;cursor:pointer;white-space:nowrap}
+.clipbtn.on{background:var(--orange);color:#1B1206;border-color:var(--orange)}
+.playall{font:700 1rem var(--body);background:var(--orange);color:#1B1206;border:0;border-radius:8px;padding:10px 16px;cursor:pointer;justify-self:start}
+.gtype{display:inline-block;font:600 .7rem var(--mono);letter-spacing:.06em;text-transform:uppercase;background:var(--soft);border-radius:4px;padding:2px 6px;margin-left:6px;vertical-align:1px}
 .cta-box{background:var(--navy);color:var(--on-navy);border-radius:12px;padding:22px;display:grid;gap:10px;margin-top:8px}
 .cta-box h2{color:#fff}.cta-box p{color:#DCE5F0}
 """
@@ -54,25 +71,72 @@ def outcome(m, nation):
     return "W" if mine > theirs else "L" if mine < theirs else "D"
 
 
+def vid_id(url):
+    return url.split("v=")[1].split("&")[0]
+
+
+def minute_num(m):
+    m = m.strip("'")
+    if "+" in m:
+        a, b = m.split("+"); return int(a) + int(b) * 0.5
+    return int(m)
+
+
+def timeline(m, nation):
+    """Goal timeline 0-90: the nation's goals above the line, the opponent's below."""
+    W, X0, X1 = 360, 16, 344
+    x = lambda mn: X0 + (X1 - X0) * min(mn, 94) / 94
+    parts = [f'<line x1="{X0}" y1="50" x2="{X1}" y2="50" stroke="var(--line)" stroke-width="3"/>',
+             f'<line x1="{x(45)}" y1="38" x2="{x(45)}" y2="62" stroke="var(--muted)" stroke-dasharray="3 3"/>',
+             f'<text x="{x(45)}" y="96" text-anchor="middle" font-size="11" fill="var(--muted)" font-family="IBM Plex Mono,monospace">HT</text>']
+    for t in (0, 90):
+        parts.append(f'<text x="{x(t)}" y="96" text-anchor="middle" font-size="12" fill="var(--muted)" font-family="IBM Plex Mono,monospace">{t}\'</text>')
+    for g in m.get("goals", []):
+        mine = g["team"] == nation
+        cx, cy = x(minute_num(g["min"])), (30 if mine else 70)
+        col = "var(--teal)" if mine else "var(--rose)"
+        parts.append(f'<line x1="{cx}" y1="50" x2="{cx}" y2="{cy}" stroke="{col}" stroke-width="2"/>'
+                     f'<circle cx="{cx}" cy="{cy}" r="7" fill="{col}"/>'
+                     f'<text x="{cx}" y="{cy - 14 if mine else cy + 24}" text-anchor="middle" font-size="11" font-weight="700" fill="{col}" font-family="IBM Plex Mono,monospace">{g["min"]}</text>')
+    label = H.escape(f'Goal timeline: {nation} goals above the line, opponent goals below')
+    return f'<svg class="tl" viewBox="0 0 {W} 104" role="img" aria-label="{label}">{"".join(parts)}</svg>'
+
+
 def match_report(m, nation):
     o = outcome(m, nation)
     word = {"W": "Win", "L": "Defeat", "D": "Draw"}[o]
+    mid = m["id"]
+    clips = [g for g in m.get("goals", []) if g.get("s") is not None]
     goals = []
-    for g in m.get("goals", []):
-        link = ""
-        if g.get("t") is not None and m.get("video"):
-            mm, ss = divmod(g["t"], 60)
-            link = f' · <a href="{m["video"]}&amp;t={g["t"]}s" target="_blank" rel="noopener">Watch the goal ({mm}:{ss:02d})</a>'
-        how = f', {H.escape(g["how"])}' if g.get("how") else ""
-        goals.append(f'<li><span class="m">{g["min"]}</span><span><b>{H.escape(g["who"])}</b> <span class="tm">({H.escape(g["team"])})</span>{how}{link}</span></li>')
-    video = (f'<p class="fine" style="margin:0"><a href="{m["video"]}" target="_blank" rel="noopener">FIFA\'s official highlights on YouTube</a></p>'
-             if m.get("video") else "")
-    return (f'<article class="mr" id="{m["id"]}"><p class="when">{m["date"]} · {m["time"]} Doha · {H.escape(m["venue"])}</p>'
+    for i, g in enumerate(m.get("goals", [])):
+        btn = ""
+        if g.get("s") is not None:
+            btn = (f' <button class="clipbtn" type="button" data-m="{mid}" data-i="{clips.index(g)}">&#9654; Watch the goal</button>')
+        how = f'<br>{H.escape(g["how"])}.' if g.get("how") else ""
+        typ = f'<span class="gtype">{H.escape(g["type"])}</span>' if g.get("type") else ""
+        goals.append(f'<li><span class="m">{g["min"]}</span><span><b>{H.escape(g["who"])}</b> <span class="tm">({H.escape(g["team"])})</span>{typ}{how}{btn}</span></li>')
+    kn = "".join(f'<div><b>{H.escape(a)}</b><span>{H.escape(b)}</span></div>' for a, b in m.get("keyNumbers", []))
+    an = "".join(f'<div><h4>{H.escape(x["h"])}</h4><p>{H.escape(x["p"])}</p></div>' for x in m.get("analysis", []))
+    vid = vid_id(m["video"]) if m.get("video") else ""
+    cl = json.dumps([{"s": g["s"], "e": g["e"], "l": f'{g["min"]} {g["who"]}'} for g in clips])
+    lab = f"Play all {len(clips)} goals" if len(clips) > 1 else "Play the goal"
+    if clips:
+        player = (f'<div class="player" id="pl-{mid}" data-v="{vid}" data-clips=\'{H.escape(cl)}\'><div class="ph"><p>{lab}: each goal plays as its own clip, stops, and moves to the next.</p></div></div>'
+                  f'<button class="playall" type="button" data-m="{mid}">&#9654; {lab}</button><p class="now" id="now-{mid}" aria-live="polite"></p>')
+    elif vid:
+        player = (f'<div class="player" id="pl-{mid}" data-v="{vid}" data-clips="[]"><div class="ph"><p>Official FIFA highlights. Goal-by-goal clips follow once each goal is checked on video.</p></div></div>'
+                  f'<button class="playall" type="button" data-m="{mid}">&#9654; Play the official highlights</button><p class="now" id="now-{mid}" aria-live="polite"></p>')
+    else:
+        player = ""
+    return (f'<article class="mr" id="{mid}"><p class="when">{m["date"]} · {m["time"]} Doha · {H.escape(m["venue"])}</p>'
             f'<span class="res {o}">{word}</span>'
             f'<div class="sc"><span class="r">{team(m["home"], nation)}</span><b>{m["score"]}</b><span>{team(m["away"], nation)}</span></div>'
             f'<p>{H.escape(m["story"])}</p>'
-            f'<h3>Goals</h3><ul class="goals">{"".join(goals)}</ul>'
-            f'<p class="scout"><b>Our read</b>{H.escape(m["scout"])}</p>{video}</article>')
+            f'{f"<div class=kn>{kn}</div>" if kn else ""}'
+            f'<h3>The goals</h3>{player}{timeline(m, nation)}<ul class="goals">{"".join(goals)}</ul>'
+            f'{f"<h3>Our analysis</h3><div class=an>{an}</div>" if an else ""}'
+            f'<p class="scout"><b>For clubs</b>{H.escape(m["scout"])}</p>'
+            f'<p class="fine" style="margin:0">Clips play from FIFA\'s official highlights on YouTube. <a href="{m["video"]}" target="_blank" rel="noopener">Open on YouTube</a></p></article>')
 
 
 def page(n, all_nations, head, emblem, updated):
@@ -82,7 +146,7 @@ def page(n, all_nations, head, emblem, updated):
     if played:
         rec = [outcome(m, name) for m in played]
         summary = (f'{len(played)} played: {rec.count("W")} won, {rec.count("D")} drawn, {rec.count("L")} lost. '
-                   f'Every goal with its minute, the official highlight and our read for clubs, agents and federations.')
+                   f'Watch every goal as its own clip, then read our analysis of what each match tells clubs, agents and federations.')
     else:
         f = upcoming[0]
         summary = (f'First match: {f["home"]} v {f["away"]}, {f["date"]}, {f["time"]} Doha time. '
@@ -124,7 +188,7 @@ def page(n, all_nations, head, emblem, updated):
 <main class="wrap">
 <section class="s" id="results">
   <div class="s-head"><p class="eyebrow">Match reports</p><h2>Results and goals</h2>
-  <p>Final scores only, after the whistle. Goal times link to FIFA's official highlights on YouTube.</p></div>
+  <p>Final scores, every goal as its own clip from FIFA's official highlights, and our analysis of what the match tells clubs, agents and federations.</p></div>
   {reports}
 </section>
 <section class="s" id="next">
@@ -148,6 +212,33 @@ def page(n, all_nations, head, emblem, updated):
 </section>
 </main>
 <footer><div class="wrap">Independent coverage by Afritech. Not affiliated with or endorsed by FIFA.<br>Produced by Afritech Sports Technology and Innovation Group Limited · Updated {updated}</div></footer>
+<script>
+(function(){{
+var players={{}},state={{}},ready=false,queue=[];
+function api(cb){{if(ready)return cb();queue.push(cb);if(window._ytl)return;window._ytl=1;
+ window.onYouTubeIframeAPIReady=function(){{ready=true;queue.forEach(function(f){{f()}});queue=[]}};
+ var s=document.createElement('script');s.src='https://www.youtube.com/iframe_api';s.onerror=fail;document.head.appendChild(s)}}
+function fail(){{document.querySelectorAll('.player').forEach(function(p){{var v=p.getAttribute('data-v');
+ p.innerHTML='<div class="ph"><a style="color:#fff" href="https://www.youtube.com/watch?v='+v+'" target="_blank" rel="noopener">The clip player could not load here. Open FIFA&rsquo;s official highlights on YouTube</a></div>'}})}}
+function mark(m,i){{document.querySelectorAll('.clipbtn[data-m="'+m+'"]').forEach(function(b){{b.classList.toggle('on',+b.getAttribute('data-i')===i)}})}}
+function play(m,i){{var el=document.getElementById('pl-'+m),clips=JSON.parse(el.getAttribute('data-clips')),v=el.getAttribute('data-v'),st=state[m];
+ var now=document.getElementById('now-'+m);
+ var go=function(){{var c=clips[i];
+  if(c){{players[m].loadVideoById({{videoId:v,startSeconds:c.s,endSeconds:c.e}});now.textContent='Now playing: '+c.l+(st.all?' ('+(i+1)+' of '+clips.length+')':'');mark(m,i)}}
+  else{{players[m].loadVideoById({{videoId:v}});now.textContent='Official highlights';mark(m,-1)}}
+  st.i=i}};
+ if(players[m])return go();
+ api(function(){{var host=document.createElement('div');el.innerHTML='';el.appendChild(host);
+  players[m]=new YT.Player(host,{{videoId:v,playerVars:{{playsinline:1,rel:0,modestbranding:1}},
+   events:{{onReady:go,onError:function(){{fail()}},onStateChange:function(e){{
+    if(e.data===YT.PlayerState.ENDED&&clips.length){{
+     if(st.all&&st.i+1<clips.length){{play(m,st.i+1)}}
+     else{{st.all=false;mark(m,-1);now.textContent=clips.length>1?'Clip finished. Press Play all or pick another goal.':'Clip finished.'}}}}}}}}}})}})}}
+document.querySelectorAll('.playall').forEach(function(b){{b.addEventListener('click',function(){{var m=b.getAttribute('data-m');state[m]=state[m]||{{}};state[m].all=true;play(m,0)}})}});
+document.querySelectorAll('.clipbtn').forEach(function(b){{b.addEventListener('click',function(){{var m=b.getAttribute('data-m');state[m]=state[m]||{{}};state[m].all=false;
+ document.getElementById('pl-'+m).scrollIntoView({{behavior:'smooth',block:'center'}});play(m,+b.getAttribute('data-i'))}})}});
+}})();
+</script>
 </body>
 </html>
 """
