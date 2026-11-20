@@ -30,3 +30,9 @@ The desk is a scouting system, so every nation page and the main board run on th
 - **Grades:** four-area and position pizzas and numeric grades are drafted only in the private tracker (rule 8D) and published on a card only after Andrew approves them. Until then the card says the full profile follows after the group matches.
 - Every new card is also added to the tracker's `prospects` collection with status "Watch" and a dated note.
 - **Every matchday run updates all of it in one pull request:** match reports for every finished African match, results file for the other matches, new and updated scout cards (Ziyad Baha-style updates to facts, next and up/down lines), nation cards, Match centre results and the board. Final scores only: a match still live or not reported as finished by two sources waits for the next run.
+
+## Four languages on every page (Andrew, 20 Nov 2026, Gatekeeper 1D)
+- The desk is published in English, French, Kiswahili and Brazilian Portuguese: English at the root, copies at `fr/`, `sw/` and `pt/`, each with the language bar and hreflang links.
+- Every new or changed piece of English text (data files, match reports, scout cards, page text, JS messages) gets its French, Kiswahili and Brazilian Portuguese wording in `src/i18n/dict_a.py` (site and main page) or `src/i18n/dict_b.py` (nations, reports, cards, JS) in the same pull request. `build.py` turns them into `src/i18n/*.json`.
+- The build stops if any text is missing a translation and lists it in `src/i18n/missing-<lang>.txt`. Never publish with missing translations and never ship English inside a translated page.
+- Names of players, clubs, coaches and places stay as written. Write natural sales-first wording for each reader (French with " : " spacing, Brazilian Portuguese not European), not word-for-word.
