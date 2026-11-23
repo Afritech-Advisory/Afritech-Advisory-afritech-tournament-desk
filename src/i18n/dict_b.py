@@ -582,6 +582,13 @@ E = [
 ]
 
 JS = [
+("'FIFA plays its match video on its own site only. Here are the key frames, or watch the goal on FIFA’s video and come straight back.'", "'La FIFA ne diffuse ses vidéos de match que sur son propre site. Voici les images clés, ou regardez le but sur la vidéo de la FIFA et revenez directement ici.'", "'FIFA huonyesha video zake za mechi kwenye tovuti yake pekee. Hizi hapa picha muhimu, au tazama bao kwenye video ya FIFA kisha urudi hapa moja kwa moja.'", "'A FIFA só exibe seus vídeos de jogo no próprio site. Aqui estão as imagens-chave, ou veja o gol no vídeo da FIFA e volte direto para cá.'"),
+("'Watch the goal on FIFA’s video'", "'Voir le but sur la vidéo de la FIFA'", "'Tazama bao kwenye video ya FIFA'", "'Ver o gol no vídeo da FIFA'"),
+("'FIFA’s video is open in a new tab at this goal. It closes by itself when the goal is over and brings you back here.'", "'La vidéo de la FIFA est ouverte dans un nouvel onglet, sur ce but. Elle se ferme toute seule à la fin du but et vous ramène ici.'", "'Video ya FIFA imefunguliwa kwenye kichupo kipya, kwenye bao hili. Itajifunga yenyewe bao likimalizika na kukurudisha hapa.'", "'O vídeo da FIFA está aberto em uma nova aba, neste gol. Ele se fecha sozinho quando o gol termina e traz você de volta para cá.'"),
+("'Back in '", "'Retour dans '", "'Unarudi baada ya '", "'Volta em '"),
+("' s'", "' s'", "' sek'", "' s'"),
+("'Close it and come back'", "'Fermer et revenir'", "'Funga na urudi'", "'Fechar e voltar'"),
+("'Welcome back. Watch the next goal or read our analysis below.'", "'Bon retour. Voyez le but suivant ou lisez notre analyse ci-dessous.'", "'Karibu tena. Tazama bao linalofuata au soma uchambuzi wetu hapa chini.'", "'Bem-vindo de volta. Veja o próximo gol ou leia nossa análise abaixo.'"),
 ("'Key frames: FIFA official broadcast, used for match analysis'", "'Images clés : diffusion officielle de la FIFA, utilisées pour l’analyse du match'", "'Picha muhimu: matangazo rasmi ya FIFA, zimetumika kwa uchambuzi wa mechi'", "'Imagens-chave: transmissão oficial da FIFA, usadas para a análise do jogo'"),
 ("'Full clips on request'", "'Extraits complets sur demande'", "'Video kamili kwa ombi'", "'Clipes completos sob pedido'"),
 ("'Hello Afritech, please send me the full clip for this goal: '", "'Bonjour Afritech, merci de m’envoyer l’extrait complet de ce but : '", "'Habari Afritech, tafadhali nitumieni video kamili ya bao hili: '", "'Olá, Afritech, por favor me enviem o clipe completo deste gol: '"),

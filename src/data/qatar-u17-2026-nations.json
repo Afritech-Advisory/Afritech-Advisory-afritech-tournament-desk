@@ -29,7 +29,12 @@
        "type": "Open play",
        "t": 42,
        "s": 32,
-       "e": 50
+       "e": 50,
+       "stills": [
+        "egy-gre-1-1.jpg",
+        "egy-gre-1-2.jpg",
+        "egy-gre-1-3.jpg"
+       ]
       },
       {
        "min": "62'",
@@ -38,7 +43,12 @@
        "type": "Open play",
        "t": 71,
        "s": 61,
-       "e": 80
+       "e": 80,
+       "stills": [
+        "egy-gre-2-1.jpg",
+        "egy-gre-2-2.jpg",
+        "egy-gre-2-3.jpg"
+       ]
       },
       {
        "min": "71'",
@@ -49,7 +59,12 @@
        "s": 88,
        "e": 108,
        "type": "Long range",
-       "pid": "ziad-saudi"
+       "pid": "ziad-saudi",
+       "stills": [
+        "egy-gre-3-1.jpg",
+        "egy-gre-3-2.jpg",
+        "egy-gre-3-3.jpg"
+       ]
       }
      ],
      "story": "Egypt played from the 23rd minute with ten men and still pulled a goal back: Ziad Saudi's strike from distance, with the keeper at full stretch. Captain Ahmed Safwat started in midfield.",
@@ -106,7 +121,12 @@
        "apid": "ahmed-beshir",
        "t": 18,
        "s": 9,
-       "e": 27
+       "e": 27,
+       "stills": [
+        "egy-qat-1-1.jpg",
+        "egy-qat-1-2.jpg",
+        "egy-qat-1-3.jpg"
+       ]
       },
       {
        "min": "33'",
@@ -118,7 +138,12 @@
        "how": "Assist Ahmed Safwat",
        "t": 71,
        "s": 61,
-       "e": 80
+       "e": 80,
+       "stills": [
+        "egy-qat-2-1.jpg",
+        "egy-qat-2-2.jpg",
+        "egy-qat-2-3.jpg"
+       ]
       }
      ],
      "story": "Captain Ahmed Safwat volleyed Egypt ahead inside two minutes and Khaled Mokhtar made it 2-0 after 33. Hosts Qatar pushed for a way back but could not break Egypt's back line. FIFA named Safwat Player of the Match.",
@@ -190,7 +215,12 @@
        "pid": "hubert-yao",
        "t": 16,
        "s": 9,
-       "e": 24
+       "e": 24,
+       "stills": [
+        "civ-uzb-1-1.jpg",
+        "civ-uzb-1-2.jpg",
+        "civ-uzb-1-3.jpg"
+       ]
       },
       {
        "min": "51'",
@@ -200,7 +230,12 @@
        "pid": "muhammad-khakimov",
        "t": 60,
        "s": 50,
-       "e": 70
+       "e": 70,
+       "stills": [
+        "civ-uzb-2-1.jpg",
+        "civ-uzb-2-2.jpg",
+        "civ-uzb-2-3.jpg"
+       ]
       },
       {
        "min": "89'",
@@ -211,7 +246,12 @@
        "pid": "abass-diarrassouba",
        "t": 88,
        "s": 78,
-       "e": 98
+       "e": 98,
+       "stills": [
+        "civ-uzb-3-1.jpg",
+        "civ-uzb-3-2.jpg",
+        "civ-uzb-3-3.jpg"
+       ]
       }
      ],
      "story": "Captain Hubert Yao put Côte d'Ivoire ahead after seven minutes. Uzbekistan levelled through Muhammad Khakimov six minutes after half-time, and substitute Abass Luc Diarrassouba won it a minute from time. Three points to open Group E.",
@@ -344,7 +384,12 @@
        "apid": "jona-benkotic",
        "t": 22,
        "s": 12,
-       "e": 32
+       "e": 32,
+       "stills": [
+        "sen-cro-1-1.jpg",
+        "sen-cro-1-2.jpg",
+        "sen-cro-1-3.jpg"
+       ]
       },
       {
        "min": "45'",
@@ -356,7 +401,12 @@
        "apid": "e-sadio",
        "t": 64,
        "s": 54,
-       "e": 74
+       "e": 74,
+       "stills": [
+        "sen-cro-2-1.jpg",
+        "sen-cro-2-2.jpg",
+        "sen-cro-2-3.jpg"
+       ]
       }
      ],
      "story": "Croatia scored after eight minutes and Senegal went down to ten men three minutes before half-time, when a player was sent off for a last-man foul. Senegal still equalised before the break through Sega Mbodji and held 1-1 for the whole second half.",
@@ -404,7 +454,12 @@
        "pid": "ibrahima-dione",
        "t": 14,
        "s": 9,
-       "e": 18
+       "e": 18,
+       "stills": [
+        "sen-cub-1-1.jpg",
+        "sen-cub-1-2.jpg",
+        "sen-cub-1-3.jpg"
+       ]
       },
       {
        "min": "14'",
@@ -414,7 +469,12 @@
        "pid": "mouhamed-faye",
        "t": 26,
        "s": 18,
-       "e": 35
+       "e": 35,
+       "stills": [
+        "sen-cub-2-1.jpg",
+        "sen-cub-2-2.jpg",
+        "sen-cub-2-3.jpg"
+       ]
       },
       {
        "min": "21'",
@@ -423,7 +483,12 @@
        "pid": "sidy-barhama-ndiaye",
        "t": 43,
        "s": 35,
-       "e": 46
+       "e": 46,
+       "stills": [
+        "sen-cub-3-1.jpg",
+        "sen-cub-3-2.jpg",
+        "sen-cub-3-3.jpg"
+       ]
       },
       {
        "min": "24'",
@@ -432,7 +497,12 @@
        "pid": "sega-mbodji",
        "t": 54,
        "s": 46,
-       "e": 57
+       "e": 57,
+       "stills": [
+        "sen-cub-4-1.jpg",
+        "sen-cub-4-2.jpg",
+        "sen-cub-4-3.jpg"
+       ]
       },
       {
        "min": "34'",
@@ -442,7 +512,12 @@
        "pid": "ibrahima-dione",
        "t": 64,
        "s": 57,
-       "e": 68
+       "e": 68,
+       "stills": [
+        "sen-cub-5-1.jpg",
+        "sen-cub-5-2.jpg",
+        "sen-cub-5-3.jpg"
+       ]
       },
       {
        "min": "49'",
@@ -452,7 +527,12 @@
        "pid": "ibrahima-konte",
        "t": 74,
        "s": 68,
-       "e": 77
+       "e": 77,
+       "stills": [
+        "sen-cub-6-1.jpg",
+        "sen-cub-6-2.jpg",
+        "sen-cub-6-3.jpg"
+       ]
       },
       {
        "min": "55'",
@@ -462,7 +542,12 @@
        "pid": "sega-mbodji",
        "t": 82,
        "s": 77,
-       "e": 86
+       "e": 86,
+       "stills": [
+        "sen-cub-7-1.jpg",
+        "sen-cub-7-2.jpg",
+        "sen-cub-7-3.jpg"
+       ]
       },
       {
        "min": "65'",
@@ -471,7 +556,12 @@
        "pid": "el-hadji-sow",
        "t": 90,
        "s": 86,
-       "e": 96
+       "e": 96,
+       "stills": [
+        "sen-cub-8-1.jpg",
+        "sen-cub-8-2.jpg",
+        "sen-cub-8-3.jpg"
+       ]
       },
       {
        "min": "72'",
@@ -480,7 +570,12 @@
        "pid": "maurice-biaye",
        "t": 104,
        "s": 96,
-       "e": 112
+       "e": 112,
+       "stills": [
+        "sen-cub-9-1.jpg",
+        "sen-cub-9-2.jpg",
+        "sen-cub-9-3.jpg"
+       ]
       }
      ],
      "story": "Senegal led 5-0 at half-time and won 9-0, the biggest win in their U-17 World Cup history. Seven different players scored, Ibrahima Dione and Sega Mbodji twice each, and Ibrahima Konté was Player of the Match. Senegal go top of Group F on goal difference ahead of Croatia.",
@@ -560,7 +655,12 @@
        "pid": "halidou-maiga",
        "t": 18,
        "s": 9,
-       "e": 28
+       "e": 28,
+       "stills": [
+        "mli-nzl-1-1.jpg",
+        "mli-nzl-1-2.jpg",
+        "mli-nzl-1-3.jpg"
+       ]
       },
       {
        "min": "50'",
@@ -570,7 +670,12 @@
        "pid": "halidou-maiga",
        "t": 72,
        "s": 62,
-       "e": 77
+       "e": 77,
+       "stills": [
+        "mli-nzl-2-1.jpg",
+        "mli-nzl-2-2.jpg",
+        "mli-nzl-2-3.jpg"
+       ]
       },
       {
        "min": "54'",
@@ -580,7 +685,12 @@
        "pid": "makan-sacko",
        "t": 85,
        "s": 77,
-       "e": 94
+       "e": 94,
+       "stills": [
+        "mli-nzl-3-1.jpg",
+        "mli-nzl-3-2.jpg",
+        "mli-nzl-3-3.jpg"
+       ]
       }
      ],
      "story": "Mali led through Halidou Maiga after 11 minutes and settled the match with two goals in four minutes after half-time, Maiga's second and Makan Sacko's. A clean sheet against the Oceania champions to open Group G.",
@@ -627,7 +737,12 @@
        "how": "Finish after a back-heel from Al-Hassan Kamara",
        "t": 22,
        "s": 12,
-       "e": 30
+       "e": 30,
+       "stills": [
+        "mli-bel-1-1.jpg",
+        "mli-bel-1-2.jpg",
+        "mli-bel-1-3.jpg"
+       ]
       },
       {
        "min": "18'",
@@ -638,7 +753,12 @@
        "pid": "djigui-koita",
        "t": 38,
        "s": 30,
-       "e": 47
+       "e": 47,
+       "stills": [
+        "mli-bel-2-1.jpg",
+        "mli-bel-2-2.jpg",
+        "mli-bel-2-3.jpg"
+       ]
       },
       {
        "min": "67'",
@@ -648,7 +768,12 @@
        "pid": "yaya-niang",
        "t": 88,
        "s": 78,
-       "e": 98
+       "e": 98,
+       "stills": [
+        "mli-bel-3-1.jpg",
+        "mli-bel-3-2.jpg",
+        "mli-bel-3-3.jpg"
+       ]
       }
      ],
      "story": "Mali came from behind to beat Belgium and became the first African side through to the round of 32. Belgium scored with their first attack; Djigui Koïta volleyed in from outside the box five minutes later and Yaya Niang won it midway through the second half.",
@@ -729,7 +854,12 @@
        "apid": "mohamed-zinbi",
        "t": 14,
        "s": 9,
-       "e": 22
+       "e": 22,
+       "stills": [
+        "mar-fij-1-1.jpg",
+        "mar-fij-1-2.jpg",
+        "mar-fij-1-3.jpg"
+       ]
       },
       {
        "min": "5'",
@@ -741,7 +871,12 @@
        "apid": "ismail-el-aoud",
        "t": 30,
        "s": 22,
-       "e": 39
+       "e": 39,
+       "stills": [
+        "mar-fij-2-1.jpg",
+        "mar-fij-2-2.jpg",
+        "mar-fij-2-3.jpg"
+       ]
       },
       {
        "min": "42'",
@@ -753,7 +888,12 @@
        "how": "Assist Ibrahim Rabbaj",
        "t": 47,
        "s": 39,
-       "e": 56
+       "e": 56,
+       "stills": [
+        "mar-fij-3-1.jpg",
+        "mar-fij-3-2.jpg",
+        "mar-fij-3-3.jpg"
+       ]
       },
       {
        "min": "49'",
@@ -765,7 +905,12 @@
        "how": "Assist Ismail El Aoud",
        "t": 64,
        "s": 56,
-       "e": 73
+       "e": 73,
+       "stills": [
+        "mar-fij-4-1.jpg",
+        "mar-fij-4-2.jpg",
+        "mar-fij-4-3.jpg"
+       ]
       },
       {
        "min": "55'",
@@ -775,7 +920,12 @@
        "pid": "ziyad-baha",
        "t": 86,
        "s": 76,
-       "e": 93
+       "e": 93,
+       "stills": [
+        "mar-fij-5-1.jpg",
+        "mar-fij-5-2.jpg",
+        "mar-fij-5-3.jpg"
+       ]
       },
       {
        "min": "85'",
@@ -786,7 +936,12 @@
        "pid": "rami-lougmani",
        "t": 101,
        "s": 93,
-       "e": 110
+       "e": 110,
+       "stills": [
+        "mar-fij-6-1.jpg",
+        "mar-fij-6-2.jpg",
+        "mar-fij-6-3.jpg"
+       ]
       }
      ],
      "story": "Morocco were 2-0 up inside five minutes and 3-0 at half-time. Ziyad Baha scored twice early in the second half, one a penalty, and substitute Rami Lougmani added the sixth. Morocco top Group H after the first round.",
@@ -842,7 +997,12 @@
        "pid": "zhao-songyuan",
        "t": 13,
        "s": 9,
-       "e": 22
+       "e": 22,
+       "stills": [
+        "mar-chn-1-1.jpg",
+        "mar-chn-1-2.jpg",
+        "mar-chn-1-3.jpg"
+       ]
       },
       {
        "min": "57'",
@@ -852,7 +1012,12 @@
        "pid": "zhao-songyuan",
        "t": 49,
        "s": 39,
-       "e": 58
+       "e": 58,
+       "stills": [
+        "mar-chn-2-1.jpg",
+        "mar-chn-2-2.jpg",
+        "mar-chn-2-3.jpg"
+       ]
       },
       {
        "min": "64'",
@@ -862,7 +1027,12 @@
        "pid": "ziyad-baha",
        "t": 73,
        "s": 63,
-       "e": 82
+       "e": 82,
+       "stills": [
+        "mar-chn-3-1.jpg",
+        "mar-chn-3-2.jpg",
+        "mar-chn-3-3.jpg"
+       ]
       },
       {
        "min": "90+9'",
@@ -872,7 +1042,12 @@
        "pid": "rami-lougmani",
        "t": 101,
        "s": 91,
-       "e": 110
+       "e": 110,
+       "stills": [
+        "mar-chn-4-1.jpg",
+        "mar-chn-4-2.jpg",
+        "mar-chn-4-3.jpg"
+       ]
       }
      ],
      "story": "China PR scored after two minutes and again before the hour, both through Zhao Songyuan. Ziyad Baha's penalty on 64 minutes started the comeback and Rami Lougmani equalised in the ninth minute of added time. Morocco stay unbeaten with four points before Spain.",
@@ -950,7 +1125,12 @@
        "type": "Open play",
        "t": 16,
        "s": 9,
-       "e": 24
+       "e": 24,
+       "stills": [
+        "tan-crc-1-1.jpg",
+        "tan-crc-1-2.jpg",
+        "tan-crc-1-3.jpg"
+       ]
       },
       {
        "min": "15'",
@@ -959,7 +1139,12 @@
        "type": "Open play",
        "t": 42,
        "s": 32,
-       "e": 52
+       "e": 52,
+       "stills": [
+        "tan-crc-2-1.jpg",
+        "tan-crc-2-2.jpg",
+        "tan-crc-2-3.jpg"
+       ]
       },
       {
        "min": "51'",
@@ -971,7 +1156,12 @@
        "how": "Assist Razaki Mbegelendi",
        "t": 63,
        "s": 53,
-       "e": 72
+       "e": 72,
+       "stills": [
+        "tan-crc-3-1.jpg",
+        "tan-crc-3-2.jpg",
+        "tan-crc-3-3.jpg"
+       ]
       },
       {
        "min": "73'",
@@ -981,7 +1171,12 @@
        "pid": "faraji-kayanda",
        "t": 98,
        "s": 88,
-       "e": 107
+       "e": 107,
+       "stills": [
+        "tan-crc-4-1.jpg",
+        "tan-crc-4-2.jpg",
+        "tan-crc-4-3.jpg"
+       ]
       }
      ],
      "story": "Tanzania's first match at a U-17 World Cup. Costa Rica led 2-0 after 15 minutes, then Faraji Kayanda scored twice after half-time to earn a 2-2 draw and FIFA's Player of the Match award. A first World Cup point for the Serengeti Boys.",
@@ -1061,7 +1256,12 @@
        "how": "Assist Walid Nechab",
        "t": 12,
        "s": 9,
-       "e": 22
+       "e": 22,
+       "stills": [
+        "alg-chi-1-1.jpg",
+        "alg-chi-1-2.jpg",
+        "alg-chi-1-3.jpg"
+       ]
       },
       {
        "min": "15'",
@@ -1073,7 +1273,12 @@
        "how": "Assist Ayoub Dahmas",
        "t": 32,
        "s": 22,
-       "e": 40
+       "e": 40,
+       "stills": [
+        "alg-chi-2-1.jpg",
+        "alg-chi-2-2.jpg",
+        "alg-chi-2-3.jpg"
+       ]
       },
       {
        "min": "21'",
@@ -1082,7 +1287,12 @@
        "type": "Open play",
        "t": 48,
        "s": 40,
-       "e": 54
+       "e": 54,
+       "stills": [
+        "alg-chi-3-1.jpg",
+        "alg-chi-3-2.jpg",
+        "alg-chi-3-3.jpg"
+       ]
       },
       {
        "min": "28'",
@@ -1091,7 +1301,12 @@
        "type": "Open play",
        "t": 62,
        "s": 54,
-       "e": 68
+       "e": 68,
+       "stills": [
+        "alg-chi-4-1.jpg",
+        "alg-chi-4-2.jpg",
+        "alg-chi-4-3.jpg"
+       ]
       },
       {
        "min": "34'",
@@ -1101,7 +1316,12 @@
        "pid": "amaro-perez",
        "t": 76,
        "s": 68,
-       "e": 84
+       "e": 84,
+       "stills": [
+        "alg-chi-5-1.jpg",
+        "alg-chi-5-2.jpg",
+        "alg-chi-5-3.jpg"
+       ]
       },
       {
        "min": "82'",
@@ -1111,7 +1331,12 @@
        "type": "Open play",
        "t": 98,
        "s": 88,
-       "e": 108
+       "e": 108,
+       "stills": [
+        "alg-chi-6-1.jpg",
+        "alg-chi-6-2.jpg",
+        "alg-chi-6-3.jpg"
+       ]
       }
      ],
      "story": "Algeria's first U-17 World Cup match in 17 years. Ilyes Mekkaoui and Yacine Abed put them 2-0 up inside 15 minutes, but Chile scored three times before half-time and added a fourth eight minutes from the end.",
@@ -1189,7 +1414,12 @@
        "pid": "roman-lozada",
        "t": 28,
        "s": 18,
-       "e": 37
+       "e": 37,
+       "stills": [
+        "cmr-ven-1-1.jpg",
+        "cmr-ven-1-2.jpg",
+        "cmr-ven-1-3.jpg"
+       ]
       },
       {
        "min": "59'",
@@ -1198,7 +1428,12 @@
        "type": "Open play",
        "t": 60,
        "s": 50,
-       "e": 70
+       "e": 70,
+       "stills": [
+        "cmr-ven-2-1.jpg",
+        "cmr-ven-2-2.jpg",
+        "cmr-ven-2-3.jpg"
+       ]
       },
       {
        "min": "90+2'",
@@ -1210,7 +1445,12 @@
        "how": "Assist Emmanuel Eone",
        "t": 94,
        "s": 84,
-       "e": 102
+       "e": 102,
+       "stills": [
+        "cmr-ven-3-1.jpg",
+        "cmr-ven-3-2.jpg",
+        "cmr-ven-3-3.jpg"
+       ]
       }
      ],
      "story": "Venezuela led through Román Lozada before half-time and Santiago Sánchez just before the hour. Eric Bolo was sent off for a second yellow card late on, and Aviel Hentcho pulled one back for Cameroon in added time.",
@@ -1382,7 +1622,12 @@
        "type": "Open play",
        "t": 26,
        "s": 16,
-       "e": 35
+       "e": 35,
+       "stills": [
+        "moz-arg-1-1.jpg",
+        "moz-arg-1-2.jpg",
+        "moz-arg-1-3.jpg"
+       ]
       },
       {
        "min": "32'",
@@ -1393,7 +1638,12 @@
        "how": "Assist Juan Cruz Policella",
        "t": 60,
        "s": 50,
-       "e": 68
+       "e": 68,
+       "stills": [
+        "moz-arg-2-1.jpg",
+        "moz-arg-2-2.jpg",
+        "moz-arg-2-3.jpg"
+       ]
       },
       {
        "min": "45+1'",
@@ -1403,7 +1653,12 @@
        "pid": "alirio-cuna",
        "t": 78,
        "s": 68,
-       "e": 87
+       "e": 87,
+       "stills": [
+        "moz-arg-3-1.jpg",
+        "moz-arg-3-2.jpg",
+        "moz-arg-3-3.jpg"
+       ]
       }
      ],
      "story": "Argentina scored after five minutes and again after 32. Alírio Cuna Júnior pulled one back in first-half added time, his third goal of the tournament, but Argentina held on for their first win.",
@@ -1475,7 +1730,12 @@
        "pid": "kim-jiho",
        "t": 20,
        "s": 10,
-       "e": 28
+       "e": 28,
+       "stills": [
+        "uga-kor-1-1.jpg",
+        "uga-kor-1-2.jpg",
+        "uga-kor-1-3.jpg"
+       ]
       },
       {
        "min": "50'",
@@ -1485,7 +1745,12 @@
        "type": "Deflection",
        "t": 82,
        "s": 72,
-       "e": 88
+       "e": 88,
+       "stills": [
+        "uga-kor-2-1.jpg",
+        "uga-kor-2-2.jpg",
+        "uga-kor-2-3.jpg"
+       ]
       },
       {
        "min": "84'",
@@ -1495,7 +1760,12 @@
        "pid": "kim-ji-woo",
        "t": 96,
        "s": 88,
-       "e": 104
+       "e": 104,
+       "stills": [
+        "uga-kor-3-1.jpg",
+        "uga-kor-3-2.jpg",
+        "uga-kor-3-3.jpg"
+       ]
       }
      ],
      "story": "A hard opener against an Asian side that scored early. Uganda were 1-0 down at half-time and created a clear chance of their own before Korea pulled away.",
@@ -1572,7 +1842,12 @@
        "who": "Save by Ecuador's goalkeeper",
        "how": "Uganda's first chance of the match, kept out",
        "s": 19,
-       "e": 29
+       "e": 29,
+       "stills": [
+        "uga-ecu-1-1.jpg",
+        "uga-ecu-1-2.jpg",
+        "uga-ecu-1-3.jpg"
+       ]
       },
       {
        "min": "34'",
@@ -1580,7 +1855,12 @@
        "who": "Save by Ecuador's goalkeeper",
        "how": "Another Uganda attack stopped",
        "s": 30,
-       "e": 40
+       "e": 40,
+       "stills": [
+        "uga-ecu-2-1.jpg",
+        "uga-ecu-2-2.jpg",
+        "uga-ecu-2-3.jpg"
+       ]
       },
       {
        "min": "43'",
@@ -1588,7 +1868,12 @@
        "who": "Two saves in a minute",
        "how": "Uganda's best spell before half-time, both chances kept out by Ecuador's goalkeeper",
        "s": 42,
-       "e": 71
+       "e": 71,
+       "stills": [
+        "uga-ecu-3-1.jpg",
+        "uga-ecu-3-2.jpg",
+        "uga-ecu-3-3.jpg"
+       ]
       },
       {
        "min": "80'",
@@ -1596,7 +1881,12 @@
        "who": "Uganda hold firm at close range",
        "how": "Uganda's goalkeeper and defence block Ecuador's late chance in the six-yard box",
        "s": 85,
-       "e": 101
+       "e": 101,
+       "stills": [
+        "uga-ecu-4-1.jpg",
+        "uga-ecu-4-2.jpg",
+        "uga-ecu-4-3.jpg"
+       ]
       }
      ]
     },

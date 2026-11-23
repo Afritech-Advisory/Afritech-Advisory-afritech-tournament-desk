@@ -69,6 +69,7 @@ var s=document.createElement('script');s.src='https://www.youtube.com/iframe_api
 .afp-kf img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:6px;background:#0B1C33}
 .afp-cover a.afp-wa{display:inline-block;min-height:44px;line-height:44px;padding:0 16px;border-radius:22px;background:#25D366;color:#06210F;font:700 .95rem var(--body,system-ui);text-decoration:none}
 .afp-bar{position:absolute;left:0;right:0;bottom:0;height:4px;z-index:4;background:rgba(255,255,255,.18)}
+.afp-open{aspect-ratio:auto!important;height:auto!important}.afp-open .afp{position:relative;inset:auto}.afp-open .afp-cover{position:relative;inset:auto;min-height:200px;padding:16px 12px}.afp-open .afp-frame{visibility:hidden}
 .afp-bar i{display:block;height:100%;width:0;background:#E8701A}
 </style>
 <script>
@@ -76,28 +77,45 @@ var s=document.createElement('script');s.src='https://www.youtube.com/iframe_api
    and shows Replay / Next. A transparent layer over the video takes every tap (pause, play), so nothing on the
    YouTube player itself can be pressed: no logo, no title, no suggested videos, no way off this page. */
 (function(){
-var T={sound:'Sound on',mute:'Sound off',tap:'Tap to play',paused:'Paused',cont:'Continue',replay:'Replay',next:'Next goal',done:'Clip finished.',err:'This clip cannot be shown here right now.',retry:'Try again',pp:'Pause or play the clip',req:'Full clips on request',ask:'Hello Afritech, please send me the full clip for this goal: ',kf:'Key frames from the official broadcast',kfc:'Key frames: FIFA official broadcast, used for match analysis'};
+var T={sound:'Sound on',mute:'Sound off',tap:'Tap to play',paused:'Paused',cont:'Continue',replay:'Replay',next:'Next goal',done:'Clip finished.',err:'This clip cannot be shown here right now.',retry:'Try again',pp:'Pause or play the clip',req:'Full clips on request',ask:'Hello Afritech, please send me the full clip for this goal: ',fifa:'Watch the goal on FIFA\u2019s video',blk:'FIFA plays its match video on its own site only. Here are the key frames, or watch the goal on FIFA\u2019s video and come straight back.',away:'FIFA\u2019s video is open in a new tab at this goal. It closes by itself when the goal is over and brings you back here.',back:'Back in ',sec:' s',now:'Close it and come back',home:'Welcome back. Watch the next goal or read our analysis below.',kf:'Key frames from the official broadcast',kfc:'Key frames: FIFA official broadcast, used for match analysis'};
 var WA='https://wa.me/254715551506?text=';
 function el(h){var d=document.createElement('div');d.innerHTML=h;return d.firstChild}
 function cover(st,msg,btns){var c=st.cover;c.innerHTML='<p style="margin:0">'+msg+'</p>';var r=el('<div class="row"></div>');
  btns.forEach(function(b){var x=document.createElement('button');x.type='button';x.textContent=b[0];if(b[2])x.className='g';x.addEventListener('click',function(ev){ev.stopPropagation();b[1]()});r.appendChild(x)});
  c.appendChild(r);c.hidden=false;st.shield.hidden=true;if(st.snd)st.snd.hidden=true;if(st.hint)st.hint.hidden=true}
-function uncover(st){st.cover.hidden=true;st.shield.hidden=false}
+function uncover(st){st.cover.hidden=true;st.shield.hidden=false;st.box.classList.remove('afp-open')}
 function stopPoll(st){if(st.t){clearInterval(st.t);st.t=null}}
 function finish(st){stopPoll(st);st.done=true;try{st.p.pauseVideo()}catch(x){}
  var o=st.o,b=[[T.replay,function(){window.afClip(st.box,o)}]];if(o.next)b.push([T.next+' ›',o.next]);
  cover(st,T.done,b);st.bar.style.width='100%';if(o.onEnd)o.onEnd()}
 function poll(st){stopPoll(st);st.t=setInterval(function(){try{var t=st.p.getCurrentTime(),o=st.o,end=o.e||st.p.getDuration()-0.4;
  if(end>o.s)st.bar.style.width=Math.min(100,Math.max(0,(t-o.s)/(end-o.s)*100))+'%';if(end&&t>=end-0.15)finish(st)}catch(x){}},200)}
-function fail(st){stopPoll(st);clearTimeout(st.w);clearTimeout(st.r);var o=st.o,f=o.fb;
- cover(st,T.err,[[T.retry,function(){st.quiet=0;window.afClip(st.box,st.o)}]]);
+function fail(st){stopPoll(st);clearTimeout(st.w);clearTimeout(st.r);var o=st.o,f=o.fb;st.box.classList.add('afp-open');
+ cover(st,o.v&&o.e>o.s?T.blk:T.err,[[T.retry,function(){st.quiet=0;window.afClip(st.box,st.o)}]]);
  if(f){var c=st.cover,h='';
   if(f.st&&f.st.length){h='<div class="afp-kf" role="group" aria-label="'+T.kf+'">'+f.st.slice(0,3).map(function(u){return '<img src="'+u+'" alt="" loading="lazy" decoding="async">'}).join('')+'</div><p class="afp-kfc">'+T.kfc+'</p>'}
   var a=document.createElement('a');a.className='afp-wa';a.target='_blank';a.rel='noopener';a.textContent=T.req;
   a.href=WA+encodeURIComponent(T.ask+f.m+', '+f.g);a.addEventListener('click',function(ev){ev.stopPropagation()});
   if(h)c.insertAdjacentHTML('afterbegin',h);c.appendChild(a)}
+ /* FIFA blocks its video inside other websites (Andrew, 23 Nov 2026, Gatekeeper 1D): open FIFA's own video at the
+    goal in a new tab, close that tab by itself when the clip's end time is reached, and bring the reader back here. */
+ if(o.v&&o.e>o.s){var fb=document.createElement('button');fb.type='button';fb.textContent='\u25B6 '+T.fifa;
+  fb.addEventListener('click',function(ev){ev.stopPropagation();away(st)});
+  var r=st.cover.querySelector('.row');if(r)r.insertBefore(fb,r.firstChild)}
  /* keep the player switched on: try again quietly, so the clip plays by itself as soon as it is allowed */
- st.tries=(st.tries||0)+1;if(st.tries<=6)st.r=setTimeout(function(){if(document.body.contains(st.box)&&!st.cover.hidden){st.quiet=1;start(st)}},45000)}
+ st.tries=(st.tries||0)+1;if(st.tries<=6)st.r=setTimeout(function(){if(document.body.contains(st.box)&&!st.cover.hidden&&!st.aw){st.quiet=1;start(st)}},45000)}
+function away(st){var o=st.o,w=null,left=Math.ceil(o.e-o.s)+3;
+ try{w=window.open('https://www.youtube.com/watch?v='+o.v+'&t='+Math.floor(o.s)+'s','afritech_goal')}catch(x){}
+ if(!w)return;clearTimeout(st.r);
+ var c=st.cover;c.innerHTML='<p style="margin:0">'+T.away+'</p><p class="afp-cd" style="margin:0;font-size:1.4rem"></p>';
+ var r=el('<div class="row"></div>'),b=document.createElement('button');b.type='button';b.textContent=T.now;r.appendChild(b);c.appendChild(r);c.hidden=false;
+ var cd=c.querySelector('.afp-cd');
+ function home(){clearInterval(st.aw);st.aw=null;try{w.close()}catch(x){}try{window.focus()}catch(x){}
+  cover(st,T.home,[[T.replay,function(){window.afClip(st.box,o)}]].concat(o.next?[[T.next+' \u203A',o.next]]:[]));
+  try{st.box.scrollIntoView({block:'center'})}catch(x){}}
+ b.addEventListener('click',function(ev){ev.stopPropagation();home()});
+ cd.textContent=T.back+left+T.sec;
+ st.aw=setInterval(function(){left--;cd.textContent=T.back+Math.max(0,left)+T.sec;if(left<=0||w.closed)home()},1000)}
 function start(st){var o=st.o;st.done=false;st.bar.style.width='0';if(!st.quiet)uncover(st);
  try{if(!st.sound)st.p.mute()}catch(x){}
  st.p.loadVideoById({videoId:o.v,startSeconds:o.s||0});
