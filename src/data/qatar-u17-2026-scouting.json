@@ -457,6 +457,73 @@
    "up": "Another standout display against Korea Republic.",
    "down": "Less influence in the next match.",
    "fed": "WATCHLIST"
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "hubert-yao",
+   "nation": "cote-divoire",
+   "name": "Hubert Yao",
+   "captain": true,
+   "facts": [
+    "Captain of Côte d'Ivoire at this World Cup.",
+    "Scored the opener after seven minutes in the 2-1 win over Uzbekistan."
+   ],
+   "next": "Follow him against Italy on 23 November, the group's benchmark match.",
+   "up": "A goal or assist against Italy.",
+   "down": "No shots against Italy."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "abass-diarrassouba",
+   "nation": "cote-divoire",
+   "name": "Abass Luc Diarrassouba",
+   "facts": [
+    "Came off the bench and scored the 88th-minute winner against Uzbekistan."
+   ],
+   "next": "Watch whether he starts against Italy on 23 November.",
+   "up": "A start, or a second goal from the bench.",
+   "down": "No minutes against Italy."
+  },
+  {
+   "role": "",
+   "club": "Fiorentina",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "federico-croci",
+   "country": "Italy",
+   "code": "ITA",
+   "flag": "it",
+   "name": "Federico Croci",
+   "facts": [
+    "Two goals in the first 15 minutes of Italy's 6-0 win over Jamaica."
+   ],
+   "next": "Follow him against Côte d'Ivoire on 23 November.",
+   "up": "A goal against Côte d'Ivoire.",
+   "down": "No shot on target against Côte d'Ivoire."
+  },
+  {
+   "role": "",
+   "club": "Granada",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "owen-mira",
+   "country": "Spain",
+   "code": "ESP",
+   "flag": "es",
+   "name": "Owen Mira Chukwuemeka",
+   "facts": [
+    "FIFA Player of the Match in Spain's 5-0 win over China PR.",
+    "Two goals in six minutes in the second half."
+   ],
+   "next": "Follow him against Fiji, then Morocco on 26 November.",
+   "up": "A goal against Morocco.",
+   "down": "No shots against Morocco."
   }
  ]
 }
