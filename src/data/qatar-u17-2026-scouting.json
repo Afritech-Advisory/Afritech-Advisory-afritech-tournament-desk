@@ -12,12 +12,13 @@
    "board": true,
    "facts": [
     "Two goals against Fiji in six minutes after the break, one from the penalty spot.",
-    "Playing his second U-17 World Cup in a row, a rare level of tournament experience at this age."
+    "Playing his second U-17 World Cup in a row, a rare level of tournament experience at this age.",
+    "Scored from the penalty spot against China PR to start Morocco's comeback from 0-2: three goals in two matches."
    ],
    "fed": "WATCHLIST",
-   "next": "Follow him against China PR on 23 November and Spain on 26 November.",
+   "next": "Follow him against Spain on 26 November, the match that decides Group H.",
    "up": "A goal or decisive moment against Spain.",
-   "down": "No shot on target against Spain or China PR."
+   "down": "No shot on target against Spain."
   },
   {
    "id": "ahmed-safwat",
@@ -182,9 +183,9 @@
     "Scored after three minutes against Fiji and set up the second two minutes later.",
     "Set up Ziyad Baha's first goal against Fiji, four minutes after the break."
    ],
-   "next": "Follow his involvement against China PR on 23 November.",
+   "next": "Follow him against Spain on 26 November.",
    "up": "A goal or assist against Spain.",
-   "down": "No goal involvement in the next two matches.",
+   "down": "No goal involvement against Spain.",
    "fed": "WATCHLIST"
   },
   {
@@ -198,9 +199,9 @@
     "Scored Morocco's second goal against Fiji in the fifth minute.",
     "Set up Imran Talai's goal for 3-0 against Fiji."
    ],
-   "next": "Follow his minutes against China PR and Spain.",
+   "next": "Follow his minutes against Spain on 26 November.",
    "up": "A second goal in the group.",
-   "down": "Limited minutes in the next two matches.",
+   "down": "Limited minutes against Spain.",
    "fed": "WATCHLIST"
   },
   {
@@ -213,9 +214,9 @@
    "facts": [
     "Scored Morocco's third goal against Fiji, three minutes before half-time."
    ],
-   "next": "Follow his minutes against China PR and Spain.",
+   "next": "Follow his minutes against Spain on 26 November.",
    "up": "A second goal in the group.",
-   "down": "Limited minutes in the next two matches.",
+   "down": "Limited minutes against Spain.",
    "fed": "WATCHLIST"
   },
   {
@@ -226,11 +227,12 @@
    "club": "",
    "shirt": "",
    "facts": [
-    "Came off the bench and scored Morocco's sixth goal against Fiji."
+    "Came off the bench and scored Morocco's sixth goal against Fiji.",
+    "Equalised against China PR in the ninth minute of added time: a goal in each of Morocco's two matches."
    ],
-   "next": "Follow whether he earns a start against China PR.",
-   "up": "A start and another goal.",
-   "down": "No minutes in the next two matches.",
+   "next": "Follow whether he starts against Spain on 26 November.",
+   "up": "A start and a third goal.",
+   "down": "No minutes against Spain.",
    "fed": "WATCHLIST"
   },
   {
@@ -243,9 +245,9 @@
    "facts": [
     "Set up Morocco's opening goal against Fiji after three minutes."
    ],
-   "next": "Follow his final passes against China PR and Spain.",
+   "next": "Follow his final passes against Spain on 26 November.",
    "up": "A second assist in the group.",
-   "down": "No chances created in the next two matches.",
+   "down": "No chances created against Spain.",
    "fed": "WATCHLIST"
   },
   {
@@ -258,9 +260,9 @@
    "facts": [
     "Two goals against New Zealand: the opener after 11 minutes and Mali's second just after half-time."
    ],
-   "next": "Follow him against Belgium on 23 November, the group's benchmark match.",
-   "up": "A goal against Belgium.",
-   "down": "No shots against Belgium's defence.",
+   "next": "Follow him against Vietnam on 26 November.",
+   "up": "A third goal of the tournament.",
+   "down": "No shots against Vietnam.",
    "fed": "WATCHLIST"
   },
   {
@@ -273,9 +275,9 @@
    "facts": [
     "Scored Mali's third goal against New Zealand, four minutes after their second."
    ],
-   "next": "Follow his minutes against Belgium on 23 November.",
+   "next": "Follow his minutes against Vietnam on 26 November.",
    "up": "A second goal in the group.",
-   "down": "Limited minutes in the next two matches.",
+   "down": "Limited minutes against Vietnam.",
    "fed": "WATCHLIST"
   },
   {
@@ -286,11 +288,12 @@
    "club": "",
    "shirt": "",
    "facts": [
-    "Equalised against Croatia just before half-time, with Senegal down to ten men."
+    "Equalised against Croatia just before half-time, with Senegal down to ten men.",
+    "Two more goals against Cuba, on 24 and 55 minutes: three in two matches."
    ],
-   "next": "Follow him against Cuba on 23 November.",
-   "up": "A goal or assist against Cuba or Tajikistan.",
-   "down": "No shots in the next two matches.",
+   "next": "Follow him against Tajikistan on 26 November.",
+   "up": "A goal against Tajikistan, the stronger defence.",
+   "down": "No shots against Tajikistan.",
    "fed": "WATCHLIST"
   },
   {
@@ -303,9 +306,9 @@
    "facts": [
     "Set up Sega Mbodji's equaliser against Croatia."
    ],
-   "next": "Follow his final passes against Cuba on 23 November.",
+   "next": "Follow his final passes against Tajikistan on 26 November.",
    "up": "A second assist in the group.",
-   "down": "No chances created in the next two matches.",
+   "down": "No chances created against Tajikistan.",
    "fed": "WATCHLIST"
   },
   {
@@ -476,9 +479,9 @@
     "Captain of Côte d'Ivoire at this World Cup.",
     "Scored the opener after seven minutes in the 2-1 win over Uzbekistan."
    ],
-   "next": "Follow him against Italy on 23 November, the group's benchmark match.",
-   "up": "A goal or assist against Italy.",
-   "down": "No shots against Italy."
+   "next": "Follow him against Jamaica on 26 November, the match that decides Côte d'Ivoire's place.",
+   "up": "A goal or assist against Jamaica.",
+   "down": "No shots against Jamaica."
   },
   {
    "role": "",
@@ -491,9 +494,9 @@
    "facts": [
     "Came off the bench and scored the 89th-minute winner against Uzbekistan."
    ],
-   "next": "Watch whether he starts against Italy on 23 November.",
+   "next": "Watch whether he starts against Jamaica on 26 November.",
    "up": "A start, or a second goal from the bench.",
-   "down": "No minutes against Italy."
+   "down": "No minutes against Jamaica."
   },
   {
    "role": "",
@@ -1039,6 +1042,158 @@
    "next": "Follow him against Haiti on 25 November.",
    "up": "Another standout display against Haiti.",
    "down": "Less influence against Haiti."
+  },
+  {
+   "id": "ibrahima-dione",
+   "nation": "senegal",
+   "name": "Ibrahima Dione",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "facts": [
+    "Two goals against Cuba: the opener after 7 minutes and Senegal's fifth before half-time."
+   ],
+   "next": "Follow him against Tajikistan on 26 November.",
+   "up": "Another goal against Tajikistan.",
+   "down": "No shots against Tajikistan.",
+   "fed": "WATCHLIST"
+  },
+  {
+   "id": "mouhamed-faye",
+   "nation": "senegal",
+   "name": "Mouhamed Faye",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "facts": [
+    "Scored Senegal's second against Cuba on his first start of the tournament."
+   ],
+   "next": "Watch whether he keeps his place against Tajikistan on 26 November.",
+   "up": "A second start and another goal involvement.",
+   "down": "Back on the bench against Tajikistan.",
+   "fed": "WATCHLIST"
+  },
+  {
+   "id": "sidy-barhama-ndiaye",
+   "nation": "senegal",
+   "name": "Sidy Barhama Ndiaye",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "facts": [
+    "Scored Senegal's third against Cuba after 21 minutes."
+   ],
+   "next": "Follow him against Tajikistan on 26 November.",
+   "up": "A goal or assist against Tajikistan.",
+   "down": "No goal involvement against Tajikistan.",
+   "fed": "WATCHLIST"
+  },
+  {
+   "id": "ibrahima-konte",
+   "nation": "senegal",
+   "name": "Ibrahima Konté",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "facts": [
+    "Player of the Match against Cuba; FIFA's round-up called his goal the pick of the day."
+   ],
+   "next": "Follow him against Tajikistan on 26 November.",
+   "up": "Another decisive performance against Tajikistan.",
+   "down": "Little influence against a deeper defence.",
+   "fed": "WATCHLIST"
+  },
+  {
+   "id": "el-hadji-sow",
+   "nation": "senegal",
+   "name": "El Hadji Sow",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "facts": [
+    "Scored Senegal's eighth against Cuba on 65 minutes."
+   ],
+   "next": "Follow his minutes against Tajikistan on 26 November.",
+   "up": "A second goal in the group.",
+   "down": "Limited minutes against Tajikistan.",
+   "fed": "WATCHLIST"
+  },
+  {
+   "id": "maurice-biaye",
+   "nation": "senegal",
+   "name": "Maurice Biaye",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "facts": [
+    "Scored the ninth against Cuba, completing Senegal's biggest U-17 World Cup win."
+   ],
+   "next": "Follow his minutes against Tajikistan on 26 November.",
+   "up": "A second goal in the group.",
+   "down": "Limited minutes against Tajikistan.",
+   "fed": "WATCHLIST"
+  },
+  {
+   "id": "djigui-koita",
+   "nation": "mali",
+   "name": "Djigui Koïta",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "facts": [
+    "Equalised against Belgium five minutes after Mali went behind, with a volley from outside the box in off the post."
+   ],
+   "next": "Follow him against Vietnam on 26 November.",
+   "up": "Another goal from distance, or a first assist.",
+   "down": "No shots against Vietnam.",
+   "fed": "WATCHLIST"
+  },
+  {
+   "id": "yaya-niang",
+   "nation": "mali",
+   "name": "Yaya Niang",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "facts": [
+    "Scored the winner against Belgium on 67 minutes with an angled shot: the goal that put Mali into the round of 32."
+   ],
+   "next": "Follow him against Vietnam on 26 November.",
+   "up": "A second goal in the group.",
+   "down": "No shots against Vietnam.",
+   "fed": "WATCHLIST"
+  },
+  {
+   "id": "harafat-diabate",
+   "nation": "cote-divoire",
+   "name": "Harafat Diabaté",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "facts": [
+    "Scored Côte d'Ivoire's penalty against Italy in the tenth minute of added time, after an earlier penalty was overturned by VAR."
+   ],
+   "next": "Follow him against Jamaica on 26 November.",
+   "up": "A goal from open play against Jamaica.",
+   "down": "No minutes against Jamaica.",
+   "fed": "WATCHLIST"
+  },
+  {
+   "id": "zhao-songyuan",
+   "country": "China PR",
+   "code": "CHN",
+   "flag": "cn",
+   "name": "Zhao Songyuan",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "facts": [
+    "Two goals against Morocco: a powerful angled strike after two minutes and a second just before the hour."
+   ],
+   "next": "Follow him against Fiji in China PR's last group match.",
+   "up": "A third goal of the group.",
+   "down": "No shots against Fiji.",
+   "fed": "WATCHLIST"
   }
  ]
 }
