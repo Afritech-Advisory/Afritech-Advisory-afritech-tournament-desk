@@ -36,13 +36,9 @@ CSS = """<style id="afs-bar-css">
 WA = "https://wa.me/qr/JU7PO5B5ADCOI1"
 
 def bar(active="", src="site"):
-    if src == "desk":
-        # Desk pages (Andrew, 23 Nov 2026, Gatekeeper A3): nothing sends readers away except WhatsApp.
-        return (f'<!-- afs-bar:start -->{CSS}<nav class="afs-bar" aria-label="Afritech Sports"><div class="afs-in">'
-                f'<span class="afs-brand">Afritech Sports<small>Technology and Innovation Group</small></span>'
-                f'<a class="afs-talk" href="{WA}" target="_blank" rel="noopener">Talk to us on WhatsApp</a>'
-                f'</div></nav><!-- afs-bar:end -->')
-    talk = H + "?src=" + src + "#talk"
+    # Desk pages keep the full bar (Home, Menu, sections, Our desks): these are Afritech Sports' own sites, which stay
+    # live under the contact-routes rule (Andrew, 23 Nov 2026). "Talk to us" on desk pages goes straight to WhatsApp.
+    talk = WA if src == "desk" else H + "?src=" + src + "#talk"
     prim = "".join(f'<a href="{u}"{" class=on aria-current=page" if k == active else ""}>{t}</a>' for k, t, u in LINKS)
     desks = "".join(f'<a href="{u}"{" class=on aria-current=page" if k == active else ""}>{t}</a>' for k, t, u in DESKS)
     js = ("<script>(function(){document.addEventListener('click',function(e){document.querySelectorAll('.afs-bar details[open]')"
