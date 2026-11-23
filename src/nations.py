@@ -113,12 +113,15 @@ def match_report(m, nation):
     o = outcome(m, nation)
     word = {"W": "Win", "L": "Defeat", "D": "Draw"}[o]
     mid = m["id"]
-    clips = [g for g in m.get("goals", []) if g.get("s") is not None]
+    # A goalless match shows its key moments (chances and saves) the same way goals are shown (Andrew, 23 Nov 2026)
+    moments = not m.get("goals") and bool(m.get("moments"))
+    items = m.get("moments", []) if moments else m.get("goals", [])
+    clips = [g for g in items if g.get("s") is not None]
     goals = []
-    for i, g in enumerate(m.get("goals", [])):
+    for i, g in enumerate(items):
         btn = ""
         if g.get("s") is not None:
-            btn = (f' <button class="clipbtn" type="button" data-m="{mid}" data-i="{clips.index(g)}">&#9654; Watch the goal</button>')
+            btn = (f' <button class="clipbtn" type="button" data-m="{mid}" data-i="{clips.index(g)}">&#9654; {"Watch the moment" if moments else "Watch the goal"}</button>')
         how = f'<br>{H.escape(g["how"])}.' if g.get("how") else ""
         typ = f'<span class="gtype">{H.escape(g["type"])}</span>' if g.get("type") else ""
         goals.append(f'<li><span class="m">{g["min"]}</span><span><b>{H.escape(g["who"])}</b> <span class="tm">({H.escape(g["team"])})</span>{typ}{how}{btn}</span></li>')
@@ -126,21 +129,28 @@ def match_report(m, nation):
     an = "".join(f'<div><h4>{H.escape(x["h"])}</h4><p>{H.escape(x["p"])}</p></div>' for x in m.get("analysis", []))
     vid = vid_id(m["video"]) if m.get("video") else ""
     cl = json.dumps([{"s": g["s"], "e": g["e"], "l": f'{g["min"]} {g["who"]}', "st": scouting.stills(g)} for g in clips])
-    lab = f"Play all {len(clips)} goals" if len(clips) > 1 else "Play the goal"
+    if moments:
+        lab = f"Play all {len(clips)} key moments" if len(clips) > 1 else "Play the key moment"
+        how_txt = "each moment plays as its own clip, stops, and moves to the next."
+    else:
+        lab = f"Play all {len(clips)} goals" if len(clips) > 1 else "Play the goal"
+        how_txt = "each goal plays as its own clip, stops, and moves to the next."
     if clips:
-        player = (f'<div class="player" id="pl-{mid}" data-v="{vid}" data-mt="{H.escape(scouting.match_title(m))}" data-clips=\'{H.escape(cl)}\'><div class="ph"><p>{lab}: each goal plays as its own clip, stops, and moves to the next.</p></div></div>'
+        player = (f'<div class="player" id="pl-{mid}" data-v="{vid}" data-mt="{H.escape(scouting.match_title(m))}" data-clips=\'{H.escape(cl)}\'><div class="ph"><p>{lab}: {how_txt}</p></div></div>'
                   f'<button class="playall" type="button" data-m="{mid}">&#9654; {lab}</button><p class="now" id="now-{mid}" aria-live="polite"></p>')
     elif vid:
         player = (f'<div class="player" id="pl-{mid}" data-v="{vid}" data-clips="[]"><div class="ph"><p>Official FIFA highlights. Goal-by-goal clips follow once each goal is checked on video.</p></div></div>'
                   f'<button class="playall" type="button" data-m="{mid}">&#9654; Play the official highlights</button><p class="now" id="now-{mid}" aria-live="polite"></p>')
     else:
         player = ""
+    head = "Key moments" if moments else "The goals"
+    tl = "" if moments else timeline(m, nation)
     return (f'<article class="mr" id="{mid}"><p class="when">{m["date"]} · {m["time"]} Doha · {H.escape(m["venue"])}</p>'
             f'<span class="res {o}">{word}</span>'
             f'<div class="sc"><span class="r">{team(m["home"], nation)}</span><b>{m["score"]}</b><span>{team(m["away"], nation)}</span></div>'
             f'<p>{H.escape(m["story"])}</p>'
             f'{f"<div class=kn>{kn}</div>" if kn else ""}'
-            f'<h3>The goals</h3>{player}{timeline(m, nation)}<ul class="goals">{"".join(goals)}</ul>'
+            f'<h3>{head}</h3>{player}{tl}<ul class="goals">{"".join(goals)}</ul>'
             f'{f"<h3>Our analysis</h3><div class=an>{an}</div>" if an else ""}'
             f'<p class="scout"><b>For clubs</b>{H.escape(m["scout"])}</p>'
             + (f'<p class="fine" style="margin:0">Clips play from FIFA\'s official highlights on YouTube.</p>' if m.get("video") else '<p class="fine" style="margin:0">Goal clips are added once FIFA\'s official highlights are checked on video.</p>') + '</article>')

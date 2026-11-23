@@ -1,6 +1,6 @@
 {
- "updated": "22 November 2026",
- "highlightsNote": "Goal times link to FIFA's official highlights on YouTube.",
+ "updated": "23 November 2026",
+ "highlightsNote": "Every goal plays as its own clip from FIFA's official highlights.",
  "nations": [
   {
    "slug": "egypt",
@@ -26,13 +26,19 @@
        "min": "54'",
        "team": "Greece",
        "who": "Konstantinos Souflatzis",
-       "type": "Open play"
+       "type": "Open play",
+       "t": 42,
+       "s": 32,
+       "e": 50
       },
       {
        "min": "62'",
        "team": "Greece",
        "who": "Konstantinos Karangelis",
-       "type": "Open play"
+       "type": "Open play",
+       "t": 71,
+       "s": 61,
+       "e": 80
       },
       {
        "min": "71'",
@@ -97,7 +103,10 @@
        "how": "Captain's volley",
        "type": "Open play",
        "pid": "ahmed-safwat",
-       "apid": "ahmed-beshir"
+       "apid": "ahmed-beshir",
+       "t": 18,
+       "s": 9,
+       "e": 27
       },
       {
        "min": "33'",
@@ -106,7 +115,10 @@
        "type": "Open play",
        "pid": "khaled-mokhtar",
        "apid": "ahmed-safwat",
-       "how": "Assist Ahmed Safwat"
+       "how": "Assist Ahmed Safwat",
+       "t": 71,
+       "s": 61,
+       "e": 80
       }
      ],
      "story": "Captain Ahmed Safwat volleyed Egypt ahead inside two minutes and Khaled Mokhtar made it 2-0 after 33. Hosts Qatar pushed for a way back but could not break Egypt's back line. FIFA named Safwat Player of the Match.",
@@ -138,7 +150,8 @@
        "p": "Greece beat Panama 2-1 and are through on six points. Egypt are second on three, level with Qatar, before Panama v Egypt on Wednesday 25 November."
       }
      ],
-     "scout": "Follow captain Ahmed Safwat and Khaled Mokhtar against Panama on 25 November: a win would put Egypt in the round of 32."
+     "scout": "Follow captain Ahmed Safwat and Khaled Mokhtar against Panama on 25 November: a win would put Egypt in the round of 32.",
+     "video": "https://www.youtube.com/watch?v=_4dZsVpoKbs"
     },
     {
      "date": "Wednesday 25 November",
@@ -174,14 +187,20 @@
        "who": "Hubert Yao",
        "how": "Captain's opener",
        "type": "Open play",
-       "pid": "hubert-yao"
+       "pid": "hubert-yao",
+       "t": 16,
+       "s": 9,
+       "e": 24
       },
       {
        "min": "51'",
        "team": "Uzbekistan",
        "who": "Muhammad Khakimov",
        "type": "Open play",
-       "pid": "muhammad-khakimov"
+       "pid": "muhammad-khakimov",
+       "t": 60,
+       "s": 50,
+       "e": 70
       },
       {
        "min": "89'",
@@ -189,7 +208,10 @@
        "who": "Abass Luc Diarrassouba",
        "how": "Off the bench",
        "type": "Open play",
-       "pid": "abass-diarrassouba"
+       "pid": "abass-diarrassouba",
+       "t": 88,
+       "s": 78,
+       "e": 98
       }
      ],
      "story": "Captain Hubert Yao put Côte d'Ivoire ahead after seven minutes. Uzbekistan levelled through Muhammad Khakimov six minutes after half-time, and substitute Abass Luc Diarrassouba won it a minute from time. Three points to open Group E.",
@@ -221,14 +243,69 @@
        "p": "Italy also won, 6-0 against Jamaica, so Italy v Côte d'Ivoire on 23 November is likely to decide first place in Group E."
       }
      ],
-     "scout": "Follow captain Hubert Yao and match-winner Abass Luc Diarrassouba against Italy on 23 November, the group's benchmark match."
+     "scout": "Follow captain Hubert Yao and match-winner Abass Luc Diarrassouba against Italy on 23 November, the group's benchmark match.",
+     "video": "https://www.youtube.com/watch?v=PmA4T3ex-IM"
     },
     {
      "date": "Monday 23 November",
      "time": "17:30",
      "home": "Italy",
      "away": "Côte d'Ivoire",
-     "venue": "Aspire Zone, Pitch 3"
+     "venue": "Aspire Zone, Pitch 3",
+     "id": "civ-ita",
+     "score": "2-1",
+     "goals": [
+      {
+       "min": "28'",
+       "team": "Italy",
+       "who": "Francesco Gasparello",
+       "how": "Rebound"
+      },
+      {
+       "min": "70'",
+       "team": "Italy",
+       "who": "Francesco Olivieri",
+       "type": "Free kick"
+      },
+      {
+       "min": "90+10'",
+       "team": "Côte d'Ivoire",
+       "who": "Harafat Diabaté",
+       "type": "Penalty",
+       "pid": "harafat-diabate"
+      }
+     ],
+     "story": "Côte d'Ivoire lost for the first time at the tournament. Italy scored from a first-half rebound by Francesco Gasparello and a second-half free kick by Francesco Olivieri. Harafat Diabaté scored a penalty in the tenth minute of added time, after an earlier penalty for Côte d'Ivoire was overturned by VAR.",
+     "keyNumbers": [
+      [
+       "7-3",
+       "shots on target, Italy v Côte d'Ivoire"
+      ],
+      [
+       "90+10'",
+       "Diabaté's penalty"
+      ],
+      [
+       "3",
+       "points from two matches"
+      ]
+     ],
+     "analysis": [
+      {
+       "h": "Italy's quality on the ball",
+       "p": "Italy had seven shots on target to three and scored from a rebound and a set piece. Côte d'Ivoire stayed in the match but could not turn pressure into a goal until the last minute."
+      },
+      {
+       "h": "Still fighting at the end",
+       "p": "A first penalty was overturned by VAR; Côte d'Ivoire kept going and Harafat Diabaté scored the second one in the 100th minute. The same late spirit won the opener against Uzbekistan."
+      },
+      {
+       "h": "What it means for the group",
+       "p": "Italy are through to the round of 32. Côte d'Ivoire have three points, level with Uzbekistan, before Jamaica on 26 November; a win takes them to six."
+      }
+     ],
+     "scout": "Follow captain Hubert Yao and Harafat Diabaté against Jamaica on 26 November, the match that decides Côte d'Ivoire's place in the round of 32.",
+     "video": "https://www.youtube.com/watch?v=7MFwvcGAzr4"
     },
     {
      "date": "Thursday 26 November",
@@ -264,7 +341,10 @@
        "who": "Luka Bartolović",
        "how": "Assist Jona Benkotić",
        "type": "Open play",
-       "apid": "jona-benkotic"
+       "apid": "jona-benkotic",
+       "t": 22,
+       "s": 12,
+       "e": 32
       },
       {
        "min": "45'",
@@ -273,7 +353,10 @@
        "how": "Assist E. Sadio",
        "type": "Open play",
        "pid": "sega-mbodji",
-       "apid": "e-sadio"
+       "apid": "e-sadio",
+       "t": 64,
+       "s": 54,
+       "e": 74
       }
      ],
      "story": "Croatia scored after eight minutes and Senegal went down to ten men three minutes before half-time, when a player was sent off for a last-man foul. Senegal still equalised before the break through Sega Mbodji and held 1-1 for the whole second half.",
@@ -301,14 +384,144 @@
        "p": "A point against Croatia, the group's main European test, leaves Senegal in control: Cuba and Tajikistan remain, and the eight best third-placed teams also reach the round of 32."
       }
      ],
-     "scout": "Sega Mbodji is the name to follow against Cuba on 23 November: he scored the goal that saved a point with ten men."
+     "scout": "Sega Mbodji is the name to follow against Cuba on 23 November: he scored the goal that saved a point with ten men.",
+     "video": "https://www.youtube.com/watch?v=DtXtQjuiWUs"
     },
     {
      "date": "Monday 23 November",
      "time": "16:30",
      "home": "Senegal",
      "away": "Cuba",
-     "venue": "Aspire Zone, Pitch 5"
+     "venue": "Aspire Zone, Pitch 5",
+     "id": "sen-cub",
+     "score": "9-0",
+     "goals": [
+      {
+       "min": "7'",
+       "team": "Senegal",
+       "who": "Ibrahima Dione",
+       "how": "The opener",
+       "pid": "ibrahima-dione",
+       "t": 14,
+       "s": 9,
+       "e": 18
+      },
+      {
+       "min": "14'",
+       "team": "Senegal",
+       "who": "Mouhamed Faye",
+       "how": "On his first start of the tournament",
+       "pid": "mouhamed-faye",
+       "t": 26,
+       "s": 18,
+       "e": 35
+      },
+      {
+       "min": "21'",
+       "team": "Senegal",
+       "who": "Sidy Barhama Ndiaye",
+       "pid": "sidy-barhama-ndiaye",
+       "t": 43,
+       "s": 35,
+       "e": 46
+      },
+      {
+       "min": "24'",
+       "team": "Senegal",
+       "who": "Sega Mbodji",
+       "pid": "sega-mbodji",
+       "t": 54,
+       "s": 46,
+       "e": 57
+      },
+      {
+       "min": "34'",
+       "team": "Senegal",
+       "who": "Ibrahima Dione",
+       "how": "His second, for 5-0 before half-time",
+       "pid": "ibrahima-dione",
+       "t": 64,
+       "s": 57,
+       "e": 68
+      },
+      {
+       "min": "49'",
+       "team": "Senegal",
+       "who": "Ibrahima Konté",
+       "how": "Player of the Match; FIFA's pick of the day's goals",
+       "pid": "ibrahima-konte",
+       "t": 74,
+       "s": 68,
+       "e": 77
+      },
+      {
+       "min": "55'",
+       "team": "Senegal",
+       "who": "Sega Mbodji",
+       "how": "His second",
+       "pid": "sega-mbodji",
+       "t": 82,
+       "s": 77,
+       "e": 86
+      },
+      {
+       "min": "65'",
+       "team": "Senegal",
+       "who": "El Hadji Sow",
+       "pid": "el-hadji-sow",
+       "t": 90,
+       "s": 86,
+       "e": 96
+      },
+      {
+       "min": "72'",
+       "team": "Senegal",
+       "who": "Maurice Biaye",
+       "pid": "maurice-biaye",
+       "t": 104,
+       "s": 96,
+       "e": 112
+      }
+     ],
+     "story": "Senegal led 5-0 at half-time and won 9-0, the biggest win in their U-17 World Cup history. Seven different players scored, Ibrahima Dione and Sega Mbodji twice each, and Ibrahima Konté was Player of the Match. Senegal go top of Group F on goal difference ahead of Croatia.",
+     "keyNumbers": [
+      [
+       "9-0",
+       "Senegal's biggest U-17 World Cup win"
+      ],
+      [
+       "5-0",
+       "at half-time"
+      ],
+      [
+       "7",
+       "different scorers"
+      ],
+      [
+       "27-7",
+       "attempts at goal, 13 of Senegal's on target"
+      ]
+     ],
+     "analysis": [
+      {
+       "h": "Settled inside the first half hour",
+       "p": "Goals at 7, 14, 21 and 24 minutes put the match away early, and Dione's second made it 5-0 at the break. Senegal kept pressing after half-time and scored four more."
+      },
+      {
+       "h": "Goals from seven players",
+       "p": "Dione and Mbodji scored twice each, Mouhamed Faye scored on his first start and Ibrahima Konté added FIFA's pick of the day's goals. Clubs get a wide pool to follow, not one striker."
+      },
+      {
+       "h": "Read it against the opponent",
+       "p": "Cuba have lost both matches and are out. The Tajikistan match on 26 November is the truer test of this attack against an organised defence."
+      },
+      {
+       "h": "What it means for the group",
+       "p": "Senegal and Croatia both have four points; Senegal lead on goal difference, +9 to +4. With the group likely to be decided on goal difference, today's margin could be worth first place."
+      }
+     ],
+     "scout": "Follow Ibrahima Konté, Player of the Match, and two-goal Ibrahima Dione against Tajikistan on 26 November, the match that settles Group F.",
+     "video": "https://www.youtube.com/watch?v=iTGlNKLLo_8"
     },
     {
      "date": "Thursday 26 November",
@@ -344,21 +557,30 @@
        "who": "Halidou Maiga",
        "how": "Swept in from about ten yards after New Zealand failed to clear",
        "type": "Inside the box",
-       "pid": "halidou-maiga"
+       "pid": "halidou-maiga",
+       "t": 18,
+       "s": 9,
+       "e": 28
       },
       {
        "min": "50'",
        "team": "Mali",
        "who": "Halidou Maiga",
        "type": "Open play",
-       "pid": "halidou-maiga"
+       "pid": "halidou-maiga",
+       "t": 72,
+       "s": 62,
+       "e": 77
       },
       {
        "min": "54'",
        "team": "Mali",
        "who": "Makan Sacko",
        "type": "Open play",
-       "pid": "makan-sacko"
+       "pid": "makan-sacko",
+       "t": 85,
+       "s": 77,
+       "e": 94
       }
      ],
      "story": "Mali led through Halidou Maiga after 11 minutes and settled the match with two goals in four minutes after half-time, Maiga's second and Makan Sacko's. A clean sheet against the Oceania champions to open Group G.",
@@ -386,14 +608,88 @@
        "p": "Three points and +3 put Mali top of Group G before the meeting with Belgium on 23 November, the match most European scouts will attend."
       }
      ],
-     "scout": "Halidou Maiga, with two goals, is the player to follow against Belgium on 23 November."
+     "scout": "Halidou Maiga, with two goals, is the player to follow against Belgium on 23 November.",
+     "video": "https://www.youtube.com/watch?v=G0gnn7twqNk"
     },
     {
      "date": "Monday 23 November",
      "time": "18:30",
      "home": "Mali",
      "away": "Belgium",
-     "venue": "Aspire Zone, Pitch 7"
+     "venue": "Aspire Zone, Pitch 7",
+     "id": "mli-bel",
+     "score": "2-1",
+     "goals": [
+      {
+       "min": "13'",
+       "team": "Belgium",
+       "who": "Niels Filippo",
+       "how": "Finish after a back-heel from Al-Hassan Kamara",
+       "t": 22,
+       "s": 12,
+       "e": 30
+      },
+      {
+       "min": "18'",
+       "team": "Mali",
+       "who": "Djigui Koïta",
+       "how": "Volley from outside the box, in off the post",
+       "type": "Long range",
+       "pid": "djigui-koita",
+       "t": 38,
+       "s": 30,
+       "e": 47
+      },
+      {
+       "min": "67'",
+       "team": "Mali",
+       "who": "Yaya Niang",
+       "how": "Angled shot across the goalkeeper",
+       "pid": "yaya-niang",
+       "t": 88,
+       "s": 78,
+       "e": 98
+      }
+     ],
+     "story": "Mali came from behind to beat Belgium and became the first African side through to the round of 32. Belgium scored with their first attack; Djigui Koïta volleyed in from outside the box five minutes later and Yaya Niang won it midway through the second half.",
+     "keyNumbers": [
+      [
+       "19-3",
+       "shots, Mali v Belgium"
+      ],
+      [
+       "60%",
+       "Mali possession"
+      ],
+      [
+       "5",
+       "minutes from 0-1 to 1-1"
+      ],
+      [
+       "6",
+       "points from two matches"
+      ]
+     ],
+     "analysis": [
+      {
+       "h": "Mali ran the match",
+       "p": "Mali had 60% of the ball and 19 shots to Belgium's 3. Belgium's goal came from their first real attack, a back-heel from Al-Hassan Kamara finished by Niels Filippo."
+      },
+      {
+       "h": "An answer inside five minutes",
+       "p": "Koïta's volley from outside the box, in off the post, came five minutes after the opener. Going behind against a European side did not change how Mali played."
+      },
+      {
+       "h": "The work still to do",
+       "p": "Only two of the 19 shots were on target. Finishing is what separates this side from a bigger result in the knockout rounds."
+      },
+      {
+       "h": "What it means for the group",
+       "p": "Two wins from two put Mali top of Group G and into the round of 32 with a match to spare. Vietnam on 26 November decides the final placing."
+      }
+     ],
+     "scout": "Follow Djigui Koïta and Yaya Niang against Vietnam on 26 November; with Halidou Maiga's two goals against New Zealand, Mali's front line is one clubs should track as a group.",
+     "video": "https://www.youtube.com/watch?v=fqvGB7V-7zE"
     },
     {
      "date": "Thursday 26 November",
@@ -430,7 +726,10 @@
        "how": "Assist Mohamed Zinbi",
        "type": "Open play",
        "pid": "ismail-el-aoud",
-       "apid": "mohamed-zinbi"
+       "apid": "mohamed-zinbi",
+       "t": 14,
+       "s": 9,
+       "e": 22
       },
       {
        "min": "5'",
@@ -439,7 +738,10 @@
        "how": "Assist Ismail El Aoud",
        "type": "Open play",
        "pid": "ibrahim-rabbaj",
-       "apid": "ismail-el-aoud"
+       "apid": "ismail-el-aoud",
+       "t": 30,
+       "s": 22,
+       "e": 39
       },
       {
        "min": "42'",
@@ -448,7 +750,10 @@
        "type": "Open play",
        "pid": "imran-talai",
        "apid": "ibrahim-rabbaj",
-       "how": "Assist Ibrahim Rabbaj"
+       "how": "Assist Ibrahim Rabbaj",
+       "t": 47,
+       "s": 39,
+       "e": 56
       },
       {
        "min": "49'",
@@ -457,14 +762,20 @@
        "type": "Open play",
        "pid": "ziyad-baha",
        "apid": "ismail-el-aoud",
-       "how": "Assist Ismail El Aoud"
+       "how": "Assist Ismail El Aoud",
+       "t": 64,
+       "s": 56,
+       "e": 73
       },
       {
        "min": "55'",
        "team": "Morocco",
        "who": "Ziyad Baha",
        "type": "Penalty",
-       "pid": "ziyad-baha"
+       "pid": "ziyad-baha",
+       "t": 86,
+       "s": 76,
+       "e": 93
       },
       {
        "min": "85'",
@@ -472,7 +783,10 @@
        "who": "Rami Lougmani",
        "how": "Off the bench",
        "type": "Open play",
-       "pid": "rami-lougmani"
+       "pid": "rami-lougmani",
+       "t": 101,
+       "s": 93,
+       "e": 110
       }
      ],
      "story": "Morocco were 2-0 up inside five minutes and 3-0 at half-time. Ziyad Baha scored twice early in the second half, one a penalty, and substitute Rami Lougmani added the sixth. Morocco top Group H after the first round.",
@@ -508,14 +822,98 @@
        "p": "Morocco lead Group H on goal difference before China PR on 23 November and Spain on 26 November, the match that will likely decide first place."
       }
      ],
-     "scout": "Follow Ziyad Baha and Ismail El Aoud against China PR on 23 November, then the headline meeting with Spain."
+     "scout": "Follow Ziyad Baha and Ismail El Aoud against China PR on 23 November, then the headline meeting with Spain.",
+     "video": "https://www.youtube.com/watch?v=1qlG_DHLB2U"
     },
     {
      "date": "Monday 23 November",
      "time": "18:00",
      "home": "Morocco",
      "away": "China PR",
-     "venue": "Aspire Zone, Pitch 2"
+     "venue": "Aspire Zone, Pitch 2",
+     "id": "mar-chn",
+     "score": "2-2",
+     "goals": [
+      {
+       "min": "2'",
+       "team": "China PR",
+       "who": "Zhao Songyuan",
+       "how": "Powerful angled strike",
+       "pid": "zhao-songyuan",
+       "t": 13,
+       "s": 9,
+       "e": 22
+      },
+      {
+       "min": "57'",
+       "team": "China PR",
+       "who": "Zhao Songyuan",
+       "how": "His second",
+       "pid": "zhao-songyuan",
+       "t": 49,
+       "s": 39,
+       "e": 58
+      },
+      {
+       "min": "64'",
+       "team": "Morocco",
+       "who": "Ziyad Baha",
+       "type": "Penalty",
+       "pid": "ziyad-baha",
+       "t": 73,
+       "s": 63,
+       "e": 82
+      },
+      {
+       "min": "90+9'",
+       "team": "Morocco",
+       "who": "Rami Lougmani",
+       "how": "The equaliser in the ninth minute of added time",
+       "pid": "rami-lougmani",
+       "t": 101,
+       "s": 91,
+       "e": 110
+      }
+     ],
+     "story": "China PR scored after two minutes and again before the hour, both through Zhao Songyuan. Ziyad Baha's penalty on 64 minutes started the comeback and Rami Lougmani equalised in the ninth minute of added time. Morocco stay unbeaten with four points before Spain.",
+     "keyNumbers": [
+      [
+       "0-2",
+       "down after 57 minutes"
+      ],
+      [
+       "90+9'",
+       "the equaliser"
+      ],
+      [
+       "3",
+       "goals in two matches for Ziyad Baha"
+      ],
+      [
+       "4",
+       "points from two matches"
+      ]
+     ],
+     "analysis": [
+      {
+       "h": "A slow start punished",
+       "p": "China PR scored inside two minutes with a powerful angled strike and defended in a compact block. Morocco had the ball but few clear openings before half-time."
+      },
+      {
+       "h": "Baha takes responsibility again",
+       "p": "Ziyad Baha scored from the spot on 64 minutes, his third goal in two matches and his second penalty. Clubs watching for a reliable finisher under pressure have their answer."
+      },
+      {
+       "h": "Lougmani, twice from nowhere",
+       "p": "Rami Lougmani scored late against Fiji and now in the 99th minute against China PR. Two goals in two matches from a player who keeps arriving at the right moment."
+      },
+      {
+       "h": "What it means for the group",
+       "p": "Spain beat Fiji 15-0 and have six points. Morocco have four and must beat Spain on 26 November to win Group H; a draw still leaves them well placed for the round of 32."
+      }
+     ],
+     "scout": "Follow Ziyad Baha and Rami Lougmani against Spain on 26 November, the group's headline match and the best measure yet of Morocco's attack.",
+     "video": "https://www.youtube.com/watch?v=5pduZHZjejI"
     },
     {
      "date": "Thursday 26 November",
@@ -549,13 +947,19 @@
        "min": "8'",
        "team": "Costa Rica",
        "who": "Urbina",
-       "type": "Open play"
+       "type": "Open play",
+       "t": 16,
+       "s": 9,
+       "e": 24
       },
       {
        "min": "15'",
        "team": "Costa Rica",
        "who": "Pilarte",
-       "type": "Open play"
+       "type": "Open play",
+       "t": 42,
+       "s": 32,
+       "e": 52
       },
       {
        "min": "51'",
@@ -564,14 +968,20 @@
        "type": "Open play",
        "pid": "faraji-kayanda",
        "apid": "razaki-mbegelendi",
-       "how": "Assist Razaki Mbegelendi"
+       "how": "Assist Razaki Mbegelendi",
+       "t": 63,
+       "s": 53,
+       "e": 72
       },
       {
        "min": "73'",
        "team": "Tanzania",
        "who": "Faraji Kayanda",
        "type": "Open play",
-       "pid": "faraji-kayanda"
+       "pid": "faraji-kayanda",
+       "t": 98,
+       "s": 88,
+       "e": 107
       }
      ],
      "story": "Tanzania's first match at a U-17 World Cup. Costa Rica led 2-0 after 15 minutes, then Faraji Kayanda scored twice after half-time to earn a 2-2 draw and FIFA's Player of the Match award. A first World Cup point for the Serengeti Boys.",
@@ -603,7 +1013,8 @@
        "p": "Brazil beat Republic of Ireland 2-1, so Brazil lead Group I and Tanzania share second place with Costa Rica. Brazil v Tanzania is on Tuesday 24 November."
       }
      ],
-     "scout": "Follow Faraji Kayanda against Brazil on 24 November: two goals in his first World Cup match, against a side that led 2-0."
+     "scout": "Follow Faraji Kayanda against Brazil on 24 November: two goals in his first World Cup match, against a side that led 2-0.",
+     "video": "https://www.youtube.com/watch?v=hm0molZPbFQ"
     },
     {
      "date": "Tuesday 24 November",
@@ -647,7 +1058,10 @@
        "type": "Open play",
        "pid": "ilyes-mekkaoui",
        "apid": "walid-nechab",
-       "how": "Assist Walid Nechab"
+       "how": "Assist Walid Nechab",
+       "t": 12,
+       "s": 9,
+       "e": 22
       },
       {
        "min": "15'",
@@ -656,33 +1070,48 @@
        "type": "Open play",
        "pid": "yacine-abed",
        "apid": "ayoub-dahmas",
-       "how": "Assist Ayoub Dahmas"
+       "how": "Assist Ayoub Dahmas",
+       "t": 32,
+       "s": 22,
+       "e": 40
       },
       {
        "min": "21'",
        "team": "Chile",
        "who": "Rodrigo Catalán",
-       "type": "Open play"
+       "type": "Open play",
+       "t": 48,
+       "s": 40,
+       "e": 54
       },
       {
        "min": "28'",
        "team": "Chile",
        "who": "Lucas López",
-       "type": "Open play"
+       "type": "Open play",
+       "t": 62,
+       "s": 54,
+       "e": 68
       },
       {
        "min": "34'",
        "team": "Chile",
        "who": "Amaro Pérez",
        "type": "Open play",
-       "pid": "amaro-perez"
+       "pid": "amaro-perez",
+       "t": 76,
+       "s": 68,
+       "e": 84
       },
       {
        "min": "82'",
        "team": "Chile",
        "who": "Jonathan Guerrero",
        "how": "Confirmed after a VAR review",
-       "type": "Open play"
+       "type": "Open play",
+       "t": 98,
+       "s": 88,
+       "e": 108
       }
      ],
      "story": "Algeria's first U-17 World Cup match in 17 years. Ilyes Mekkaoui and Yacine Abed put them 2-0 up inside 15 minutes, but Chile scored three times before half-time and added a fourth eight minutes from the end.",
@@ -714,7 +1143,8 @@
        "p": "Dominican Republic and Montenegro drew 1-1, so Chile lead Group J. Algeria play Montenegro on 24 November, and a win would put them back in the race for the round of 32."
       }
      ],
-     "scout": "Mekkaoui and Abed both scored against Chile: follow them against Montenegro on 24 November."
+     "scout": "Mekkaoui and Abed both scored against Chile: follow them against Montenegro on 24 November.",
+     "video": "https://www.youtube.com/watch?v=WT7KY2ko_ig"
     },
     {
      "date": "Tuesday 24 November",
@@ -756,13 +1186,19 @@
        "team": "Venezuela",
        "who": "Román Lozada",
        "type": "Open play",
-       "pid": "roman-lozada"
+       "pid": "roman-lozada",
+       "t": 28,
+       "s": 18,
+       "e": 37
       },
       {
        "min": "59'",
        "team": "Venezuela",
        "who": "Santiago Sánchez",
-       "type": "Open play"
+       "type": "Open play",
+       "t": 60,
+       "s": 50,
+       "e": 70
       },
       {
        "min": "90+2'",
@@ -771,7 +1207,10 @@
        "type": "Open play",
        "pid": "aviel-hentcho",
        "apid": "emmanuel-eone",
-       "how": "Assist Emmanuel Eone"
+       "how": "Assist Emmanuel Eone",
+       "t": 94,
+       "s": 84,
+       "e": 102
       }
      ],
      "story": "Venezuela led through Román Lozada before half-time and Santiago Sánchez just before the hour. Eric Bolo was sent off for a second yellow card late on, and Aviel Hentcho pulled one back for Cameroon in added time.",
@@ -803,7 +1242,8 @@
        "p": "Mexico beat Romania 1-0, so Venezuela and Mexico lead Group K. Cameroon play Mexico on 24 November and need points to stay in the race."
       }
      ],
-     "scout": "Aviel Hentcho scored with Cameroon down to ten men: follow him against Mexico on 24 November."
+     "scout": "Aviel Hentcho scored with Cameroon down to ten men: follow him against Mexico on 24 November.",
+     "video": "https://www.youtube.com/watch?v=oM7dheOycno"
     },
     {
      "date": "Tuesday 24 November",
@@ -939,7 +1379,10 @@
        "min": "5'",
        "team": "Argentina",
        "who": "Machuca",
-       "type": "Open play"
+       "type": "Open play",
+       "t": 26,
+       "s": 16,
+       "e": 35
       },
       {
        "min": "32'",
@@ -947,14 +1390,20 @@
        "who": "Escobar",
        "type": "Open play",
        "apid": "juan-cruz-policella",
-       "how": "Assist Juan Cruz Policella"
+       "how": "Assist Juan Cruz Policella",
+       "t": 60,
+       "s": 50,
+       "e": 68
       },
       {
        "min": "45+1'",
        "team": "Mozambique",
        "who": "Alírio Cuna Júnior",
        "type": "Open play",
-       "pid": "alirio-cuna"
+       "pid": "alirio-cuna",
+       "t": 78,
+       "s": 68,
+       "e": 87
       }
      ],
      "story": "Argentina scored after five minutes and again after 32. Alírio Cuna Júnior pulled one back in first-half added time, his third goal of the tournament, but Argentina held on for their first win.",
@@ -986,7 +1435,8 @@
        "p": "Denmark and Australia drew 0-0. Australia lead Group C on four points; Mozambique are second on three with a +3 goal difference, ahead of Argentina, before meeting Australia on Wednesday 25 November."
       }
      ],
-     "scout": "Alírio Cuna Júnior has three goals in two matches: follow him and captain Diego Elias Pelembe against Australia on 25 November."
+     "scout": "Alírio Cuna Júnior has three goals in two matches: follow him and captain Diego Elias Pelembe against Australia on 25 November.",
+     "video": "https://www.youtube.com/watch?v=suCdUiuhBLU"
     },
     {
      "date": "Wednesday 25 November",
@@ -1022,21 +1472,30 @@
        "team": "Korea Republic",
        "who": "Kim Jiho",
        "type": "Open play",
-       "pid": "kim-jiho"
+       "pid": "kim-jiho",
+       "t": 20,
+       "s": 10,
+       "e": 28
       },
       {
        "min": "50'",
        "team": "Korea Republic",
        "who": "Nam Ian",
        "how": "Shot deflected in",
-       "type": "Deflection"
+       "type": "Deflection",
+       "t": 82,
+       "s": 72,
+       "e": 88
       },
       {
        "min": "84'",
        "team": "Korea Republic",
        "who": "Kim Ji-woo",
        "type": "Open play",
-       "pid": "kim-ji-woo"
+       "pid": "kim-ji-woo",
+       "t": 96,
+       "s": 88,
+       "e": 104
       }
      ],
      "story": "A hard opener against an Asian side that scored early. Uganda were 1-0 down at half-time and created a clear chance of their own before Korea pulled away.",
@@ -1075,7 +1534,7 @@
      "id": "uga-ecu",
      "score": "0-0",
      "goals": [],
-     "story": "Uganda held Ecuador, winners of their opening match, to a goalless draw: Uganda's first point at a U-17 World Cup. Their goalkeeper made several saves to keep the clean sheet.",
+     "story": "Uganda held Ecuador, winners of their opening match, to a goalless draw: Uganda's first point at a U-17 World Cup. Uganda's defence held out at the end, and their attacks kept Ecuador's goalkeeper busy.",
      "keyNumbers": [
       [
        "0",
@@ -1096,15 +1555,50 @@
        "p": "After the 3-0 defeat by Korea Republic, Uganda kept Ecuador out for 90 minutes; their goalkeeper made several saves."
       },
       {
-       "h": "Still looking for a first goal",
-       "p": "Uganda have not yet scored at the tournament. Chances are the area to watch in the last group match."
+       "h": "Chances, not yet goals",
+       "p": "Uganda made Ecuador's goalkeeper work: he saved again and again in the first half, twice in a minute just before the break. The chances are there; the first goal is the next step against New Caledonia."
       },
       {
        "h": "What it means for the group",
        "p": "Korea Republic beat New Caledonia 6-0 and are through. Uganda are third with one point before meeting New Caledonia on 25 November; a win would take them to four points and keep the round of 32 in reach."
       }
      ],
-     "scout": "Uganda's defence held Ecuador: follow the back line and the first goal against New Caledonia on 25 November."
+     "scout": "Uganda's defence held Ecuador: follow the back line and the first goal against New Caledonia on 25 November.",
+     "video": "https://www.youtube.com/watch?v=sOp97C7rprs",
+     "moments": [
+      {
+       "min": "22'",
+       "team": "Ecuador",
+       "who": "Save by Ecuador's goalkeeper",
+       "how": "Uganda's first chance of the match, kept out",
+       "s": 19,
+       "e": 29
+      },
+      {
+       "min": "34'",
+       "team": "Ecuador",
+       "who": "Save by Ecuador's goalkeeper",
+       "how": "Another Uganda attack stopped",
+       "s": 30,
+       "e": 40
+      },
+      {
+       "min": "43'",
+       "team": "Ecuador",
+       "who": "Two saves in a minute",
+       "how": "Uganda's best spell before half-time, both chances kept out by Ecuador's goalkeeper",
+       "s": 42,
+       "e": 71
+      },
+      {
+       "min": "80'",
+       "team": "Uganda",
+       "who": "Uganda hold firm at close range",
+       "how": "Uganda's goalkeeper and defence block Ecuador's late chance in the six-yard box",
+       "s": 85,
+       "e": 101
+      }
+     ]
     },
     {
      "date": "Wednesday 25 November",
