@@ -302,6 +302,118 @@
      "who": "Guillermo Trujillano"
     }
    ]
+  },
+  {
+   "id": "bra-irl",
+   "date": "21 Nov",
+   "group": "I",
+   "home": "Brazil",
+   "away": "Republic of Ireland",
+   "score": "2-1",
+   "goals": [
+    {
+     "min": "30'",
+     "team": "Brazil",
+     "who": "Rodrigo Jr."
+    },
+    {
+     "min": "44'",
+     "team": "Republic of Ireland",
+     "who": "Ryan Sheridan"
+    },
+    {
+     "min": "71'",
+     "team": "Brazil",
+     "who": "Eduardo Conceição",
+     "pid": "eduardo-conceicao"
+    }
+   ]
+  },
+  {
+   "id": "dom-mne",
+   "date": "21 Nov",
+   "group": "J",
+   "home": "Dominican Republic",
+   "away": "Montenegro",
+   "score": "1-1",
+   "goals": [
+    {
+     "min": "12'",
+     "team": "Montenegro",
+     "who": "Djokaj"
+    },
+    {
+     "min": "24'",
+     "team": "Dominican Republic",
+     "who": "Kamil Castillo"
+    }
+   ]
+  },
+  {
+   "id": "mex-rou",
+   "date": "21 Nov",
+   "group": "K",
+   "home": "Mexico",
+   "away": "Romania",
+   "score": "1-0",
+   "goals": [
+    {
+     "min": "55'",
+     "team": "Mexico",
+     "who": "Adán Sánchez"
+    }
+   ]
+  },
+  {
+   "id": "jpn-col",
+   "date": "21 Nov",
+   "group": "L",
+   "home": "Japan",
+   "away": "Colombia",
+   "score": "1-2",
+   "goals": [
+    {
+     "min": "5'",
+     "team": "Colombia",
+     "who": "Miguel Agámez"
+    },
+    {
+     "min": "38'",
+     "team": "Japan",
+     "who": "Kakeru Saito"
+    },
+    {
+     "min": "90+3'",
+     "team": "Colombia",
+     "who": "Samuel Martínez",
+     "type": "Penalty",
+     "pid": "samuel-martinez"
+    }
+   ]
+  },
+  {
+   "id": "srb-hon",
+   "date": "21 Nov",
+   "group": "L",
+   "home": "Serbia",
+   "away": "Honduras",
+   "score": "2-0",
+   "goals": [
+    {
+     "min": "50'",
+     "team": "Serbia",
+     "who": "Tadija Samardžić",
+     "how": "Off the bench",
+     "pid": "tadija-samardzic"
+    },
+    {
+     "min": "71'",
+     "team": "Serbia",
+     "who": "Tadija Samardžić",
+     "how": "Header; assist Matej Strika",
+     "pid": "tadija-samardzic"
+    }
+   ]
   }
  ]
 }

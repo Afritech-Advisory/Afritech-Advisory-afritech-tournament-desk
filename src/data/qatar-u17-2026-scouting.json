@@ -1,5 +1,5 @@
 {
- "updated": "20 November 2026",
+ "updated": "21 November 2026",
  "_note": "Public scout cards (Stage 1, public-domain evidence). Every player is under 18: club signal capped at MONITOR, agent at DEVELOP FIRST, no valuation. Numeric grades are published only after Andrew approves them in the private tracker.",
  "players": [
   {
@@ -147,9 +147,9 @@
     "Captained Cameroon to the U-17 AFCON quarter-finals; CAF called him the side's midfield engine."
    ],
    "fed": "WATCHLIST",
-   "next": "Follow every Group K match, including Mexico on 24 November.",
-   "up": "Control of midfield in the opener against Venezuela.",
-   "down": "Cameroon outnumbered in midfield against Mexico."
+   "next": "Follow him against Mexico on Tuesday 24 November, 16:30 Doha time.",
+   "up": "Control of midfield against Mexico.",
+   "down": "Cameroon lose the midfield battle against Mexico."
   },
   {
    "id": "dismas-athanasi",
@@ -165,7 +165,7 @@
     "Top scorer at the U-17 AFCON with three goals as Tanzania reached the final."
    ],
    "fed": "WATCHLIST",
-   "next": "Watch his first World Cup minutes against Costa Rica on 21 November. At 14 his route runs through his family and federation for years yet.",
+   "next": "Follow Tanzania against Brazil on Tuesday 24 November, 18:00 Doha time. At 14 his route runs through his family and federation for years yet.",
    "up": "A goal at this World Cup.",
    "down": "Few minutes off the bench."
   },
@@ -524,6 +524,135 @@
    "next": "Follow him against Fiji, then Morocco on 26 November.",
    "up": "A goal against Morocco.",
    "down": "No shots against Morocco."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "faraji-kayanda",
+   "nation": "tanzania",
+   "name": "Faraji Kayanda",
+   "facts": [
+    "Two goals in Tanzania's first U-17 World Cup match, a 2-2 draw with Costa Rica after trailing 2-0.",
+    "FIFA Player of the Match against Costa Rica."
+   ],
+   "next": "Follow him against Brazil on Tuesday 24 November, 18:00 Doha time.",
+   "up": "A goal or assist against Brazil.",
+   "down": "No goal involvement against Brazil."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "ilyes-mekkaoui",
+   "nation": "algeria",
+   "name": "Ilyes Mekkaoui",
+   "facts": [
+    "Opened the scoring after eight minutes against Chile, Algeria's first goal at a U-17 World Cup in 17 years."
+   ],
+   "next": "Follow him against Montenegro on Tuesday 24 November, 18:30 Doha time.",
+   "up": "A goal or assist against Montenegro.",
+   "down": "No goal involvement against Montenegro."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "yacine-abed",
+   "nation": "algeria",
+   "name": "Yacine Abed",
+   "facts": [
+    "Made it 2-0 to Algeria against Chile after 15 minutes."
+   ],
+   "next": "Follow him against Montenegro on Tuesday 24 November, 18:30 Doha time.",
+   "up": "A goal or assist against Montenegro.",
+   "down": "No goal involvement against Montenegro."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "aviel-hentcho",
+   "nation": "cameroon",
+   "name": "Aviel Hentcho",
+   "facts": [
+    "Scored Cameroon's goal in added time against Venezuela, with the side down to ten men."
+   ],
+   "next": "Follow him against Mexico on Tuesday 24 November, 16:30 Doha time.",
+   "up": "A goal or assist against Mexico.",
+   "down": "No goal involvement against Mexico."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "roman-lozada",
+   "country": "Venezuela",
+   "code": "VEN",
+   "flag": "ve",
+   "name": "Román Lozada",
+   "facts": [
+    "FIFA Player of the Match as Venezuela beat Cameroon 2-1; scored the opener after 29 minutes."
+   ],
+   "next": "Follow him against Romania on 24 November.",
+   "up": "A goal against Romania.",
+   "down": "No shot on target against Romania."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "tadija-samardzic",
+   "country": "Serbia",
+   "code": "SRB",
+   "flag": "rs",
+   "name": "Tadija Samardžić",
+   "facts": [
+    "Came off the bench and scored both goals in Serbia's 2-0 win over Honduras, Serbia's first match at a U-17 World Cup."
+   ],
+   "next": "Follow him against Japan on 24 November.",
+   "up": "A start, and a goal against Japan.",
+   "down": "No minutes against Japan."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "samuel-martinez",
+   "country": "Colombia",
+   "code": "COL",
+   "flag": "co",
+   "name": "Samuel Martínez",
+   "facts": [
+    "Scored the 90+3rd-minute penalty that beat Japan 2-1."
+   ],
+   "next": "Follow him against Honduras on 24 November.",
+   "up": "A goal against Honduras.",
+   "down": "No minutes against Honduras."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "eduardo-conceicao",
+   "country": "Brazil",
+   "code": "BRA",
+   "flag": "br",
+   "name": "Eduardo Conceição",
+   "facts": [
+    "Scored Brazil's 71st-minute winner against Republic of Ireland."
+   ],
+   "next": "Follow him against Tanzania on 24 November.",
+   "up": "A goal against Tanzania.",
+   "down": "No shot on target against Tanzania."
   }
  ]
 }
