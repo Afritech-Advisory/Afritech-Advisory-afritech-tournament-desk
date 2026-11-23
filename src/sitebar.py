@@ -10,7 +10,7 @@ CSS = """<style id="afs-bar-css">
 .afs-bar{background:#0F2442;color:#fff;font:600 15px/1.2 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;position:relative;z-index:60}
 .afs-bar *{box-sizing:border-box}
 .afs-in{max-width:1240px;margin:0 auto;padding:0 14px;display:flex;align-items:center;gap:6px;min-height:52px}
-.afs-bar a.afs-brand{flex-direction:column;align-items:flex-start;justify-content:center}
+.afs-bar .afs-brand{display:flex;color:#fff;font-weight:800;margin-right:auto;flex-direction:column;align-items:flex-start;justify-content:center}
 .afs-brand{color:#fff;text-decoration:none;font-weight:800;font-size:17px;letter-spacing:.3px;margin-right:10px;white-space:nowrap}
 .afs-brand small{display:block;font-size:10px;font-weight:700;letter-spacing:1.4px;opacity:.7;text-transform:uppercase}
 .afs-bar a,.afs-bar summary{color:#E6EEF7;text-decoration:none;padding:10px 9px;border-radius:8px;cursor:pointer;white-space:nowrap;display:inline-flex;align-items:center;min-height:44px}
@@ -29,11 +29,19 @@ CSS = """<style id="afs-bar-css">
 .afs-mob{display:flex;align-items:center;margin-left:auto;gap:4px}
 .afs-mob .afs-list{left:auto;right:0}
 @media (min-width:960px){.afs-links{display:flex}.afs-mob{display:none}}
-@media (max-width:959px){.afs-brand small{display:none}.afs-brand{margin-right:0;font-size:16px}.afs-in{padding:0 8px}}
+@media (max-width:959px){.afs-bar a.afs-talk{white-space:normal;text-align:center;line-height:1.15;padding:8px 10px;max-width:58%}.afs-brand small{display:none}.afs-brand{margin-right:0;font-size:16px}.afs-in{padding:0 8px}}
 @media print{.afs-bar{display:none}}
 </style>"""
 
+WA = "https://wa.me/qr/JU7PO5B5ADCOI1"
+
 def bar(active="", src="site"):
+    if src == "desk":
+        # Desk pages (Andrew, 23 Nov 2026, Gatekeeper A3): nothing sends readers away except WhatsApp.
+        return (f'<!-- afs-bar:start -->{CSS}<nav class="afs-bar" aria-label="Afritech Sports"><div class="afs-in">'
+                f'<span class="afs-brand">Afritech Sports<small>Technology and Innovation Group</small></span>'
+                f'<a class="afs-talk" href="{WA}" target="_blank" rel="noopener">Talk to us on WhatsApp</a>'
+                f'</div></nav><!-- afs-bar:end -->')
     talk = H + "?src=" + src + "#talk"
     prim = "".join(f'<a href="{u}"{" class=on aria-current=page" if k == active else ""}>{t}</a>' for k, t, u in LINKS)
     desks = "".join(f'<a href="{u}"{" class=on aria-current=page" if k == active else ""}>{t}</a>' for k, t, u in DESKS)

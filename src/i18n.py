@@ -143,6 +143,15 @@ def translate(html, rel, lang, d, missing):
     return out
 
 
+def sw_label_first(html):
+    """Kiswahili number tiles read label first, then the value: "Pointi: 3" (Andrew, 23 Nov 2026, Gatekeeper B2)."""
+    def sub(m):
+        lab = m.group(4)
+        lab = lab[:1].upper() + lab[1:]
+        return f'{m.group(1)}<span>{lab}:</span><b{m.group(2)}>{m.group(3)}</b></div>'
+    return re.sub(r'(<div(?: class="kpi")?>)<b((?: class="num")?)>([^<]*)</b><span>([^<]*)</span></div>', sub, html)
+
+
 def build(root, pages):
     """pages: {relative output path: English html}. Writes translated copies and returns English pages with the switcher."""
     report = {}
@@ -165,6 +174,8 @@ def build(root, pages):
             rel = out[:-len("index.html")] if out.endswith("index.html") else out
             t = translate(html, rel, code, d, missing)
             t = add_switch(t, rel, code)
+            if code == "sw":
+                t = sw_label_first(t)
             p = root / code / out
             p.parent.mkdir(parents=True, exist_ok=True)
             p.write_text(t)
