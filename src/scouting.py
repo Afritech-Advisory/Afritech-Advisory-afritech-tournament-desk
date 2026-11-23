@@ -319,7 +319,7 @@ def results_html(nations, flag):
     other = "".join(f'<li><span>{H.escape(m["home"])}</span> <b>{m["score"]}</b> <span>{H.escape(m["away"])}</span> <i>Group {m["group"]}</i></li>'
                     for m in nations.get("_results", []))
     return (f'<section class="s" id="results"><div class="s-head"><p class="eyebrow">Results</p><h2>Every African match so far</h2>'
-            f'<p class="sub">Final scores, the goals and the numbers that tell each match. Tap a match for every goal as a clip and our full analysis.</p></div>'
+            f'<p class="sub">Final scores, the goals and the numbers that tell each match. Tap a match for the goals, the official clips as they are checked, and our full analysis.</p></div>'
             f'<div class="rgrid">{"".join(cards)}</div>'
             + (f'<h3 style="margin-top:22px">Other results at the tournament</h3><ul class="ores">{other}</ul>' if other else "")
             + '</section>')

@@ -26,13 +26,13 @@ def played(lang, n, w, dr, l):
     if lang == "fr":
         p = lambda k, one, many: f"{k} {one if k < 2 else many}"
         return (f"{p(n, 'match disputé', 'matchs disputés')} : {p(w, 'victoire', 'victoires')}, {p(dr, 'nul', 'nuls')} et {p(l, 'défaite', 'défaites')}. "
-                "Retrouvez chaque but en extrait vidéo, puis notre analyse de ce que chaque match apprend aux clubs, agents et fédérations.")
+                "Lisez notre analyse de ce que chaque match apprend aux clubs, agents et fédérations ; chaque but devient un extrait vidéo dès qu'il est vérifié.")
     if lang == "pt":
         p = lambda k, one, many: f"{k} {one if k == 1 else many}"
         return (f"{p(n, 'jogo disputado', 'jogos disputados')}: {p(w, 'vitória', 'vitórias')}, {p(dr, 'empate', 'empates')} e {p(l, 'derrota', 'derrotas')}. "
-                "Assista a cada gol em seu próprio clipe e depois leia nossa análise do que cada partida mostra a clubes, agentes e federações.")
+                "Leia nossa análise do que cada partida mostra a clubes, agentes e federações; cada gol ganha seu próprio clipe assim que é conferido no vídeo.")
     return (f"Mechi {n} {'iliyochezwa' if n == 1 else 'zilizochezwa'}: ushindi {w}, sare {dr}, {'kipigo' if l == 1 else 'vipigo'} {l}. "
-            "Tazama kila bao kama video yake, kisha soma tathmini yetu ya kile kila mechi inachoonyesha vilabu, mawakala na mashirikisho.")
+            "Soma tathmini yetu ya kile kila mechi inachoonyesha vilabu, mawakala na mashirikisho; kila bao linaonyeshwa kama video yake mara linapothibitishwa kwenye video.")
 
 DAYS = {
  "fr": {"Monday": "lundi", "Tuesday": "mardi", "Wednesday": "mercredi", "Thursday": "jeudi", "Friday": "vendredi", "Saturday": "samedi", "Sunday": "dimanche"},
@@ -158,7 +158,7 @@ def rule(lang, s, names, tr):
         (r"Coach: (.+)", lambda m: t["coach"].format(x=m[1])),
         (r"(.+): (.+) radar, awaiting first scores", lambda m: m[2] in ROLES[lang] and t["radar"].format(x=m[1], r=ROLES[lang][m[2]].lower() if lang != "sw" else ROLES[lang][m[2]].lower())),
         (r"First match: (.+) v (.+), (\w+ \d+ \w+), (\d\d:\d\d) Doha time\. The match report, goals and our read go up here after the final whistle\.", lambda m: c(m[1]) and c(m[2]) and t["first"].format(c=c(m[1]), c2=c(m[2]), d=date(lang, m[3]), t=m[4])),
-        (r"(\d+) played: (\d+) won, (\d+) drawn, (\d+) lost\. Watch every goal as its own clip, then read our analysis of what each match tells clubs, agents and federations\.", lambda m: played(lang, m[1], m[2], m[3], m[4])),
+        (r"(\d+) played: (\d+) won, (\d+) drawn, (\d+) lost\. Read our analysis of what each match tells clubs, agents and federations; each goal plays as its own clip once checked on video\.", lambda m: played(lang, m[1], m[2], m[3], m[4])),
         (r"(\d\d:\d\d) Doha", lambda m: t["doha"].format(t=m[1])),
         (r"Aspire Zone, Pitch (\d+)", lambda m: t["pitch"].format(n=m[1])),
         (r"All \((\d+)\)", lambda m: t["all"].format(n=m[1])),

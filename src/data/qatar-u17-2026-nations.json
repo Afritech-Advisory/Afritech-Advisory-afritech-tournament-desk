@@ -96,14 +96,17 @@
        "who": "Ahmed Safwat",
        "how": "Captain's volley",
        "type": "Open play",
-       "pid": "ahmed-safwat"
+       "pid": "ahmed-safwat",
+       "apid": "ahmed-beshir"
       },
       {
        "min": "33'",
        "team": "Egypt",
        "who": "Khaled Mokhtar",
        "type": "Open play",
-       "pid": "khaled-mokhtar"
+       "pid": "khaled-mokhtar",
+       "apid": "ahmed-safwat",
+       "how": "Assist Ahmed Safwat"
       }
      ],
      "story": "Captain Ahmed Safwat volleyed Egypt ahead inside two minutes and Khaled Mokhtar made it 2-0 after 33. Hosts Qatar pushed for a way back but could not break Egypt's back line. FIFA named Safwat Player of the Match.",
@@ -176,8 +179,9 @@
       {
        "min": "51'",
        "team": "Uzbekistan",
-       "who": "Mukhammad Khakimov",
-       "type": "Open play"
+       "who": "Muhammad Khakimov",
+       "type": "Open play",
+       "pid": "muhammad-khakimov"
       },
       {
        "min": "88'",
@@ -188,7 +192,7 @@
        "pid": "abass-diarrassouba"
       }
      ],
-     "story": "Captain Hubert Yao put Côte d'Ivoire ahead after seven minutes. Uzbekistan levelled through Mukhammad Khakimov six minutes after half-time, and substitute Abass Luc Diarrassouba won it two minutes from time. Three points to open Group E.",
+     "story": "Captain Hubert Yao put Côte d'Ivoire ahead after seven minutes. Uzbekistan levelled through Muhammad Khakimov six minutes after half-time, and substitute Abass Luc Diarrassouba won it two minutes from time. Three points to open Group E.",
      "keyNumbers": [
       [
        "7'",
@@ -259,7 +263,8 @@
        "team": "Croatia",
        "who": "Luka Bartolović",
        "how": "Assist Jona Benkotić",
-       "type": "Open play"
+       "type": "Open play",
+       "apid": "jona-benkotic"
       },
       {
        "min": "45'",
@@ -441,14 +446,18 @@
        "team": "Morocco",
        "who": "Imran Talai",
        "type": "Open play",
-       "pid": "imran-talai"
+       "pid": "imran-talai",
+       "apid": "ibrahim-rabbaj",
+       "how": "Assist Ibrahim Rabbaj"
       },
       {
        "min": "49'",
        "team": "Morocco",
        "who": "Ziyad Baha",
        "type": "Open play",
-       "pid": "ziyad-baha"
+       "pid": "ziyad-baha",
+       "apid": "ismail-el-aoud",
+       "how": "Assist Ismail El Aoud"
       },
       {
        "min": "55'",
@@ -553,7 +562,9 @@
        "team": "Tanzania",
        "who": "Faraji Kayanda",
        "type": "Open play",
-       "pid": "faraji-kayanda"
+       "pid": "faraji-kayanda",
+       "apid": "razaki-mbegelendi",
+       "how": "Assist Razaki Mbegelendi"
       },
       {
        "min": "73'",
@@ -634,14 +645,18 @@
        "team": "Algeria",
        "who": "Ilyes Mekkaoui",
        "type": "Open play",
-       "pid": "ilyes-mekkaoui"
+       "pid": "ilyes-mekkaoui",
+       "apid": "walid-nechab",
+       "how": "Assist Walid Nechab"
       },
       {
        "min": "15'",
        "team": "Algeria",
        "who": "Yacine Abed",
        "type": "Open play",
-       "pid": "yacine-abed"
+       "pid": "yacine-abed",
+       "apid": "ayoub-dahmas",
+       "how": "Assist Ayoub Dahmas"
       },
       {
        "min": "21'",
@@ -659,7 +674,8 @@
        "min": "34'",
        "team": "Chile",
        "who": "Amaro Pérez",
-       "type": "Open play"
+       "type": "Open play",
+       "pid": "amaro-perez"
       },
       {
        "min": "82'",
@@ -739,7 +755,8 @@
        "min": "29'",
        "team": "Venezuela",
        "who": "Román Lozada",
-       "type": "Open play"
+       "type": "Open play",
+       "pid": "roman-lozada"
       },
       {
        "min": "59'",
@@ -752,7 +769,9 @@
        "team": "Cameroon",
        "who": "Aviel Hentcho",
        "type": "Open play",
-       "pid": "aviel-hentcho"
+       "pid": "aviel-hentcho",
+       "apid": "emmanuel-eone",
+       "how": "Assist Emmanuel Eone"
       }
      ],
      "story": "Venezuela led through Román Lozada before half-time and Santiago Sánchez just before the hour. Eric Bolo was sent off for a second yellow card late on, and Aviel Hentcho pulled one back for Cameroon in added time.",
@@ -926,7 +945,9 @@
        "min": "32'",
        "team": "Argentina",
        "who": "Escobar",
-       "type": "Open play"
+       "type": "Open play",
+       "apid": "juan-cruz-policella",
+       "how": "Assist Juan Cruz Policella"
       },
       {
        "min": "45+1'",
