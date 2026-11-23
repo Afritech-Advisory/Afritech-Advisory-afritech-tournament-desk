@@ -1,5 +1,5 @@
 {
- "updated": "21 November 2026",
+ "updated": "22 November 2026",
  "_note": "Public scout cards (Stage 1, public-domain evidence). Every player is under 18: club signal capped at MONITOR, agent at DEVELOP FIRST, no valuation. Numeric grades are published only after Andrew approves them in the private tracker.",
  "players": [
   {
@@ -30,11 +30,12 @@
    "board": true,
    "facts": [
     "Best player of the U-17 Gulf Cup in Qatar this autumn, with two assists in the 3-1 final win over the UAE.",
-    "Started in midfield against Greece and led a ten-man side for over an hour."
+    "Started in midfield against Greece and led a ten-man side for over an hour.",
+    "Volleyed Egypt ahead after two minutes against hosts Qatar and was FIFA's Player of the Match in the 2-0 win."
    ],
    "fed": "WATCHLIST",
-   "next": "Watch him set the tempo against hosts Qatar on 22 November.",
-   "up": "A goal or assist against Qatar or Panama.",
+   "next": "Follow him against Panama on Wednesday 25 November, 17:30 Doha time.",
+   "up": "A goal or assist against Panama.",
    "down": "Little influence on the ball in a must-win match."
   },
   {
@@ -48,9 +49,9 @@
     "Scored Egypt's goal against Greece from outside the box while Egypt played with ten men."
    ],
    "fed": "WATCHLIST",
-   "next": "Follow his minutes and shots against Qatar and Panama.",
-   "up": "A second goal or a start in the next match.",
-   "down": "Limited minutes in the remaining group matches."
+   "next": "Follow his minutes and shots against Panama on 25 November.",
+   "up": "A second goal or a start against Panama.",
+   "down": "Limited minutes against Panama."
   },
   {
    "id": "diego-pelembe",
@@ -67,9 +68,9 @@
     "Ran midfield in the 4-0 win over Denmark and hit the woodwork."
    ],
    "fed": "WATCHLIST",
-   "next": "Watch how he controls midfield against Argentina on 22 November.",
-   "up": "A goal or assist against Argentina or Australia.",
-   "down": "Mozambique lose control of midfield against Argentina."
+   "next": "Follow him against Australia on Wednesday 25 November, 18:30 Doha time.",
+   "up": "A goal or assist against Australia.",
+   "down": "No goal involvement against Australia."
   },
   {
    "id": "alirio-cuna",
@@ -81,12 +82,13 @@
    "board": true,
    "facts": [
     "Two goals against Denmark: the first African player to score twice at this tournament.",
-    "Both goals came inside the box, the first from a counter-attack."
+    "Both goals came inside the box, the first from a counter-attack.",
+    "Scored again against Argentina in first-half added time: three goals in two matches."
    ],
    "fed": "WATCHLIST",
-   "next": "Follow his runs in behind against Argentina on 22 November.",
-   "up": "A third goal, or a goal against Argentina.",
-   "down": "No shots against stronger defences."
+   "next": "Follow his runs in behind against Australia on Wednesday 25 November, 18:30 Doha time.",
+   "up": "A fourth goal, against Australia.",
+   "down": "No shots against Australia."
   },
   {
    "id": "khensane-machel",
@@ -100,9 +102,9 @@
     "Started in midfield beside captain Diego Elias Pelembe."
    ],
    "fed": "WATCHLIST",
-   "next": "Follow his arrival into the box against Argentina.",
-   "up": "A second goal or assist in the group.",
-   "down": "Fewer forward runs against Argentina's midfield."
+   "next": "Follow him against Australia on Wednesday 25 November, 18:30 Doha time.",
+   "up": "A goal or assist against Australia.",
+   "down": "No goal involvement against Australia."
   },
   {
    "id": "chausson-nhabanga",
@@ -115,9 +117,9 @@
     "Set up Mozambique's opening goal against Denmark."
    ],
    "fed": "WATCHLIST",
-   "next": "Follow his final passes against Argentina and Australia.",
-   "up": "A second assist in the group.",
-   "down": "No chances created in the next two matches."
+   "next": "Follow him against Australia on Wednesday 25 November, 18:30 Doha time.",
+   "up": "A goal or assist against Australia.",
+   "down": "No goal involvement against Australia."
   },
   {
    "id": "joaquim-mubai",
@@ -130,9 +132,9 @@
     "Scored Mozambique's fourth goal against Denmark in added time."
    ],
    "fed": "WATCHLIST",
-   "next": "Follow his minutes against Argentina and Australia.",
-   "up": "A start or a second goal.",
-   "down": "No minutes in the next two matches."
+   "next": "Follow him against Australia on Wednesday 25 November, 18:30 Doha time.",
+   "up": "A goal or assist against Australia.",
+   "down": "No goal involvement against Australia."
   },
   {
    "id": "chris-karel",
@@ -317,7 +319,7 @@
    "facts": [
     "Player of the Match as Australia beat Argentina 2-0: his low ball across the box forced the first goal and he rounded the keeper for the second."
    ],
-   "next": "Follow him against Denmark on 22 November, then Mozambique on 25 November.",
+   "next": "Follow him against Mozambique on 25 November.",
    "up": "Another goal against Mozambique's defence.",
    "down": "Few chances against a deeper block.",
    "fed": "WATCHLIST"
@@ -334,9 +336,9 @@
    "facts": [
     "Player of the Match against Uganda; scored the opener in the 8th minute."
    ],
-   "next": "Follow him against New Caledonia on 22 November.",
+   "next": "Follow him against Ecuador on 25 November.",
    "up": "A second goal in the group.",
-   "down": "No goal involvement in the next two matches.",
+   "down": "No goal involvement against Ecuador.",
    "fed": "WATCHLIST"
   },
   {
@@ -451,11 +453,12 @@
    "club": "",
    "shirt": "",
    "facts": [
-    "Player of the Match even in a 1-0 defeat by Ecuador."
+    "Player of the Match even in a 1-0 defeat by Ecuador.",
+    "Saved a penalty from Ahn Sun-hyun in the 6-0 defeat by Korea Republic."
    ],
-   "next": "Follow him against Korea Republic on 22 November.",
-   "up": "Another standout display against Korea Republic.",
-   "down": "Less influence in the next match.",
+   "next": "Follow him against Uganda on 25 November.",
+   "up": "A clean sheet against Uganda.",
+   "down": "Less influence against Uganda.",
    "fed": "WATCHLIST"
   },
   {
@@ -653,6 +656,125 @@
    "next": "Follow him against Tanzania on 24 November.",
    "up": "A goal against Tanzania.",
    "down": "No shot on target against Tanzania."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "khaled-mokhtar",
+   "nation": "egypt",
+   "name": "Khaled Mokhtar",
+   "facts": [
+    "Scored Egypt's second goal after 33 minutes in the 2-0 win over hosts Qatar."
+   ],
+   "next": "Follow him against Panama on Wednesday 25 November, 17:30 Doha time.",
+   "up": "A goal or assist against Panama.",
+   "down": "No goal involvement against Panama."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "kim-ji-woo",
+   "country": "Korea Republic",
+   "code": "KOR",
+   "flag": "kr",
+   "name": "Kim Ji-woo",
+   "facts": [
+    "Hat-trick in the 6-0 win over New Caledonia, after scoring against Uganda in the opener.",
+    "Four goals in two matches."
+   ],
+   "next": "Follow him against Ecuador on 25 November.",
+   "up": "A goal against Ecuador.",
+   "down": "No shot on target against Ecuador."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "pablo-barreiro",
+   "country": "Uruguay",
+   "code": "URU",
+   "flag": "uy",
+   "name": "Pablo Barreiro",
+   "facts": [
+    "Scored in both of Uruguay's group wins, against Saudi Arabia and Haiti."
+   ],
+   "next": "Follow him against France on 25 November.",
+   "up": "A goal against France.",
+   "down": "No shot on target against France."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "shaman-al-qahtani",
+   "country": "Saudi Arabia",
+   "code": "KSA",
+   "flag": "sa",
+   "name": "Shaman Al-Qahtani",
+   "facts": [
+    "Scored the only goal as Saudi Arabia beat France 1-0, after 73 minutes."
+   ],
+   "next": "Follow him against Haiti on 25 November.",
+   "up": "A goal against Haiti.",
+   "down": "No minutes against Haiti."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "papasarafianos",
+   "country": "Greece",
+   "code": "GRE",
+   "flag": "gr",
+   "name": "Papasarafianos",
+   "facts": [
+    "Scored Greece's winner against Panama in the fifth minute of added time; Greece are through to the round of 32."
+   ],
+   "next": "Follow him against Qatar on 25 November.",
+   "up": "A start against Qatar.",
+   "down": "No minutes against Qatar."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "juan-cruz-policella",
+   "country": "Argentina",
+   "code": "ARG",
+   "flag": "ar",
+   "name": "Juan Cruz Policella",
+   "facts": [
+    "FIFA Player of the Match as Argentina beat Mozambique 2-1."
+   ],
+   "next": "Follow him against Denmark on 25 November.",
+   "up": "Another standout display against Denmark.",
+   "down": "Less influence against Denmark."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "emmett-shaw",
+   "country": "Australia",
+   "code": "AUS",
+   "flag": "au",
+   "name": "Emmett Shaw",
+   "facts": [
+    "Set up Akol Akon's goal in the 2-0 win over Argentina.",
+    "FIFA Player of the Match in the 0-0 draw with Denmark."
+   ],
+   "next": "Follow him against Mozambique on 25 November.",
+   "up": "A goal or assist against Mozambique.",
+   "down": "No chances created against Mozambique."
   }
  ]
 }

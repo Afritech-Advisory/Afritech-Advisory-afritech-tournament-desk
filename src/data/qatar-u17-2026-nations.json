@@ -1,5 +1,5 @@
 {
- "updated": "20 November 2026",
+ "updated": "22 November 2026",
  "highlightsNote": "Goal times link to FIFA's official highlights on YouTube.",
  "nations": [
   {
@@ -86,7 +86,56 @@
      "time": "18:00",
      "home": "Qatar",
      "away": "Egypt",
-     "venue": "Aspire Zone, Pitch 2"
+     "venue": "Aspire Zone, Pitch 2",
+     "id": "egy-qat",
+     "score": "0-2",
+     "goals": [
+      {
+       "min": "2'",
+       "team": "Egypt",
+       "who": "Ahmed Safwat",
+       "how": "Captain's volley",
+       "type": "Open play",
+       "pid": "ahmed-safwat"
+      },
+      {
+       "min": "33'",
+       "team": "Egypt",
+       "who": "Khaled Mokhtar",
+       "type": "Open play",
+       "pid": "khaled-mokhtar"
+      }
+     ],
+     "story": "Captain Ahmed Safwat volleyed Egypt ahead inside two minutes and Khaled Mokhtar made it 2-0 after 33. Hosts Qatar pushed for a way back but could not break Egypt's back line. FIFA named Safwat Player of the Match.",
+     "keyNumbers": [
+      [
+       "2'",
+       "Ahmed Safwat's opener"
+      ],
+      [
+       "0",
+       "goals conceded"
+      ],
+      [
+       "3",
+       "points, second in Group A"
+      ]
+     ],
+     "analysis": [
+      {
+       "h": "The captain set the tone",
+       "p": "Safwat scored inside two minutes and was named Player of the Match: the response the side needed after losing to Greece with ten men."
+      },
+      {
+       "h": "A clean sheet against the hosts",
+       "p": "Qatar had won their opener 2-0; Egypt kept them out for 90 minutes."
+      },
+      {
+       "h": "What it means for the group",
+       "p": "Greece beat Panama 2-1 and are through on six points. Egypt are second on three, level with Qatar, before Panama v Egypt on Wednesday 25 November."
+      }
+     ],
+     "scout": "Follow captain Ahmed Safwat and Khaled Mokhtar against Panama on 25 November: a win would put Egypt in the round of 32."
     },
     {
      "date": "Wednesday 25 November",
@@ -863,7 +912,60 @@
      "time": "18:30",
      "home": "Argentina",
      "away": "Mozambique",
-     "venue": "Aspire Zone, Pitch 7"
+     "venue": "Aspire Zone, Pitch 7",
+     "id": "moz-arg",
+     "score": "2-1",
+     "goals": [
+      {
+       "min": "5'",
+       "team": "Argentina",
+       "who": "Machuca",
+       "type": "Open play"
+      },
+      {
+       "min": "32'",
+       "team": "Argentina",
+       "who": "Escobar",
+       "type": "Open play"
+      },
+      {
+       "min": "45+1'",
+       "team": "Mozambique",
+       "who": "Alírio Cuna Júnior",
+       "type": "Open play",
+       "pid": "alirio-cuna"
+      }
+     ],
+     "story": "Argentina scored after five minutes and again after 32. Alírio Cuna Júnior pulled one back in first-half added time, his third goal of the tournament, but Argentina held on for their first win.",
+     "keyNumbers": [
+      [
+       "3",
+       "goals for Alírio Cuna Júnior in two matches"
+      ],
+      [
+       "45+1'",
+       "Mozambique's reply"
+      ],
+      [
+       "+3",
+       "goal difference, second in Group C"
+      ]
+     ],
+     "analysis": [
+      {
+       "h": "An early setback",
+       "p": "Argentina led after five minutes, the opposite of the start Mozambique made against Denmark."
+      },
+      {
+       "h": "Cuna Júnior again",
+       "p": "His goal just before half-time made it three in two matches, Africa's leading scorer so far at the tournament."
+      },
+      {
+       "h": "What it means for the group",
+       "p": "Denmark and Australia drew 0-0. Australia lead Group C on four points; Mozambique are second on three with a +3 goal difference, ahead of Argentina, before meeting Australia on Wednesday 25 November."
+      }
+     ],
+     "scout": "Alírio Cuna Júnior has three goals in two matches: follow him and captain Diego Elias Pelembe against Australia on 25 November."
     },
     {
      "date": "Wednesday 25 November",
@@ -912,7 +1014,8 @@
        "min": "84'",
        "team": "Korea Republic",
        "who": "Kim Ji-woo",
-       "type": "Open play"
+       "type": "Open play",
+       "pid": "kim-ji-woo"
       }
      ],
      "story": "A hard opener against an Asian side that scored early. Uganda were 1-0 down at half-time and created a clear chance of their own before Korea pulled away.",
@@ -947,7 +1050,40 @@
      "time": "16:00",
      "home": "Ecuador",
      "away": "Uganda",
-     "venue": "Aspire Zone"
+     "venue": "Aspire Zone",
+     "id": "uga-ecu",
+     "score": "0-0",
+     "goals": [],
+     "story": "Uganda held Ecuador, winners of their opening match, to a goalless draw: Uganda's first point at a U-17 World Cup. Their goalkeeper made several saves to keep the clean sheet.",
+     "keyNumbers": [
+      [
+       "0",
+       "goals conceded"
+      ],
+      [
+       "1",
+       "first U-17 World Cup point for Uganda"
+      ],
+      [
+       "3",
+       "goals conceded in the opener, against Korea Republic"
+      ]
+     ],
+     "analysis": [
+      {
+       "h": "A defensive reply",
+       "p": "After the 3-0 defeat by Korea Republic, Uganda kept Ecuador out for 90 minutes; their goalkeeper made several saves."
+      },
+      {
+       "h": "Still looking for a first goal",
+       "p": "Uganda have not yet scored at the tournament. Chances are the area to watch in the last group match."
+      },
+      {
+       "h": "What it means for the group",
+       "p": "Korea Republic beat New Caledonia 6-0 and are through. Uganda are third with one point before meeting New Caledonia on 25 November; a win would take them to four points and keep the round of 32 in reach."
+      }
+     ],
+     "scout": "Uganda's defence held Ecuador: follow the back line and the first goal against New Caledonia on 25 November."
     },
     {
      "date": "Wednesday 25 November",

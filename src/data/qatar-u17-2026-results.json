@@ -55,7 +55,8 @@
      "team": "Australia",
      "who": "Akol Akon",
      "how": "Assist Emmett Shaw",
-     "pid": "akol-akon"
+     "pid": "akol-akon",
+     "apid": "emmett-shaw"
     }
    ]
   },
@@ -109,7 +110,8 @@
     {
      "min": "43'",
      "team": "Uruguay",
-     "who": "P. Barreiro"
+     "who": "Pablo Barreiro",
+     "pid": "pablo-barreiro"
     },
     {
      "min": "58'",
@@ -412,6 +414,137 @@
      "who": "Tadija Samardžić",
      "how": "Header; assist Matej Strika",
      "pid": "tadija-samardzic"
+    }
+   ]
+  },
+  {
+   "id": "gre-pan",
+   "date": "22 Nov",
+   "group": "A",
+   "home": "Greece",
+   "away": "Panama",
+   "score": "2-1",
+   "goals": [
+    {
+     "min": "39'",
+     "team": "Greece",
+     "who": "Georgios Siozios"
+    },
+    {
+     "min": "84'",
+     "team": "Panama",
+     "who": "Estevis López"
+    },
+    {
+     "min": "90+5'",
+     "team": "Greece",
+     "who": "Papasarafianos",
+     "pid": "papasarafianos"
+    }
+   ]
+  },
+  {
+   "id": "kor-ncl",
+   "date": "22 Nov",
+   "group": "B",
+   "home": "Korea Republic",
+   "away": "New Caledonia",
+   "score": "6-0",
+   "goals": [
+    {
+     "min": "5'",
+     "team": "Korea Republic",
+     "who": "Park Joo-ho"
+    },
+    {
+     "min": "15'",
+     "team": "Korea Republic",
+     "who": "Kim Ji-woo",
+     "pid": "kim-ji-woo"
+    },
+    {
+     "min": "20'",
+     "team": "Korea Republic",
+     "who": "Kim Ji-woo",
+     "pid": "kim-ji-woo"
+    },
+    {
+     "min": "25'",
+     "team": "Korea Republic",
+     "who": "Ahn Sun-hyun"
+    },
+    {
+     "min": "27'",
+     "team": "Korea Republic",
+     "who": "Han Seung-min"
+    },
+    {
+     "min": "53'",
+     "team": "Korea Republic",
+     "who": "Kim Ji-woo",
+     "pid": "kim-ji-woo"
+    }
+   ]
+  },
+  {
+   "id": "den-aus",
+   "date": "22 Nov",
+   "group": "C",
+   "home": "Denmark",
+   "away": "Australia",
+   "score": "0-0",
+   "goals": []
+  },
+  {
+   "id": "fra-ksa",
+   "date": "22 Nov",
+   "group": "D",
+   "home": "France",
+   "away": "Saudi Arabia",
+   "score": "0-1",
+   "goals": [
+    {
+     "min": "73'",
+     "team": "Saudi Arabia",
+     "who": "Shaman Al-Qahtani",
+     "pid": "shaman-al-qahtani"
+    }
+   ]
+  },
+  {
+   "id": "uru-hai",
+   "date": "22 Nov",
+   "group": "D",
+   "home": "Uruguay",
+   "away": "Haiti",
+   "score": "4-1",
+   "goals": [
+    {
+     "min": "21'",
+     "team": "Haiti",
+     "who": "Marvenly Exilas",
+     "how": "Header; assist Guivens Barjon"
+    },
+    {
+     "min": "32'",
+     "team": "Uruguay",
+     "who": "Lautaro Muñiz"
+    },
+    {
+     "min": "39'",
+     "team": "Uruguay",
+     "who": "Pablo Barreiro",
+     "pid": "pablo-barreiro"
+    },
+    {
+     "min": "76'",
+     "team": "Uruguay",
+     "who": "Nicolás Rodríguez"
+    },
+    {
+     "min": "82'",
+     "team": "Uruguay",
+     "who": "Alan Soares"
     }
    ]
   }
