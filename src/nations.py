@@ -153,7 +153,7 @@ def page(n, all_nations, head, emblem, updated, scout=None):
     if played:
         rec = [outcome(m, name) for m in played]
         summary = (f'{len(played)} played: {rec.count("W")} won, {rec.count("D")} drawn, {rec.count("L")} lost. '
-                   f'Watch every goal as its own clip, then read our analysis of what each match tells clubs, agents and federations.')
+                   f'Read our analysis of what each match tells clubs, agents and federations; each goal plays as its own clip once checked on video.')
     else:
         f = upcoming[0]
         summary = (f'First match: {f["home"]} v {f["away"]}, {f["date"]}, {f["time"]} Doha time. '
@@ -200,7 +200,7 @@ def page(n, all_nations, head, emblem, updated, scout=None):
 <main class="wrap">
 <section class="s" id="results">
   <div class="s-head"><p class="eyebrow">Match reports</p><h2>Results and goals</h2>
-  <p>Final scores, every goal as its own clip from FIFA's official highlights, and our analysis of what the match tells clubs, agents and federations.</p></div>
+  <p>Final scores, the goals with FIFA's official highlights as each one is checked, and our analysis of what the match tells clubs, agents and federations.</p></div>
   {reports}
 </section>
 <section class="s" id="next">

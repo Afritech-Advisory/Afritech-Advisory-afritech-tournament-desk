@@ -1,5 +1,5 @@
 {
- "updated": "22 November 2026",
+ "updated": "23 November 2026",
  "_note": "Public scout cards (Stage 1, public-domain evidence). Every player is under 18: club signal capped at MONITOR, agent at DEVELOP FIRST, no valuation. Numeric grades are published only after Andrew approves them in the private tracker.",
  "players": [
   {
@@ -31,7 +31,8 @@
    "facts": [
     "Best player of the U-17 Gulf Cup in Qatar this autumn, with two assists in the 3-1 final win over the UAE.",
     "Started in midfield against Greece and led a ten-man side for over an hour.",
-    "Volleyed Egypt ahead after two minutes against hosts Qatar and was FIFA's Player of the Match in the 2-0 win."
+    "Volleyed Egypt ahead after two minutes against hosts Qatar and was FIFA's Player of the Match in the 2-0 win.",
+    "Set up Khaled Mokhtar's goal for 2-0 against Qatar."
    ],
    "fed": "WATCHLIST",
    "next": "Follow him against Panama on Wednesday 25 November, 17:30 Doha time.",
@@ -64,7 +65,6 @@
    "board": true,
    "facts": [
     "Captain. Two goals at the U-17 AFCON.",
-    "Red Bull Bragantino have announced his signing, to start in Brazil in June 2027 when he turns 18.",
     "Ran midfield in the 4-0 win over Denmark and hit the woodwork."
    ],
    "fed": "WATCHLIST",
@@ -137,16 +137,16 @@
    "down": "No goal involvement against Australia."
   },
   {
-   "id": "chris-karel",
+   "id": "karel-krys",
    "nation": "cameroon",
-   "name": "Chris Karel",
+   "name": "Karel Krys",
    "role": "Midfielder",
    "club": "",
-   "shirt": "6",
-   "captain": true,
+   "shirt": "18",
    "board": true,
    "facts": [
-    "Captained Cameroon to the U-17 AFCON quarter-finals; CAF called him the side's midfield engine."
+    "Named by CAF as Cameroon's player to watch at the World Cup.",
+    "Started in midfield against Venezuela and played until the 90th minute."
    ],
    "fed": "WATCHLIST",
    "next": "Follow him against Mexico on Tuesday 24 November, 16:30 Doha time.",
@@ -179,7 +179,8 @@
    "club": "",
    "shirt": "",
    "facts": [
-    "Scored after three minutes against Fiji and set up the second two minutes later."
+    "Scored after three minutes against Fiji and set up the second two minutes later.",
+    "Set up Ziyad Baha's first goal against Fiji, four minutes after the break."
    ],
    "next": "Follow his involvement against China PR on 23 November.",
    "up": "A goal or assist against Spain.",
@@ -194,7 +195,8 @@
    "club": "",
    "shirt": "",
    "facts": [
-    "Scored Morocco's second goal against Fiji in the fifth minute."
+    "Scored Morocco's second goal against Fiji in the fifth minute.",
+    "Set up Imran Talai's goal for 3-0 against Fiji."
    ],
    "next": "Follow his minutes against China PR and Spain.",
    "up": "A second goal in the group.",
@@ -701,7 +703,8 @@
    "flag": "uy",
    "name": "Pablo Barreiro",
    "facts": [
-    "Scored in both of Uruguay's group wins, against Saudi Arabia and Haiti."
+    "Scored in both of Uruguay's group wins, against Saudi Arabia and Haiti.",
+    "Set up Alan Soares's goal for 4-1 against Haiti."
    ],
    "next": "Follow him against France on 25 November.",
    "up": "A goal against France.",
@@ -752,7 +755,8 @@
    "flag": "ar",
    "name": "Juan Cruz Policella",
    "facts": [
-    "FIFA Player of the Match as Argentina beat Mozambique 2-1."
+    "FIFA Player of the Match as Argentina beat Mozambique 2-1.",
+    "Set up Simón Escobar's goal for 2-0 against Mozambique."
    ],
    "next": "Follow him against Denmark on 25 November.",
    "up": "Another standout display against Denmark.",
@@ -775,6 +779,266 @@
    "next": "Follow him against Mozambique on 25 November.",
    "up": "A goal or assist against Mozambique.",
    "down": "No chances created against Mozambique."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "henry-muhoozi",
+   "nation": "uganda",
+   "name": "Henry Muhoozi",
+   "facts": [
+    "FIFA Player of the Match as Uganda held Ecuador 0-0."
+   ],
+   "next": "Follow him against New Caledonia on Wednesday 25 November, 15:30 Doha time.",
+   "up": "Another standout display against New Caledonia.",
+   "down": "Less influence against New Caledonia."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "ahmed-beshir",
+   "nation": "egypt",
+   "name": "Ahmed Beshir",
+   "facts": [
+    "Set up captain Ahmed Safwat's volley after two minutes in the 2-0 win over Qatar."
+   ],
+   "next": "Follow him against Panama on Wednesday 25 November, 17:30 Doha time.",
+   "up": "A goal or assist against Panama.",
+   "down": "No goal involvement against Panama."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "walid-nechab",
+   "nation": "algeria",
+   "name": "Walid Nechab",
+   "facts": [
+    "Set up Ilyes Mekkaoui's opener after eight minutes against Chile."
+   ],
+   "next": "Follow him against Montenegro on Tuesday 24 November, 18:30 Doha time.",
+   "up": "A goal or assist against Montenegro.",
+   "down": "No goal involvement against Montenegro."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "ayoub-dahmas",
+   "nation": "algeria",
+   "name": "Ayoub Dahmas",
+   "facts": [
+    "Set up Yacine Abed's goal for 2-0 against Chile after 15 minutes."
+   ],
+   "next": "Follow him against Montenegro on Tuesday 24 November, 18:30 Doha time.",
+   "up": "A goal or assist against Montenegro.",
+   "down": "No goal involvement against Montenegro."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "razaki-mbegelendi",
+   "nation": "tanzania",
+   "name": "Razaki Mbegelendi",
+   "facts": [
+    "Set up Faraji Kayanda's first goal as Tanzania came back from 2-0 down to draw 2-2 with Costa Rica."
+   ],
+   "next": "Follow him against Brazil on Tuesday 24 November, 18:00 Doha time.",
+   "up": "A goal or assist against Brazil.",
+   "down": "No goal involvement against Brazil."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "emmanuel-eone",
+   "nation": "cameroon",
+   "name": "Emmanuel Eone",
+   "facts": [
+    "Came off the bench and set up Aviel Hentcho's added-time goal against Venezuela."
+   ],
+   "next": "Follow him against Mexico on Tuesday 24 November, 16:30 Doha time.",
+   "up": "A goal or assist against Mexico.",
+   "down": "No goal involvement against Mexico."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "muhammad-khakimov",
+   "country": "Uzbekistan",
+   "code": "UZB",
+   "flag": "uz",
+   "name": "Muhammad Khakimov",
+   "facts": [
+    "FIFA Player of the Match against Côte d'Ivoire; scored Uzbekistan's goal in the 2-1 defeat."
+   ],
+   "next": "Follow him against Jamaica on 23 November and Italy on 26 November.",
+   "up": "A goal against Italy.",
+   "down": "No shot on target against Italy."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "komiljon-sharipov",
+   "country": "Tajikistan",
+   "code": "TJK",
+   "flag": "tj",
+   "name": "Komiljon Sharipov",
+   "facts": [
+    "FIFA Player of the Match as Tajikistan beat Cuba 5-3; scored their first goal after 48 minutes."
+   ],
+   "next": "Follow him against Croatia on 23 November and Senegal on 26 November.",
+   "up": "A goal or assist against Senegal.",
+   "down": "No goal involvement against Senegal."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "jona-benkotic",
+   "country": "Croatia",
+   "code": "CRO",
+   "flag": "hr",
+   "name": "Jona Benkotić",
+   "facts": [
+    "FIFA Player of the Match in the 1-1 draw with Senegal; set up Croatia's goal after eight minutes."
+   ],
+   "next": "Follow him against Tajikistan on 23 November and Cuba on 26 November.",
+   "up": "A goal or assist against Cuba.",
+   "down": "No chances created against Cuba."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "anthony-philips",
+   "country": "Belgium",
+   "code": "BEL",
+   "flag": "be",
+   "name": "Anthony Philips",
+   "facts": [
+    "FIFA Player of the Match as Belgium beat Vietnam 3-2; his goal after 60 minutes proved the winner."
+   ],
+   "next": "Follow him against Mali on 23 November and New Zealand on 26 November.",
+   "up": "A goal against Mali or New Zealand.",
+   "down": "No shot on target against Mali or New Zealand."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "almonte-luis",
+   "country": "Dominican Republic",
+   "code": "DOM",
+   "flag": "do",
+   "name": "Almonte Luis",
+   "facts": [
+    "FIFA Player of the Match in the 1-1 draw with Montenegro."
+   ],
+   "next": "Follow him against Chile on 24 November and Algeria on 27 November.",
+   "up": "Another standout display against Chile.",
+   "down": "Less influence against Chile."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "amaro-perez",
+   "country": "Chile",
+   "code": "CHI",
+   "flag": "cl",
+   "name": "Amaro Pérez",
+   "facts": [
+    "FIFA Player of the Match as Chile came from 2-0 down to beat Algeria 4-2; scored the third goal after 34 minutes."
+   ],
+   "next": "Follow him against the Dominican Republic on 24 November.",
+   "up": "A goal against the Dominican Republic.",
+   "down": "No shot on target against the Dominican Republic."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "jonathan-de-la-fuente",
+   "country": "Mexico",
+   "code": "MEX",
+   "flag": "mx",
+   "name": "Jonathan De La Fuente",
+   "facts": [
+    "FIFA Player of the Match in the 1-0 win over Romania."
+   ],
+   "next": "Follow him against Cameroon on 24 November.",
+   "up": "Another standout display against Cameroon.",
+   "down": "Less influence against Cameroon."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "estevis-lopez",
+   "country": "Panama",
+   "code": "PAN",
+   "flag": "pa",
+   "name": "Estevis López",
+   "facts": [
+    "FIFA Player of the Match against Greece; scored Panama's goal after 84 minutes in the 2-1 defeat."
+   ],
+   "next": "Follow him against Egypt on 25 November.",
+   "up": "A goal against Egypt.",
+   "down": "No shot on target against Egypt."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "lee-inwoo",
+   "country": "Korea Republic",
+   "code": "KOR",
+   "flag": "kr",
+   "name": "Lee Inwoo",
+   "facts": [
+    "FIFA Player of the Match in the 6-0 win over New Caledonia."
+   ],
+   "next": "Follow him against Ecuador on 25 November.",
+   "up": "A goal or assist against Ecuador.",
+   "down": "Less influence against Ecuador."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "abdullah-almas",
+   "country": "Saudi Arabia",
+   "code": "KSA",
+   "flag": "sa",
+   "name": "Abdullah Almas",
+   "facts": [
+    "FIFA Player of the Match as Saudi Arabia beat France 1-0."
+   ],
+   "next": "Follow him against Haiti on 25 November.",
+   "up": "Another standout display against Haiti.",
+   "down": "Less influence against Haiti."
   }
  ]
 }

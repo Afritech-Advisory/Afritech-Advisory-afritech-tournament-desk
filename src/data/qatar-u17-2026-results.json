@@ -158,7 +158,8 @@
     {
      "min": "60'",
      "team": "Belgium",
-     "who": "A. Philips"
+     "who": "A. Philips",
+     "pid": "anthony-philips"
     },
     {
      "min": "84'",
@@ -184,7 +185,8 @@
     {
      "min": "48'",
      "team": "Tajikistan",
-     "who": "K. Sharipov"
+     "who": "K. Sharipov",
+     "pid": "komiljon-sharipov"
     },
     {
      "min": "57'",
@@ -433,7 +435,8 @@
     {
      "min": "84'",
      "team": "Panama",
-     "who": "Estevis López"
+     "who": "Estevis López",
+     "pid": "estevis-lopez"
     },
     {
      "min": "90+5'",
@@ -544,7 +547,9 @@
     {
      "min": "82'",
      "team": "Uruguay",
-     "who": "Alan Soares"
+     "who": "Alan Soares",
+     "apid": "pablo-barreiro",
+     "how": "Assist Pablo Barreiro"
     }
    ]
   }
