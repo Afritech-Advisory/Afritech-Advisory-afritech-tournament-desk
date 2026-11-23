@@ -400,6 +400,9 @@ E = [
 ]
 
 JS = [
+("'Full clips on request'", "'Extraits complets sur demande'", "'Video kamili kwa ombi'", "'Clipes completos sob pedido'"),
+("'Hello Afritech, please send me the full clip for this goal: '", "'Bonjour Afritech, merci de m’envoyer l’extrait complet de ce but : '", "'Habari Afritech, tafadhali nitumieni video kamili ya bao hili: '", "'Olá, Afritech, por favor me enviem o clipe completo deste gol: '"),
+("'Key frames from the official broadcast'", "'Images clés de la diffusion officielle'", "'Picha muhimu kutoka matangazo rasmi'", "'Imagens-chave da transmissão oficial'"),
 ('Now playing: ', 'Lecture en cours : ', 'Inacheza sasa: ', 'Tocando agora: '),
 (' of ', ' sur ', ' kati ya ', ' de '),
 ('Official highlights', 'Résumé officiel', 'Muhtasari rasmi', 'Melhores momentos oficiais'),
