@@ -33,14 +33,15 @@ for src, (out, extra) in pages.items():
 pages_n, _ = nations.build(root, fonts, emblem, flags)
 for out, html in pages_n.items():
     built[out] = sitebar.inject(html, "desk", "desk")
-# Desk pages keep readers on the desk (Andrew, 23 Nov 2026, Gatekeeper A3): every outside link except WhatsApp
-# becomes plain text; the source stays named, the address is not clickable.
+# Desk pages keep readers on the desk (Andrew, 23 Nov 2026, Gatekeeper A3): every outside link becomes plain text;
+# the source stays named, the address is not clickable. Contact routes stay live (Andrew, 23 Nov 2026): WhatsApp,
+# Afritech's and Andrew's LinkedIn pages, and Afritech Sports' own sites (home site, Player CVs, this desk).
 import re as _re
 DESK = "https://afritech-advisory.github.io/Afritech-Advisory-afritech-tournament-desk/"
 def _local(html):
     def sub(m):
         u = m.group(1)
-        if u.startswith(("https://wa.me/", DESK)):
+        if u.startswith(("https://wa.me/", DESK, "https://www.linkedin.com/company/afritech-sports-technology-and-innovation-group-limited", "https://www.linkedin.com/in/andrew-r-b1b514", "https://afritech-advisory.github.io/", "https://afritechsports.github.io/")):
             return m.group(0)
         return f'<span class="src-ref">{m.group(2)}</span>'
     return _re.sub(r'<a\b[^>]*?href="(https?://[^"]+)"[^>]*>(.*?)</a>', sub, html, flags=_re.S)
