@@ -400,6 +400,7 @@ E = [
 ]
 
 JS = [
+("'Key frames: FIFA official broadcast, used for match analysis'", "'Images clés : diffusion officielle de la FIFA, utilisées pour l’analyse du match'", "'Picha muhimu: matangazo rasmi ya FIFA, zimetumika kwa uchambuzi wa mechi'", "'Imagens-chave: transmissão oficial da FIFA, usadas para a análise do jogo'"),
 ("'Full clips on request'", "'Extraits complets sur demande'", "'Video kamili kwa ombi'", "'Clipes completos sob pedido'"),
 ("'Hello Afritech, please send me the full clip for this goal: '", "'Bonjour Afritech, merci de m’envoyer l’extrait complet de ce but : '", "'Habari Afritech, tafadhali nitumieni video kamili ya bao hili: '", "'Olá, Afritech, por favor me enviem o clipe completo deste gol: '"),
 ("'Key frames from the official broadcast'", "'Images clés de la diffusion officielle'", "'Picha muhimu kutoka matangazo rasmi'", "'Imagens-chave da transmissão oficial'"),

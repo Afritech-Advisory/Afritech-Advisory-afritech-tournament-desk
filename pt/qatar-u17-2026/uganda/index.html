@@ -437,6 +437,7 @@ var s=document.createElement('script');s.src='https://www.youtube.com/iframe_api
 .afp-cover button{font:700 .95rem var(--body,system-ui);min-height:44px;padding:8px 16px;border-radius:22px;border:0;cursor:pointer;background:#E8701A;color:#1B1206}
 .afp-cover button.g{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.6)}
 .afp-kf{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;width:100%;max-width:520px}
+.afp-kfc{margin:0;font:400 .72rem var(--body,system-ui);opacity:.8}
 .afp-kf img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:6px;background:#0B1C33}
 .afp-cover a.afp-wa{display:inline-block;min-height:44px;line-height:44px;padding:0 16px;border-radius:22px;background:#25D366;color:#06210F;font:700 .95rem var(--body,system-ui);text-decoration:none}
 .afp-bar{position:absolute;left:0;right:0;bottom:0;height:4px;z-index:4;background:rgba(255,255,255,.18)}
@@ -447,7 +448,7 @@ var s=document.createElement('script');s.src='https://www.youtube.com/iframe_api
    and shows Replay / Next. A transparent layer over the video takes every tap (pause, play), so nothing on the
    YouTube player itself can be pressed: no logo, no title, no suggested videos, no way off this page. */
 (function(){
-var T={sound:'Ativar som',mute:'Desativar som',tap:'Toque para assistir',paused:'Pausado',cont:'Continuar',replay:'Ver de novo',next:'Próximo gol',done:'Clipe encerrado.',err:'Este clipe não pode ser exibido aqui no momento.',retry:'Tentar de novo',pp:'Pausar ou reproduzir o clipe',req:'Clipes completos sob pedido',ask:'Olá, Afritech, por favor me enviem o clipe completo deste gol: ',kf:'Imagens-chave da transmissão oficial'};
+var T={sound:'Ativar som',mute:'Desativar som',tap:'Toque para assistir',paused:'Pausado',cont:'Continuar',replay:'Ver de novo',next:'Próximo gol',done:'Clipe encerrado.',err:'Este clipe não pode ser exibido aqui no momento.',retry:'Tentar de novo',pp:'Pausar ou reproduzir o clipe',req:'Clipes completos sob pedido',ask:'Olá, Afritech, por favor me enviem o clipe completo deste gol: ',kf:'Imagens-chave da transmissão oficial',kfc:'Imagens-chave: transmissão oficial da FIFA, usadas para a análise do jogo'};
 var WA='https://wa.me/254715551506?text=';
 function el(h){var d=document.createElement('div');d.innerHTML=h;return d.firstChild}
 function cover(st,msg,btns){var c=st.cover;c.innerHTML='<p style="margin:0">'+msg+'</p>';var r=el('<div class="row"></div>');
@@ -463,7 +464,7 @@ function poll(st){stopPoll(st);st.t=setInterval(function(){try{var t=st.p.getCur
 function fail(st){stopPoll(st);clearTimeout(st.w);clearTimeout(st.r);var o=st.o,f=o.fb;
  cover(st,T.err,[[T.retry,function(){st.quiet=0;window.afClip(st.box,st.o)}]]);
  if(f){var c=st.cover,h='';
-  if(f.st&&f.st.length){h='<div class="afp-kf" role="group" aria-label="'+T.kf+'">'+f.st.slice(0,3).map(function(u){return '<img src="'+u+'" alt="" loading="lazy" decoding="async">'}).join('')+'</div>'}
+  if(f.st&&f.st.length){h='<div class="afp-kf" role="group" aria-label="'+T.kf+'">'+f.st.slice(0,3).map(function(u){return '<img src="'+u+'" alt="" loading="lazy" decoding="async">'}).join('')+'</div><p class="afp-kfc">'+T.kfc+'</p>'}
   var a=document.createElement('a');a.className='afp-wa';a.target='_blank';a.rel='noopener';a.textContent=T.req;
   a.href=WA+encodeURIComponent(T.ask+f.m+', '+f.g);a.addEventListener('click',function(ev){ev.stopPropagation()});
   if(h)c.insertAdjacentHTML('afterbegin',h);c.appendChild(a)}
