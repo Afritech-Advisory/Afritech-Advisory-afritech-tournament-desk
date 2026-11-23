@@ -1,5 +1,5 @@
 {
- "updated": "22 November 2026",
+ "updated": "23 November 2026",
  "highlightsNote": "Goal times link to FIFA's official highlights on YouTube.",
  "nations": [
   {
@@ -228,7 +228,62 @@
      "time": "17:30",
      "home": "Italy",
      "away": "Côte d'Ivoire",
-     "venue": "Aspire Zone, Pitch 3"
+     "venue": "Aspire Zone, Pitch 3",
+     "id": "civ-ita",
+     "score": "2-1",
+     "goals": [
+      {
+       "min": "28'",
+       "team": "Italy",
+       "who": "Francesco Gasparello",
+       "type": "Inside the box"
+      },
+      {
+       "min": "70'",
+       "team": "Italy",
+       "who": "Francesco Olivieri",
+       "type": "Free kick",
+       "pid": "francesco-olivieri"
+      },
+      {
+       "min": "90+10'",
+       "team": "Côte d'Ivoire",
+       "who": "Harafat Diabaté",
+       "how": "Penalty given after a video review",
+       "type": "Penalty",
+       "pid": "harafat-diabate"
+      }
+     ],
+     "story": "Italy led through Francesco Gasparello after 28 minutes and Francesco Olivieri's direct free kick made it 2-0 after 70. Côte d'Ivoire had one penalty overturned on video review, then won another in the tenth minute of added time, and Harafat Diabaté scored it.",
+     "keyNumbers": [
+      [
+       "90+10'",
+       "Harafat Diabaté's penalty"
+      ],
+      [
+       "3",
+       "points: level with Uzbekistan"
+      ],
+      [
+       "26",
+       "November: Jamaica, a win sends Côte d'Ivoire through"
+      ]
+     ],
+     "analysis": [
+      {
+       "h": "Italy's two moments",
+       "p": "Italy scored after 28 minutes and from a direct free kick after 70. They are through to the round of 32 with six points and eight goals in two matches."
+      },
+      {
+       "h": "Côte d'Ivoire kept going",
+       "p": "A penalty for Côte d'Ivoire was overturned after a video review midway through the second half. They kept pushing and won another in the tenth minute of added time; Harafat Diabaté scored it."
+      },
+      {
+       "h": "What it means for the group",
+       "p": "Uzbekistan beat Jamaica 6-2, so Côte d'Ivoire are level on three points with Uzbekistan, third on goal difference. A win against Jamaica on Thursday 26 November takes them through."
+      }
+     ],
+     "scout": "Harafat Diabaté took the penalty in the tenth minute of added time with the match on the line: follow him, captain Hubert Yao and Abass Luc Diarrassouba against Jamaica on 26 November."
     },
     {
      "date": "Thursday 26 November",
@@ -308,7 +363,114 @@
      "time": "16:30",
      "home": "Senegal",
      "away": "Cuba",
-     "venue": "Aspire Zone, Pitch 5"
+     "venue": "Aspire Zone, Pitch 5",
+     "id": "sen-cub",
+     "score": "9-0",
+     "goals": [
+      {
+       "min": "7'",
+       "team": "Senegal",
+       "who": "Ibrahima Dione",
+       "how": "Finished a team move into the top corner",
+       "type": "Open play",
+       "pid": "ibrahima-dione",
+       "apid": "sidy-ndiaye"
+      },
+      {
+       "min": "14'",
+       "team": "Senegal",
+       "who": "Mouhamed Faye",
+       "how": "Volley on his first start",
+       "type": "Open play",
+       "pid": "mouhamed-faye"
+      },
+      {
+       "min": "21'",
+       "team": "Senegal",
+       "who": "Sidy Barhama Ndiaye",
+       "type": "Open play",
+       "pid": "sidy-ndiaye"
+      },
+      {
+       "min": "24'",
+       "team": "Senegal",
+       "who": "Sega Fall Mbodji",
+       "type": "Open play",
+       "pid": "sega-mbodji"
+      },
+      {
+       "min": "34'",
+       "team": "Senegal",
+       "who": "Ibrahima Dione",
+       "type": "Open play",
+       "pid": "ibrahima-dione"
+      },
+      {
+       "min": "49'",
+       "team": "Senegal",
+       "who": "Ibrahima Konte",
+       "how": "Solo goal, past four defenders",
+       "type": "Open play",
+       "pid": "ibrahima-konte"
+      },
+      {
+       "min": "55'",
+       "team": "Senegal",
+       "who": "Sega Fall Mbodji",
+       "type": "Open play",
+       "pid": "sega-mbodji",
+       "apid": "jerome-albis"
+      },
+      {
+       "min": "65'",
+       "team": "Senegal",
+       "who": "El Hadji Ibrahima Sow",
+       "how": "Captain's goal",
+       "pid": "el-hadji-sow"
+      },
+      {
+       "min": "72'",
+       "team": "Senegal",
+       "who": "Maurice Biaye",
+       "how": "Strike from distance off the bench",
+       "type": "Long range",
+       "pid": "maurice-biaye"
+      }
+     ],
+     "story": "Senegal led 5-0 at half-time with five different scorers by the 34th minute, and finished 9-0, their biggest win at a U-17 World Cup. Ibrahima Dione scored twice and was Player of the Match; Sega Fall Mbodji also scored twice, and captain El Hadji Ibrahima Sow got the eighth.",
+     "keyNumbers": [
+      [
+       "9-0",
+       "Senegal's biggest U-17 World Cup win"
+      ],
+      [
+       "7",
+       "different Senegal scorers"
+      ],
+      [
+       "13",
+       "shots on target, to Cuba's 3"
+      ],
+      [
+       "3",
+       "goals in two matches for Sega Fall Mbodji"
+      ]
+     ],
+     "analysis": [
+      {
+       "h": "Goals from everywhere",
+       "p": "Seven different players scored, from a player on his first start (Mouhamed Faye's volley) to a substitute's strike from distance (Maurice Biaye). Five goals came before half-time."
+      },
+      {
+       "h": "The attack is shared",
+       "p": "Ibrahima Dione scored twice and set the tempo; Sidy Barhama Ndiaye scored one and set up another; Ibrahima Konte's 49th-minute goal, past four defenders, was FIFA's pick of the night."
+      },
+      {
+       "h": "What it means for the group",
+       "p": "Croatia beat Tajikistan 4-0, so Senegal and Croatia both have four points; Senegal top Group F on goal difference before Tajikistan on Thursday 26 November."
+      }
+     ],
+     "scout": "Nine goals from seven players gives clubs a whole squad to watch: start with Ibrahima Dione, Sega Fall Mbodji and captain El Hadji Ibrahima Sow against Tajikistan on 26 November."
     },
     {
      "date": "Thursday 26 November",
@@ -393,7 +555,64 @@
      "time": "18:30",
      "home": "Mali",
      "away": "Belgium",
-     "venue": "Aspire Zone, Pitch 7"
+     "venue": "Aspire Zone, Pitch 7",
+     "id": "mli-bel",
+     "score": "2-1",
+     "goals": [
+      {
+       "min": "13'",
+       "team": "Belgium",
+       "who": "Niels Filippo",
+       "how": "From a backheel",
+       "type": "Open play"
+      },
+      {
+       "min": "18'",
+       "team": "Mali",
+       "who": "Djigui Koïta",
+       "type": "Open play",
+       "pid": "djigui-koita"
+      },
+      {
+       "min": "67'",
+       "team": "Mali",
+       "who": "Yaya Niang",
+       "how": "Set up by Issiaka Koné",
+       "type": "Open play",
+       "pid": "yaya-niang",
+       "apid": "issiaka-kone"
+      }
+     ],
+     "story": "Belgium scored first through Niels Filippo after 13 minutes. Djigui Koïta levelled five minutes later and Yaya Niang won it after 67, set up by Issiaka Koné. Mali had 23 attempts at goal to Belgium's three and are the first African side into the round of 32.",
+     "keyNumbers": [
+      [
+       "23",
+       "Mali attempts at goal, to Belgium's 3"
+      ],
+      [
+       "60%",
+       "Mali's share of the ball"
+      ],
+      [
+       "6",
+       "points: Mali are through to the round of 32"
+      ]
+     ],
+     "analysis": [
+      {
+       "h": "A fast reply",
+       "p": "Belgium led after 13 minutes. Mali needed five minutes to level through Djigui Koïta, and it was 1-1 at half-time."
+      },
+      {
+       "h": "Mali ran the match",
+       "p": "Mali had 60% of the ball and 23 attempts to Belgium's three. The winner came after 67 minutes: Issiaka Koné's pass, Yaya Niang's finish."
+      },
+      {
+       "h": "What it means for the group",
+       "p": "Six points from two matches: Mali are through to the round of 32 as Group G leaders. New Zealand and Vietnam drew 3-3, so Belgium are second on three before the last round on Thursday 26 November."
+      }
+     ],
+     "scout": "Mali beat the group's European side with three different players in the goals: follow Djigui Koïta, Yaya Niang and Issiaka Koné against Vietnam on 26 November."
     },
     {
      "date": "Thursday 26 November",
@@ -515,7 +734,76 @@
      "time": "18:00",
      "home": "Morocco",
      "away": "China PR",
-     "venue": "Aspire Zone, Pitch 2"
+     "venue": "Aspire Zone, Pitch 2",
+     "id": "mar-chn",
+     "score": "2-2",
+     "goals": [
+      {
+       "min": "2'",
+       "team": "China PR",
+       "who": "Zhao Songyuan",
+       "how": "Won the ball high and finished low from the edge of the box",
+       "type": "Open play"
+      },
+      {
+       "min": "57'",
+       "team": "China PR",
+       "who": "Zhao Songyuan",
+       "how": "From He Sifan's cross",
+       "type": "Open play"
+      },
+      {
+       "min": "64'",
+       "team": "Morocco",
+       "who": "Ziyad Baha",
+       "how": "Won the penalty himself",
+       "type": "Penalty",
+       "pid": "ziyad-baha"
+      },
+      {
+       "min": "90+9'",
+       "team": "Morocco",
+       "who": "Rami Lougmani",
+       "how": "Close-range finish from Adam Soudi's cross, off the bench",
+       "type": "Inside the box",
+       "pid": "rami-lougmani",
+       "apid": "adam-soudi"
+      }
+     ],
+     "story": "China PR led after two minutes and again through Zhao Songyuan after 57. Ziyad Baha won and scored a penalty after 64 minutes, and substitute Rami Lougmani equalised in the ninth minute of added time from Adam Soudi's cross. Morocco had about two-thirds of the ball.",
+     "keyNumbers": [
+      [
+       "90+9'",
+       "Rami Lougmani's equaliser"
+      ],
+      [
+       "3",
+       "goals for Ziyad Baha in two matches"
+      ],
+      [
+       "4",
+       "points: second in Group H"
+      ],
+      [
+       "2",
+       "goals down after 57 minutes"
+      ]
+     ],
+     "analysis": [
+      {
+       "h": "An early setback",
+       "p": "China PR scored after two minutes and doubled the lead early in the second half, both goals from striker Zhao Songyuan."
+      },
+      {
+       "h": "Morocco never stopped",
+       "p": "Ziyad Baha won the penalty and scored it after 64 minutes. Rami Lougmani, on from the bench, finished Adam Soudi's cross in the ninth minute of added time: his second goal of the tournament as a substitute."
+      },
+      {
+       "h": "What it means for the group",
+       "p": "Spain beat Fiji 15-0 and lead Group H on six points; Morocco are second on four. Spain v Morocco on Thursday 26 November decides first place."
+      }
+     ],
+     "scout": "Rami Lougmani has scored in both matches from the bench, and Ziyad Baha now has three goals: both are the names to follow against Spain on 26 November."
     },
     {
      "date": "Thursday 26 November",
