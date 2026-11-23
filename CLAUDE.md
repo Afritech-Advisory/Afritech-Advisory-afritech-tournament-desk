@@ -41,3 +41,9 @@ The desk is a scouting system, so every nation page and the main board run on th
 - Every new or changed piece of English text (data files, match reports, scout cards, page text, JS messages) gets its French, Kiswahili and Brazilian Portuguese wording in `src/i18n/dict_a.py` (site and main page) or `src/i18n/dict_b.py` (nations, reports, cards, JS) in the same pull request. `build.py` turns them into `src/i18n/*.json`.
 - The build stops if any text is missing a translation and lists it in `src/i18n/missing-<lang>.txt`. Never publish with missing translations and never ship English inside a translated page.
 - Names of players, clubs, coaches and places stay as written. Write natural sales-first wording for each reader (French with " : " spacing, Brazilian Portuguese not European), not word-for-word.
+
+## Gatekeeper decisions, 23 Nov 2026 (Andrew)
+- **A3, readers stay on the desk:** no link on a desk page sends people elsewhere except WhatsApp. `build.py` turns every other outside link into plain text (the source stays named) and the desk header shows only the brand and "Talk to us on WhatsApp". Don't add outside links by hand.
+- **B2, Kiswahili reads label first:** number tiles on Kiswahili pages show the label, then the value ("Pointi: 3"). `src/i18n.py` does it in every build; write the English tile as usual.
+- **C, FIFA's minute is the record:** when FIFA's match report or round-up gives a different goal minute from a feed or another site, use FIFA's minute straight away. Don't wait for the video.
+
