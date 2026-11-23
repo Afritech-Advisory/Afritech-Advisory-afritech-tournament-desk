@@ -125,10 +125,10 @@ def match_report(m, nation):
     kn = "".join(f'<div><b>{H.escape(a)}</b><span>{H.escape(b)}</span></div>' for a, b in m.get("keyNumbers", []))
     an = "".join(f'<div><h4>{H.escape(x["h"])}</h4><p>{H.escape(x["p"])}</p></div>' for x in m.get("analysis", []))
     vid = vid_id(m["video"]) if m.get("video") else ""
-    cl = json.dumps([{"s": g["s"], "e": g["e"], "l": f'{g["min"]} {g["who"]}'} for g in clips])
+    cl = json.dumps([{"s": g["s"], "e": g["e"], "l": f'{g["min"]} {g["who"]}', "st": scouting.stills(g)} for g in clips])
     lab = f"Play all {len(clips)} goals" if len(clips) > 1 else "Play the goal"
     if clips:
-        player = (f'<div class="player" id="pl-{mid}" data-v="{vid}" data-clips=\'{H.escape(cl)}\'><div class="ph"><p>{lab}: each goal plays as its own clip, stops, and moves to the next.</p></div></div>'
+        player = (f'<div class="player" id="pl-{mid}" data-v="{vid}" data-mt="{H.escape(scouting.match_title(m))}" data-clips=\'{H.escape(cl)}\'><div class="ph"><p>{lab}: each goal plays as its own clip, stops, and moves to the next.</p></div></div>'
                   f'<button class="playall" type="button" data-m="{mid}">&#9654; {lab}</button><p class="now" id="now-{mid}" aria-live="polite"></p>')
     elif vid:
         player = (f'<div class="player" id="pl-{mid}" data-v="{vid}" data-clips="[]"><div class="ph"><p>Official FIFA highlights. Goal-by-goal clips follow once each goal is checked on video.</p></div></div>'
@@ -237,7 +237,7 @@ function play(m,i){{var el=document.getElementById('pl-'+m),clips=JSON.parse(el.
  if(!c){{now.textContent='Official highlights';mark(m,-1);window.afClip(el,{{v:v,s:0,e:0}});return}}
  now.textContent='Now playing: '+c.l+(st.all?' ('+(i+1)+' of '+clips.length+')':'');mark(m,i);
  var last=i+1>=clips.length;
- window.afClip(el,{{v:v,s:c.s,e:c.e,
+ window.afClip(el,{{v:v,s:c.s,e:c.e,fb:{{m:el.getAttribute('data-mt'),g:c.l,st:c.st||[]}},
   next:last?null:function(){{st.all=false;play(m,i+1)}},
   onEnd:function(){{if(st.all&&!last){{setTimeout(function(){{if(st.all&&st.i===i)play(m,i+1)}},1200)}}
    else{{st.all=false;mark(m,-1);now.textContent=clips.length>1?'Clip finished. Press Play all or pick another goal.':'Clip finished.'}}}}}})}}

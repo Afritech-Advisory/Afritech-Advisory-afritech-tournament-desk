@@ -1,5 +1,5 @@
 {
- "updated": "20 November 2026",
+ "updated": "22 November 2026",
  "highlightsNote": "Goal times link to FIFA's official highlights on YouTube.",
  "nations": [
   {
@@ -86,7 +86,56 @@
      "time": "18:00",
      "home": "Qatar",
      "away": "Egypt",
-     "venue": "Aspire Zone, Pitch 2"
+     "venue": "Aspire Zone, Pitch 2",
+     "id": "egy-qat",
+     "score": "0-2",
+     "goals": [
+      {
+       "min": "2'",
+       "team": "Egypt",
+       "who": "Ahmed Safwat",
+       "how": "Captain's volley",
+       "type": "Open play",
+       "pid": "ahmed-safwat"
+      },
+      {
+       "min": "33'",
+       "team": "Egypt",
+       "who": "Khaled Mokhtar",
+       "type": "Open play",
+       "pid": "khaled-mokhtar"
+      }
+     ],
+     "story": "Captain Ahmed Safwat volleyed Egypt ahead inside two minutes and Khaled Mokhtar made it 2-0 after 33. Hosts Qatar pushed for a way back but could not break Egypt's back line. FIFA named Safwat Player of the Match.",
+     "keyNumbers": [
+      [
+       "2'",
+       "Ahmed Safwat's opener"
+      ],
+      [
+       "0",
+       "goals conceded"
+      ],
+      [
+       "3",
+       "points, second in Group A"
+      ]
+     ],
+     "analysis": [
+      {
+       "h": "The captain set the tone",
+       "p": "Safwat scored inside two minutes and was named Player of the Match: the response the side needed after losing to Greece with ten men."
+      },
+      {
+       "h": "A clean sheet against the hosts",
+       "p": "Qatar had won their opener 2-0; Egypt kept them out for 90 minutes."
+      },
+      {
+       "h": "What it means for the group",
+       "p": "Greece beat Panama 2-1 and are through on six points. Egypt are second on three, level with Qatar, before Panama v Egypt on Wednesday 25 November."
+      }
+     ],
+     "scout": "Follow captain Ahmed Safwat and Khaled Mokhtar against Panama on 25 November: a win would put Egypt in the round of 32."
     },
     {
      "date": "Wednesday 25 November",
@@ -112,7 +161,63 @@
      "time": "19:00",
      "home": "Côte d'Ivoire",
      "away": "Uzbekistan",
-     "venue": "Aspire Zone"
+     "venue": "Aspire Zone",
+     "id": "civ-uzb",
+     "score": "2-1",
+     "goals": [
+      {
+       "min": "7'",
+       "team": "Côte d'Ivoire",
+       "who": "Hubert Yao",
+       "how": "Captain's opener",
+       "type": "Open play",
+       "pid": "hubert-yao"
+      },
+      {
+       "min": "51'",
+       "team": "Uzbekistan",
+       "who": "Mukhammad Khakimov",
+       "type": "Open play"
+      },
+      {
+       "min": "88'",
+       "team": "Côte d'Ivoire",
+       "who": "Abass Luc Diarrassouba",
+       "how": "Off the bench",
+       "type": "Open play",
+       "pid": "abass-diarrassouba"
+      }
+     ],
+     "story": "Captain Hubert Yao put Côte d'Ivoire ahead after seven minutes. Uzbekistan levelled through Mukhammad Khakimov six minutes after half-time, and substitute Abass Luc Diarrassouba won it two minutes from time. Three points to open Group E.",
+     "keyNumbers": [
+      [
+       "7'",
+       "captain Hubert Yao's opener"
+      ],
+      [
+       "88'",
+       "the winner, from a substitute"
+      ],
+      [
+       "3",
+       "points from the opening match"
+      ]
+     ],
+     "analysis": [
+      {
+       "h": "Captain sets the tone",
+       "p": "Hubert Yao scored inside the first ten minutes, the start a side wants against a well-organised Asian team."
+      },
+      {
+       "h": "The bench decided it",
+       "p": "Uzbekistan were level from the 51st minute. Abass Luc Diarrassouba, on as a substitute, scored the winner in the 88th minute."
+      },
+      {
+       "h": "What it means for the group",
+       "p": "Italy also won, 6-0 against Jamaica, so Italy v Côte d'Ivoire on 23 November is likely to decide first place in Group E."
+      }
+     ],
+     "scout": "Follow captain Hubert Yao and match-winner Abass Luc Diarrassouba against Italy on 23 November, the group's benchmark match."
     },
     {
      "date": "Monday 23 November",
@@ -427,7 +532,67 @@
      "time": "16:00",
      "home": "Tanzania",
      "away": "Costa Rica",
-     "venue": "Aspire Zone, Pitch 1"
+     "venue": "Aspire Zone, Pitch 1",
+     "id": "tan-crc",
+     "score": "2-2",
+     "goals": [
+      {
+       "min": "8'",
+       "team": "Costa Rica",
+       "who": "Urbina",
+       "type": "Open play"
+      },
+      {
+       "min": "15'",
+       "team": "Costa Rica",
+       "who": "Pilarte",
+       "type": "Open play"
+      },
+      {
+       "min": "51'",
+       "team": "Tanzania",
+       "who": "Faraji Kayanda",
+       "type": "Open play",
+       "pid": "faraji-kayanda"
+      },
+      {
+       "min": "73'",
+       "team": "Tanzania",
+       "who": "Faraji Kayanda",
+       "type": "Open play",
+       "pid": "faraji-kayanda"
+      }
+     ],
+     "story": "Tanzania's first match at a U-17 World Cup. Costa Rica led 2-0 after 15 minutes, then Faraji Kayanda scored twice after half-time to earn a 2-2 draw and FIFA's Player of the Match award. A first World Cup point for the Serengeti Boys.",
+     "keyNumbers": [
+      [
+       "0-2",
+       "down after 15 minutes"
+      ],
+      [
+       "2",
+       "goals from Faraji Kayanda"
+      ],
+      [
+       "1",
+       "first World Cup point for Tanzania"
+      ]
+     ],
+     "analysis": [
+      {
+       "h": "A slow start",
+       "p": "Costa Rica scored twice in the first 15 minutes. Coach Elieneza Nsanganzelu pointed to early defensive lapses."
+      },
+      {
+       "h": "Kayanda turned it round",
+       "p": "Faraji Kayanda scored in the 51st and 73rd minutes, and FIFA named him Player of the Match."
+      },
+      {
+       "h": "What it means for the group",
+       "p": "Brazil beat Republic of Ireland 2-1, so Brazil lead Group I and Tanzania share second place with Costa Rica. Brazil v Tanzania is on Tuesday 24 November."
+      }
+     ],
+     "scout": "Follow Faraji Kayanda against Brazil on 24 November: two goals in his first World Cup match, against a side that led 2-0."
     },
     {
      "date": "Tuesday 24 November",
@@ -460,7 +625,80 @@
      "time": "18:30",
      "home": "Chile",
      "away": "Algeria",
-     "venue": "Aspire Zone, Pitch 7"
+     "venue": "Aspire Zone, Pitch 7",
+     "id": "alg-chi",
+     "score": "4-2",
+     "goals": [
+      {
+       "min": "8'",
+       "team": "Algeria",
+       "who": "Ilyes Mekkaoui",
+       "type": "Open play",
+       "pid": "ilyes-mekkaoui"
+      },
+      {
+       "min": "15'",
+       "team": "Algeria",
+       "who": "Yacine Abed",
+       "type": "Open play",
+       "pid": "yacine-abed"
+      },
+      {
+       "min": "21'",
+       "team": "Chile",
+       "who": "Rodrigo Catalán",
+       "type": "Open play"
+      },
+      {
+       "min": "28'",
+       "team": "Chile",
+       "who": "Lucas López",
+       "type": "Open play"
+      },
+      {
+       "min": "34'",
+       "team": "Chile",
+       "who": "Amaro Pérez",
+       "type": "Open play"
+      },
+      {
+       "min": "82'",
+       "team": "Chile",
+       "who": "Jonathan Guerrero",
+       "how": "Confirmed after a VAR review",
+       "type": "Open play"
+      }
+     ],
+     "story": "Algeria's first U-17 World Cup match in 17 years. Ilyes Mekkaoui and Yacine Abed put them 2-0 up inside 15 minutes, but Chile scored three times before half-time and added a fourth eight minutes from the end.",
+     "keyNumbers": [
+      [
+       "2-0",
+       "Algeria's lead after 15 minutes"
+      ],
+      [
+       "13",
+       "minutes in which Chile scored three"
+      ],
+      [
+       "17",
+       "years since Algeria's last U-17 World Cup"
+      ]
+     ],
+     "analysis": [
+      {
+       "h": "A fast start",
+       "p": "Mekkaoui scored after eight minutes and Abed made it 2-0 after 15: Algeria pressed Chile high from the kick-off."
+      },
+      {
+       "h": "Thirteen minutes changed the match",
+       "p": "Chile scored at 21, 28 and 34 minutes. Holding a lead is the lesson to take into the next two matches."
+      },
+      {
+       "h": "What it means for the group",
+       "p": "Dominican Republic and Montenegro drew 1-1, so Chile lead Group J. Algeria play Montenegro on 24 November, and a win would put them back in the race for the round of 32."
+      }
+     ],
+     "scout": "Mekkaoui and Abed both scored against Chile: follow them against Montenegro on 24 November."
     },
     {
      "date": "Tuesday 24 November",
@@ -493,7 +731,60 @@
      "time": "16:30",
      "home": "Cameroon",
      "away": "Venezuela",
-     "venue": "Aspire Zone, Pitch 5"
+     "venue": "Aspire Zone, Pitch 5",
+     "id": "cmr-ven",
+     "score": "1-2",
+     "goals": [
+      {
+       "min": "29'",
+       "team": "Venezuela",
+       "who": "Román Lozada",
+       "type": "Open play"
+      },
+      {
+       "min": "59'",
+       "team": "Venezuela",
+       "who": "Santiago Sánchez",
+       "type": "Open play"
+      },
+      {
+       "min": "90+2'",
+       "team": "Cameroon",
+       "who": "Aviel Hentcho",
+       "type": "Open play",
+       "pid": "aviel-hentcho"
+      }
+     ],
+     "story": "Venezuela led through Román Lozada before half-time and Santiago Sánchez just before the hour. Eric Bolo was sent off for a second yellow card late on, and Aviel Hentcho pulled one back for Cameroon in added time.",
+     "keyNumbers": [
+      [
+       "0-2",
+       "after 59 minutes"
+      ],
+      [
+       "90+2'",
+       "Aviel Hentcho's goal"
+      ],
+      [
+       "10",
+       "men at the end, after a second yellow card"
+      ]
+     ],
+     "analysis": [
+      {
+       "h": "Venezuela took their chances",
+       "p": "Román Lozada, FIFA's Player of the Match, scored after 29 minutes and Santiago Sánchez doubled the lead after 59."
+      },
+      {
+       "h": "A late reply with ten men",
+       "p": "Eric Bolo was sent off late on; Aviel Hentcho still scored in added time."
+      },
+      {
+       "h": "What it means for the group",
+       "p": "Mexico beat Romania 1-0, so Venezuela and Mexico lead Group K. Cameroon play Mexico on 24 November and need points to stay in the race."
+      }
+     ],
+     "scout": "Aviel Hentcho scored with Cameroon down to ten men: follow him against Mexico on 24 November."
     },
     {
      "date": "Tuesday 24 November",
@@ -621,7 +912,60 @@
      "time": "18:30",
      "home": "Argentina",
      "away": "Mozambique",
-     "venue": "Aspire Zone, Pitch 7"
+     "venue": "Aspire Zone, Pitch 7",
+     "id": "moz-arg",
+     "score": "2-1",
+     "goals": [
+      {
+       "min": "5'",
+       "team": "Argentina",
+       "who": "Machuca",
+       "type": "Open play"
+      },
+      {
+       "min": "32'",
+       "team": "Argentina",
+       "who": "Escobar",
+       "type": "Open play"
+      },
+      {
+       "min": "45+1'",
+       "team": "Mozambique",
+       "who": "Alírio Cuna Júnior",
+       "type": "Open play",
+       "pid": "alirio-cuna"
+      }
+     ],
+     "story": "Argentina scored after five minutes and again after 32. Alírio Cuna Júnior pulled one back in first-half added time, his third goal of the tournament, but Argentina held on for their first win.",
+     "keyNumbers": [
+      [
+       "3",
+       "goals for Alírio Cuna Júnior in two matches"
+      ],
+      [
+       "45+1'",
+       "Mozambique's reply"
+      ],
+      [
+       "+3",
+       "goal difference, second in Group C"
+      ]
+     ],
+     "analysis": [
+      {
+       "h": "An early setback",
+       "p": "Argentina led after five minutes, the opposite of the start Mozambique made against Denmark."
+      },
+      {
+       "h": "Cuna Júnior again",
+       "p": "His goal just before half-time made it three in two matches, Africa's leading scorer so far at the tournament."
+      },
+      {
+       "h": "What it means for the group",
+       "p": "Denmark and Australia drew 0-0. Australia lead Group C on four points; Mozambique are second on three with a +3 goal difference, ahead of Argentina, before meeting Australia on Wednesday 25 November."
+      }
+     ],
+     "scout": "Alírio Cuna Júnior has three goals in two matches: follow him and captain Diego Elias Pelembe against Australia on 25 November."
     },
     {
      "date": "Wednesday 25 November",
@@ -670,7 +1014,8 @@
        "min": "84'",
        "team": "Korea Republic",
        "who": "Kim Ji-woo",
-       "type": "Open play"
+       "type": "Open play",
+       "pid": "kim-ji-woo"
       }
      ],
      "story": "A hard opener against an Asian side that scored early. Uganda were 1-0 down at half-time and created a clear chance of their own before Korea pulled away.",
@@ -705,7 +1050,40 @@
      "time": "16:00",
      "home": "Ecuador",
      "away": "Uganda",
-     "venue": "Aspire Zone"
+     "venue": "Aspire Zone",
+     "id": "uga-ecu",
+     "score": "0-0",
+     "goals": [],
+     "story": "Uganda held Ecuador, winners of their opening match, to a goalless draw: Uganda's first point at a U-17 World Cup. Their goalkeeper made several saves to keep the clean sheet.",
+     "keyNumbers": [
+      [
+       "0",
+       "goals conceded"
+      ],
+      [
+       "1",
+       "first U-17 World Cup point for Uganda"
+      ],
+      [
+       "3",
+       "goals conceded in the opener, against Korea Republic"
+      ]
+     ],
+     "analysis": [
+      {
+       "h": "A defensive reply",
+       "p": "After the 3-0 defeat by Korea Republic, Uganda kept Ecuador out for 90 minutes; their goalkeeper made several saves."
+      },
+      {
+       "h": "Still looking for a first goal",
+       "p": "Uganda have not yet scored at the tournament. Chances are the area to watch in the last group match."
+      },
+      {
+       "h": "What it means for the group",
+       "p": "Korea Republic beat New Caledonia 6-0 and are through. Uganda are third with one point before meeting New Caledonia on 25 November; a win would take them to four points and keep the round of 32 in reach."
+      }
+     ],
+     "scout": "Uganda's defence held Ecuador: follow the back line and the first goal against New Caledonia on 25 November."
     },
     {
      "date": "Wednesday 25 November",

@@ -64,6 +64,9 @@ var s=document.createElement('script');s.src='https://www.youtube.com/iframe_api
 .afp-cover .row{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
 .afp-cover button{font:700 .95rem var(--body,system-ui);min-height:44px;padding:8px 16px;border-radius:22px;border:0;cursor:pointer;background:#E8701A;color:#1B1206}
 .afp-cover button.g{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.6)}
+.afp-kf{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;width:100%;max-width:520px}
+.afp-kf img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:6px;background:#0B1C33}
+.afp-cover a.afp-wa{display:inline-block;min-height:44px;line-height:44px;padding:0 16px;border-radius:22px;background:#25D366;color:#06210F;font:700 .95rem var(--body,system-ui);text-decoration:none}
 .afp-bar{position:absolute;left:0;right:0;bottom:0;height:4px;z-index:4;background:rgba(255,255,255,.18)}
 .afp-bar i{display:block;height:100%;width:0;background:#E8701A}
 </style>
@@ -72,7 +75,8 @@ var s=document.createElement('script');s.src='https://www.youtube.com/iframe_api
    and shows Replay / Next. A transparent layer over the video takes every tap (pause, play), so nothing on the
    YouTube player itself can be pressed: no logo, no title, no suggested videos, no way off this page. */
 (function(){
-var T={sound:'Sound on',mute:'Sound off',tap:'Tap to play',paused:'Paused',cont:'Continue',replay:'Replay',next:'Next goal',done:'Clip finished.',err:'This clip cannot be shown here right now.',retry:'Try again',pp:'Pause or play the clip'};
+var T={sound:'Sound on',mute:'Sound off',tap:'Tap to play',paused:'Paused',cont:'Continue',replay:'Replay',next:'Next goal',done:'Clip finished.',err:'This clip cannot be shown here right now.',retry:'Try again',pp:'Pause or play the clip',req:'Full clips on request',ask:'Hello Afritech, please send me the full clip for this goal: ',kf:'Key frames from the official broadcast'};
+var WA='https://wa.me/254715551506?text=';
 function el(h){var d=document.createElement('div');d.innerHTML=h;return d.firstChild}
 function cover(st,msg,btns){var c=st.cover;c.innerHTML='<p style="margin:0">'+msg+'</p>';var r=el('<div class="row"></div>');
  btns.forEach(function(b){var x=document.createElement('button');x.type='button';x.textContent=b[0];if(b[2])x.className='g';x.addEventListener('click',function(ev){ev.stopPropagation();b[1]()});r.appendChild(x)});
@@ -84,12 +88,20 @@ function finish(st){stopPoll(st);st.done=true;try{st.p.pauseVideo()}catch(x){}
  cover(st,T.done,b);st.bar.style.width='100%';if(o.onEnd)o.onEnd()}
 function poll(st){stopPoll(st);st.t=setInterval(function(){try{var t=st.p.getCurrentTime(),o=st.o,end=o.e||st.p.getDuration()-0.4;
  if(end>o.s)st.bar.style.width=Math.min(100,Math.max(0,(t-o.s)/(end-o.s)*100))+'%';if(end&&t>=end-0.15)finish(st)}catch(x){}},200)}
-function fail(st){stopPoll(st);clearTimeout(st.w);cover(st,T.err,[[T.retry,function(){window.afClip(st.box,st.o)}]])}
-function start(st){var o=st.o;st.done=false;st.bar.style.width='0';uncover(st);
+function fail(st){stopPoll(st);clearTimeout(st.w);clearTimeout(st.r);var o=st.o,f=o.fb;
+ cover(st,T.err,[[T.retry,function(){st.quiet=0;window.afClip(st.box,st.o)}]]);
+ if(f){var c=st.cover,h='';
+  if(f.st&&f.st.length){h='<div class="afp-kf" role="group" aria-label="'+T.kf+'">'+f.st.slice(0,3).map(function(u){return '<img src="'+u+'" alt="" loading="lazy" decoding="async">'}).join('')+'</div>'}
+  var a=document.createElement('a');a.className='afp-wa';a.target='_blank';a.rel='noopener';a.textContent=T.req;
+  a.href=WA+encodeURIComponent(T.ask+f.m+', '+f.g);a.addEventListener('click',function(ev){ev.stopPropagation()});
+  if(h)c.insertAdjacentHTML('afterbegin',h);c.appendChild(a)}
+ /* keep the player switched on: try again quietly, so the clip plays by itself as soon as it is allowed */
+ st.tries=(st.tries||0)+1;if(st.tries<=6)st.r=setTimeout(function(){if(document.body.contains(st.box)&&!st.cover.hidden){st.quiet=1;start(st)}},45000)}
+function start(st){var o=st.o;st.done=false;st.bar.style.width='0';if(!st.quiet)uncover(st);
  try{if(!st.sound)st.p.mute()}catch(x){}
  st.p.loadVideoById({videoId:o.v,startSeconds:o.s||0});
  try{st.p.playVideo()}catch(x){}
- clearTimeout(st.w);st.w=setTimeout(function(){try{var s=st.p.getPlayerState();if(s!==1&&s!==3&&!st.done)tapThrough(st)}catch(x){tapThrough(st)}},2500)}
+ clearTimeout(st.w);if(st.quiet)return;st.w=setTimeout(function(){try{var s=st.p.getPlayerState();if(s!==1&&s!==3&&!st.done)tapThrough(st)}catch(x){tapThrough(st)}},2500)}
 function tapThrough(st){ /* the phone wants a tap on the video itself: let one tap through, then the shield comes back */
  st.cover.hidden=true;st.shield.hidden=true;st.hint.hidden=false}
 window.afClip=function(box,o){
@@ -107,7 +119,7 @@ window.afClip=function(box,o){
   playerVars:{playsinline:1,controls:0,disablekb:1,fs:0,rel:0,modestbranding:1,iv_load_policy:3,cc_load_policy:0,start:Math.floor(o.s||0)},
   events:{onReady:function(){st.ready=1;start(st)},
    onError:function(){fail(st)},
-   onStateChange:function(e){if(e.data===1){clearTimeout(st.w);st.hint.hidden=true;st.snd.hidden=false;uncover(st);poll(st)}
+   onStateChange:function(e){if(e.data===1){clearTimeout(st.w);clearTimeout(st.r);st.quiet=0;st.tries=0;st.hint.hidden=true;st.snd.hidden=false;uncover(st);poll(st)}
     else if(e.data===2&&!st.done){stopPoll(st);cover(st,T.paused,[['▶ '+T.cont,function(){uncover(st);st.p.playVideo()}],['↺ '+T.replay,function(){window.afClip(st.box,st.o)},1]])}
     else if(e.data===0&&!st.done){finish(st)}}}})},
   function(){cover(st,T.err,[[T.retry,function(){location.reload()}]])});
@@ -121,13 +133,26 @@ CARD_JS = """<script>
 document.querySelectorAll('button.cclip').forEach(function(b){b.addEventListener('click',function(){
  var card=b.closest('.scard'),box=card.querySelector('.cplayer');box.hidden=false;
  card.querySelectorAll('button.cclip').forEach(function(x){x.classList.toggle('on',x===b)});
- window.afClip(box,{v:b.getAttribute('data-v'),s:+b.getAttribute('data-s'),e:+b.getAttribute('data-e')});
+ window.afClip(box,{v:b.getAttribute('data-v'),s:+b.getAttribute('data-s'),e:+b.getAttribute('data-e'),fb:{m:b.getAttribute('data-mt')||'',g:b.getAttribute('data-g')||'',st:JSON.parse(b.getAttribute('data-st')||'[]')}});
 })});
 var f=document.querySelector('.bfilter');if(f){f.hidden=false;f.querySelectorAll('button').forEach(function(b){b.addEventListener('click',function(){
  var r=b.getAttribute('data-r');f.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
  document.querySelectorAll('#board-cards .scard').forEach(function(c){c.hidden=!(r==='all'||c.getAttribute('data-region')===r)})})})}
 })();
 </script>"""
+
+
+STILLS_BASE = "/Afritech-Advisory-afritech-tournament-desk/qatar-u17-2026/stills/"
+
+
+def stills(g):
+    """Key frames from the official broadcast for a goal (web-sized JPEGs in qatar-u17-2026/stills/), shown
+    only when the official clip is refused. Empty until the frames for that goal exist."""
+    return [STILLS_BASE + s for s in g.get("stills", [])][:3]
+
+
+def match_title(m):
+    return f'{m["home"]} {m["score"]} {m["away"]}'
 
 
 def load(root):
@@ -197,7 +222,7 @@ def card(p, nations, here_slug=None):
         label = f'{kind} v {opp}, {g["min"]}'
         if g.get("s") is not None and m.get("video"):
             clips += 1
-            moments.append(f'<li><button class="clipbtn cclip" type="button" data-v="{vid(m["video"])}" data-s="{g["s"]}" data-e="{g["e"]}">&#9654; {H.escape(label)}</button></li>')
+            moments.append(f'<li><button class="clipbtn cclip" type="button" data-v="{vid(m["video"])}" data-s="{g["s"]}" data-e="{g["e"]}" data-mt="{H.escape(match_title(m))}" data-g="{H.escape(g["min"] + " " + g["who"])}" data-st="{H.escape(json.dumps(stills(g)))}">&#9654; {H.escape(label)}</button></li>')
         elif t["slug"]:
             href = f'#{m["id"]}' if here_slug == t["slug"] else (f'../{t["slug"]}/#{m["id"]}' if here_slug else f'{t["slug"]}/#{m["id"]}')
             moments.append(f'<li><a class="clipbtn" href="{href}">{H.escape(label)} &rsaquo;</a></li>')
