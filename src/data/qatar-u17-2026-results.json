@@ -781,6 +781,105 @@
      "who": "Yeremaiah"
     }
    ]
+  },
+  {
+   "id": "crc-irl",
+   "date": "24 Nov",
+   "group": "I",
+   "home": "Costa Rica",
+   "away": "Republic of Ireland",
+   "score": "0-2",
+   "goals": [
+    {
+     "min": "51'",
+     "team": "Republic of Ireland",
+     "who": "Maxim Afonin"
+    },
+    {
+     "min": "64'",
+     "team": "Republic of Ireland",
+     "who": "Cillian Murphy",
+     "pid": "cillian-murphy"
+    }
+   ]
+  },
+  {
+   "id": "dom-chi",
+   "date": "24 Nov",
+   "group": "J",
+   "home": "Dominican Republic",
+   "away": "Chile",
+   "score": "2-1",
+   "goals": [
+    {
+     "min": "34'",
+     "team": "Dominican Republic",
+     "who": "Daniel Fernández"
+    },
+    {
+     "min": "45'",
+     "team": "Dominican Republic",
+     "who": "Gabriel Florentino"
+    },
+    {
+     "min": "73'",
+     "team": "Chile",
+     "who": "Amaro Pérez",
+     "pid": "amaro-perez"
+    }
+   ]
+  },
+  {
+   "id": "ven-rou",
+   "date": "24 Nov",
+   "group": "K",
+   "home": "Venezuela",
+   "away": "Romania",
+   "score": "1-0",
+   "goals": [
+    {
+     "min": "64'",
+     "team": "Venezuela",
+     "who": "Román Lozada",
+     "pid": "roman-lozada"
+    }
+   ]
+  },
+  {
+   "id": "jpn-srb",
+   "date": "24 Nov",
+   "group": "L",
+   "home": "Japan",
+   "away": "Serbia",
+   "score": "0-1",
+   "goals": [
+    {
+     "min": "11'",
+     "team": "Serbia",
+     "who": "Dragan Anokic",
+     "type": "Penalty"
+    }
+   ]
+  },
+  {
+   "id": "hon-col",
+   "date": "24 Nov",
+   "group": "L",
+   "home": "Honduras",
+   "away": "Colombia",
+   "score": "0-2",
+   "goals": [
+    {
+     "min": "76'",
+     "team": "Colombia",
+     "who": "Matías Caicedo"
+    },
+    {
+     "min": "84'",
+     "team": "Colombia",
+     "who": "José Escorcia"
+    }
+   ]
   }
  ]
 }
