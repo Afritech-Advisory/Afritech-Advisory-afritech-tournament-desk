@@ -1,5 +1,5 @@
 {
- "updated": "23 November 2026",
+ "updated": "24 November 2026",
  "_note": "Public scout cards (Stage 1, public-domain evidence). Every player is under 18: club signal capped at MONITOR, agent at DEVELOP FIRST, no valuation. Numeric grades are published only after Andrew approves them in the private tracker.",
  "players": [
   {
@@ -1194,6 +1194,174 @@
    "up": "A third goal of the group.",
    "down": "No shots against Fiji.",
    "fed": "WATCHLIST"
+  },
+  {
+   "id": "jerome-albis",
+   "nation": "senegal",
+   "name": "Jérome Albis",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "facts": [
+    "Came on at half-time against Cuba for his first minutes of the tournament and set up Sega Fall Mbodji's second goal."
+   ],
+   "fed": "WATCHLIST",
+   "next": "Follow him against Tajikistan on Thursday 26 November, 19:00 Doha time.",
+   "up": "More minutes against Tajikistan.",
+   "down": "No minutes against Tajikistan."
+  },
+  {
+   "id": "adam-soudi",
+   "nation": "morocco",
+   "name": "Adam Soudi",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "facts": [
+    "Started in defence against China PR and crossed for Rami Lougmani's equaliser in the ninth minute of added time."
+   ],
+   "fed": "WATCHLIST",
+   "next": "Follow him against Spain on Thursday 26 November, 18:00 Doha time.",
+   "up": "A clean sheet or another assist against Spain.",
+   "down": "Spain's wingers on top of his side."
+  },
+  {
+   "id": "issiaka-kone",
+   "nation": "mali",
+   "name": "Issiaka Koné",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "facts": [
+    "Set up Yaya Niang's winner against Belgium."
+   ],
+   "fed": "WATCHLIST",
+   "next": "Follow his final passes against Vietnam on Thursday 26 November.",
+   "up": "A second assist against Vietnam.",
+   "down": "No chances created against Vietnam."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "sukhrob-sadirjanov",
+   "country": "Uzbekistan",
+   "code": "UZB",
+   "flag": "uz",
+   "name": "Sukhrob Sadirjanov",
+   "facts": [
+    "Hat-trick in 27 minutes as Uzbekistan came from 2-1 down to beat Jamaica 6-2.",
+    "Player of the Match."
+   ],
+   "next": "Follow him against Italy on 26 November.",
+   "up": "A goal against Italy.",
+   "down": "No shot on target against Italy."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "kelvin-brown",
+   "country": "Jamaica",
+   "code": "JAM",
+   "flag": "jm",
+   "name": "Kelvin Brown",
+   "facts": [
+    "Two goals in 17 minutes against Uzbekistan, Jamaica's first goals of the tournament."
+   ],
+   "next": "Follow him against Côte d'Ivoire on 26 November.",
+   "up": "A goal against Côte d'Ivoire.",
+   "down": "No shots against Côte d'Ivoire."
+  },
+  {
+   "role": "Winger",
+   "club": "UD Las Palmas",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "rafa-cruz",
+   "country": "Spain",
+   "code": "ESP",
+   "flag": "es",
+   "name": "Rafa Cruz",
+   "facts": [
+    "Five goals in Spain's 15-0 win over Fiji, three of them in the first 21 minutes.",
+    "Winger at UD Las Palmas."
+   ],
+   "next": "Follow him against Morocco on 26 November.",
+   "up": "A goal against Morocco.",
+   "down": "No shots against Morocco."
+  },
+  {
+   "role": "",
+   "club": "FC Barcelona",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "roberto-tomas",
+   "country": "Spain",
+   "code": "ESP",
+   "flag": "es",
+   "name": "Roberto Tomás",
+   "facts": [
+    "Hat-trick inside 35 minutes against Fiji, the third from the penalty spot.",
+    "Plays for FC Barcelona."
+   ],
+   "next": "Follow him against Morocco on 26 November.",
+   "up": "A goal against Morocco.",
+   "down": "No shots against Morocco."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "guillermo-trujillano",
+   "country": "Spain",
+   "code": "ESP",
+   "flag": "es",
+   "name": "Guillermo Trujillano",
+   "facts": [
+    "Hat-trick, including a penalty, in Spain's 15-0 win over Fiji."
+   ],
+   "next": "Follow him against Morocco on 26 November.",
+   "up": "A goal against Morocco.",
+   "down": "No shots against Morocco."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "jorge-dominguez",
+   "country": "Spain",
+   "code": "ESP",
+   "flag": "es",
+   "name": "Jorge Domínguez",
+   "facts": [
+    "Two goals in the second half of Spain's 15-0 win over Fiji."
+   ],
+   "next": "Follow him against Morocco on 26 November.",
+   "up": "A goal against Morocco.",
+   "down": "No minutes against Morocco."
+  },
+  {
+   "role": "Midfielder",
+   "club": "Atalanta",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "francesco-olivieri",
+   "country": "Italy",
+   "code": "ITA",
+   "flag": "it",
+   "name": "Francesco Olivieri",
+   "facts": [
+    "Scored Italy's second against Côte d'Ivoire with a direct free kick after 70 minutes, the goal that decided the match.",
+    "Midfielder at Atalanta, one of two players born in 2010 in Italy's squad."
+   ],
+   "next": "Follow him against Uzbekistan on 26 November.",
+   "up": "Another goal or assist against Uzbekistan.",
+   "down": "Little influence against Uzbekistan."
   }
  ]
 }
