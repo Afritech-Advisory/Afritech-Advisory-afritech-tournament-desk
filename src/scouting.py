@@ -328,7 +328,7 @@ def results_html(nations, flag):
     rows.sort(key=lambda r: (-order(r[1]), r[0]["group"]))
     for n, m in rows:
         side = lambda x: (flag(n["flag"], x) if x == n["name"] else "") + H.escape(x)
-        goals = "".join(f'<li><span class="m">{g["min"]}</span><span>{H.escape(g["who"])} ({H.escape(g["team"])})</span></li>' for g in m.get("goals", []))
+        goals = "".join(f'<li><span class="m">{g["min"]}</span><span>{H.escape(g["who"])}{(" <i>Own goal</i>" if g.get("type") == "Own goal" else "")} ({H.escape(g["team"])})</span></li>' for g in m.get("goals", []))
         kn = "".join(f'<div><b>{H.escape(a)}</b><span>{H.escape(b)}</span></div>' for a, b in m.get("keyNumbers", [])[:3])
         cards.append(f'<article class="rc"><p class="when">{H.escape(m["date"])} · Group {n["group"]}</p>'
                      f'<p class="sc2"><span>{side(m["home"])}</span><b>{m["score"]}</b><span class="r">{side(m["away"])}</span></p>'

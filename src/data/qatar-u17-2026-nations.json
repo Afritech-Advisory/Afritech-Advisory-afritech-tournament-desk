@@ -1,5 +1,5 @@
 {
- "updated": "23 November 2026",
+ "updated": "24 November 2026",
  "highlightsNote": "Every goal plays as its own clip from FIFA's official highlights.",
  "nations": [
   {
@@ -305,7 +305,8 @@
        "min": "70'",
        "team": "Italy",
        "who": "Francesco Olivieri",
-       "type": "Free kick"
+       "type": "Free kick",
+       "pid": "francesco-olivieri"
       },
       {
        "min": "90+10'",
@@ -459,7 +460,8 @@
         "sen-cub-1-1.jpg",
         "sen-cub-1-2.jpg",
         "sen-cub-1-3.jpg"
-       ]
+       ],
+       "apid": "sidy-barhama-ndiaye"
       },
       {
        "min": "14'",
@@ -547,7 +549,8 @@
         "sen-cub-7-1.jpg",
         "sen-cub-7-2.jpg",
         "sen-cub-7-3.jpg"
-       ]
+       ],
+       "apid": "jerome-albis"
       },
       {
        "min": "65'",
@@ -773,7 +776,8 @@
         "mli-bel-3-1.jpg",
         "mli-bel-3-2.jpg",
         "mli-bel-3-3.jpg"
-       ]
+       ],
+       "apid": "issiaka-kone"
       }
      ],
      "story": "Mali came from behind to beat Belgium and became the first African side through to the round of 32. Belgium scored with their first attack; Djigui Koïta volleyed in from outside the box five minutes later and Yaya Niang won it midway through the second half.",
@@ -1047,7 +1051,8 @@
         "mar-chn-4-1.jpg",
         "mar-chn-4-2.jpg",
         "mar-chn-4-3.jpg"
-       ]
+       ],
+       "apid": "adam-soudi"
       }
      ],
      "story": "China PR scored after two minutes and again before the hour, both through Zhao Songyuan. Ziyad Baha's penalty on 64 minutes started the comeback and Rami Lougmani equalised in the ninth minute of added time. Morocco stay unbeaten with four points before Spain.",
@@ -1216,7 +1221,49 @@
      "time": "18:00",
      "home": "Brazil",
      "away": "Tanzania",
-     "venue": "Aspire Zone, Pitch 2"
+     "venue": "Aspire Zone, Pitch 2",
+     "id": "tan-bra",
+     "score": "1-0",
+     "goals": [
+      {
+       "min": "15'",
+       "team": "Brazil",
+       "who": "Richard Wendel",
+       "type": "Open play",
+       "how": "First-time shot from Rodrigo Jr.'s cross",
+       "pid": "richard-wendel"
+      }
+     ],
+     "story": "Brazil's full-back Richard Wendel scored the only goal after 15 minutes with a first-time shot. Tanzania spent long spells defending and still made a couple of chances. Brazil are through to the round of 32; Tanzania are third in Group I on one point.",
+     "keyNumbers": [
+      [
+       "15'",
+       "the only goal, by Richard Wendel"
+      ],
+      [
+       "1",
+       "goal conceded to Brazil in 90 minutes"
+      ],
+      [
+       "1",
+       "point for Tanzania from two matches"
+      ]
+     ],
+     "analysis": [
+      {
+       "h": "One goal decided it",
+       "p": "Rodrigo Jr. crossed, Eduardo Conceição missed his contact, and full-back Richard Wendel arrived behind the defence to shoot first time into the corner."
+      },
+      {
+       "h": "Tanzania kept it close",
+       "p": "Two down after 15 minutes against Costa Rica, Tanzania gave Brazil one goal in 90 minutes. Reports say they defended for most of the match and still created a couple of chances."
+      },
+      {
+       "h": "What it means for the group",
+       "p": "Brazil have six points and are through. Republic of Ireland beat Costa Rica 2-0 and have three. Tanzania and Costa Rica have one each, Tanzania third on goal difference. Republic of Ireland v Tanzania is on Friday 27 November, 17:00 Doha time."
+      }
+     ],
+     "scout": "Follow Faraji Kayanda, two goals against Costa Rica, against Republic of Ireland on 27 November: Tanzania need a win, and a striker who delivers in a must-win match is worth seeing live."
     },
     {
      "date": "Friday 27 November",
@@ -1376,7 +1423,63 @@
      "time": "18:30",
      "home": "Algeria",
      "away": "Montenegro",
-     "venue": "Aspire Zone"
+     "venue": "Aspire Zone, Pitch 7",
+     "id": "alg-mne",
+     "score": "2-1",
+     "goals": [
+      {
+       "min": "41'",
+       "team": "Montenegro",
+       "who": "Yazid Tifrani",
+       "type": "Own goal"
+      },
+      {
+       "min": "67'",
+       "team": "Algeria",
+       "who": "Yacine Abed",
+       "type": "Penalty",
+       "how": "Won the penalty himself; an earlier spot kick hit the bar",
+       "pid": "yacine-abed"
+      },
+      {
+       "min": "81'",
+       "team": "Algeria",
+       "who": "Yacine Abed",
+       "type": "Open play",
+       "how": "Solo run after a midfield interception",
+       "pid": "yacine-abed"
+      }
+     ],
+     "story": "Algeria's first win at a U-17 World Cup. Montenegro led at half-time through an own goal. Yacine Abed hit the bar with a first penalty, scored a second one after 67 minutes and won the match with a solo run nine minutes from time.",
+     "keyNumbers": [
+      [
+       "3",
+       "goals in two matches for Yacine Abed"
+      ],
+      [
+       "0-1",
+       "Algeria behind at half-time"
+      ],
+      [
+       "1st",
+       "U-17 World Cup win for Algeria"
+      ]
+     ],
+     "analysis": [
+      {
+       "h": "Abed carried the attack",
+       "p": "Yacine Abed's first penalty, a Panenka, hit the bar. He then won a second penalty and scored it after 67 minutes, and finished a solo run after a midfield interception for the winner. He has three of Algeria's four goals at the tournament."
+      },
+      {
+       "h": "Turned round after the break",
+       "p": "An own goal four minutes before half-time put Montenegro ahead. Algeria turned the match in the last 25 minutes, after losing a 2-0 lead against Chile in their opener."
+      },
+      {
+       "h": "What it means for the group",
+       "p": "The Dominican Republic beat Chile 2-1 and lead Group J on four points. Algeria and Chile have three each, Chile ahead on goal difference, and Montenegro one. Algeria v Dominican Republic is on Friday 27 November, 18:00 Doha time; the eight best third-placed teams also go through."
+      }
+     ],
+     "scout": "Follow Yacine Abed against the Dominican Republic on 27 November: three goals in two matches, a penalty scored after a miss, and a match-winning solo run. Clubs looking for a forward who takes responsibility should see him live."
     },
     {
      "date": "Friday 27 November",
@@ -1490,7 +1593,71 @@
      "time": "16:30",
      "home": "Mexico",
      "away": "Cameroon",
-     "venue": "Aspire Zone, Pitch 5"
+     "venue": "Aspire Zone, Pitch 5",
+     "id": "cmr-mex",
+     "score": "4-0",
+     "goals": [
+      {
+       "min": "51'",
+       "team": "Mexico",
+       "who": "Miguel Rivera",
+       "type": "Open play",
+       "pid": "miguel-rivera"
+      },
+      {
+       "min": "57'",
+       "team": "Mexico",
+       "who": "Adán Sánchez",
+       "type": "Penalty",
+       "how": "After a foul by Ulrick Kenfack"
+      },
+      {
+       "min": "75'",
+       "team": "Mexico",
+       "who": "Gerson Gutiérrez",
+       "type": "Open play",
+       "how": "Close-range finish",
+       "pid": "gerson-gutierrez"
+      },
+      {
+       "min": "81'",
+       "team": "Mexico",
+       "who": "Gerson Gutiérrez",
+       "type": "Open play",
+       "how": "Close-range finish; assist Adán Sánchez",
+       "pid": "gerson-gutierrez"
+      }
+     ],
+     "story": "Goalless at half-time, Cameroon conceded four times in 30 minutes after the break. Miguel Rivera opened the scoring, Adán Sánchez scored a penalty and Gerson Gutiérrez added two from close range. Cameroon are bottom of Group K without a point.",
+     "keyNumbers": [
+      [
+       "0-0",
+       "at half-time"
+      ],
+      [
+       "4",
+       "Mexico goals in 30 minutes"
+      ],
+      [
+       "0",
+       "points for Cameroon from two matches"
+      ]
+     ],
+     "analysis": [
+      {
+       "h": "A solid first half",
+       "p": "Cameroon held Mexico in a mid-block for 45 minutes and had 53% of the ball at half-time, with midfielder William Gueke the standout (Allez Les Lions)."
+      },
+      {
+       "h": "Then the match turned",
+       "p": "Mexico had 60% of the ball after the break and put six of their 15 shots on target. Rivera scored six minutes into the half and the penalty followed six minutes later. Coach Thomas Libiih made changes on 58 and 78 minutes."
+      },
+      {
+       "h": "What it means for the group",
+       "p": "Mexico and Venezuela have six points each and are through. Cameroon and Romania have none, Romania ahead on goal difference. Romania v Cameroon is on Friday 27 November, 19:00 Doha time: only a win keeps Cameroon in the race for a best third place."
+      }
+     ],
+     "scout": "Follow Aviel Hentcho, Cameroon's only scorer so far, against Romania on 27 November: Cameroon need a win, and how this squad answers a 4-0 defeat is what clubs should judge it on."
     },
     {
      "date": "Friday 27 November",

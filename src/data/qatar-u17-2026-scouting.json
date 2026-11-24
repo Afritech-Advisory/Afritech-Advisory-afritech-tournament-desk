@@ -1,5 +1,5 @@
 {
- "updated": "23 November 2026",
+ "updated": "24 November 2026",
  "_note": "Public scout cards (Stage 1, public-domain evidence). Every player is under 18: club signal capped at MONITOR, agent at DEVELOP FIRST, no valuation. Numeric grades are published only after Andrew approves them in the private tracker.",
  "players": [
   {
@@ -150,9 +150,9 @@
     "Started in midfield against Venezuela and played until the 90th minute."
    ],
    "fed": "WATCHLIST",
-   "next": "Follow him against Mexico on Tuesday 24 November, 16:30 Doha time.",
-   "up": "Control of midfield against Mexico.",
-   "down": "Cameroon lose the midfield battle against Mexico."
+   "next": "Follow him against Romania on Friday 27 November, 19:00 Doha time.",
+   "up": "Control of midfield against Romania.",
+   "down": "Cameroon lose the midfield battle against Romania."
   },
   {
    "id": "dismas-athanasi",
@@ -168,7 +168,7 @@
     "Top scorer at the U-17 AFCON with three goals as Tanzania reached the final."
    ],
    "fed": "WATCHLIST",
-   "next": "Follow Tanzania against Brazil on Tuesday 24 November, 18:00 Doha time. At 14 his route runs through his family and federation for years yet.",
+   "next": "Follow Tanzania against Republic of Ireland on Friday 27 November, 17:00 Doha time. At 14 his route runs through his family and federation for years yet.",
    "up": "A goal at this World Cup.",
    "down": "Few minutes off the bench."
   },
@@ -545,9 +545,9 @@
     "Two goals in Tanzania's first U-17 World Cup match, a 2-2 draw with Costa Rica after trailing 2-0.",
     "FIFA Player of the Match against Costa Rica."
    ],
-   "next": "Follow him against Brazil on Tuesday 24 November, 18:00 Doha time.",
-   "up": "A goal or assist against Brazil.",
-   "down": "No goal involvement against Brazil."
+   "next": "Follow him against Republic of Ireland on Friday 27 November, 17:00 Doha time.",
+   "up": "A goal against Republic of Ireland.",
+   "down": "No goal involvement against Republic of Ireland."
   },
   {
    "role": "",
@@ -560,9 +560,9 @@
    "facts": [
     "Opened the scoring after eight minutes against Chile, Algeria's first goal at a U-17 World Cup in 17 years."
    ],
-   "next": "Follow him against Montenegro on Tuesday 24 November, 18:30 Doha time.",
-   "up": "A goal or assist against Montenegro.",
-   "down": "No goal involvement against Montenegro."
+   "next": "Follow him against the Dominican Republic on Friday 27 November, 18:00 Doha time.",
+   "up": "A goal or assist against the Dominican Republic.",
+   "down": "No goal involvement against the Dominican Republic."
   },
   {
    "role": "",
@@ -573,11 +573,13 @@
    "nation": "algeria",
    "name": "Yacine Abed",
    "facts": [
-    "Made it 2-0 to Algeria against Chile after 15 minutes."
+    "Made it 2-0 to Algeria against Chile after 15 minutes.",
+    "Won and scored a 67th-minute penalty, then scored the 81st-minute winner from a solo run, as Algeria beat Montenegro 2-1 for their first U-17 World Cup win.",
+    "Three goals in two matches."
    ],
-   "next": "Follow him against Montenegro on Tuesday 24 November, 18:30 Doha time.",
-   "up": "A goal or assist against Montenegro.",
-   "down": "No goal involvement against Montenegro."
+   "next": "Follow him against the Dominican Republic on Friday 27 November, 18:00 Doha time.",
+   "up": "A goal against the Dominican Republic that takes Algeria through.",
+   "down": "Kept quiet by the Dominican Republic."
   },
   {
    "role": "",
@@ -590,9 +592,9 @@
    "facts": [
     "Scored Cameroon's goal in added time against Venezuela, with the side down to ten men."
    ],
-   "next": "Follow him against Mexico on Tuesday 24 November, 16:30 Doha time.",
-   "up": "A goal or assist against Mexico.",
-   "down": "No goal involvement against Mexico."
+   "next": "Follow him against Romania on Friday 27 November, 19:00 Doha time.",
+   "up": "A goal or assist against Romania.",
+   "down": "No goal involvement against Romania."
   },
   {
    "role": "",
@@ -605,11 +607,12 @@
    "flag": "ve",
    "name": "Román Lozada",
    "facts": [
-    "FIFA Player of the Match as Venezuela beat Cameroon 2-1; scored the opener after 29 minutes."
+    "FIFA Player of the Match as Venezuela beat Cameroon 2-1; scored the opener after 29 minutes.",
+    "Headed the 64th-minute winner against Romania from six metres: two goals in two matches, both in wins."
    ],
-   "next": "Follow him against Romania on 24 November.",
-   "up": "A goal against Romania.",
-   "down": "No shot on target against Romania."
+   "next": "Follow him against Mexico on 27 November.",
+   "up": "A goal against Mexico.",
+   "down": "No shot on target against Mexico."
   },
   {
    "role": "",
@@ -624,9 +627,9 @@
    "facts": [
     "Came off the bench and scored both goals in Serbia's 2-0 win over Honduras, Serbia's first match at a U-17 World Cup."
    ],
-   "next": "Follow him against Japan on 24 November.",
-   "up": "A start, and a goal against Japan.",
-   "down": "No minutes against Japan."
+   "next": "Follow him against Colombia on 27 November.",
+   "up": "A goal against Colombia.",
+   "down": "No minutes against Colombia."
   },
   {
    "role": "",
@@ -641,9 +644,9 @@
    "facts": [
     "Scored the 90+3rd-minute penalty that beat Japan 2-1."
    ],
-   "next": "Follow him against Honduras on 24 November.",
-   "up": "A goal against Honduras.",
-   "down": "No minutes against Honduras."
+   "next": "Follow him against Serbia on 27 November.",
+   "up": "A goal against Serbia.",
+   "down": "No minutes against Serbia."
   },
   {
    "role": "",
@@ -658,9 +661,9 @@
    "facts": [
     "Scored Brazil's 71st-minute winner against Republic of Ireland."
    ],
-   "next": "Follow him against Tanzania on 24 November.",
-   "up": "A goal against Tanzania.",
-   "down": "No shot on target against Tanzania."
+   "next": "Follow him against Costa Rica on 27 November.",
+   "up": "A goal against Costa Rica.",
+   "down": "No shot on target against Costa Rica."
   },
   {
    "role": "",
@@ -824,9 +827,9 @@
    "facts": [
     "Set up Ilyes Mekkaoui's opener after eight minutes against Chile."
    ],
-   "next": "Follow him against Montenegro on Tuesday 24 November, 18:30 Doha time.",
-   "up": "A goal or assist against Montenegro.",
-   "down": "No goal involvement against Montenegro."
+   "next": "Follow him against the Dominican Republic on Friday 27 November, 18:00 Doha time.",
+   "up": "A goal or assist against the Dominican Republic.",
+   "down": "No goal involvement against the Dominican Republic."
   },
   {
    "role": "",
@@ -839,9 +842,9 @@
    "facts": [
     "Set up Yacine Abed's goal for 2-0 against Chile after 15 minutes."
    ],
-   "next": "Follow him against Montenegro on Tuesday 24 November, 18:30 Doha time.",
-   "up": "A goal or assist against Montenegro.",
-   "down": "No goal involvement against Montenegro."
+   "next": "Follow him against the Dominican Republic on Friday 27 November, 18:00 Doha time.",
+   "up": "A goal or assist against the Dominican Republic.",
+   "down": "No goal involvement against the Dominican Republic."
   },
   {
    "role": "",
@@ -854,9 +857,9 @@
    "facts": [
     "Set up Faraji Kayanda's first goal as Tanzania came back from 2-0 down to draw 2-2 with Costa Rica."
    ],
-   "next": "Follow him against Brazil on Tuesday 24 November, 18:00 Doha time.",
-   "up": "A goal or assist against Brazil.",
-   "down": "No goal involvement against Brazil."
+   "next": "Follow him against Republic of Ireland on Friday 27 November, 17:00 Doha time.",
+   "up": "A goal or assist against Republic of Ireland.",
+   "down": "No goal involvement against Republic of Ireland."
   },
   {
    "role": "",
@@ -869,9 +872,9 @@
    "facts": [
     "Came off the bench and set up Aviel Hentcho's added-time goal against Venezuela."
    ],
-   "next": "Follow him against Mexico on Tuesday 24 November, 16:30 Doha time.",
-   "up": "A goal or assist against Mexico.",
-   "down": "No goal involvement against Mexico."
+   "next": "Follow him against Romania on Friday 27 November, 19:00 Doha time.",
+   "up": "A goal or assist against Romania.",
+   "down": "No goal involvement against Romania."
   },
   {
    "role": "",
@@ -954,9 +957,9 @@
    "facts": [
     "FIFA Player of the Match in the 1-1 draw with Montenegro."
    ],
-   "next": "Follow him against Chile on 24 November and Algeria on 27 November.",
-   "up": "Another standout display against Chile.",
-   "down": "Less influence against Chile."
+   "next": "Follow him against Algeria on 27 November.",
+   "up": "Another standout display against Algeria.",
+   "down": "Less influence against Algeria."
   },
   {
    "role": "",
@@ -969,11 +972,12 @@
    "flag": "cl",
    "name": "Amaro Pérez",
    "facts": [
-    "FIFA Player of the Match as Chile came from 2-0 down to beat Algeria 4-2; scored the third goal after 34 minutes."
+    "FIFA Player of the Match as Chile came from 2-0 down to beat Algeria 4-2; scored the third goal after 34 minutes.",
+    "Scored Chile's goal in the 2-1 defeat by the Dominican Republic, from the rebound of a saved penalty: two goals in two matches."
    ],
-   "next": "Follow him against the Dominican Republic on 24 November.",
-   "up": "A goal against the Dominican Republic.",
-   "down": "No shot on target against the Dominican Republic."
+   "next": "Follow him against Montenegro on 27 November.",
+   "up": "A goal against Montenegro.",
+   "down": "No shot on target against Montenegro."
   },
   {
    "role": "",
@@ -988,9 +992,9 @@
    "facts": [
     "FIFA Player of the Match in the 1-0 win over Romania."
    ],
-   "next": "Follow him against Cameroon on 24 November.",
-   "up": "Another standout display against Cameroon.",
-   "down": "Less influence against Cameroon."
+   "next": "Follow him against Venezuela on 27 November.",
+   "up": "Another standout display against Venezuela.",
+   "down": "Less influence against Venezuela."
   },
   {
    "role": "",
@@ -1194,6 +1198,294 @@
    "up": "A third goal of the group.",
    "down": "No shots against Fiji.",
    "fed": "WATCHLIST"
+  },
+  {
+   "id": "jerome-albis",
+   "nation": "senegal",
+   "name": "Jérome Albis",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "facts": [
+    "Came on at half-time against Cuba for his first minutes of the tournament and set up Sega Fall Mbodji's second goal."
+   ],
+   "fed": "WATCHLIST",
+   "next": "Follow him against Tajikistan on Thursday 26 November, 19:00 Doha time.",
+   "up": "More minutes against Tajikistan.",
+   "down": "No minutes against Tajikistan."
+  },
+  {
+   "id": "adam-soudi",
+   "nation": "morocco",
+   "name": "Adam Soudi",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "facts": [
+    "Started in defence against China PR and crossed for Rami Lougmani's equaliser in the ninth minute of added time."
+   ],
+   "fed": "WATCHLIST",
+   "next": "Follow him against Spain on Thursday 26 November, 18:00 Doha time.",
+   "up": "A clean sheet or another assist against Spain.",
+   "down": "Spain's wingers on top of his side."
+  },
+  {
+   "id": "issiaka-kone",
+   "nation": "mali",
+   "name": "Issiaka Koné",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "facts": [
+    "Set up Yaya Niang's winner against Belgium."
+   ],
+   "fed": "WATCHLIST",
+   "next": "Follow his final passes against Vietnam on Thursday 26 November.",
+   "up": "A second assist against Vietnam.",
+   "down": "No chances created against Vietnam."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "sukhrob-sadirjanov",
+   "country": "Uzbekistan",
+   "code": "UZB",
+   "flag": "uz",
+   "name": "Sukhrob Sadirjanov",
+   "facts": [
+    "Hat-trick in 27 minutes as Uzbekistan came from 2-1 down to beat Jamaica 6-2.",
+    "Player of the Match."
+   ],
+   "next": "Follow him against Italy on 26 November.",
+   "up": "A goal against Italy.",
+   "down": "No shot on target against Italy."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "kelvin-brown",
+   "country": "Jamaica",
+   "code": "JAM",
+   "flag": "jm",
+   "name": "Kelvin Brown",
+   "facts": [
+    "Two goals in 17 minutes against Uzbekistan, Jamaica's first goals of the tournament."
+   ],
+   "next": "Follow him against Côte d'Ivoire on 26 November.",
+   "up": "A goal against Côte d'Ivoire.",
+   "down": "No shots against Côte d'Ivoire."
+  },
+  {
+   "role": "Winger",
+   "club": "UD Las Palmas",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "rafa-cruz",
+   "country": "Spain",
+   "code": "ESP",
+   "flag": "es",
+   "name": "Rafa Cruz",
+   "facts": [
+    "Five goals in Spain's 15-0 win over Fiji, three of them in the first 21 minutes.",
+    "Winger at UD Las Palmas."
+   ],
+   "next": "Follow him against Morocco on 26 November.",
+   "up": "A goal against Morocco.",
+   "down": "No shots against Morocco."
+  },
+  {
+   "role": "",
+   "club": "FC Barcelona",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "roberto-tomas",
+   "country": "Spain",
+   "code": "ESP",
+   "flag": "es",
+   "name": "Roberto Tomás",
+   "facts": [
+    "Hat-trick inside 35 minutes against Fiji, the third from the penalty spot.",
+    "Plays for FC Barcelona."
+   ],
+   "next": "Follow him against Morocco on 26 November.",
+   "up": "A goal against Morocco.",
+   "down": "No shots against Morocco."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "guillermo-trujillano",
+   "country": "Spain",
+   "code": "ESP",
+   "flag": "es",
+   "name": "Guillermo Trujillano",
+   "facts": [
+    "Hat-trick, including a penalty, in Spain's 15-0 win over Fiji."
+   ],
+   "next": "Follow him against Morocco on 26 November.",
+   "up": "A goal against Morocco.",
+   "down": "No shots against Morocco."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "jorge-dominguez",
+   "country": "Spain",
+   "code": "ESP",
+   "flag": "es",
+   "name": "Jorge Domínguez",
+   "facts": [
+    "Two goals in the second half of Spain's 15-0 win over Fiji."
+   ],
+   "next": "Follow him against Morocco on 26 November.",
+   "up": "A goal against Morocco.",
+   "down": "No minutes against Morocco."
+  },
+  {
+   "role": "Midfielder",
+   "club": "Atalanta",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "francesco-olivieri",
+   "country": "Italy",
+   "code": "ITA",
+   "flag": "it",
+   "name": "Francesco Olivieri",
+   "facts": [
+    "Scored Italy's second against Côte d'Ivoire with a direct free kick after 70 minutes, the goal that decided the match.",
+    "Midfielder at Atalanta, one of two players born in 2010 in Italy's squad."
+   ],
+   "next": "Follow him against Uzbekistan on 26 November.",
+   "up": "Another goal or assist against Uzbekistan.",
+   "down": "Little influence against Uzbekistan."
+  },
+  {
+   "role": "Full-back",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "richard-wendel",
+   "country": "Brazil",
+   "code": "BRA",
+   "flag": "br",
+   "name": "Richard Wendel",
+   "facts": [
+    "Full-back who scored the only goal against Tanzania, a first-time shot after 15 minutes that put Brazil into the round of 32."
+   ],
+   "next": "Follow him against Costa Rica on 27 November.",
+   "up": "Another goal from full-back against Costa Rica.",
+   "down": "Fewer forward runs against Costa Rica."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "gerson-gutierrez",
+   "country": "Mexico",
+   "code": "MEX",
+   "flag": "mx",
+   "name": "Gerson Gutiérrez",
+   "facts": [
+    "Scored twice from close range in six minutes as Mexico beat Cameroon 4-0."
+   ],
+   "next": "Follow him against Venezuela on 27 November.",
+   "up": "A goal against Venezuela.",
+   "down": "No shot on target against Venezuela."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "miguel-rivera",
+   "country": "Mexico",
+   "code": "MEX",
+   "flag": "mx",
+   "name": "Miguel Rivera",
+   "facts": [
+    "FIFA Player of the Match against Cameroon; opened the scoring six minutes after half-time in the 4-0 win."
+   ],
+   "next": "Follow him against Venezuela on 27 November.",
+   "up": "Another standout display against Venezuela.",
+   "down": "Less influence against Venezuela."
+  },
+  {
+   "role": "Forward",
+   "club": "Cork City",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "cillian-murphy",
+   "country": "Republic of Ireland",
+   "code": "IRL",
+   "flag": "ie",
+   "name": "Cillian Murphy",
+   "facts": [
+    "FIFA Player of the Match against Costa Rica; scored Ireland's second goal after 64 minutes in a 2-0 win.",
+    "Scored a first-half hat-trick against Slovakia that sent Ireland to the World Cup."
+   ],
+   "next": "Follow him against Tanzania on 27 November.",
+   "up": "A goal against Tanzania.",
+   "down": "No shot on target against Tanzania."
+  },
+  {
+   "role": "Goalkeeper",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "aidan-betances",
+   "country": "Dominican Republic",
+   "code": "DOM",
+   "flag": "do",
+   "name": "Aidan Betances",
+   "facts": [
+    "FIFA Player of the Match as the Dominican Republic beat Chile 2-1, their first win at a men's FIFA World Cup; saved a penalty."
+   ],
+   "next": "Follow him against Algeria on 27 November.",
+   "up": "A clean sheet against Algeria.",
+   "down": "Beaten from open play by Algeria."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "andrew-maric",
+   "country": "Serbia",
+   "code": "SRB",
+   "flag": "rs",
+   "name": "Andrew Maric",
+   "facts": [
+    "FIFA Player of the Match as Serbia beat Japan 1-0 and reached the round of 32."
+   ],
+   "next": "Follow him against Colombia on 27 November.",
+   "up": "Another standout display against Colombia.",
+   "down": "Less influence against Colombia."
+  },
+  {
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST",
+   "id": "enmanuel-brito",
+   "country": "Venezuela",
+   "code": "VEN",
+   "flag": "ve",
+   "name": "Enmanuel Brito",
+   "facts": [
+    "FIFA Player of the Match as Venezuela beat Romania 1-0 and reached the round of 32."
+   ],
+   "next": "Follow him against Mexico on 27 November.",
+   "up": "Another standout display against Mexico.",
+   "down": "Less influence against Mexico."
   }
  ]
 }

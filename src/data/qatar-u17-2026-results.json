@@ -552,6 +552,334 @@
      "how": "Assist Pablo Barreiro"
     }
    ]
+  },
+  {
+   "id": "uzb-jam",
+   "date": "23 Nov",
+   "group": "E",
+   "home": "Uzbekistan",
+   "away": "Jamaica",
+   "score": "6-2",
+   "goals": [
+    {
+     "min": "8'",
+     "team": "Jamaica",
+     "who": "Kelvin Brown",
+     "pid": "kelvin-brown"
+    },
+    {
+     "min": "9'",
+     "team": "Uzbekistan",
+     "who": "Laziz Abduraimov"
+    },
+    {
+     "min": "25'",
+     "team": "Jamaica",
+     "who": "Kelvin Brown",
+     "pid": "kelvin-brown"
+    },
+    {
+     "min": "31'",
+     "team": "Uzbekistan",
+     "who": "Sukhrob Sadirjanov",
+     "pid": "sukhrob-sadirjanov"
+    },
+    {
+     "min": "47'",
+     "team": "Uzbekistan",
+     "who": "Sukhrob Sadirjanov",
+     "pid": "sukhrob-sadirjanov"
+    },
+    {
+     "min": "58'",
+     "team": "Uzbekistan",
+     "who": "Sukhrob Sadirjanov",
+     "pid": "sukhrob-sadirjanov"
+    },
+    {
+     "min": "79'",
+     "team": "Uzbekistan",
+     "who": "Amirkhon Erkinov"
+    },
+    {
+     "min": "90+2'",
+     "team": "Uzbekistan",
+     "who": "Akhrorbek Ravshanbekov"
+    }
+   ]
+  },
+  {
+   "id": "tjk-cro",
+   "date": "23 Nov",
+   "group": "F",
+   "home": "Tajikistan",
+   "away": "Croatia",
+   "score": "0-4",
+   "goals": [
+    {
+     "min": "6'",
+     "team": "Croatia",
+     "who": "Jona Benkotić",
+     "type": "Penalty",
+     "pid": "jona-benkotic"
+    },
+    {
+     "min": "50'",
+     "team": "Croatia",
+     "who": "Jona Benkotić",
+     "pid": "jona-benkotic"
+    },
+    {
+     "min": "56'",
+     "team": "Croatia",
+     "who": "Jona Benkotić",
+     "type": "Penalty",
+     "pid": "jona-benkotic"
+    },
+    {
+     "min": "59'",
+     "team": "Croatia",
+     "who": "Jakov Dedić"
+    }
+   ]
+  },
+  {
+   "id": "nzl-vie",
+   "date": "23 Nov",
+   "group": "G",
+   "home": "New Zealand",
+   "away": "Vietnam",
+   "score": "3-3",
+   "goals": [
+    {
+     "min": "19'",
+     "team": "New Zealand",
+     "who": "Jack Clegg"
+    },
+    {
+     "min": "49'",
+     "team": "Vietnam",
+     "who": "Nguyễn Lực"
+    },
+    {
+     "min": "52'",
+     "team": "New Zealand",
+     "who": "John Woldegiorgis"
+    },
+    {
+     "min": "58'",
+     "team": "Vietnam",
+     "who": "Lê Trọng Đại Nhân"
+    },
+    {
+     "min": "66'",
+     "team": "New Zealand",
+     "who": "Ethan Dyer"
+    },
+    {
+     "min": "90+2'",
+     "team": "Vietnam",
+     "who": "Trương Nguyễn Duy Khang"
+    }
+   ]
+  },
+  {
+   "id": "esp-fij",
+   "date": "23 Nov",
+   "group": "H",
+   "home": "Spain",
+   "away": "Fiji",
+   "score": "15-0",
+   "goals": [
+    {
+     "min": "5'",
+     "team": "Spain",
+     "who": "Rafa Cruz",
+     "pid": "rafa-cruz"
+    },
+    {
+     "min": "10'",
+     "team": "Spain",
+     "who": "Rafa Cruz",
+     "pid": "rafa-cruz"
+    },
+    {
+     "min": "12'",
+     "team": "Spain",
+     "who": "Roberto Tomás",
+     "pid": "roberto-tomas"
+    },
+    {
+     "min": "19'",
+     "team": "Spain",
+     "who": "Roberto Tomás",
+     "pid": "roberto-tomas"
+    },
+    {
+     "min": "21'",
+     "team": "Spain",
+     "who": "Rafa Cruz",
+     "pid": "rafa-cruz"
+    },
+    {
+     "min": "25'",
+     "team": "Spain",
+     "who": "Guillermo Trujillano",
+     "pid": "guillermo-trujillano"
+    },
+    {
+     "min": "35'",
+     "team": "Spain",
+     "who": "Roberto Tomás",
+     "type": "Penalty",
+     "pid": "roberto-tomas"
+    },
+    {
+     "min": "40'",
+     "team": "Spain",
+     "who": "Guillermo Trujillano",
+     "pid": "guillermo-trujillano"
+    },
+    {
+     "min": "43'",
+     "team": "Spain",
+     "who": "Marco Company"
+    },
+    {
+     "min": "51'",
+     "team": "Spain",
+     "who": "Guillermo Trujillano",
+     "pid": "guillermo-trujillano"
+    },
+    {
+     "min": "54'",
+     "team": "Spain",
+     "who": "Jorge Domínguez",
+     "pid": "jorge-dominguez"
+    },
+    {
+     "min": "57'",
+     "team": "Spain",
+     "who": "Rafa Cruz",
+     "pid": "rafa-cruz"
+    },
+    {
+     "min": "65'",
+     "team": "Spain",
+     "who": "Rafa Cruz",
+     "pid": "rafa-cruz"
+    },
+    {
+     "min": "74'",
+     "team": "Spain",
+     "who": "Jorge Domínguez",
+     "pid": "jorge-dominguez"
+    },
+    {
+     "min": "80'",
+     "team": "Spain",
+     "who": "Yeremaiah"
+    }
+   ]
+  },
+  {
+   "id": "crc-irl",
+   "date": "24 Nov",
+   "group": "I",
+   "home": "Costa Rica",
+   "away": "Republic of Ireland",
+   "score": "0-2",
+   "goals": [
+    {
+     "min": "51'",
+     "team": "Republic of Ireland",
+     "who": "Maxim Afonin"
+    },
+    {
+     "min": "64'",
+     "team": "Republic of Ireland",
+     "who": "Cillian Murphy",
+     "pid": "cillian-murphy"
+    }
+   ]
+  },
+  {
+   "id": "dom-chi",
+   "date": "24 Nov",
+   "group": "J",
+   "home": "Dominican Republic",
+   "away": "Chile",
+   "score": "2-1",
+   "goals": [
+    {
+     "min": "34'",
+     "team": "Dominican Republic",
+     "who": "Daniel Fernández"
+    },
+    {
+     "min": "45'",
+     "team": "Dominican Republic",
+     "who": "Gabriel Florentino"
+    },
+    {
+     "min": "73'",
+     "team": "Chile",
+     "who": "Amaro Pérez",
+     "pid": "amaro-perez"
+    }
+   ]
+  },
+  {
+   "id": "ven-rou",
+   "date": "24 Nov",
+   "group": "K",
+   "home": "Venezuela",
+   "away": "Romania",
+   "score": "1-0",
+   "goals": [
+    {
+     "min": "64'",
+     "team": "Venezuela",
+     "who": "Román Lozada",
+     "pid": "roman-lozada"
+    }
+   ]
+  },
+  {
+   "id": "jpn-srb",
+   "date": "24 Nov",
+   "group": "L",
+   "home": "Japan",
+   "away": "Serbia",
+   "score": "0-1",
+   "goals": [
+    {
+     "min": "11'",
+     "team": "Serbia",
+     "who": "Dragan Anokic",
+     "type": "Penalty"
+    }
+   ]
+  },
+  {
+   "id": "hon-col",
+   "date": "24 Nov",
+   "group": "L",
+   "home": "Honduras",
+   "away": "Colombia",
+   "score": "0-2",
+   "goals": [
+    {
+     "min": "76'",
+     "team": "Colombia",
+     "who": "Matías Caicedo"
+    },
+    {
+     "min": "84'",
+     "team": "Colombia",
+     "who": "José Escorcia"
+    }
+   ]
   }
  ]
 }
