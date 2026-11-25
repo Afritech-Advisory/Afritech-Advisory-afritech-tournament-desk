@@ -880,6 +880,131 @@
      "who": "José Escorcia"
     }
    ]
+  },
+  {
+   "id": "gre-qat",
+   "date": "25 Nov",
+   "group": "A",
+   "home": "Greece",
+   "away": "Qatar",
+   "score": "4-1",
+   "goals": [
+    {
+     "min": "5'",
+     "team": "Qatar",
+     "who": "Omar Ayman"
+    },
+    {
+     "min": "48'",
+     "team": "Greece",
+     "who": "Konstantinos Souvlatzis",
+     "pid": "konstantinos-souvlatzis"
+    },
+    {
+     "min": "67'",
+     "team": "Greece",
+     "who": "Argyris Argyriou"
+    },
+    {
+     "min": "69'",
+     "team": "Greece",
+     "who": "Konstantinos Karangelis"
+    },
+    {
+     "min": "86'",
+     "team": "Greece",
+     "who": "Konstantinos Souvlatzis",
+     "pid": "konstantinos-souvlatzis"
+    }
+   ]
+  },
+  {
+   "id": "ecu-kor",
+   "date": "25 Nov",
+   "group": "B",
+   "home": "Ecuador",
+   "away": "Korea Republic",
+   "score": "2-3",
+   "goals": [
+    {
+     "min": "7'",
+     "team": "Korea Republic",
+     "who": "Own goal",
+     "type": "Own goal"
+    },
+    {
+     "min": "22'",
+     "team": "Korea Republic",
+     "who": "Nam Yi-an",
+     "how": "Long-range shot"
+    },
+    {
+     "min": "46'",
+     "team": "Korea Republic",
+     "who": "Own goal",
+     "type": "Own goal"
+    },
+    {
+     "min": "59'",
+     "team": "Ecuador",
+     "who": "Guerrero"
+    },
+    {
+     "min": "78'",
+     "team": "Ecuador",
+     "who": "Luis Fragozo"
+    }
+   ]
+  },
+  {
+   "id": "uru-fra",
+   "date": "25 Nov",
+   "group": "D",
+   "home": "Uruguay",
+   "away": "France",
+   "score": "0-3",
+   "goals": [
+    {
+     "min": "22'",
+     "team": "France",
+     "who": "Aymen Ammaouch"
+    },
+    {
+     "min": "24'",
+     "team": "France",
+     "who": "Aly Traoré"
+    },
+    {
+     "min": "50'",
+     "team": "France",
+     "who": "Idrissa Dia Aissaoui"
+    }
+   ]
+  },
+  {
+   "id": "hai-ksa",
+   "date": "25 Nov",
+   "group": "D",
+   "home": "Haiti",
+   "away": "Saudi Arabia",
+   "score": "1-2",
+   "goals": [
+    {
+     "min": "28'",
+     "team": "Haiti",
+     "who": "Stephen Ramos"
+    },
+    {
+     "min": "53'",
+     "team": "Saudi Arabia",
+     "who": "Abdullah Aldawsari"
+    },
+    {
+     "min": "78'",
+     "team": "Saudi Arabia",
+     "who": "Zaid Alburi"
+    }
+   ]
   }
  ]
 }
