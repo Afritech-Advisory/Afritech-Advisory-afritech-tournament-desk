@@ -1,5 +1,5 @@
 {
- "updated": "24 November 2026",
+ "updated": "25 November 2026",
  "highlightsNote": "Every goal plays as its own clip from FIFA's official highlights.",
  "nations": [
   {
@@ -183,7 +183,77 @@
      "time": "17:30",
      "home": "Panama",
      "away": "Egypt",
-     "venue": "Aspire Zone, Pitch 3"
+     "venue": "Aspire Zone, Pitch 3",
+     "id": "egy-pan",
+     "score": "1-4",
+     "goals": [
+      {
+       "min": "27'",
+       "team": "Egypt",
+       "who": "Youssef Abdullah",
+       "type": "Open play",
+       "pid": "youssef-abdullah"
+      },
+      {
+       "min": "47'",
+       "team": "Egypt",
+       "who": "Youssef Abdullah",
+       "type": "Open play",
+       "how": "Two minutes after the restart",
+       "pid": "youssef-abdullah"
+      },
+      {
+       "min": "50'",
+       "team": "Panama",
+       "who": "Thiago Chalmers",
+       "type": "Open play"
+      },
+      {
+       "min": "59'",
+       "team": "Egypt",
+       "who": "Khaled Mokhtar",
+       "type": "Open play",
+       "how": "His second goal in two matches",
+       "pid": "khaled-mokhtar"
+      },
+      {
+       "min": "77'",
+       "team": "Egypt",
+       "who": "Mohamed Gamal",
+       "type": "Penalty",
+       "pid": "mohamed-gamal"
+      }
+     ],
+     "story": "Youssef Abdullah scored either side of half-time, Khaled Mokhtar added a third and Mohamed Gamal converted a penalty as Egypt beat Panama 4-1. Egypt finish second in Group A and are through to the round of 32.",
+     "keyNumbers": [
+      [
+       "4",
+       "goals, Egypt's best return of the group"
+      ],
+      [
+       "2",
+       "goals for Youssef Abdullah"
+      ],
+      [
+       "6",
+       "points, second in Group A"
+      ]
+     ],
+     "analysis": [
+      {
+       "h": "Abdullah's double",
+       "p": "Youssef Abdullah opened the scoring after 27 minutes and made it 2-0 two minutes after the restart."
+      },
+      {
+       "h": "A quick answer",
+       "p": "Thiago Chalmers pulled one back for Panama after 50 minutes. Khaled Mokhtar restored the two-goal lead after 59, his second goal in two matches, and Mohamed Gamal's penalty after 77 settled it."
+      },
+      {
+       "h": "What it means for the group",
+       "p": "Greece beat Qatar 4-1 and win Group A on nine points. Egypt finish second on six and are in the round of 32; the opponent is set when the group stage ends on 27 November."
+      }
+     ],
+     "scout": "Follow Youssef Abdullah and Khaled Mokhtar into the round of 32: they scored four of Egypt's six goals in the two wins."
     }
    ]
   },
@@ -1949,9 +2019,71 @@
     {
      "date": "Wednesday 25 November",
      "time": "18:30",
-     "home": "Mozambique",
-     "away": "Australia",
-     "venue": "Aspire Zone, Pitch 8"
+     "home": "Australia",
+     "away": "Mozambique",
+     "venue": "Aspire Zone, Pitch 8",
+     "id": "moz-aus",
+     "score": "2-2",
+     "goals": [
+      {
+       "min": "18'",
+       "team": "Mozambique",
+       "who": "Nhampule Junior",
+       "type": "Open play",
+       "pid": "nhampule-junior"
+      },
+      {
+       "min": "28'",
+       "team": "Mozambique",
+       "who": "Khensane Machel",
+       "type": "Open play",
+       "how": "His second goal of the tournament",
+       "pid": "khensane-machel"
+      },
+      {
+       "min": "44'",
+       "team": "Australia",
+       "who": "Luke Becvinovski",
+       "type": "Open play"
+      },
+      {
+       "min": "76'",
+       "team": "Australia",
+       "who": "Georgio Hassarati",
+       "type": "Open play",
+       "how": "Australia's captain levels"
+      }
+     ],
+     "story": "Mozambique led 2-0 inside half an hour through Nhampule Junior and Khensane Machel. Australia's Luke Becvinovski pulled one back before half-time and captain Georgio Hassarati equalised after 76 minutes. Mozambique finish third in Group C on four points.",
+     "keyNumbers": [
+      [
+       "2-0",
+       "lead after 28 minutes"
+      ],
+      [
+       "7",
+       "goals in three group matches"
+      ],
+      [
+       "4",
+       "points, third in Group C"
+      ]
+     ],
+     "analysis": [
+      {
+       "h": "A fast start",
+       "p": "Nhampule Junior scored after 18 minutes and Khensane Machel, who also scored against Denmark, made it 2-0 after 28."
+      },
+      {
+       "h": "Australia came back",
+       "p": "Luke Becvinovski scored just before half-time and captain Georgio Hassarati levelled after 76 minutes. Australia win the group on five points."
+      },
+      {
+       "h": "What it means for the group",
+       "p": "Mozambique and Argentina both finish on four points; Argentina take second place on their 2-1 win over Mozambique. Four points and a goal difference of +3 should put Mozambique among the eight best third-placed teams, confirmed when the group stage ends on 27 November."
+      }
+     ],
+     "scout": "Follow Alírio Cuna Júnior (three goals) and Khensane Machel (two) in the knockout rounds: Mozambique scored seven times in their first World Cup group."
     }
    ]
   },
@@ -2148,7 +2280,85 @@
      "time": "15:30",
      "home": "Uganda",
      "away": "New Caledonia",
-     "venue": "Aspire Zone"
+     "venue": "Aspire Zone",
+     "id": "uga-ncl",
+     "score": "6-0",
+     "goals": [
+      {
+       "min": "6'",
+       "team": "Uganda",
+       "who": "Owen Mukisa",
+       "type": "Penalty",
+       "pid": "owen-mukisa"
+      },
+      {
+       "min": "34'",
+       "team": "Uganda",
+       "who": "Owen Mukisa",
+       "type": "Open play",
+       "pid": "owen-mukisa"
+      },
+      {
+       "min": "45+2'",
+       "team": "Uganda",
+       "who": "Joseph Dorongin",
+       "type": "Open play",
+       "pid": "joseph-dorongin"
+      },
+      {
+       "min": "46'",
+       "team": "Uganda",
+       "who": "Isima Magala",
+       "type": "Open play",
+       "how": "Straight after the restart",
+       "pid": "isima-magala"
+      },
+      {
+       "min": "52'",
+       "team": "Uganda",
+       "who": "Junior Ofoyirwoth",
+       "type": "Open play",
+       "pid": "junior-ofoyirwoth"
+      },
+      {
+       "min": "63'",
+       "team": "Uganda",
+       "who": "Owen Mukisa",
+       "type": "Open play",
+       "how": "Completes the captain's hat-trick",
+       "pid": "owen-mukisa"
+      }
+     ],
+     "story": "Captain Owen Mukisa scored a hat-trick, starting with a sixth-minute penalty, as Uganda beat New Caledonia 6-0 for their first win at a U-17 World Cup. Joseph Dorongin, Isima Magala and Junior Ofoyirwoth also scored, and Uganda are through to the round of 32.",
+     "keyNumbers": [
+      [
+       "3",
+       "goals for captain Owen Mukisa"
+      ],
+      [
+       "6",
+       "goals in Uganda's first U-17 World Cup win"
+      ],
+      [
+       "4",
+       "points, second in Group B on goal difference"
+      ]
+     ],
+     "analysis": [
+      {
+       "h": "The captain led it",
+       "p": "Mukisa scored from the spot after six minutes, added a second after 34 and completed his hat-trick after 63."
+      },
+      {
+       "h": "Three goals either side of the break",
+       "p": "Joseph Dorongin scored in first-half added time, Isima Magala straight after the restart and Junior Ofoyirwoth after 52 minutes."
+      },
+      {
+       "h": "What it means for the group",
+       "p": "Korea Republic win Group B on nine points. Uganda finish second, level on four points with Ecuador after their 0-0 draw and ahead on goal difference. Through to the round of 32: the opponent is set when the group stage ends on 27 November."
+      }
+     ],
+     "scout": "Follow captain Owen Mukisa of Vipers SC in the round of 32: a hat-trick in Uganda's first U-17 World Cup win."
     }
    ]
   }

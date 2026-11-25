@@ -1,5 +1,5 @@
 {
- "updated": "24 November 2026",
+ "updated": "25 November 2026",
  "_note": "Public scout cards (Stage 1, public-domain evidence). Every player is under 18: club signal capped at MONITOR, agent at DEVELOP FIRST, no valuation. Numeric grades are published only after Andrew approves them in the private tracker.",
  "players": [
   {
@@ -36,9 +36,9 @@
     "Set up Khaled Mokhtar's goal for 2-0 against Qatar."
    ],
    "fed": "WATCHLIST",
-   "next": "Follow him against Panama on Wednesday 25 November, 17:30 Doha time.",
-   "up": "A goal or assist against Panama.",
-   "down": "Little influence on the ball in a must-win match."
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "Little influence in the round of 32."
   },
   {
    "id": "ziad-saudi",
@@ -51,9 +51,9 @@
     "Scored Egypt's goal against Greece from outside the box while Egypt played with ten men."
    ],
    "fed": "WATCHLIST",
-   "next": "Follow his minutes and shots against Panama on 25 November.",
-   "up": "A second goal or a start against Panama.",
-   "down": "Limited minutes against Panama."
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "Little influence in the round of 32."
   },
   {
    "id": "diego-pelembe",
@@ -69,9 +69,9 @@
     "Ran midfield in the 4-0 win over Denmark and hit the woodwork."
    ],
    "fed": "WATCHLIST",
-   "next": "Follow him against Australia on Wednesday 25 November, 18:30 Doha time.",
-   "up": "A goal or assist against Australia.",
-   "down": "No goal involvement against Australia."
+   "next": "Follow him if Mozambique take a best-third place in the round of 32, confirmed on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "No goal involvement in the round of 32."
   },
   {
    "id": "alirio-cuna",
@@ -87,9 +87,9 @@
     "Scored again against Argentina in first-half added time: three goals in two matches."
    ],
    "fed": "WATCHLIST",
-   "next": "Follow his runs in behind against Australia on Wednesday 25 November, 18:30 Doha time.",
-   "up": "A fourth goal, against Australia.",
-   "down": "No shots against Australia."
+   "next": "Follow him if Mozambique take a best-third place in the round of 32, confirmed on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "No goal involvement in the round of 32."
   },
   {
    "id": "khensane-machel",
@@ -100,12 +100,13 @@
    "shirt": "5",
    "facts": [
     "Scored Africa's first goal of the tournament, four minutes into the 4-0 win over Denmark.",
-    "Started in midfield beside captain Diego Elias Pelembe."
+    "Started in midfield beside captain Diego Elias Pelembe.",
+    "Scored again against Australia, after 28 minutes: two goals in three group matches."
    ],
    "fed": "WATCHLIST",
-   "next": "Follow him against Australia on Wednesday 25 November, 18:30 Doha time.",
-   "up": "A goal or assist against Australia.",
-   "down": "No goal involvement against Australia."
+   "next": "Follow him if Mozambique take a best-third place in the round of 32, confirmed on 27 November.",
+   "up": "A third goal in the round of 32.",
+   "down": "No goal involvement in the round of 32."
   },
   {
    "id": "chausson-nhabanga",
@@ -118,9 +119,9 @@
     "Set up Mozambique's opening goal against Denmark."
    ],
    "fed": "WATCHLIST",
-   "next": "Follow him against Australia on Wednesday 25 November, 18:30 Doha time.",
-   "up": "A goal or assist against Australia.",
-   "down": "No goal involvement against Australia."
+   "next": "Follow him if Mozambique take a best-third place in the round of 32, confirmed on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "No goal involvement in the round of 32."
   },
   {
    "id": "joaquim-mubai",
@@ -133,9 +134,9 @@
     "Scored Mozambique's fourth goal against Denmark in added time."
    ],
    "fed": "WATCHLIST",
-   "next": "Follow him against Australia on Wednesday 25 November, 18:30 Doha time.",
-   "up": "A goal or assist against Australia.",
-   "down": "No goal involvement against Australia."
+   "next": "Follow him if Mozambique take a best-third place in the round of 32, confirmed on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "No goal involvement in the round of 32."
   },
   {
    "id": "karel-krys",
@@ -324,9 +325,9 @@
    "facts": [
     "Player of the Match as Australia beat Argentina 2-0: his low ball across the box forced the first goal and he rounded the keeper for the second."
    ],
-   "next": "Follow him against Mozambique on 25 November.",
-   "up": "Another goal against Mozambique's defence.",
-   "down": "Few chances against a deeper block.",
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "Few chances created in the round of 32.",
    "fed": "WATCHLIST"
   },
   {
@@ -341,9 +342,9 @@
    "facts": [
     "Player of the Match against Uganda; scored the opener in the 8th minute."
    ],
-   "next": "Follow him against Ecuador on 25 November.",
-   "up": "A second goal in the group.",
-   "down": "No goal involvement against Ecuador.",
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "No goal involvement in the round of 32.",
    "fed": "WATCHLIST"
   },
   {
@@ -358,9 +359,9 @@
    "facts": [
     "Two goals against Haiti, after four minutes and just before half-time."
    ],
-   "next": "Follow France's second group match.",
-   "up": "A third goal in the group.",
-   "down": "No shot on target in the next match.",
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "No goal involvement in the round of 32.",
    "fed": "WATCHLIST"
   },
   {
@@ -375,9 +376,9 @@
    "facts": [
     "Scored twice from the penalty spot against Uruguay."
    ],
-   "next": "Follow Saudi Arabia's second group match.",
-   "up": "An open-play goal in the group.",
-   "down": "No shots outside set pieces.",
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "No goal involvement in the round of 32.",
    "fed": "WATCHLIST"
   },
   {
@@ -426,9 +427,9 @@
    "facts": [
     "Player of the Match as Greece beat Egypt 2-1."
    ],
-   "next": "Follow Greece's second group match.",
-   "up": "A goal involvement in the group.",
-   "down": "Less influence in the next match.",
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "No goal involvement in the round of 32.",
    "fed": "WATCHLIST"
   },
   {
@@ -443,9 +444,9 @@
    "facts": [
     "Player of the Match as hosts Qatar beat Panama 2-0."
    ],
-   "next": "Follow him against Egypt on 22 November.",
-   "up": "A goal involvement against Egypt.",
-   "down": "Less influence in the next match.",
+   "next": "Qatar finish third in Group A on three points; a best-third place is decided on 27 November.",
+   "up": "A start in the round of 32 if Qatar go through.",
+   "down": "Qatar miss out on a best-third place.",
    "fed": "WATCHLIST"
   },
   {
@@ -461,9 +462,9 @@
     "Player of the Match even in a 1-0 defeat by Ecuador.",
     "Saved a penalty from Ahn Sun-hyun in the 6-0 defeat by Korea Republic."
    ],
-   "next": "Follow him against Uganda on 25 November.",
-   "up": "A clean sheet against Uganda.",
-   "down": "Less influence against Uganda.",
+   "next": "His group-stage record stays on the board: follow his next youth international.",
+   "up": "A call-up to the next youth international window.",
+   "down": "No minutes in the next youth international window.",
    "fed": "WATCHLIST"
   },
   {
@@ -674,11 +675,12 @@
    "nation": "egypt",
    "name": "Khaled Mokhtar",
    "facts": [
-    "Scored Egypt's second goal after 33 minutes in the 2-0 win over hosts Qatar."
+    "Scored Egypt's second goal after 33 minutes in the 2-0 win over hosts Qatar.",
+    "Scored again against Panama, after 59 minutes in the 4-1 win: two goals in two matches."
    ],
-   "next": "Follow him against Panama on Wednesday 25 November, 17:30 Doha time.",
-   "up": "A goal or assist against Panama.",
-   "down": "No goal involvement against Panama."
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A third goal in the round of 32.",
+   "down": "No shot on target in the round of 32."
   },
   {
    "role": "",
@@ -694,9 +696,9 @@
     "Hat-trick in the 6-0 win over New Caledonia, after scoring against Uganda in the opener.",
     "Four goals in two matches."
    ],
-   "next": "Follow him against Ecuador on 25 November.",
-   "up": "A goal against Ecuador.",
-   "down": "No shot on target against Ecuador."
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "No goal involvement in the round of 32."
   },
   {
    "role": "",
@@ -712,9 +714,9 @@
     "Scored in both of Uruguay's group wins, against Saudi Arabia and Haiti.",
     "Set up Alan Soares's goal for 4-1 against Haiti."
    ],
-   "next": "Follow him against France on 25 November.",
-   "up": "A goal against France.",
-   "down": "No shot on target against France."
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "No goal involvement in the round of 32."
   },
   {
    "role": "",
@@ -729,9 +731,9 @@
    "facts": [
     "Scored the only goal as Saudi Arabia beat France 1-0, after 73 minutes."
    ],
-   "next": "Follow him against Haiti on 25 November.",
-   "up": "A goal against Haiti.",
-   "down": "No minutes against Haiti."
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "No goal involvement in the round of 32."
   },
   {
    "role": "",
@@ -746,9 +748,9 @@
    "facts": [
     "Scored Greece's winner against Panama in the fifth minute of added time; Greece are through to the round of 32."
    ],
-   "next": "Follow him against Qatar on 25 November.",
-   "up": "A start against Qatar.",
-   "down": "No minutes against Qatar."
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "No goal involvement in the round of 32."
   },
   {
    "role": "",
@@ -762,11 +764,12 @@
    "name": "Juan Cruz Policella",
    "facts": [
     "FIFA Player of the Match as Argentina beat Mozambique 2-1.",
-    "Set up Simón Escobar's goal for 2-0 against Mozambique."
+    "Set up Simón Escobar's goal for 2-0 against Mozambique.",
+    "Scored as Argentina came from 2-0 down to draw 3-3 with Denmark and reach the round of 32."
    ],
-   "next": "Follow him against Denmark on 25 November.",
-   "up": "Another standout display against Denmark.",
-   "down": "Less influence against Denmark."
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "Another goal in the round of 32.",
+   "down": "Less influence in the round of 32."
   },
   {
    "role": "",
@@ -782,9 +785,9 @@
     "Set up Akol Akon's goal in the 2-0 win over Argentina.",
     "FIFA Player of the Match in the 0-0 draw with Denmark."
    ],
-   "next": "Follow him against Mozambique on 25 November.",
-   "up": "A goal or assist against Mozambique.",
-   "down": "No chances created against Mozambique."
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "Few chances created in the round of 32."
   },
   {
    "role": "",
@@ -797,9 +800,9 @@
    "facts": [
     "FIFA Player of the Match as Uganda held Ecuador 0-0."
    ],
-   "next": "Follow him against New Caledonia on Wednesday 25 November, 15:30 Doha time.",
-   "up": "Another standout display against New Caledonia.",
-   "down": "Less influence against New Caledonia."
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "Another standout display in the round of 32.",
+   "down": "Less influence in the round of 32."
   },
   {
    "role": "",
@@ -812,9 +815,9 @@
    "facts": [
     "Set up captain Ahmed Safwat's volley after two minutes in the 2-0 win over Qatar."
    ],
-   "next": "Follow him against Panama on Wednesday 25 November, 17:30 Doha time.",
-   "up": "A goal or assist against Panama.",
-   "down": "No goal involvement against Panama."
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "Little influence in the round of 32."
   },
   {
    "role": "",
@@ -1009,9 +1012,9 @@
    "facts": [
     "FIFA Player of the Match against Greece; scored Panama's goal after 84 minutes in the 2-1 defeat."
    ],
-   "next": "Follow him against Egypt on 25 November.",
-   "up": "A goal against Egypt.",
-   "down": "No shot on target against Egypt."
+   "next": "His group-stage record stays on the board: follow his next youth international.",
+   "up": "A call-up to the next youth international window.",
+   "down": "No minutes in the next youth international window."
   },
   {
    "role": "",
@@ -1026,9 +1029,9 @@
    "facts": [
     "FIFA Player of the Match in the 6-0 win over New Caledonia."
    ],
-   "next": "Follow him against Ecuador on 25 November.",
-   "up": "A goal or assist against Ecuador.",
-   "down": "Less influence against Ecuador."
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "No goal involvement in the round of 32."
   },
   {
    "role": "",
@@ -1043,9 +1046,9 @@
    "facts": [
     "FIFA Player of the Match as Saudi Arabia beat France 1-0."
    ],
-   "next": "Follow him against Haiti on 25 November.",
-   "up": "Another standout display against Haiti.",
-   "down": "Less influence against Haiti."
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "No goal involvement in the round of 32."
   },
   {
    "id": "ibrahima-dione",
@@ -1486,6 +1489,129 @@
    "next": "Follow him against Mexico on 27 November.",
    "up": "Another standout display against Mexico.",
    "down": "Less influence against Mexico."
+  },
+  {
+   "id": "owen-mukisa",
+   "name": "Owen Mukisa",
+   "role": "",
+   "club": "Vipers SC",
+   "shirt": "10",
+   "facts": [
+    "Captain. Hat-trick in the 6-0 win over New Caledonia, Uganda's first win at a U-17 World Cup: a sixth-minute penalty, then goals after 34 and 63 minutes."
+   ],
+   "fed": "WATCHLIST",
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal in the round of 32.",
+   "down": "No shot on target in the round of 32.",
+   "nation": "uganda",
+   "captain": true
+  },
+  {
+   "id": "joseph-dorongin",
+   "name": "Joseph Dorongin",
+   "role": "",
+   "club": "",
+   "shirt": "9",
+   "facts": [
+    "Scored Uganda's third goal in first-half added time in the 6-0 win over New Caledonia."
+   ],
+   "fed": "WATCHLIST",
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "No minutes in the round of 32.",
+   "nation": "uganda"
+  },
+  {
+   "id": "isima-magala",
+   "name": "Isima Magala",
+   "role": "",
+   "club": "Masaka Sunshine FC",
+   "shirt": "",
+   "facts": [
+    "Scored straight after the restart in the 6-0 win over New Caledonia."
+   ],
+   "fed": "WATCHLIST",
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "No minutes in the round of 32.",
+   "nation": "uganda"
+  },
+  {
+   "id": "junior-ofoyirwoth",
+   "name": "Junior Ofoyirwoth",
+   "role": "",
+   "club": "Masaka Sunshine FC",
+   "shirt": "",
+   "facts": [
+    "Scored Uganda's fifth goal after 52 minutes in the 6-0 win over New Caledonia."
+   ],
+   "fed": "WATCHLIST",
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "No minutes in the round of 32.",
+   "nation": "uganda"
+  },
+  {
+   "id": "youssef-abdullah",
+   "name": "Youssef Abdullah",
+   "role": "",
+   "club": "",
+   "shirt": "21",
+   "facts": [
+    "Two goals in the 4-1 win over Panama, after 27 minutes and two minutes after the restart, as Egypt reached the round of 32."
+   ],
+   "fed": "WATCHLIST",
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal in the round of 32.",
+   "down": "No shot on target in the round of 32.",
+   "nation": "egypt"
+  },
+  {
+   "id": "mohamed-gamal",
+   "name": "Mohamed Gamal",
+   "role": "",
+   "club": "",
+   "shirt": "7",
+   "facts": [
+    "Scored Egypt's fourth goal from the penalty spot after 77 minutes in the 4-1 win over Panama."
+   ],
+   "fed": "WATCHLIST",
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "No minutes in the round of 32.",
+   "nation": "egypt"
+  },
+  {
+   "id": "nhampule-junior",
+   "name": "Nhampule Junior",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "facts": [
+    "Opened the scoring after 18 minutes in the 2-2 draw with Australia, the Group C winners."
+   ],
+   "fed": "WATCHLIST",
+   "next": "Follow him if Mozambique take a best-third place in the round of 32, confirmed on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "No minutes in the round of 32.",
+   "nation": "mozambique"
+  },
+  {
+   "id": "konstantinos-souvlatzis",
+   "name": "Konstantinos Souvlatzis",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "facts": [
+    "Two goals in the 4-1 win over hosts Qatar, after 48 and 86 minutes, as Greece won Group A with three wins from three."
+   ],
+   "fed": "WATCHLIST",
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal in the round of 32.",
+   "down": "No shot on target in the round of 32.",
+   "country": "Greece",
+   "code": "GRE",
+   "flag": "gr"
   }
  ]
 }
