@@ -7,6 +7,10 @@
 - Be proactive: build what the task obviously needs without being asked. Keep replies short; no lectures or jargon.
 - Gatekeeper questions go at the very end of the reply, after the notes, so Andrew never has to search for them (Andrew, 19 Nov 2026).
 
+## Blocked items in one section (Andrew, 23 Nov 2026, applies to every chat, project and task)
+- Anything that did not open or work (a file, PDF, page, tool, login, connector, permission) and everything left undone because of it goes in **one section** of the reply, headed **"Blocked: for you to deal with"**. One line each: what it is, why it failed, what it holds up, and the fix or next step. Never scatter these through the rest of the reply.
+- Place it after the notes and before the Gatekeeper questions, which stay last. If nothing was blocked, leave the section out.
+
 ## Four Sentences first (Andrew's rule, 15 Nov 2026)
 - Before writing or changing any page, card, invite, briefing or tracker text, read the Afritech Four Sentences (the afritech-four-sentences skill and memory file): who it's for, what they get, why they'd believe us, the one action.
 - Every public page's first screen passes the stranger test: someone outside football can say who it's for and what to do next.
