@@ -1046,6 +1046,189 @@
      "who": "Zaid Alburi"
     }
    ]
+  },
+  {
+   "id": "uzb-ita",
+   "date": "26 Nov",
+   "group": "E",
+   "home": "Uzbekistan",
+   "away": "Italy",
+   "score": "1-3",
+   "goals": [
+    {
+     "min": "7'",
+     "team": "Italy",
+     "who": "Tommaso Casagrande"
+    },
+    {
+     "min": "31'",
+     "team": "Italy",
+     "who": "Federico Croci",
+     "pid": "federico-croci",
+     "type": "Penalty"
+    },
+    {
+     "min": "45+2'",
+     "team": "Italy",
+     "who": "Corigliano"
+    },
+    {
+     "min": "75'",
+     "team": "Uzbekistan",
+     "who": "Sukhrob Sadirjanov",
+     "pid": "sukhrob-sadirjanov"
+    }
+   ]
+  },
+  {
+   "id": "cro-cub",
+   "date": "26 Nov",
+   "group": "F",
+   "home": "Croatia",
+   "away": "Cuba",
+   "score": "7-0",
+   "goals": [
+    {
+     "min": "18'",
+     "team": "Croatia",
+     "who": "Toni Ruso",
+     "pid": "toni-ruso",
+     "type": "Penalty"
+    },
+    {
+     "min": "20'",
+     "team": "Croatia",
+     "who": "Toni Ruso",
+     "pid": "toni-ruso"
+    },
+    {
+     "min": "36'",
+     "team": "Croatia",
+     "who": "Izak Ježić",
+     "pid": "izak-jezic"
+    },
+    {
+     "min": "44'",
+     "team": "Croatia",
+     "who": "Vito Jakovljević"
+    },
+    {
+     "min": "58'",
+     "team": "Croatia",
+     "who": "Izak Ježić",
+     "pid": "izak-jezic"
+    },
+    {
+     "min": "76'",
+     "team": "Croatia",
+     "who": "Toni Ruso",
+     "pid": "toni-ruso"
+    },
+    {
+     "min": "82'",
+     "team": "Croatia",
+     "who": "Patrik Lačić"
+    }
+   ]
+  },
+  {
+   "id": "nzl-bel",
+   "date": "26 Nov",
+   "group": "G",
+   "home": "New Zealand",
+   "away": "Belgium",
+   "score": "0-6",
+   "goals": [
+    {
+     "min": "3'",
+     "team": "Belgium",
+     "who": "Preben Blondeel"
+    },
+    {
+     "min": "15'",
+     "team": "Belgium",
+     "who": "Matteo Soria",
+     "pid": "matteo-soria"
+    },
+    {
+     "min": "18'",
+     "team": "Belgium",
+     "who": "Matteo Soria",
+     "pid": "matteo-soria"
+    },
+    {
+     "min": "23'",
+     "team": "Belgium",
+     "who": "Tinus Moorthamer"
+    },
+    {
+     "min": "39'",
+     "team": "Belgium",
+     "who": "Kiyan Achahbar"
+    },
+    {
+     "min": "51'",
+     "team": "Belgium",
+     "who": "Jelle Driessen",
+     "pid": "jelle-driessen"
+    }
+   ]
+  },
+  {
+   "id": "chn-fij",
+   "date": "26 Nov",
+   "group": "H",
+   "home": "China PR",
+   "away": "Fiji",
+   "score": "8-0",
+   "goals": [
+    {
+     "min": "3'",
+     "team": "China PR",
+     "who": "Zhao Songyuan",
+     "pid": "zhao-songyuan"
+    },
+    {
+     "min": "22'",
+     "team": "China PR",
+     "who": "Kuang Zhaolei",
+     "pid": "kuang-zhaolei"
+    },
+    {
+     "min": "28'",
+     "team": "China PR",
+     "who": "Wan Xiang",
+     "pid": "wan-xiang"
+    },
+    {
+     "min": "32'",
+     "team": "China PR",
+     "who": "Own goal",
+     "type": "Own goal"
+    },
+    {
+     "min": "58'",
+     "team": "China PR",
+     "who": "Kuang Zhaolei",
+     "pid": "kuang-zhaolei"
+    },
+    {
+     "min": "65'",
+     "team": "China PR",
+     "who": "Zhang Junhao"
+    },
+    {
+     "min": "72'",
+     "team": "China PR",
+     "who": "Wan Xiang",
+     "pid": "wan-xiang"
+    },
+    {
+     "min": "85'",
+     "team": "China PR",
+     "who": "Liang Shiyu"
+    }
+   ]
   }
  ]
 }
