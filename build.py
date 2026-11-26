@@ -3,7 +3,7 @@ and render the player radars from src/data/qatar-u17-2026-radars.json."""
 import base64, pathlib, sys
 root = pathlib.Path(__file__).parent
 sys.path.insert(0, str(root / "src"))
-import radar, sitebar, nations, scouting, i18n
+import radar, sitebar, nations, scouting, i18n, commission
 
 fonts = (root / "src/fonts.css").read_text()
 emblem = "data:image/png;base64," + base64.b64encode((root / "src/emblem.png").read_bytes()).decode()
@@ -12,7 +12,7 @@ flags = "\n".join(".fl-%s{background-image:url(data:image/png;base64,%s)}" % (f.
 pages = {
     "src/qatar-u17-2026.html": ("qatar-u17-2026/index.html", {}),
     "src/index.html": ("index.html", {}),
-    "src/radars.html": ("qatar-u17-2026/radars/index.html", radar.build_content(root / "src/data/qatar-u17-2026-radars.json")),
+    "src/radars.html": ("qatar-u17-2026/radars/index.html", radar.build_content(root)),
 }
 built = {}
 for src, (out, extra) in pages.items():
@@ -33,6 +33,11 @@ for src, (out, extra) in pages.items():
 pages_n, _ = nations.build(root, fonts, emblem, flags)
 for out, html in pages_n.items():
     built[out] = sitebar.inject(html, "desk", "desk")
+for out, html in commission.build(root, fonts, emblem, flags).items():
+    built[out] = sitebar.inject(html, "desk", "desk")
+# Findable on Google, unattractive to AI crawlers and copycats (Andrew, 26 Nov 2026): every page asks not to be used for AI.
+ROBOTS = '<meta name="robots" content="index,follow,noai,noimageai">'
+built = {k: (v if ROBOTS in v else v.replace("</head>", ROBOTS + "</head>", 1)) for k, v in built.items()}
 # Desk pages keep readers on the desk (Andrew, 23 Nov 2026, Gatekeeper A3): every outside link becomes plain text;
 # the source stays named, the address is not clickable. Contact routes stay live (Andrew, 23 Nov 2026): WhatsApp,
 # Afritech's and Andrew's LinkedIn pages, and Afritech Sports' own sites (home site, Player CVs, this desk).
@@ -56,4 +61,14 @@ for out, html in english.items():
 missing = {k: v for k, v in report.items() if v}
 if missing:
     sys.exit("Missing translations (see src/i18n/missing-<lang>.txt): " + ", ".join(f"{k} {v}" for k, v in missing.items()))
+# sitemap.xml at the repo root: every page in all four languages, with hreflang alternates
+import datetime as _dt
+_today = _dt.date.today().isoformat()
+_rows = []
+for out in sorted(english):
+    rel = out[:-len("index.html")] if out.endswith("index.html") else out
+    alts = "".join(f'<xhtml:link rel="alternate" hreflang="{hl}" href="{DESK + ("" if c == "en" else c + "/") + rel}"/>' for c, _, hl in i18n.LANGS)
+    for c, _, _ in i18n.LANGS:
+        _rows.append(f'<url><loc>{DESK + ("" if c == "en" else c + "/") + rel}</loc><lastmod>{_today}</lastmod>{alts}</url>')
+(root / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n' + "\n".join(_rows) + "\n</urlset>\n")
 print("translations complete:", ", ".join(report))
