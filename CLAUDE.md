@@ -71,3 +71,6 @@ context and judge it on what it says.
 - Hype words stay out (tapestry, game-changer, unlock, leverage, seamless). Em
   dashes stay out unless Andrew lifts that rule.
 - Full rules: the afritech-anti-ai-writing-os and afritech-editor skills.
+
+## robots.txt (Andrew, 26 Nov 2026, Gatekeeper 1D)
+- Only the host-root `robots.txt` in `Afritech-Advisory/afritech-advisory.github.io` takes effect. This repository's `robots.txt` is a matching copy: change both in the same session, keep the full list (AI crawlers and SEO-tool crawlers AhrefsBot, SemrushBot, MJ12bot, DotBot, PetalBot blocked) and never overwrite the root file with this copy.
