@@ -38,10 +38,25 @@ html[lang=sw] .nums div{display:flex;flex-direction:column-reverse;justify-conte
 .cplayer iframe,.cplayer>div{position:absolute;inset:0;width:100%;height:100%;border:0}
 .cplayer[hidden],.scard[hidden],.bfilter[hidden]{display:none}
 .peer{width:100%;height:auto;display:block;max-width:640px}
-.scards{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(320px,1fr))}
-.bfilter{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}
+.scards{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(340px,1fr))}
 .bfilter button{font:700 .9rem var(--body);border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:99px;padding:7px 14px;cursor:pointer}
 .bfilter button[aria-pressed="true"]{background:var(--navy);color:#fff;border-color:var(--navy)}
+.bwrap{grid-column:1/-1;min-width:0}
+.bhead{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;margin:0 0 14px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px}
+.donut{width:96px;height:96px;flex:none}
+.blegend{display:grid;gap:2px}
+.bl{margin:0;display:flex;align-items:center;gap:8px;font-size:.95rem}
+.bl i{width:12px;height:12px;border-radius:3px;display:inline-block}
+.bl b{font-family:var(--display);font-size:1.2rem}
+.bfilter{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:0 0 0 auto}
+.intel{border:1px solid var(--line);border-radius:10px;padding:10px 12px;display:grid;gap:8px;background:linear-gradient(180deg,var(--soft),transparent)}
+.intel .ih{margin:0;font:600 .72rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.itiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+.itiles div{display:grid;gap:2px}
+.itiles b{font-family:var(--display);font-size:1.45rem;line-height:1;color:var(--fg)}
+.itiles span{font-size:.74rem;color:var(--muted);line-height:1.25}
+.iread{margin:0;font-weight:600;border-left:3px solid var(--orange-text,#C2570C);padding-left:8px}
+@media (max-width:520px){.itiles{grid-template-columns:repeat(2,minmax(0,1fr))}.bfilter{margin-left:0}}
 @media (max-width:420px){.nums b{font-size:1.35rem}.ladder2{grid-template-columns:1fr}.scards{grid-template-columns:1fr}}
 """
 
@@ -227,6 +242,90 @@ def vid(url):
     return url.split("v=")[1].split("&")[0]
 
 
+def _uniq(nations):
+    """Each finished match once (an all-African match sits under both nations)."""
+    seen = set()
+    for m in all_matches(nations):
+        if m["id"] not in seen:
+            seen.add(m["id"])
+            yield m
+
+
+def _sc(m):
+    a, b = (int(x) for x in re.findall(r"\d+", m["score"])[:2])
+    return a, b
+
+
+def wins_by_team(nations):
+    """Wins per team, from final scores."""
+    w = {}
+    for m in _uniq(nations):
+        a, b = _sc(m)
+        if a != b:
+            k = m["home"] if a > b else m["away"]
+            w[k] = w.get(k, 0) + 1
+    return w
+
+
+def complete(m):
+    """True when the match report lists every goal of the final score."""
+    return len(m.get("goals", [])) == sum(_sc(m))
+
+
+def decisive(m, g):
+    """Replay the goals in order: True when the scorer's team was level or one behind just before this goal."""
+    tally = {m["home"]: 0, m["away"]: 0}
+    for x in m.get("goals", []):
+        if x is g:
+            mine = tally.get(g["team"], 0)
+            other = sum(v for k, v in tally.items() if k != g["team"])
+            return other - mine in (0, 1)
+        if x["team"] in tally:
+            tally[x["team"]] += 1
+    return False
+
+
+def team_goals(t, nations):
+    n = 0
+    for m in _uniq(nations):
+        if t["name"] == m["home"]:
+            n += _sc(m)[0]
+        elif t["name"] == m["away"]:
+            n += _sc(m)[1]
+    return n
+
+
+def intel_html(p, t, goals, assists, nations):
+    """Tournament read: four numbers computed from final match reports and one verdict a scout can act on."""
+    if not goals and not assists:
+        return ""
+    tg = team_goals(t, nations)
+    share = round(100 * len(goals) / tg) if tg else 0
+    known = [r for r in goals if complete(r["m"])]
+    dec = sum(1 for r in known if decisive(r["m"], r["g"]))
+    wins = wins_by_team(nations)
+    inv = goals + assists
+    opp = lambda m: m["away"] if m["home"] == t["name"] else m["home"]
+    vw = sum(1 for r in inv if wins.get(opp(r["m"]), 0) > 0)
+    seen = sum(1 for r in inv if r["g"].get("s") is not None)
+    n = len(inv)
+    tiles = [(f"{share}%", "Share of his team's goals"),
+             (f"{dec}/{len(known)}" if known else "\u2013", "Goals that levelled or led"),
+             (f"{vw}/{n}", "Involvements v sides with a win"),
+             (f"{seen}/{n}", "Checked on video")]
+    if vw == 0:
+        v = "Proof still needed against a side that has won a match."
+    elif known and dec > 0 and dec >= len(known) / 2:
+        v = "Scores when the match is in the balance, not only when it is won."
+    elif share >= 40:
+        v = "Carries his team's scoring: watch how he copes when he is the defence's first target."
+    else:
+        v = "Contributes inside a team that shares its goals: judge his role, not only his numbers."
+    return ('<div class="intel"><p class="ih">Tournament read</p><div class="itiles">'
+            + "".join(f'<div><b>{a}</b><span>{H.escape(b)}</span></div>' for a, b in tiles)
+            + f'</div><p class="iread">{H.escape(v)}</p></div>')
+
+
 def card(p, nations, here_slug=None):
     """Full scout card. here_slug: the nation page it sits on (None = main board)."""
     t = team(p, nations)
@@ -259,7 +358,7 @@ def card(p, nations, here_slug=None):
     return (f'<article class="scard" id="{p["id"]}" data-region="{region}"><header><div class="sil">{SIL}</div><div><h3>{H.escape(p["name"])}{cap}</h3>'
             f'<p class="meta">{meta}</p></div></header>'
             f'<div class="sig"><span>Club: <b>MONITOR</b></span><span>Agent: <b>DEVELOP FIRST</b></span><span>Federation: <b>{p["fed"]}</b></span></div>'
-            f'<p><b>Next:</b> {H.escape(p["next"])}</p>{nums}'
+            f'<p><b>Next:</b> {H.escape(p["next"])}</p>{nums}{intel_html(p, t, goals, assists, nations)}'
             f'{f"<ul class=gl>{chr(10).join(moments)}</ul>" if moments else ""}'
             f'<div class="cplayer" hidden></div>'
             f'<h4 style="margin:2px 0 0;font-family:var(--display);font-size:1.1rem">What we have seen</h4><ul class="seen">{seen}</ul>'
@@ -304,15 +403,49 @@ def peer_svg(nations, scout, highlight_nation=None):
             'Teal dots are goals, purple dots assists. Counts from final match reports, updated after every matchday.</p>')
 
 
+def donut_svg(na, nw):
+    """Ring chart: Africa's share of the board in teal from 12 o'clock clockwise, the rest in navy, total in the centre."""
+    import math
+    tot = na + nw
+    cx = cy = 60
+    R, r = 54, 36
+    def seg(a0, a1, col):
+        if a1 - a0 >= 0.9999:
+            return (f'<circle cx="{cx}" cy="{cy}" r="{(R + r) / 2}" fill="none" stroke="{col}" stroke-width="{R - r}"/>')
+        p = lambda rad, f: (cx + rad * math.sin(2 * math.pi * f), cy - rad * math.cos(2 * math.pi * f))
+        large = 1 if a1 - a0 > 0.5 else 0
+        (x0, y0), (x1, y1), (x2, y2), (x3, y3) = p(R, a0), p(R, a1), p(r, a1), p(r, a0)
+        return (f'<path d="M{x0:.2f} {y0:.2f}A{R} {R} 0 {large} 1 {x1:.2f} {y1:.2f}L{x2:.2f} {y2:.2f}'
+                f'A{r} {r} 0 {large} 0 {x3:.2f} {y3:.2f}Z" fill="{col}"/>')
+    parts = []
+    if tot:
+        fa = na / tot
+        if na:
+            parts.append(seg(0, fa, "var(--teal)"))
+        if nw:
+            parts.append(seg(fa, 1, "var(--navy)"))
+    else:
+        parts.append(f'<circle cx="{cx}" cy="{cy}" r="45" fill="none" stroke="var(--line)" stroke-width="18"/>')
+    return (f'<svg class="donut" viewBox="0 0 120 120" role="img" aria-label="Players on the board: Africa and rest of the world">'
+            + "".join(parts)
+            + f'<text x="60" y="61" text-anchor="middle" dominant-baseline="middle" font-family="Barlow Condensed,sans-serif" font-weight="700" font-size="30" fill="var(--fg)">{tot}</text></svg>')
+
+
 def board_html(nations, scout):
-    """Main desk board: the full scout card of every player, ranked by goal involvements, with an Africa / rest-of-world filter."""
+    """Main desk board: a header (Africa / rest-of-world ring, legend, filter) across the full width, then the
+    full scout card of every player, ranked by goal involvements."""
     ps = ranked(scout["players"], nations)
     na = sum(1 for p in ps if p.get("nation"))
+    nw = len(ps) - na
     filt = (f'<div class="bfilter" role="group" aria-label="Filter the board" hidden>'
             f'<button type="button" data-r="all" aria-pressed="true">All ({len(ps)})</button>'
             f'<button type="button" data-r="africa" aria-pressed="false">Africa ({na})</button>'
-            f'<button type="button" data-r="world" aria-pressed="false">Rest of the world ({len(ps) - na})</button></div>')
-    return filt + '<div class="scards" id="board-cards">' + "".join(card(p, nations) for p in ps) + "</div>"
+            f'<button type="button" data-r="world" aria-pressed="false">Rest of the world ({nw})</button></div>')
+    head = ('<div class="bhead">' + donut_svg(na, nw)
+            + f'<div class="blegend"><p class="bl"><i style="background:var(--teal)"></i><b>{na}</b> Africa</p>'
+            + f'<p class="bl"><i style="background:var(--navy)"></i><b>{nw}</b> Rest of the world</p>'
+            + '<p class="fine" style="margin:0">players on the board</p></div>' + filt + '</div>')
+    return '<div class="bwrap">' + head + '<div class="scards" id="board-cards">' + "".join(card(p, nations) for p in ps) + "</div></div>"
 
 
 def results_html(nations, flag):

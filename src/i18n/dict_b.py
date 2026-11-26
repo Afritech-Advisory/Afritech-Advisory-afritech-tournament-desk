@@ -783,6 +783,19 @@ E = [
 ('lead after 28 minutes', "d'avance après 28 minutes", 'uongozi baada ya dakika 28', 'de vantagem aos 28 minutos'),
 ('points, second in Group B on goal difference', 'points, deuxième du groupe B à la différence de buts', 'pointi, wa pili Kundi B kwa tofauti ya mabao', 'pontos, segundo do Grupo B no saldo de gols'),
 ('points, third in Group C', 'points, troisième du groupe C', 'pointi, wa tatu Kundi C', 'pontos, terceiro do Grupo C'),
+('Tournament read', 'Lecture du tournoi', 'Tathmini ya mashindano', 'Leitura do torneio'),
+("Share of his team's goals", 'Part des buts de son équipe', 'Sehemu ya mabao ya timu yake', 'Parcela dos gols da equipe'),
+('Goals that levelled or led', "Buts égalisateurs ou donnant l'avantage", 'Mabao ya kusawazisha au kuongoza', 'Gols de empate ou de virada'),
+('Involvements v sides with a win', 'Participations face à des équipes ayant gagné', 'Michango dhidi ya timu zilizoshinda', 'Participações contra seleções com vitória'),
+('Checked on video', 'Vérifiés en vidéo', 'Yamehakikiwa kwa video', 'Conferidos em vídeo'),
+('Proof still needed against a side that has won a match.', 'Il doit encore le prouver face à une équipe qui a gagné un match.', 'Bado anahitaji kujithibitisha dhidi ya timu iliyoshinda mechi.', 'Ainda precisa provar contra uma seleção que venceu uma partida.'),
+('Scores when the match is in the balance, not only when it is won.', 'Il marque quand le match est indécis, pas seulement quand il est gagné.', 'Hufunga mechi ikiwa bado haijaamuliwa, si tu ikiwa imeshashindwa.', 'Marca quando o jogo está em aberto, não só quando já está ganho.'),
+("Carries his team's scoring: watch how he copes when he is the defence's first target.", "Il porte l'attaque de son équipe : voyez comment il réagit quand la défense le cible en premier.", 'Ndiye tegemeo la mabao la timu yake: angalia anavyokabiliana anapolengwa kwanza na mabeki.', 'Carrega os gols da equipe: veja como reage quando é o primeiro alvo da defesa.'),
+('Contributes inside a team that shares its goals: judge his role, not only his numbers.', 'Il contribue dans une équipe où les buts sont partagés : jugez son rôle, pas seulement ses chiffres.', 'Anachangia katika timu inayogawana mabao: pima nafasi yake, si takwimu zake pekee.', 'Contribui numa equipe que divide os gols: avalie a função dele, não só os números.'),
+('Africa', 'Afrique', 'Afrika', 'África'),
+('Rest of the world', 'Reste du monde', 'Dunia nzima', 'Resto do mundo'),
+('players on the board', 'joueurs au tableau', 'wachezaji kwenye orodha', 'jogadores no quadro'),
+('Players on the board: Africa and rest of the world', 'Joueurs au tableau : Afrique et reste du monde', 'Wachezaji kwenye orodha: Afrika na dunia nzima', 'Jogadores no quadro: África e resto do mundo'),
 ]
 
 JS = [
