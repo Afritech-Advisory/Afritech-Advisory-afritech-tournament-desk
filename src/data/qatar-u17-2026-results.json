@@ -957,6 +957,47 @@
    ]
   },
   {
+   "id": "den-arg",
+   "date": "25 Nov",
+   "group": "C",
+   "home": "Denmark",
+   "away": "Argentina",
+   "score": "3-3",
+   "goals": [
+    {
+     "min": "37'",
+     "team": "Denmark",
+     "who": "Madsen"
+    },
+    {
+     "min": "48'",
+     "team": "Denmark",
+     "who": "Ekene Chukwuani"
+    },
+    {
+     "min": "58'",
+     "team": "Argentina",
+     "who": "Giovanni Baroni"
+    },
+    {
+     "min": "62'",
+     "team": "Argentina",
+     "who": "Juan Cruz Policella",
+     "pid": "juan-cruz-policella"
+    },
+    {
+     "min": "68'",
+     "team": "Argentina",
+     "who": "Alan Alcaraz"
+    },
+    {
+     "min": "78'",
+     "team": "Denmark",
+     "who": "Omran Khatar"
+    }
+   ]
+  },
+  {
    "id": "uru-fra",
    "date": "25 Nov",
    "group": "D",
