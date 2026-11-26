@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Player Radars, Qatar 2026 | Afritech Tournament Desk</title>
-<meta name="description" content="Player radars for Africa's prospects at the FIFA U-17 World Cup Qatar 2026, each set against the average for his role at the tournament. Updated after every matchday.">
+<title>Tournament Radars, Qatar 2026 | Afritech Tournament Desk</title>
+<meta name="description" content="Animated radars for every player with a goal or assist at the FIFA U-17 World Cup Qatar 2026, and for each of Africa's ten nations, computed from final match reports. Updated after every matchday.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Player radars: Africa's prospects at the U-17 World Cup Qatar 2026">
-<meta property="og:description" content="Each player set against the average for his role at the tournament. Updated after every matchday by Afritech Sports.">
+<meta property="og:title" content="Tournament radars: players and Africa's ten at the U-17 World Cup Qatar 2026">
+<meta property="og:description" content="Six areas for every player with a goal or assist, and for each African nation, computed from final match reports. Updated after every matchday by Afritech Sports.">
 <meta property="og:image" content="https://afritech-advisory.github.io/Afritech-Advisory-afritech-tournament-desk/qatar-u17-2026/share.png">
 <meta property="og:url" content="https://afritech-advisory.github.io/Afritech-Advisory-afritech-tournament-desk/qatar-u17-2026/radars/">
 <meta name="twitter:card" content="summary_large_image">
@@ -59,7 +59,7 @@ p{margin:0}
 .rc header{display:flex;gap:12px;align-items:center}
 .rc h3{font-size:1.45rem;line-height:1.1}
 .rc .meta{color:var(--muted);font-size:.92rem}
-.rc svg{width:100%;height:auto;display:block}
+.rc svg{width:100%;height:auto;display:block;overflow:visible}
 .rc .read{font-weight:600}
 .rc .cap{font-size:.84rem;color:var(--muted)}
 .rc .rec{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:baseline;border-top:1px solid var(--line);padding-top:10px;font-size:.93rem}
@@ -76,47 +76,108 @@ p{margin:0}
 footer{margin-top:36px;border-top:1px solid var(--line);padding-block:20px 28px;font-size:.88rem;color:var(--muted);text-align:center}
 @media (max-width:820px){.mast .wrap{grid-template-columns:1fr}.how{grid-template-columns:1fr}}
 @media (max-width:640px){.bar .wrap{flex-wrap:wrap;gap:0 10px;padding-bottom:4px}.bar nav{order:3;width:100%;margin-left:0;overflow-x:auto}.bar nav a.cta{display:none}.grid{grid-template-columns:1fr}}
+
+.toggle{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.toggle span{font-size:.9rem;color:var(--muted);margin-right:4px}
+.toggle button,.chips button{font:600 .88rem var(--body);border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:99px;padding:6px 12px;cursor:pointer;min-height:36px}
+.toggle button[aria-pressed="true"]{background:var(--orange);border-color:var(--orange);color:#1B1206}
+.rd .ax{cursor:pointer;outline:none}
+.rd .ax:focus-visible text,.rd .ax.on text{text-decoration:underline;text-decoration-thickness:2px}
+.rd .ra,.rd .rp{transition:none}
+.tips{background:var(--soft);border-radius:10px;padding:10px 12px;font-size:.92rem;min-height:64px}
+.tips .thint{margin:0;color:var(--muted)}
+.tip p{margin:0}.tip .tv{font-family:var(--display);font-weight:700;color:var(--teal);font-size:1.15rem}
+.tip .tr{color:var(--muted)}.tip .tr b{color:var(--fg);font-family:var(--display);font-size:1.05rem}
+.tip ul{margin:4px 0 0;padding-left:18px;display:grid;gap:2px}
+.tip .tn{color:var(--muted)}
+.fine{font-size:.86rem;color:var(--muted);margin:0}
+.honest{margin:6px 0 0;font-size:.9rem;color:#DCE5F0;border-left:3px solid var(--orange);padding-left:10px}
+h2.sec{font-size:clamp(1.6rem,3.5vw,2.1rem);margin-top:30px}
+.sub{color:var(--muted);max-width:70ch;margin-top:4px}
+.ccode{font:600 .72rem var(--mono);background:var(--soft);border-radius:4px;padding:1px 5px}
+.wa-btn{display:inline-block;background:#25D366;color:#06210F;font-weight:700;text-decoration:none;border-radius:8px;padding:10px 16px}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
 <header class="bar"><div class="wrap">
   <a class="brand" href="../../"><img src="{{EMBLEM}}" alt="Afritech Sports emblem" width="36" height="39">Tournament Desk</a>
-  <nav aria-label="Sections"><a href="../">Qatar 2026</a><a href="../#results">Results</a><a href="../#players">Players</a><a href="../#nations">Nations</a><a class="cta" href="../#contact">Book a briefing</a></nav>
+  <nav aria-label="Sections"><a href="../">Qatar 2026</a><a href="../#results">Results</a><a href="../#players">Players</a><a href="../#nations">Nations</a><a href="../../commission/">Commission a desk</a><a class="cta" href="../#contact">Book a briefing</a></nav>
 </div></header>
 
 <section class="mast"><div class="wrap">
   <div>
     <p class="eyebrow">FIFA U-17 World Cup Qatar 2026 · Updated {{UPDATED}}</p>
-    <h1>Player radars. <em>Measured against the tournament.</em></h1>
-    <p class="lead">Each player's game across the eight areas that matter for his role, set against the average for that role at this tournament. Updated after every matchday.</p>
+    <h1>Tournament radars. <em>Every player with a goal or assist, and Africa's ten.</em></h1>
+    <p class="lead">For scouts, coaches and technical directors: see in one picture where a player or a team stands at this tournament, then open the matches behind each number. Updated after every matchday.</p>
+    <p class="honest">Tournament numbers from final match reports and FIFA's official highlights. Full-match grades follow if FIFA posts full matches.</p>
   </div>
   <div class="key" aria-label="How to read the radars">
-    <div><span class="sw p"></span>The player, scored 1 to 10 from full matches</div>
-    <div><span class="sw a"></span>Average for his role at this tournament</div>
-    <div><span style="width:30px;text-align:center;font-family:var(--mono)">7.0</span>Dashed grey ring: a strong level for the role</div>
+    <div><span class="sw p"></span>The player or team: 0 to 10, the share of the field he or it matches or beats</div>
+    <div><span class="sw a"></span>The comparison: board average, African players' average or Africa's ten</div>
+    <div><span style="width:30px;text-align:center;font-family:var(--mono)">{{NM}}</span>matches reported so far</div>
   </div>
 </div></section>
 
 <main class="wrap">
-  <div class="status"><span class="pill">{{STATUS}}</span><div class="chips" id="chips" hidden><button type="button" data-f="" aria-pressed="true">All roles</button>{{CHIPS}}</div></div>
-  <div class="grid" id="grid">
-{{CARDS}}
+  <h2 class="sec" id="players">Players with a goal or assist <span>({{NP}})</span></h2>
+  <p class="sub">Six areas, each a percentile against every player on our board with a goal or assist. These are counts and percentiles, not scout grades.</p>
+  <div class="status">
+    <div class="toggle" role="group" aria-label="Compare with"><span>Compare with</span><button type="button" data-c="b" aria-pressed="true">Board average</button><button type="button" data-c="alt" aria-pressed="false">African players' average</button></div>
+    <div class="chips" role="group" aria-label="Filter the players"><button type="button" data-f="" aria-pressed="true">All ({{NP}})</button><button type="button" data-f="africa" aria-pressed="false">Africa ({{NA}})</button></div>
+  </div>
+  <div class="grid" id="pgrid">
+{{PCARDS}}
+  </div>
+
+  <h2 class="sec" id="teams">Africa's ten: team radars</h2>
+  <p class="sub">Six areas for each African nation, each a percentile against the other nine, with the average of Africa's ten as the dashed line.</p>
+  <div class="grid" id="tgrid">
+{{TCARDS}}
   </div>
 
   <div class="how">
-    <div><p class="eyebrow">What we score</p><h3>Eight areas for each role</h3><p>A striker is scored on finishing, movement and pressing from the front. A goalkeeper on shot stopping, command and distribution. Each player is judged on the role he plays for his team.</p></div>
-    <div><p class="eyebrow">Who he is compared with</p><h3>Peers at the same tournament</h3><p>The orange line is the average of every player we have rated in the same role in Qatar. It appears once three players in that role have been rated.</p></div>
-    <div><p class="eyebrow">What it rests on</p><h3>Full matches, watched in full</h3><p>Scores come from complete matches, not highlights. Each card states how much of the player we have seen.</p></div>
+    <div><p class="eyebrow">For scouts</p><h3>Who to watch next, and why</h3><p>A radar shows where a player's tournament stands out. The matches behind each axis tell you which clip to watch and which match will confirm it.</p></div>
+    <div><p class="eyebrow">For coaches</p><h3>How a team scores and concedes</h3><p>Late goals, set pieces and points won from behind show how an opponent behaves when the match is on the line.</p></div>
+    <div><p class="eyebrow">What it rests on</p><h3>Final match reports only</h3><p>Every number is counted from final scores and the goals in our match reports. Four-area scout grades stay private until they are approved.</p></div>
   </div>
 
-  <div class="cta-band"><p>Want the full picture on a player, with match-by-match evidence and our recommendation?</p><a class="btn" href="mailto:Advisory@afritechsports.com?subject=U-17%20World%20Cup%20private%20pack">Request the private pack</a></div>
+  <div class="cta-band"><p>Want the full picture on a player or a team, with match-by-match evidence and our recommendation?</p><a class="wa-btn" href="https://wa.me/qr/JU7PO5B5ADCOI1" target="_blank" rel="noopener">Book a briefing on WhatsApp</a></div>
 </main>
 
-<footer><div class="wrap">All players shown are under 18. We follow FIFA's rules on minors, and every conversation runs through the player's family and federation.<br>Independent coverage by Afritech. Not affiliated with or endorsed by FIFA.<br>Produced by Afritech Sports Technology and Innovation Group Limited</div></footer>
+<footer><div class="wrap">All players shown are under 18. We follow FIFA's rules on minors, and every conversation runs through the player's family and federation.<br>Independent coverage by Afritech. Not affiliated with or endorsed by FIFA.<br>© Afritech Sports Technology and Innovation Group Limited. The Afritech tournament desk method.<br><a href="../../commission/">Commission a tournament desk</a></div></footer>
 <script>
-(function(){var c=document.getElementById('chips');if(!c)return;var b=c.querySelectorAll('button');if(b.length<3)return;c.hidden=false;
-b.forEach(function(x){x.addEventListener('click',function(){var f=x.getAttribute('data-f');b.forEach(function(y){y.setAttribute('aria-pressed',y===x?'true':'false')});
-document.querySelectorAll('#grid .rc').forEach(function(card){card.hidden=!!f&&card.getAttribute('data-role')!==f})})})})();
+(function(){
+var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+var CX=380,CY=205,R=125;
+function pts(v,k){return v.map(function(x,i){var a=-Math.PI/2+i*2*Math.PI/v.length,r=R*x*k/10;return (CX+Math.cos(a)*r).toFixed(1)+','+(CY+Math.sin(a)*r).toFixed(1)}).join(' ')}
+function vals(el,a){return (el.getAttribute(a)||'').split(',').map(Number)}
+function ease(t){return 1-Math.pow(1-t,3)}
+function tween(ms,f,done){if(reduce){f(1);if(done)done();return}var t0=null;function step(ts){if(t0===null)t0=ts;var t=Math.min(1,(ts-t0)/ms);f(ease(t));if(t<1)requestAnimationFrame(step);else if(done)done()}requestAnimationFrame(step)}
+function dots(svg,v,k){svg.querySelectorAll('.rdot').forEach(function(d){var i=+d.getAttribute('data-i'),a=-Math.PI/2+i*2*Math.PI/6,r=R*v[i]*k/10;d.setAttribute('cx',(CX+Math.cos(a)*r).toFixed(1));d.setAttribute('cy',(CY+Math.sin(a)*r).toFixed(1))})}
+function draw(svg){if(svg.__drawn)return;svg.__drawn=1;var p=svg.querySelector('.rp'),a=svg.querySelector('.ra'),v=vals(p,'data-v'),c=vals(a,'data-v'),nums=svg.querySelectorAll('.rv');
+ tween(900,function(k){p.setAttribute('points',pts(v,k));a.setAttribute('points',pts(c,k));dots(svg,v,k);nums.forEach(function(n){n.textContent=(+n.getAttribute('data-v')*k).toFixed(1)})})}
+var svgs=document.querySelectorAll('svg.rd');
+if(!reduce&&'IntersectionObserver' in window){svgs.forEach(function(s){var p=s.querySelector('.rp'),a=s.querySelector('.ra');p.setAttribute('points',pts(vals(p,'data-v'),0));a.setAttribute('points',pts(vals(a,'data-v'),0));dots(s,vals(p,'data-v'),0);s.querySelectorAll('.rv').forEach(function(n){n.textContent='0.0'})});
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){draw(e.target);io.unobserve(e.target)}})},{threshold:.35});svgs.forEach(function(s){io.observe(s)})}
+/* compare with the board average or the African players' average: smooth morph */
+var tg=document.querySelector('.toggle');if(tg)tg.querySelectorAll('button').forEach(function(b){b.addEventListener('click',function(){var c=b.getAttribute('data-c');
+ tg.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
+ document.querySelectorAll('#pgrid .ra').forEach(function(a){var from=vals(a,'data-v'),to=vals(a,c==='alt'?'data-alt':'data-b');if(!to.length||isNaN(to[0]))return;
+  tween(600,function(k){a.setAttribute('points',pts(from.map(function(f,i){return f+(to[i]-f)*k}),1))},function(){a.setAttribute('data-v',to.join(','))});
+  if(reduce)a.setAttribute('data-v',to.join(','))})})});
+/* filter */
+var ch=document.querySelector('.chips');if(ch)ch.querySelectorAll('button').forEach(function(b){b.addEventListener('click',function(){var f=b.getAttribute('data-f');
+ ch.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
+ document.querySelectorAll('#pgrid .rc').forEach(function(c){c.hidden=!!f&&c.getAttribute('data-region')!==f})})});
+/* hover or tap an axis: its value and the matches behind it */
+document.querySelectorAll('.rc').forEach(function(card){var tips=card.querySelector('.tips');if(!tips)return;
+ function show(i){card.querySelectorAll('.ax').forEach(function(x){x.classList.toggle('on',x.getAttribute('data-i')===i)});
+  tips.querySelector('.thint').hidden=true;tips.querySelectorAll('.tip').forEach(function(t){t.hidden=t.getAttribute('data-i')!==i})}
+ card.querySelectorAll('.ax').forEach(function(ax){var i=ax.getAttribute('data-i');
+  ax.addEventListener('mouseenter',function(){show(i)});ax.addEventListener('focus',function(){show(i)});ax.addEventListener('click',function(){show(i)});
+  ax.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();show(i)}})})});
+})();
 </script>
 </body>
 </html>

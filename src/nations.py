@@ -43,6 +43,12 @@ EXTRA_CSS = """
 @media (prefers-color-scheme:dark){.kn b{color:var(--orange-text)}}
 .kn span{font-size:.86rem;color:var(--muted)}
 .tl{width:100%;max-width:560px;height:auto;display:block}
+.dec{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:0 0 12px}
+.dec div{background:var(--soft);border-radius:10px;padding:10px 12px;border-top:4px solid var(--teal)}
+.dec .coaches{border-top-color:var(--orange,#E8701A)}.dec .directors{border-top-color:var(--navy)}
+.dec b{display:block;font-family:var(--display);text-transform:uppercase;letter-spacing:.04em;font-size:.9rem;margin-bottom:2px}
+.dec p{margin:0;font-size:.95rem}
+@media (max-width:760px){.dec{grid-template-columns:1fr}}
 .an{display:grid;gap:10px}
 .an div{border-top:1px solid var(--line);padding-top:10px}
 .an h4{font-family:var(--display);font-size:1.15rem;margin:0 0 4px}
@@ -127,6 +133,9 @@ def match_report(m, nation):
         goals.append(f'<li><span class="m">{g["min"]}</span><span><b>{H.escape(g["who"])}</b> <span class="tm">({H.escape(g["team"])})</span>{typ}{how}{btn}</span></li>')
     kn = "".join(f'<div><b>{H.escape(a)}</b><span>{H.escape(b)}</span></div>' for a, b in m.get("keyNumbers", []))
     an = "".join(f'<div><h4>{H.escape(x["h"])}</h4><p>{H.escape(x["p"])}</p></div>' for x in m.get("analysis", []))
+    dd = m.get("decisions") or {}
+    dec = ("<div class=\"dec\">" + "".join(f'<div class="{k}"><b>{lab}</b><p>{H.escape(dd[k])}</p></div>'
+           for k, lab in (("scouts", "For scouts"), ("coaches", "For coaches"), ("directors", "For technical directors")) if dd.get(k)) + "</div>") if dd else ""
     vid = vid_id(m["video"]) if m.get("video") else ""
     cl = json.dumps([{"s": g["s"], "e": g["e"], "l": f'{g["min"]} {g["who"]}', "st": scouting.stills(g)} for g in clips])
     if moments:
@@ -151,7 +160,7 @@ def match_report(m, nation):
             f'<p>{H.escape(m["story"])}</p>'
             f'{f"<div class=kn>{kn}</div>" if kn else ""}'
             f'<h3>{head}</h3>{player}{tl}<ul class="goals">{"".join(goals)}</ul>'
-            f'{f"<h3>Our analysis</h3><div class=an>{an}</div>" if an else ""}'
+            f'{f"<h3>Our analysis</h3>{dec}<div class=an>{an}</div>" if an or dec else ""}'
             f'<p class="scout"><b>For clubs</b>{H.escape(m["scout"])}</p>'
             + (f'<p class="fine" style="margin:0">Clips play from FIFA\'s official highlights on YouTube.</p>' if m.get("video") else '<p class="fine" style="margin:0">Goal clips are added once FIFA\'s official highlights are checked on video.</p>') + '</article>')
 
@@ -195,7 +204,7 @@ def page(n, all_nations, head, emblem, updated, scout=None):
 <body>
 <header class="bar"><div class="wrap">
   <a class="brand" href="../"><img src="{emblem}" alt="Afritech Sports emblem" width="36" height="39">Tournament Desk</a>
-  <nav aria-label="Sections"><a href="#results">Results</a><a href="#next">Next</a><a href="#players">Players</a><a href="../#nations">All nations</a><a class="cta" href="#contact">Book a briefing</a></nav>
+  <nav aria-label="Sections"><a href="#results">Results</a><a href="#next">Next</a><a href="#players">Players</a><a href="../#nations">All nations</a><a href="../../commission/">Commission a desk</a><a class="cta" href="#contact">Book a briefing</a></nav>
 </div></header>
 <section class="hero" id="top"><div class="wrap" style="grid-template-columns:1fr">
   <div>
@@ -236,7 +245,7 @@ def page(n, all_nations, head, emblem, updated, scout=None):
   <div class="others">{others}</div>
 </section>
 </main>
-<footer><div class="wrap">Independent coverage by Afritech. Not affiliated with or endorsed by FIFA.<br>Produced by Afritech Sports Technology and Innovation Group Limited · Updated {updated}</div></footer>
+<footer><div class="wrap">Independent coverage by Afritech. Not affiliated with or endorsed by FIFA.<br>Produced by Afritech Sports Technology and Innovation Group Limited · Updated {updated}<br><a href="../../commission/">Commission a tournament desk</a></div></footer>
 {scouting.YT_LOADER}
 <script>
 (function(){{
