@@ -7,6 +7,10 @@
 - Be proactive: build what the task obviously needs without being asked. Keep replies short; no lectures or jargon.
 - Gatekeeper questions go at the very end of the reply, after the notes, so Andrew never has to search for them (Andrew, 19 Nov 2026).
 
+## Blocked items in one section (Andrew, 23 Nov 2026, applies to every chat, project and task)
+- Anything that did not open or work (a file, PDF, page, tool, login, connector, permission) and everything left undone because of it goes in **one section** of the reply, headed **"Blocked: for you to deal with"**. One line each: what it is, why it failed, what it holds up, and the fix or next step. Never scatter these through the rest of the reply.
+- Place it after the notes and before the Gatekeeper questions, which stay last. If nothing was blocked, leave the section out.
+
 ## Four Sentences first (Andrew's rule, 15 Nov 2026)
 - Before writing or changing any page, card, invite, briefing or tracker text, read the Afritech Four Sentences (the afritech-four-sentences skill and memory file): who it's for, what they get, why they'd believe us, the one action.
 - Every public page's first screen passes the stranger test: someone outside football can say who it's for and what to do next.
@@ -50,3 +54,20 @@ The desk is a scouting system, so every nation page and the main board run on th
 - **B2, Kiswahili reads label first:** number tiles on Kiswahili pages show the label, then the value ("Pointi: 3"). `src/i18n.py` does it in every build; write the English tile as usual.
 - **C, FIFA's minute is the record:** when FIFA's match report or round-up gives a different goal minute from a feed or another site, use FIFA's minute straight away. Don't wait for the video.
 
+
+## Commonwealth English (24 Nov 2026)
+
+Afritech Sports writes Commonwealth English, the formal register taught in Kenya
+and across the Commonwealth. It is human writing. Read every page, CV and form in
+context and judge it on what it says.
+
+- Formal vocabulary, linking words (moreover, consequently), lists of three, long
+  measured sentences and the contrasting parallel ("it's not X, it's Y") are
+  allowed when every part is specific and true. Cut them only when they are empty.
+- Never roughen text to look human: no slang, no deliberate errors, no chopping a
+  long sentence that carries one line of thought.
+- Never flag, reject or run anyone's writing (players, parents, coaches, scouts,
+  analysts) through an AI detector. Their own English is kept as written.
+- Hype words stay out (tapestry, game-changer, unlock, leverage, seamless). Em
+  dashes stay out unless Andrew lifts that rule.
+- Full rules: the afritech-anti-ai-writing-os and afritech-editor skills.
