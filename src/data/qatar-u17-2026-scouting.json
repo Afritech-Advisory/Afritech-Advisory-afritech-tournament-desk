@@ -1,5 +1,5 @@
 {
- "updated": "25 November 2026",
+ "updated": "26 November 2026",
  "_note": "Public scout cards (Stage 1, public-domain evidence). Every player is under 18: club signal capped at MONITOR, agent at DEVELOP FIRST, no valuation. Numeric grades are published only after Andrew approves them in the private tracker.",
  "players": [
   {
@@ -16,9 +16,9 @@
     "Scored from the penalty spot against China PR to start Morocco's comeback from 0-2: three goals in two matches."
    ],
    "fed": "WATCHLIST",
-   "next": "Follow him against Spain on 26 November, the match that decides Group H.",
-   "up": "A goal or decisive moment against Spain.",
-   "down": "No shot on target against Spain."
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal in the round of 32.",
+   "down": "No shot on target in the round of 32."
   },
   {
    "id": "ahmed-safwat",
@@ -184,9 +184,9 @@
     "Scored after three minutes against Fiji and set up the second two minutes later.",
     "Set up Ziyad Baha's first goal against Fiji, four minutes after the break."
    ],
-   "next": "Follow him against Spain on 26 November.",
-   "up": "A goal or assist against Spain.",
-   "down": "No goal involvement against Spain.",
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "Little influence in the round of 32.",
    "fed": "WATCHLIST"
   },
   {
@@ -200,9 +200,9 @@
     "Scored Morocco's second goal against Fiji in the fifth minute.",
     "Set up Imran Talai's goal for 3-0 against Fiji."
    ],
-   "next": "Follow his minutes against Spain on 26 November.",
-   "up": "A second goal in the group.",
-   "down": "Limited minutes against Spain.",
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "Little influence in the round of 32.",
    "fed": "WATCHLIST"
   },
   {
@@ -215,9 +215,9 @@
    "facts": [
     "Scored Morocco's third goal against Fiji, three minutes before half-time."
    ],
-   "next": "Follow his minutes against Spain on 26 November.",
-   "up": "A second goal in the group.",
-   "down": "Limited minutes against Spain.",
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "Little influence in the round of 32.",
    "fed": "WATCHLIST"
   },
   {
@@ -231,9 +231,9 @@
     "Came off the bench and scored Morocco's sixth goal against Fiji.",
     "Equalised against China PR in the ninth minute of added time: a goal in each of Morocco's two matches."
    ],
-   "next": "Follow whether he starts against Spain on 26 November.",
-   "up": "A start and a third goal.",
-   "down": "No minutes against Spain.",
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "Little influence in the round of 32.",
    "fed": "WATCHLIST"
   },
   {
@@ -246,9 +246,9 @@
    "facts": [
     "Set up Morocco's opening goal against Fiji after three minutes."
    ],
-   "next": "Follow his final passes against Spain on 26 November.",
-   "up": "A second assist in the group.",
-   "down": "No chances created against Spain.",
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "Little influence in the round of 32.",
    "fed": "WATCHLIST"
   },
   {
@@ -261,9 +261,9 @@
    "facts": [
     "Two goals against New Zealand: the opener after 11 minutes and Mali's second just after half-time."
    ],
-   "next": "Follow him against Vietnam on 26 November.",
-   "up": "A third goal of the tournament.",
-   "down": "No shots against Vietnam.",
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "Little influence in the round of 32.",
    "fed": "WATCHLIST"
   },
   {
@@ -274,11 +274,12 @@
    "club": "",
    "shirt": "",
    "facts": [
-    "Scored Mali's third goal against New Zealand, four minutes after their second."
+    "Scored Mali's third goal against New Zealand, four minutes after their second.",
+    "Set up Sanaba Keita's opener against Vietnam with a through ball."
    ],
-   "next": "Follow his minutes against Vietnam on 26 November.",
-   "up": "A second goal in the group.",
-   "down": "Limited minutes against Vietnam.",
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "Little influence in the round of 32.",
    "fed": "WATCHLIST"
   },
   {
@@ -292,9 +293,9 @@
     "Equalised against Croatia just before half-time, with Senegal down to ten men.",
     "Two more goals against Cuba, on 24 and 55 minutes: three in two matches."
    ],
-   "next": "Follow him against Tajikistan on 26 November.",
-   "up": "A goal against Tajikistan, the stronger defence.",
-   "down": "No shots against Tajikistan.",
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "Little influence in the round of 32.",
    "fed": "WATCHLIST"
   },
   {
@@ -307,9 +308,9 @@
    "facts": [
     "Set up Sega Mbodji's equaliser against Croatia."
    ],
-   "next": "Follow his final passes against Tajikistan on 26 November.",
-   "up": "A second assist in the group.",
-   "down": "No chances created against Tajikistan.",
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "Little influence in the round of 32.",
    "fed": "WATCHLIST"
   },
   {
@@ -393,9 +394,9 @@
    "facts": [
     "Two goals in three minutes as Tajikistan came from behind to beat Cuba 5-3."
    ],
-   "next": "Follow him against Croatia on 23 November.",
-   "up": "A goal against Croatia.",
-   "down": "No shots against Croatia.",
+   "next": "Follow him if Tajikistan take a best-third place in the round of 32, confirmed on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "Little influence in the round of 32.",
    "fed": "WATCHLIST"
   },
   {
@@ -410,9 +411,9 @@
    "facts": [
     "Scored twice for Cuba in a 5-3 defeat by Tajikistan."
    ],
-   "next": "Follow him against Senegal on 23 November.",
-   "up": "A goal against Senegal.",
-   "down": "No shots against Senegal.",
+   "next": "His group-stage record stays on the board: follow his next youth international.",
+   "up": "A call-up to the next youth international window.",
+   "down": "No minutes in the next youth international window.",
    "fed": "WATCHLIST"
   },
   {
@@ -480,9 +481,9 @@
     "Captain of Côte d'Ivoire at this World Cup.",
     "Scored the opener after seven minutes in the 2-1 win over Uzbekistan."
    ],
-   "next": "Follow him against Jamaica on 26 November, the match that decides Côte d'Ivoire's place.",
-   "up": "A goal or assist against Jamaica.",
-   "down": "No shots against Jamaica."
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "Little influence in the round of 32."
   },
   {
    "role": "",
@@ -495,9 +496,9 @@
    "facts": [
     "Came off the bench and scored the 89th-minute winner against Uzbekistan."
    ],
-   "next": "Watch whether he starts against Jamaica on 26 November.",
-   "up": "A start, or a second goal from the bench.",
-   "down": "No minutes against Jamaica."
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "Little influence in the round of 32."
   },
   {
    "role": "",
@@ -510,11 +511,12 @@
    "flag": "it",
    "name": "Federico Croci",
    "facts": [
-    "Two goals in the first 15 minutes of Italy's 6-0 win over Jamaica."
+    "Two goals in the first 15 minutes of Italy's 6-0 win over Jamaica.",
+    "Scored a penalty after 31 minutes in the 3-1 win over Uzbekistan as Italy won Group E with nine points."
    ],
-   "next": "Follow him against Côte d'Ivoire on 23 November.",
-   "up": "A goal against Côte d'Ivoire.",
-   "down": "No shot on target against Côte d'Ivoire."
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal in the round of 32.",
+   "down": "No shot on target in the round of 32."
   },
   {
    "role": "",
@@ -530,9 +532,9 @@
     "FIFA Player of the Match in Spain's 5-0 win over China PR.",
     "Two goals in six minutes in the second half."
    ],
-   "next": "Follow him against Fiji, then Morocco on 26 November.",
-   "up": "A goal against Morocco.",
-   "down": "No shots against Morocco."
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal in the round of 32.",
+   "down": "No shot on target in the round of 32."
   },
   {
    "role": "",
@@ -892,9 +894,9 @@
    "facts": [
     "FIFA Player of the Match against Côte d'Ivoire; scored Uzbekistan's goal in the 2-1 defeat."
    ],
-   "next": "Follow him against Jamaica on 23 November and Italy on 26 November.",
-   "up": "A goal against Italy.",
-   "down": "No shot on target against Italy."
+   "next": "Follow him if Uzbekistan take a best-third place in the round of 32, confirmed on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "Little influence in the round of 32."
   },
   {
    "role": "",
@@ -909,9 +911,9 @@
    "facts": [
     "FIFA Player of the Match as Tajikistan beat Cuba 5-3; scored their first goal after 48 minutes."
    ],
-   "next": "Follow him against Croatia on 23 November and Senegal on 26 November.",
-   "up": "A goal or assist against Senegal.",
-   "down": "No goal involvement against Senegal."
+   "next": "Follow him if Tajikistan take a best-third place in the round of 32, confirmed on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "Little influence in the round of 32."
   },
   {
    "role": "",
@@ -926,9 +928,9 @@
    "facts": [
     "FIFA Player of the Match in the 1-1 draw with Senegal; set up Croatia's goal after eight minutes."
    ],
-   "next": "Follow him against Tajikistan on 23 November and Cuba on 26 November.",
-   "up": "A goal or assist against Cuba.",
-   "down": "No chances created against Cuba."
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "Little influence in the round of 32."
   },
   {
    "role": "",
@@ -943,9 +945,9 @@
    "facts": [
     "FIFA Player of the Match as Belgium beat Vietnam 3-2; his goal after 60 minutes proved the winner."
    ],
-   "next": "Follow him against Mali on 23 November and New Zealand on 26 November.",
-   "up": "A goal against Mali or New Zealand.",
-   "down": "No shot on target against Mali or New Zealand."
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal in the round of 32.",
+   "down": "No shot on target in the round of 32."
   },
   {
    "role": "",
@@ -1060,9 +1062,9 @@
    "facts": [
     "Two goals against Cuba: the opener after 7 minutes and Senegal's fifth before half-time."
    ],
-   "next": "Follow him against Tajikistan on 26 November.",
-   "up": "Another goal against Tajikistan.",
-   "down": "No shots against Tajikistan.",
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "Little influence in the round of 32.",
    "fed": "WATCHLIST"
   },
   {
@@ -1075,9 +1077,9 @@
    "facts": [
     "Scored Senegal's second against Cuba on his first start of the tournament."
    ],
-   "next": "Watch whether he keeps his place against Tajikistan on 26 November.",
-   "up": "A second start and another goal involvement.",
-   "down": "Back on the bench against Tajikistan.",
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "Little influence in the round of 32.",
    "fed": "WATCHLIST"
   },
   {
@@ -1088,11 +1090,12 @@
    "club": "",
    "shirt": "",
    "facts": [
-    "Scored Senegal's third against Cuba after 21 minutes."
+    "Scored Senegal's third against Cuba after 21 minutes.",
+    "Put Senegal ahead against Tajikistan after 37 minutes: goals in each of his last two matches."
    ],
-   "next": "Follow him against Tajikistan on 26 November.",
-   "up": "A goal or assist against Tajikistan.",
-   "down": "No goal involvement against Tajikistan.",
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A third goal in the round of 32.",
+   "down": "No goal involvement in the round of 32.",
    "fed": "WATCHLIST"
   },
   {
@@ -1103,11 +1106,12 @@
    "club": "",
    "shirt": "",
    "facts": [
-    "Player of the Match against Cuba; FIFA's round-up called his goal the pick of the day."
+    "Player of the Match against Cuba; FIFA's round-up called his goal the pick of the day.",
+    "Sent off after 70 minutes against Tajikistan."
    ],
-   "next": "Follow him against Tajikistan on 26 November.",
-   "up": "Another decisive performance against Tajikistan.",
-   "down": "Little influence against a deeper defence.",
+   "next": "Check whether he is available for the round of 32 after his red card against Tajikistan.",
+   "up": "Back in the side and decisive in the knockout rounds.",
+   "down": "Not available for the round of 32.",
    "fed": "WATCHLIST"
   },
   {
@@ -1120,9 +1124,9 @@
    "facts": [
     "Scored Senegal's eighth against Cuba on 65 minutes."
    ],
-   "next": "Follow his minutes against Tajikistan on 26 November.",
-   "up": "A second goal in the group.",
-   "down": "Limited minutes against Tajikistan.",
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "Little influence in the round of 32.",
    "fed": "WATCHLIST"
   },
   {
@@ -1135,9 +1139,9 @@
    "facts": [
     "Scored the ninth against Cuba, completing Senegal's biggest U-17 World Cup win."
    ],
-   "next": "Follow his minutes against Tajikistan on 26 November.",
-   "up": "A second goal in the group.",
-   "down": "Limited minutes against Tajikistan.",
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "Little influence in the round of 32.",
    "fed": "WATCHLIST"
   },
   {
@@ -1148,11 +1152,12 @@
    "club": "",
    "shirt": "",
    "facts": [
-    "Equalised against Belgium five minutes after Mali went behind, with a volley from outside the box in off the post."
+    "Equalised against Belgium five minutes after Mali went behind, with a volley from outside the box in off the post.",
+    "Scored Mali's second against Vietnam after 82 minutes: two goals in two matches."
    ],
-   "next": "Follow him against Vietnam on 26 November.",
-   "up": "Another goal from distance, or a first assist.",
-   "down": "No shots against Vietnam.",
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A third goal in the round of 32.",
+   "down": "No shots in the round of 32.",
    "fed": "WATCHLIST"
   },
   {
@@ -1165,9 +1170,9 @@
    "facts": [
     "Scored the winner against Belgium on 67 minutes with an angled shot: the goal that put Mali into the round of 32."
    ],
-   "next": "Follow him against Vietnam on 26 November.",
-   "up": "A second goal in the group.",
-   "down": "No shots against Vietnam.",
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "Little influence in the round of 32.",
    "fed": "WATCHLIST"
   },
   {
@@ -1180,9 +1185,9 @@
    "facts": [
     "Scored Côte d'Ivoire's penalty against Italy in the tenth minute of added time, after an earlier penalty was overturned by VAR."
    ],
-   "next": "Follow him against Jamaica on 26 November.",
-   "up": "A goal from open play against Jamaica.",
-   "down": "No minutes against Jamaica.",
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "Little influence in the round of 32.",
    "fed": "WATCHLIST"
   },
   {
@@ -1195,11 +1200,12 @@
    "club": "",
    "shirt": "",
    "facts": [
-    "Two goals against Morocco: a powerful angled strike after two minutes and a second just before the hour."
+    "Two goals against Morocco: a powerful angled strike after two minutes and a second just before the hour.",
+    "Opened the scoring after three minutes in the 8-0 win over Fiji: three goals in the group."
    ],
-   "next": "Follow him against Fiji in China PR's last group match.",
-   "up": "A third goal of the group.",
-   "down": "No shots against Fiji.",
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal in the round of 32.",
+   "down": "No shot on target in the round of 32.",
    "fed": "WATCHLIST"
   },
   {
@@ -1213,9 +1219,9 @@
     "Came on at half-time against Cuba for his first minutes of the tournament and set up Sega Fall Mbodji's second goal."
    ],
    "fed": "WATCHLIST",
-   "next": "Follow him against Tajikistan on Thursday 26 November, 19:00 Doha time.",
-   "up": "More minutes against Tajikistan.",
-   "down": "No minutes against Tajikistan."
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "Little influence in the round of 32."
   },
   {
    "id": "adam-soudi",
@@ -1228,9 +1234,9 @@
     "Started in defence against China PR and crossed for Rami Lougmani's equaliser in the ninth minute of added time."
    ],
    "fed": "WATCHLIST",
-   "next": "Follow him against Spain on Thursday 26 November, 18:00 Doha time.",
-   "up": "A clean sheet or another assist against Spain.",
-   "down": "Spain's wingers on top of his side."
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "Little influence in the round of 32."
   },
   {
    "id": "issiaka-kone",
@@ -1243,9 +1249,9 @@
     "Set up Yaya Niang's winner against Belgium."
    ],
    "fed": "WATCHLIST",
-   "next": "Follow his final passes against Vietnam on Thursday 26 November.",
-   "up": "A second assist against Vietnam.",
-   "down": "No chances created against Vietnam."
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "Little influence in the round of 32."
   },
   {
    "role": "",
@@ -1259,11 +1265,12 @@
    "name": "Sukhrob Sadirjanov",
    "facts": [
     "Hat-trick in 27 minutes as Uzbekistan came from 2-1 down to beat Jamaica 6-2.",
-    "Player of the Match."
+    "Player of the Match.",
+    "Scored Uzbekistan's goal against Italy after 75 minutes."
    ],
-   "next": "Follow him against Italy on 26 November.",
-   "up": "A goal against Italy.",
-   "down": "No shot on target against Italy."
+   "next": "Follow him if Uzbekistan take a best-third place in the round of 32, confirmed on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "Little influence in the round of 32."
   },
   {
    "role": "",
@@ -1278,9 +1285,9 @@
    "facts": [
     "Two goals in 17 minutes against Uzbekistan, Jamaica's first goals of the tournament."
    ],
-   "next": "Follow him against Côte d'Ivoire on 26 November.",
-   "up": "A goal against Côte d'Ivoire.",
-   "down": "No shots against Côte d'Ivoire."
+   "next": "His group-stage record stays on the board: follow his next youth international.",
+   "up": "A call-up to the next youth international window.",
+   "down": "No minutes in the next youth international window."
   },
   {
    "role": "Winger",
@@ -1296,9 +1303,9 @@
     "Five goals in Spain's 15-0 win over Fiji, three of them in the first 21 minutes.",
     "Winger at UD Las Palmas."
    ],
-   "next": "Follow him against Morocco on 26 November.",
-   "up": "A goal against Morocco.",
-   "down": "No shots against Morocco."
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal in the round of 32.",
+   "down": "No shot on target in the round of 32."
   },
   {
    "role": "",
@@ -1314,9 +1321,9 @@
     "Hat-trick inside 35 minutes against Fiji, the third from the penalty spot.",
     "Plays for FC Barcelona."
    ],
-   "next": "Follow him against Morocco on 26 November.",
-   "up": "A goal against Morocco.",
-   "down": "No shots against Morocco."
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal in the round of 32.",
+   "down": "No shot on target in the round of 32."
   },
   {
    "role": "",
@@ -1329,11 +1336,12 @@
    "flag": "es",
    "name": "Guillermo Trujillano",
    "facts": [
-    "Hat-trick, including a penalty, in Spain's 15-0 win over Fiji."
+    "Hat-trick, including a penalty, in Spain's 15-0 win over Fiji.",
+    "Scored Spain's second against Morocco after 61 minutes as Spain won Group H with nine points."
    ],
-   "next": "Follow him against Morocco on 26 November.",
-   "up": "A goal against Morocco.",
-   "down": "No shots against Morocco."
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal in the round of 32.",
+   "down": "No shot on target in the round of 32."
   },
   {
    "role": "",
@@ -1348,9 +1356,9 @@
    "facts": [
     "Two goals in the second half of Spain's 15-0 win over Fiji."
    ],
-   "next": "Follow him against Morocco on 26 November.",
-   "up": "A goal against Morocco.",
-   "down": "No minutes against Morocco."
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal in the round of 32.",
+   "down": "No shot on target in the round of 32."
   },
   {
    "role": "Midfielder",
@@ -1366,9 +1374,9 @@
     "Scored Italy's second against Côte d'Ivoire with a direct free kick after 70 minutes, the goal that decided the match.",
     "Midfielder at Atalanta, one of two players born in 2010 in Italy's squad."
    ],
-   "next": "Follow him against Uzbekistan on 26 November.",
-   "up": "Another goal or assist against Uzbekistan.",
-   "down": "Little influence against Uzbekistan."
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "Little influence in the round of 32."
   },
   {
    "role": "Full-back",
@@ -1612,6 +1620,188 @@
    "country": "Greece",
    "code": "GRE",
    "flag": "gr"
+  },
+  {
+   "id": "koudougnon-drebo",
+   "nation": "cote-divoire",
+   "name": "Koudougnon Drebo",
+   "facts": [
+    "FIFA Player of the Match against Jamaica: two goals before half-time, after 44 minutes and in the sixth minute of added time, in the 3-1 win that took Côte d'Ivoire into the round of 32."
+   ],
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal in the round of 32.",
+   "down": "No shot on target in the round of 32.",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST"
+  },
+  {
+   "id": "abdoul-doumbia",
+   "nation": "cote-divoire",
+   "name": "Abdoul Doumbia",
+   "facts": [
+    "Opened the scoring against Jamaica after 27 minutes, his first goal of the tournament."
+   ],
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A second goal in the round of 32.",
+   "down": "No goal involvement in the round of 32.",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST"
+  },
+  {
+   "id": "sanaba-keita",
+   "nation": "mali",
+   "name": "Sanaba Keita",
+   "facts": [
+    "FIFA Player of the Match against Vietnam: broke the deadlock after 56 minutes with a first-time left-footed shot into the corner, as Mali won Group G with three wins from three."
+   ],
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A second goal in the round of 32.",
+   "down": "No shot on target in the round of 32.",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST"
+  },
+  {
+   "id": "toni-ruso",
+   "country": "Croatia",
+   "code": "CRO",
+   "flag": "hr",
+   "name": "Toni Ruso",
+   "facts": [
+    "FIFA Player of the Match against Cuba: a hat-trick, starting with a penalty after 18 minutes, as Croatia won 7-0 and took Group F."
+   ],
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal in the round of 32.",
+   "down": "No shot on target in the round of 32.",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST"
+  },
+  {
+   "id": "izak-jezic",
+   "country": "Croatia",
+   "code": "CRO",
+   "flag": "hr",
+   "name": "Izak Ježić",
+   "facts": [
+    "Two goals in the 7-0 win over Cuba, after 36 and 58 minutes."
+   ],
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal in the round of 32.",
+   "down": "No shot on target in the round of 32.",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST"
+  },
+  {
+   "id": "wan-xiang",
+   "country": "China PR",
+   "code": "CHN",
+   "flag": "cn",
+   "name": "Wan Xiang",
+   "facts": [
+    "FIFA Player of the Match against Fiji: two goals, after 28 and 72 minutes, in China PR's 8-0 win."
+   ],
+   "next": "Follow him if China PR take a best-third place in the round of 32, confirmed on 27 November.",
+   "up": "A goal in the round of 32.",
+   "down": "No shot on target in the round of 32.",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST"
+  },
+  {
+   "id": "kuang-zhaolei",
+   "country": "China PR",
+   "code": "CHN",
+   "flag": "cn",
+   "name": "Kuang Zhaolei",
+   "facts": [
+    "Two goals in the 8-0 win over Fiji, after 22 and 58 minutes."
+   ],
+   "next": "Follow him if China PR take a best-third place in the round of 32, confirmed on 27 November.",
+   "up": "A goal in the round of 32.",
+   "down": "No shot on target in the round of 32.",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST"
+  },
+  {
+   "id": "matteo-soria",
+   "country": "Belgium",
+   "code": "BEL",
+   "flag": "be",
+   "name": "Matteo Soria",
+   "facts": [
+    "Two goals in three minutes, after 15 and 18, in Belgium's 6-0 win over New Zealand."
+   ],
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal in the round of 32.",
+   "down": "No shot on target in the round of 32.",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST"
+  },
+  {
+   "id": "jelle-driessen",
+   "country": "Belgium",
+   "code": "BEL",
+   "flag": "be",
+   "name": "Jelle Driessen",
+   "facts": [
+    "FIFA Player of the Match against New Zealand; scored Belgium's sixth goal after 51 minutes."
+   ],
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal or assist in the round of 32.",
+   "down": "Little influence in the round of 32.",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST"
+  },
+  {
+   "id": "gioele-giammattei",
+   "country": "Italy",
+   "code": "ITA",
+   "flag": "it",
+   "name": "Gioele Giammattei",
+   "facts": [
+    "FIFA Player of the Match in the 3-1 win over Uzbekistan, as Italy won Group E with three wins from three."
+   ],
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "Another standout display in the round of 32.",
+   "down": "Little influence in the round of 32.",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST"
+  },
+  {
+   "id": "ebrima-tunkara",
+   "country": "Spain",
+   "code": "ESP",
+   "flag": "es",
+   "name": "Ebrima Tunkara",
+   "facts": [
+    "Scored Spain's first goal against Morocco after 18 minutes; Spain won Group H with three wins from three.",
+    "Named Player of the Tournament at the 2026 Under-17 EURO by UEFA."
+   ],
+   "next": "Follow him in the round of 32; the opponent is set when the group stage ends on 27 November.",
+   "up": "A goal in the round of 32.",
+   "down": "No shot on target in the round of 32.",
+   "role": "",
+   "club": "",
+   "shirt": "",
+   "fed": "WATCHLIST"
   }
  ]
 }
