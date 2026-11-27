@@ -1,6 +1,7 @@
 """The "Commission a tournament desk" offer page (/commission/).
 
-Four Sentences: who (organisers, federations, leagues, academies and confederations running youth tournaments),
+Four Sentences: who (anyone running a football tournament at any level: youth to senior, men's and women's, grassroots,
+schools, colleges, universities, counties, clubs, academies, leagues, federations and confederations),
 what they get (a live desk like this one), why believe (this desk is the live proof: its real numbers are computed
 here at build time from the same data files), one action (WhatsApp: Book a briefing). No prices, no email address
 or phone number in plain text, no data files linked, and the method described as outcomes, not as a recipe.
@@ -11,9 +12,10 @@ import scouting, nations, radar
 DESK = "https://afritech-advisory.github.io/Afritech-Advisory-afritech-tournament-desk/"
 URL = DESK + "commission/"
 WA = "https://wa.me/qr/JU7PO5B5ADCOI1"
-TITLE = "Commission a tournament desk for your youth tournament | Afritech Sports"
-DESC = ("A live tournament desk for organisers, federations, leagues and academies: every result, goal clips, match reports "
-        "with decision lines, scout cards, animated radars, in four languages, updated every matchday.")
+TITLE = "Commission a tournament desk for your football tournament | Afritech Sports"
+DESC = ("A tournament desk for any football tournament, youth to senior, men's and women's, grassroots to international: "
+        "every result, goal clips, match reports with decision lines, scout cards and animated radars, in four languages, "
+        "updated every matchday.")
 
 CSS = """
 .proof{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
@@ -22,8 +24,9 @@ CSS = """
 .proof span{color:var(--muted);font-size:.92rem}
 .gets{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
 .gets div{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--teal);border-radius:12px;padding:14px 16px;display:grid;gap:4px;align-content:start}
+.gets .must{border-top-color:var(--orange);border-width:2px 2px 2px;border-top-width:5px;border-color:var(--orange)}
 .gets h3{font-size:1.2rem;margin:0}.gets p{margin:0;color:var(--muted)}
-.who{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
+.who{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:10px}
 .who div{border-left:4px solid var(--orange);background:var(--card);border-radius:0 10px 10px 0;padding:12px 14px}
 .who b{display:block;font-family:var(--display);font-size:1.15rem}.who p{margin:2px 0 0;color:var(--muted);font-size:.95rem}
 .shots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:start}
@@ -61,9 +64,9 @@ def jsonld():
     org = {"@context": "https://schema.org", "@type": "Organization", "name": "Afritech Sports Technology and Innovation Group Limited",
            "alternateName": "Afritech Sports", "url": "https://afritechsports.github.io/",
            "sameAs": ["https://www.linkedin.com/company/afritech-sports-technology-and-innovation-group-limited/"]}
-    svc = {"@context": "https://schema.org", "@type": "Service", "name": "Afritech Tournament Desk", "serviceType": "Youth football tournament coverage and scouting desk",
+    svc = {"@context": "https://schema.org", "@type": "Service", "name": "Afritech Tournament Desk", "serviceType": "Football tournament coverage and scouting desk, youth to senior, men's and women's",
            "provider": {"@type": "Organization", "name": "Afritech Sports Technology and Innovation Group Limited"},
-           "areaServed": "Worldwide", "audience": {"@type": "Audience", "audienceType": "Tournament organisers, federations, leagues, academies and confederations"},
+           "areaServed": "Worldwide", "audience": {"@type": "Audience", "audienceType": "Tournament organisers, federations, leagues, clubs, academies, schools, colleges, universities, counties, grassroots organisers and confederations"},
            "description": DESC, "url": URL, "availableLanguage": ["en", "fr", "sw", "pt-BR"]}
     return "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in (org, svc))
 
@@ -116,14 +119,14 @@ def build(root, fonts, emblem, flags):
 <body>
 <header class="bar"><div class="wrap">
   <a class="brand" href="../"><img src="{emblem}" alt="Afritech Sports emblem" width="36" height="39">Tournament Desk</a>
-  <nav aria-label="Sections"><a href="#get">What you get</a><a href="#see">See it</a><a href="#who">Who it is for</a><a href="../qatar-u17-2026/">Live desk</a><a class="cta" href="{WA}" target="_blank" rel="noopener">Book a briefing</a></nav>
+  <nav aria-label="Sections"><a href="#get">What you get</a><a href="#need">What we need</a><a href="#see">See it</a><a href="#who">Who it is for</a><a href="../qatar-u17-2026/">Live desk</a><a class="cta" href="{WA}" target="_blank" rel="noopener">Book a briefing</a></nav>
 </div></header>
 
 <section class="hero" id="top"><div class="wrap">
   <div>
-    <p class="eyebrow">For tournament organisers, federations, leagues, academies and confederations</p>
+    <p class="eyebrow">For anyone running a football tournament, at any level</p>
     <h1>Commission a tournament desk. <em>Every player seen, every match read.</em></h1>
-    <p class="lead">Running a youth tournament? We cover it live: every result, goal clips, match reports with decision lines, scout cards on every standout and animated radars, in four languages, updated every matchday. Your players get seen by the clubs, scouts and federations who decide their next step.</p>
+    <p class="lead">Running a football tournament? Youth or senior, men's or women's, a county cup or an international, we cover it: every result, goal clips, match reports with decision lines, scout cards on every standout and animated radars, in four languages, updated every matchday. Your players get seen by the clubs, scouts and federations who decide their next step.</p>
     <p style="display:flex;flex-wrap:wrap;gap:10px;margin-top:18px"><a class="btn primary" href="{WA}" target="_blank" rel="noopener">Book a briefing on WhatsApp</a><a class="btn ghost" href="../qatar-u17-2026/">See the live desk</a></p>
   </div>
   <div class="proof" aria-label="This desk today">{nums}</div>
@@ -131,42 +134,56 @@ def build(root, fonts, emblem, flags):
 
 <main class="wrap">
 <section class="s" id="proof"><div class="s-head"><p class="eyebrow">The live proof</p><h2>This desk, at the FIFA U-17 World Cup Qatar 2026</h2>
-<p>The numbers above are counted from this desk when the page is built, the same way your desk would be. Youth tournaments rarely give their players coverage like this. Your tournament can.</p></div></section>
+<p>The numbers above are counted from this desk when the page is built, the same way your desk would be. Few tournaments, at any level, give their players coverage like this. Yours can.</p></div></section>
 
 <section class="s" id="get"><div class="s-head"><p class="eyebrow">What you get</p><h2>A live desk for your tournament</h2></div>
 <div class="gets">
   <div><h3>Every result, every matchday</h3><p>Final scores, scorers and the numbers that tell each match, for every team in the tournament.</p></div>
-  <div><h3>Goal clips that stay on your desk</h3><p>Each goal plays as its own clip from the official video, then stops. Readers stay with your tournament.</p></div>
+  <div><h3>Goal clips that stay on your desk</h3><p>Each goal plays as its own clip from your match video, then stops. Readers stay with your tournament.</p></div>
   <div><h3>Match reports that lead to a decision</h3><p>Every report ends with three lines: for scouts, for coaches and for technical directors.</p></div>
-  <div><h3>A scout card on every standout</h3><p>Every scorer, creator and decisive performer gets a card with his numbers, his clips and what would move him up or down.</p></div>
+  <div><h3>A scout card on every standout</h3><p>Every scorer, creator and decisive performer gets a card with their numbers, their clips and what would move them up or down.</p></div>
   <div><h3>Animated radars</h3><p>Player and team radars computed from the match reports, so a club sees in one picture where a player stands.</p></div>
-  <div><h3>Four languages, rules for minors built in</h3><p>English, French, Kiswahili and Brazilian Portuguese on every page. Under-18 rules on every card: no valuations, no transfer talk.</p></div>
+  <div><h3>Four languages, rules for minors built in</h3><p>English, French, Kiswahili and Brazilian Portuguese on every page. Under-18 rules on every card that names a minor: no valuations, no transfer talk.</p></div>
+</div></section>
+
+<section class="s" id="need"><div class="s-head"><p class="eyebrow">Before we start</p><h2>What we need from you</h2><p>One condition: every match is filmed and we can get the video. The rest helps us move faster and get every name right.</p></div>
+<div class="gets">
+  <div class="must"><h3>Video of every match (required)</h3><p>Every match recorded and the video shared with us. It does not have to be live: a recording sent after the final whistle works. Full matches are best; highlights of every match, kept up across the whole tournament, also work.</p></div>
+  <div><h3>Fixtures and squad lists</h3><p>Teams, dates and venues, and every squad with names, shirt numbers and positions, so every card names the right player.</p></div>
+  <div><h3>Official match sheets</h3><p>Line-ups, substitutions, scorers and cards from the referee's report or your results office. Your official record is the one we publish.</p></div>
+  <div><h3>Consent for players under 18</h3><p>Confirmation that parents or guardians have agreed to their child appearing on the desk.</p></div>
+  <div><h3>One contact on your side</h3><p>One person who can answer a question about a match on the same day.</p></div>
 </div></section>
 
 <section class="s" id="see"><div class="s-head"><p class="eyebrow">See it</p><h2>What your readers will see</h2><p>Three parts of this desk, exactly as they appear on it today.</p></div>
 <div class="shots">
-  <figure class="shot"><div class="frame" inert aria-hidden="true">{card}</div><figcaption><b>Scout card.</b> Every standout, with his numbers, his clips, a Tournament read and what moves him up or down.</figcaption></figure>
+  <figure class="shot"><div class="frame" inert aria-hidden="true">{card}</div><figcaption><b>Scout card.</b> Every standout, with their numbers, their clips, a Tournament read and what moves them up or down.</figcaption></figure>
   <figure class="shot"><div class="frame" inert aria-hidden="true">{rd}</div><figcaption><b>Player radar.</b> Six areas from the match reports, against the rest of the tournament. On the desk it draws itself as you scroll.</figcaption></figure>
   <figure class="shot wide"><div class="frame" inert aria-hidden="true">{rep}</div><figcaption><b>Match report.</b> The goals, the numbers, our analysis and three decision lines for scouts, coaches and technical directors.</figcaption></figure>
 </div></section>
 
 <section class="s" id="how"><div class="s-head"><p class="eyebrow">How it runs</p><h2>What happens on a matchday</h2></div>
 <ol class="steps">
+  <li>Before the first match: we set up your desk from your fixtures and squad lists.</li>
   <li>After the final whistle: the result and the scorers, final scores only.</li>
   <li>After every matchday: match reports with decision lines, new and updated scout cards, redrawn radars.</li>
-  <li>Every goal checked on the official video before its clip goes live.</li>
+  <li>Every goal checked on the match video before its clip goes live.</li>
   <li>All of it in four languages, and nothing provisional published.</li>
 </ol></section>
 
-<section class="s" id="who"><div class="s-head"><p class="eyebrow">Who it is for</p><h2>Built for the people who run youth football</h2></div>
+<section class="s" id="who"><div class="s-head"><p class="eyebrow">Who it is for</p><h2>Built for anyone who runs a football tournament</h2><p>Youth to senior, men's and women's, grassroots to international.</p></div>
 <div class="who">
   <div><b>Tournament organisers</b><p>A tournament that clubs and scouts follow, and a record that brings teams back next year.</p></div>
   <div><b>Federations</b><p>Your players seen by clubs abroad, with the evidence on one page.</p></div>
-  <div><b>Leagues</b><p>Every standout in your youth competition on a card a club can act on.</p></div>
-  <div><b>Academies</b><p>A public record of every player you developed, match by match.</p></div>
   <div><b>Confederations</b><p>One desk for every nation in your competition, in the languages your members read.</p></div>
+  <div><b>Leagues</b><p>Every standout in your competition on a card a club can act on.</p></div>
+  <div><b>Clubs</b><p>Your own tournament or pre-season cup covered like an international, with every player of yours on record.</p></div>
+  <div><b>Academies</b><p>A public record of every player you developed, match by match.</p></div>
+  <div><b>Schools, colleges and universities</b><p>Inter-school and university competitions with a record that coaches, scouts and college programmes can read.</p></div>
+  <div><b>Counties and regions</b><p>A county or regional tournament that clubs and scouts can follow from anywhere.</p></div>
+  <div><b>Grassroots and community tournaments</b><p>The same coverage the big competitions get, for the tournaments where most players start.</p></div>
 </div>
-<div class="offer"><div><b>Message us for a quote</b><p>Tell us the tournament, the dates and the number of teams. We reply with what your desk would cover and when it can go live.</p></div><a class="wa" href="{WA}" target="_blank" rel="noopener">Book a briefing on WhatsApp</a></div>
+<div class="offer"><div><b>Message us for a quote</b><p>Tell us the tournament, the dates, the number of teams and how the matches are filmed. We reply with what your desk would cover and when it can go live.</p></div><a class="wa" href="{WA}" target="_blank" rel="noopener">Book a briefing on WhatsApp</a></div>
 </section>
 </main>
 

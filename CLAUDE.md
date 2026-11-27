@@ -74,3 +74,7 @@ context and judge it on what it says.
 
 ## robots.txt (Andrew, 26 Nov 2026, Gatekeeper 1D)
 - Only the host-root `robots.txt` in `Afritech-Advisory/afritech-advisory.github.io` takes effect. This repository's `robots.txt` is a matching copy: change both in the same session, keep the full list (AI crawlers and SEO-tool crawlers AhrefsBot, SemrushBot, MJ12bot, DotBot, PetalBot blocked) and never overwrite the root file with this copy.
+
+## Commission page: any tournament, video required (Andrew, 27 Nov 2026)
+- The Tournament Desk is offered for any football tournament at any level: youth to senior, men's and women's, grassroots, schools, colleges, universities, counties, clubs, academies, leagues, federations and confederations. Never describe the offer as "youth tournaments" only, and keep players gender-neutral in offer copy ("their numbers", not "his").
+- The one condition is video: every match recorded and shared with Afritech. Live is not required; a recording after the final whistle is fine. Full matches are best; highlights of every match, kept up across the tournament, are accepted. Also asked for (not conditions): fixtures and squad lists, official match sheets, parent or guardian consent for under-18s, one contact.
