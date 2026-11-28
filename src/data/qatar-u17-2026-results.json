@@ -1229,6 +1229,125 @@
      "who": "Liang Shiyu"
     }
    ]
+  },
+  {
+   "id": "crc-bra",
+   "date": "27 Nov",
+   "group": "I",
+   "home": "Costa Rica",
+   "away": "Brazil",
+   "score": "0-3",
+   "goals": [
+    {
+     "min": "53'",
+     "team": "Brazil",
+     "who": "Rodrigo Jr."
+    },
+    {
+     "min": "60'",
+     "team": "Brazil",
+     "who": "Kauê Furquim",
+     "type": "Penalty"
+    },
+    {
+     "min": "71'",
+     "team": "Brazil",
+     "who": "Lucas Emanuel"
+    }
+   ]
+  },
+  {
+   "id": "mne-chi",
+   "date": "27 Nov",
+   "group": "J",
+   "home": "Montenegro",
+   "away": "Chile",
+   "score": "0-1",
+   "goals": [
+    {
+     "min": "32'",
+     "team": "Chile",
+     "who": "Baltazar Oróstica",
+     "pid": "baltazar-orostica"
+    }
+   ]
+  },
+  {
+   "id": "ven-mex",
+   "date": "27 Nov",
+   "group": "K",
+   "home": "Venezuela",
+   "away": "Mexico",
+   "score": "0-0",
+   "goals": []
+  },
+  {
+   "id": "hon-jpn",
+   "date": "27 Nov",
+   "group": "L",
+   "home": "Honduras",
+   "away": "Japan",
+   "score": "0-7",
+   "goals": [
+    {
+     "min": "18'",
+     "team": "Japan",
+     "who": "Kakeru Saito",
+     "pid": "kakeru-saito"
+    },
+    {
+     "min": "24'",
+     "team": "Japan",
+     "who": "Riku Nakashima"
+    },
+    {
+     "min": "33'",
+     "team": "Japan",
+     "who": "Maki Kitahara",
+     "pid": "maki-kitahara",
+     "type": "Penalty"
+    },
+    {
+     "min": "53'",
+     "team": "Japan",
+     "who": "Maki Kitahara",
+     "pid": "maki-kitahara"
+    },
+    {
+     "min": "57'",
+     "team": "Japan",
+     "who": "Kakeru Saito",
+     "pid": "kakeru-saito"
+    },
+    {
+     "min": "61'",
+     "team": "Japan",
+     "who": "Maki Kitahara",
+     "pid": "maki-kitahara"
+    },
+    {
+     "min": "85'",
+     "team": "Japan",
+     "who": "Takeshi Wada"
+    }
+   ]
+  },
+  {
+   "id": "col-srb",
+   "date": "27 Nov",
+   "group": "L",
+   "home": "Colombia",
+   "away": "Serbia",
+   "score": "0-1",
+   "goals": [
+    {
+     "min": "72'",
+     "team": "Serbia",
+     "who": "Nebojša Grujić",
+     "pid": "nebojsa-grujic",
+     "apid": "ognjen-matanovic"
+    }
+   ]
   }
  ]
 }
