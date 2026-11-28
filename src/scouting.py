@@ -12,7 +12,7 @@ import json, re, html as H
 CSS = """
 html[lang=sw] .nums div{display:flex;flex-direction:column-reverse;justify-content:flex-end;gap:2px}
 .scard .clipbtn,.gl .clipbtn{white-space:normal;max-width:100%;min-height:44px;text-align:left;overflow-wrap:anywhere}
-.scard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;display:grid;gap:10px;scroll-margin-top:70px;align-content:start}
+.scard{min-width:0;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;display:grid;gap:10px;scroll-margin-top:70px;align-content:start}
 .scard header{display:flex;gap:12px;align-items:center}
 .scard .sil{width:52px;height:52px;flex:none;border-radius:50%;background:var(--soft);display:grid;place-items:center}
 .scard h3{font-size:1.35rem}
@@ -23,15 +23,16 @@ html[lang=sw] .nums div{display:flex;flex-direction:column-reverse;justify-conte
 .sig span{font:600 .74rem var(--mono);letter-spacing:.04em;text-transform:uppercase;border-radius:6px;padding:4px 8px;background:var(--soft)}
 .sig span b{color:var(--orange-text)}
 .nums{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
-.nums div{background:var(--soft);border-radius:8px;padding:8px;text-align:center}
+.nums div{background:var(--soft);border-radius:8px;padding:8px;text-align:center;min-width:0}
 .nums b{display:block;font-family:var(--display);font-size:1.6rem;line-height:1}
-.nums span{font-size:.74rem;color:var(--muted)}
+.nums span{font-size:.74rem;color:var(--muted);overflow-wrap:anywhere;hyphens:auto}
+.scard>*{min-width:0}
 .seen{margin:0;padding-left:18px;display:grid;gap:4px;font-size:.96rem}
 .ladder2{display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:.9rem}
 .ladder2 div{border-radius:8px;padding:8px 10px;border:1px solid var(--line)}
 .ladder2 .u{border-left:4px solid var(--teal)} .ladder2 .d{border-left:4px solid var(--rose)}
 .ladder2 b{display:block;font-family:var(--display);text-transform:uppercase;letter-spacing:.04em;font-size:.85rem}
-.scard .clipbtn{font:700 .88rem var(--body);border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:99px;padding:6px 12px;cursor:pointer;white-space:nowrap;text-decoration:none;display:inline-block}
+.scard .clipbtn{font:700 .88rem var(--body);border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:99px;padding:6px 12px;cursor:pointer;white-space:normal;max-width:100%;overflow-wrap:anywhere;text-decoration:none;display:inline-block}
 .gl{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:6px}
 .gl .tm{font:600 .78rem var(--mono);color:var(--muted);align-self:center}
 .cplayer{position:relative;aspect-ratio:16/9;background:#000;border-radius:10px;overflow:hidden}
@@ -52,9 +53,9 @@ html[lang=sw] .nums div{display:flex;flex-direction:column-reverse;justify-conte
 .intel{border:1px solid var(--line);border-radius:10px;padding:10px 12px;display:grid;gap:8px;background:linear-gradient(180deg,var(--soft),transparent)}
 .intel .ih{margin:0;font:600 .72rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 .itiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
-.itiles div{display:grid;gap:2px}
+.itiles div{display:grid;gap:2px;min-width:0}
 .itiles b{font-family:var(--display);font-size:1.45rem;line-height:1;color:var(--fg)}
-.itiles span{font-size:.74rem;color:var(--muted);line-height:1.25}
+.itiles span{font-size:.74rem;color:var(--muted);line-height:1.25;overflow-wrap:anywhere;hyphens:auto}
 .iread{margin:0;font-weight:600;border-left:3px solid var(--orange-text,#C2570C);padding-left:8px}
 @media (max-width:520px){.itiles{grid-template-columns:repeat(2,minmax(0,1fr))}.bfilter{margin-left:0}}
 @media (max-width:420px){.nums b{font-size:1.35rem}.ladder2{grid-template-columns:1fr}.scards{grid-template-columns:1fr}}

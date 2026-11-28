@@ -1,5 +1,5 @@
 {
- "updated": "26 November 2026",
+ "updated": "28 November 2026",
  "highlightsNote": "Every goal plays as its own clip from FIFA's official highlights.",
  "nations": [
   {
@@ -270,6 +270,14 @@
       "directors": "Six goals from four scorers across two wins: Egypt's threat is shared, so the squad does not depend on one forward."
      },
      "video": "https://www.youtube.com/watch?v=75UMcqVkltM"
+    },
+    {
+     "date": "Tuesday 1 December",
+     "time": "18:00",
+     "home": "Egypt",
+     "away": "Colombia",
+     "venue": "Aspire Zone, Pitch 2",
+     "stage": "Round of 32"
     }
    ]
   },
@@ -538,6 +546,14 @@
       "directors": "Six goals from five scorers in the group: Côte d'Ivoire's threat is shared across the side."
      },
      "video": "https://www.youtube.com/watch?v=z2IkFZeVkUY"
+    },
+    {
+     "date": "Monday 30 November",
+     "time": "17:30",
+     "home": "Republic of Ireland",
+     "away": "Côte d'Ivoire",
+     "venue": "Aspire Zone, Pitch 3",
+     "stage": "Round of 32"
     }
    ]
   },
@@ -874,6 +890,14 @@
       "directors": "Unbeaten in the group, with 11 goals in three matches: Senegal reach the knockout rounds with goals from across the squad."
      },
      "video": "https://www.youtube.com/watch?v=A1bKwah986Q"
+    },
+    {
+     "date": "Tuesday 1 December",
+     "time": "15:30",
+     "home": "Australia",
+     "away": "Senegal",
+     "venue": "Aspire Zone, Pitch 4",
+     "stage": "Round of 32"
     }
    ]
   },
@@ -1140,6 +1164,14 @@
       "directors": "Three wins from three, seven goals from five scorers and one conceded: Mali are the first African side to win every group match in Qatar."
      },
      "video": "https://www.youtube.com/watch?v=GukVH2uoZ2s"
+    },
+    {
+     "date": "Tuesday 1 December",
+     "time": "15:30",
+     "home": "Mali",
+     "away": "Dominican Republic",
+     "venue": "Aspire Zone, Pitch 9",
+     "stage": "Round of 32"
     }
    ]
   },
@@ -1477,6 +1509,14 @@
       "directors": "Second place came on goal difference: the 6-0 win over Fiji on the first matchday put Morocco into the round of 32."
      },
      "video": "https://www.youtube.com/watch?v=tr7SqpfS2VM"
+    },
+    {
+     "date": "Monday 30 November",
+     "time": "18:30",
+     "home": "Chile",
+     "away": "Morocco",
+     "venue": "Aspire Zone, Pitch 7",
+     "stage": "Round of 32"
     }
    ]
   },
@@ -1665,7 +1705,75 @@
      "time": "17:00",
      "home": "Republic of Ireland",
      "away": "Tanzania",
-     "venue": "Aspire Zone, Pitch 1"
+     "venue": "Aspire Zone, Pitch 1",
+     "id": "tan-irl",
+     "score": "3-1",
+     "goals": [
+      {
+       "min": "6'",
+       "team": "Republic of Ireland",
+       "who": "Cillian Murphy",
+       "type": "Open play",
+       "pid": "cillian-murphy"
+      },
+      {
+       "min": "18'",
+       "team": "Tanzania",
+       "who": "Luqman Mbalasalu",
+       "type": "Open play",
+       "how": "Close-range finish after Issa Hamis drove into the box down the right and his cross was deflected",
+       "pid": "luqman-mbalasalu",
+       "apid": "issa-hamis"
+      },
+      {
+       "min": "26'",
+       "team": "Republic of Ireland",
+       "who": "Cillian Murphy",
+       "type": "Open play",
+       "pid": "cillian-murphy"
+      },
+      {
+       "min": "31'",
+       "team": "Republic of Ireland",
+       "who": "Desmond Armstrong",
+       "type": "Open play"
+      }
+     ],
+     "story": "Cillian Murphy scored after 6 and 26 minutes and Desmond Armstrong added a third after 31 as Republic of Ireland beat Tanzania 3-1. Luqman Mbalasalu had levelled after 18 minutes. Tanzania finish third in Group I on one point and go home from their first U-17 World Cup.",
+     "keyNumbers": [
+      [
+       "1",
+       "point from three matches at Tanzania's first U-17 World Cup"
+      ],
+      [
+       "3",
+       "Tanzania goals at the tournament, two from Faraji Kayanda"
+      ],
+      [
+       "3",
+       "Ireland goals inside 31 minutes"
+      ]
+     ],
+     "analysis": [
+      {
+       "h": "An early hole, then a reply",
+       "p": "Ireland scored after six minutes. Tanzania answered after 18: Issa Hamis drove into the box down the right and Luqman Mbalasalu finished his deflected cross from close range."
+      },
+      {
+       "h": "Two goals in five minutes",
+       "p": "Cillian Murphy's second goal after 26 minutes and Desmond Armstrong's after 31 put Ireland 3-1 up. There were no more goals."
+      },
+      {
+       "h": "What it means for the group",
+       "p": "Tanzania finish third in Group I on one point and are out. Brazil win the group with nine points; Ireland, second on six, meet Côte d'Ivoire in the round of 32 on Monday 30 November."
+      }
+     ],
+     "scout": "Luqman Mbalasalu and Issa Hamis made Tanzania's goal against Ireland, and Faraji Kayanda scored twice in the opener: clubs following East African talent should keep all three on their list.",
+     "decisions": {
+      "scouts": "Luqman Mbalasalu and Issa Hamis join the board after combining for the equaliser. Faraji Kayanda ends with two goals from Tanzania's first match.",
+      "coaches": "Tanzania conceded three times in the first 31 minutes. The early phase of matches is the area to work on.",
+      "directors": "A first U-17 World Cup brings one point and three goals: a base for the next generation of the Serengeti Boys."
+     }
     }
    ]
   },
@@ -1892,7 +2000,63 @@
      "time": "18:00",
      "home": "Algeria",
      "away": "Dominican Republic",
-     "venue": "Aspire Zone, Pitch 2"
+     "venue": "Aspire Zone, Pitch 2",
+     "id": "alg-dom",
+     "score": "1-0",
+     "goals": [
+      {
+       "min": "27'",
+       "team": "Algeria",
+       "who": "Yacine Abed",
+       "type": "Open play",
+       "how": "Finished Ramy Benkhiat's cut-back from the right",
+       "pid": "yacine-abed",
+       "apid": "ramy-benkhiat"
+      }
+     ],
+     "story": "Yacine Abed scored the only goal after 27 minutes, from Ramy Benkhiat's cut-back, as Algeria beat the Dominican Republic 1-0. Algeria finish second in Group J on six points and reach the round of 32 for the first time.",
+     "keyNumbers": [
+      [
+       "4",
+       "goals for Yacine Abed, one in every group match"
+      ],
+      [
+       "6",
+       "points, second in Group J behind Chile"
+      ],
+      [
+       "1st",
+       "U-17 World Cup knockout round for Algeria"
+      ]
+     ],
+     "analysis": [
+      {
+       "h": "Abed again",
+       "p": "Ramy Benkhiat cut the ball back from the right and Yacine Abed finished after 27 minutes. Abed has scored in all three group matches and has four of Algeria's five goals."
+      },
+      {
+       "h": "A first clean sheet",
+       "p": "After conceding four against Chile and one against Montenegro, Algeria kept the Dominican Republic out for 90 minutes."
+      },
+      {
+       "h": "What it means for the group",
+       "p": "Chile beat Montenegro 1-0 and win Group J on their head-to-head win over Algeria. Algeria are second on six points and the Dominican Republic go through as one of the best third-placed teams. Algeria meet Venezuela in the round of 32 on Tuesday 1 December, 18:30 Doha time."
+      }
+     ],
+     "scout": "Follow Yacine Abed and Ramy Benkhiat against Venezuela on 1 December: Abed has scored in every group match and Benkhiat made the winner. Clubs looking for a forward who decides tight matches should see Abed live.",
+     "decisions": {
+      "scouts": "Yacine Abed moved up again: four goals, one in every group match. Ramy Benkhiat joins the board with the assist for the winner.",
+      "coaches": "Algeria won a tight match without conceding, after leaking five goals in their first two matches.",
+      "directors": "Algeria reach a U-17 World Cup knockout round for the first time. Four of their five goals came from one player."
+     }
+    },
+    {
+     "date": "Tuesday 1 December",
+     "time": "18:30",
+     "home": "Venezuela",
+     "away": "Algeria",
+     "venue": "Aspire Zone, Pitch 8",
+     "stage": "Round of 32"
     }
    ]
   },
@@ -2113,7 +2277,70 @@
      "time": "19:00",
      "home": "Romania",
      "away": "Cameroon",
-     "venue": "Aspire Zone, Pitch 8"
+     "venue": "Aspire Zone, Pitch 8",
+     "id": "cmr-rou",
+     "score": "3-1",
+     "goals": [
+      {
+       "min": "46'",
+       "team": "Romania",
+       "who": "Matei Pădure",
+       "type": "Open play"
+      },
+      {
+       "min": "49'",
+       "team": "Romania",
+       "who": "Eduardo Bodnar",
+       "type": "Open play"
+      },
+      {
+       "min": "61'",
+       "team": "Romania",
+       "who": "Denis Aevoaei",
+       "type": "Open play"
+      },
+      {
+       "min": "90+3'",
+       "team": "Cameroon",
+       "who": "Bassirou Nkoto",
+       "type": "Open play"
+      }
+     ],
+     "story": "Goalless at half-time, Romania scored three times between the 46th and 61st minutes and beat Cameroon 3-1. Cameroon scored in added time. They finish bottom of Group K without a point; Mexico and Venezuela go through.",
+     "keyNumbers": [
+      [
+       "0",
+       "points from three matches"
+      ],
+      [
+       "15",
+       "minutes in which Romania scored three times after half-time"
+      ],
+      [
+       "2",
+       "Cameroon goals at the tournament, both in added time"
+      ]
+     ],
+     "analysis": [
+      {
+       "h": "Undone after the break",
+       "p": "Cameroon held Romania to 0-0 at half-time. Matei Pădure scored at the start of the second half, Eduardo Bodnar three minutes later and Denis Aevoaei after 61 minutes."
+      },
+      {
+       "h": "The same story as against Mexico",
+       "p": "Against Mexico and Romania, Cameroon were level at half-time and conceded seven goals after it. Holding the shape for 90 minutes is the lesson from Qatar."
+      },
+      {
+       "h": "What it means for the group",
+       "p": "Cameroon finish fourth in Group K and go home. Mexico and Venezuela drew 0-0 and both go through, Mexico first on goal difference; Romania are third on three points and also out."
+      }
+     ],
+     "scout": "Cameroon go home, but Aviel Hentcho, Emmanuel Eone and Karel Krys stay on the board: clubs can follow their next youth international with us.",
+     "decisions": {
+      "scouts": "No new Cameroon cards from this match. Aviel Hentcho, Emmanuel Eone and Karel Krys stay on the board for their next youth international.",
+      "coaches": "Two of three matches were lost after a goalless first half: the second-half drop is the pattern to fix.",
+      "directors": "No points from three matches. The squad's group-stage record stays on the board for clubs to follow."
+     }
     }
    ]
   },
@@ -2413,6 +2640,14 @@
       "directors": "Seven goals in a first World Cup group, but a 2-0 lead against Australia ended 2-2: closing out matches is the gap to work on."
      },
      "video": "https://www.youtube.com/watch?v=m329TQAKbyI"
+    },
+    {
+     "date": "Monday 30 November",
+     "time": "16:00",
+     "home": "Brazil",
+     "away": "Mozambique",
+     "venue": "Aspire Zone, Pitch 1",
+     "stage": "Round of 32"
     }
    ]
   },
@@ -2704,6 +2939,14 @@
       "directors": "First U-17 World Cup win and a place in the round of 32, with four different scorers in one match for the federation to build on."
      },
      "video": "https://www.youtube.com/watch?v=rUhsShok8Jo"
+    },
+    {
+     "date": "Tuesday 1 December",
+     "time": "18:30",
+     "home": "France",
+     "away": "Uganda",
+     "venue": "Aspire Zone, Pitch 7",
+     "stage": "Round of 32"
     }
    ]
   }
