@@ -396,6 +396,13 @@ html[lang=sw] .nums div{display:flex;flex-direction:column-reverse;justify-conte
 .steps{counter-reset:s;display:grid;gap:10px;padding:0;list-style:none}
 .steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px 12px 52px;position:relative}
 .steps li::before{content:counter(s);position:absolute;left:14px;top:12px;width:26px;height:26px;border-radius:50%;background:var(--teal);color:#fff;font:700 .9rem var(--body);display:grid;place-items:center}
+.prices{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.prices div{background:var(--card);border:1px solid var(--line);border-top:5px solid var(--teal);border-radius:12px;padding:16px;display:grid;gap:6px;align-content:start}
+.prices .pro{border-top-color:var(--orange)}
+.prices h3{font-size:1.35rem;margin:0}.prices .sub{color:var(--muted);margin:0 0 4px}
+.prices .usd{font-family:var(--display);font-size:1.25rem;margin:0;color:var(--fg)}
+.prices .af{margin:0;font-weight:600}.prices .fine{margin:6px 0 0;color:var(--muted);font-size:.92rem}
+.after{margin-top:14px;background:var(--soft);border-radius:12px;padding:14px 16px}.after p{margin:4px 0 0;color:var(--muted)}
 @media (max-width:760px){.shots{grid-template-columns:minmax(0,1fr)}}
 @media (max-width:520px){.proof b{font-size:2rem}}
 </style>
@@ -476,8 +483,10 @@ html[lang=sw] .nums div{display:flex;flex-direction:column-reverse;justify-conte
 <li>Chaque but vérifié sur la vidéo du match avant la mise en ligne de son clip.</li>
 <li>Le tout en quatre langues, et rien de provisoire n'est publié.</li>
 </ol></section>
+<section class="s" id="pay"><div class="s-head"><p class="eyebrow">Comment les organisateurs le financent</p><h2>Vos équipes le financent, les recruteurs suivent gratuitement</h2><p>La plupart des organisateurs ajoutent le desk aux frais d'inscription de chaque équipe et l'encaissent avec l'inscription : le tournoi se finance ainsi lui-même. Les recruteurs, entraîneurs et clubs suivent le desk gratuitement, et c'est ce qui les amène vers vos joueurs. Écrivez-nous pour un devis adapté à votre tournoi.</p></div></section>
 <section class="s" id="who"><div class="s-head"><p class="eyebrow">Pour qui</p><h2>Conçu pour tous ceux qui organisent un tournoi de football</h2><p>Des jeunes aux seniors, masculin et féminin, de l'amateur à l'international.</p></div>
 <div class="who">
+<div><b>Showcases de jeunes d'élite</b><p>Des joueurs qui visent le soccer universitaire, la MLS NEXT et la MLS, vus par les entraîneurs universitaires et les recruteurs qui les recrutent.</p></div>
 <div><b>Organisateurs de tournois</b><p>Un tournoi que les clubs et les recruteurs suivent, et une vitrine qui fait revenir les équipes l'année suivante.</p></div>
 <div><b>Fédérations</b><p>Vos joueurs vus par les clubs étrangers, avec les preuves sur une seule page.</p></div>
 <div><b>Confédérations</b><p>Un desk pour chaque nation de votre compétition, dans les langues que lisent vos membres.</p></div>
@@ -488,7 +497,7 @@ html[lang=sw] .nums div{display:flex;flex-direction:column-reverse;justify-conte
 <div><b>Départements et régions</b><p>Un tournoi départemental ou régional que les clubs et les recruteurs peuvent suivre de partout.</p></div>
 <div><b>Tournois amateurs et de quartier</b><p>La même couverture que les grandes compétitions, pour les tournois où la plupart des joueurs commencent.</p></div>
 </div>
-<div class="offer"><div><b>Écrivez-nous pour un devis</b><p>Indiquez-nous le tournoi, les dates, le nombre d'équipes et la façon dont les matchs sont filmés. Nous vous répondons avec ce que couvrirait votre desk et la date à laquelle il peut être mis en ligne.</p></div><a class="wa" href="https://wa.me/qr/JU7PO5B5ADCOI1" rel="noopener" target="_blank">Réserver un échange sur WhatsApp</a></div>
+<div class="offer"><div><b>Prêt à ajouter un desk à votre tournoi ?</b><p>Dites-nous le tournoi, les dates, le nombre d'équipes et comment les matchs sont filmés. Nous confirmons le bon desk, le prix et la date de mise en ligne.</p></div><a class="wa" href="https://wa.me/qr/JU7PO5B5ADCOI1" rel="noopener" target="_blank">Réserver un échange sur WhatsApp</a></div>
 </section>
 </main>
 <footer><div class="wrap">© Afritech Sports Technology and Innovation Group Limited. La méthode desk de tournoi Afritech.<br/>Couverture indépendante par Afritech. Ni affiliée ni approuvée par la FIFA.<br/><a href="../qatar-u17-2026/">Voir le desk en direct</a></div></footer>

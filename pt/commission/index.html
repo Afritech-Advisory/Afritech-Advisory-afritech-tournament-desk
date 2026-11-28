@@ -396,6 +396,13 @@ html[lang=sw] .nums div{display:flex;flex-direction:column-reverse;justify-conte
 .steps{counter-reset:s;display:grid;gap:10px;padding:0;list-style:none}
 .steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px 12px 52px;position:relative}
 .steps li::before{content:counter(s);position:absolute;left:14px;top:12px;width:26px;height:26px;border-radius:50%;background:var(--teal);color:#fff;font:700 .9rem var(--body);display:grid;place-items:center}
+.prices{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.prices div{background:var(--card);border:1px solid var(--line);border-top:5px solid var(--teal);border-radius:12px;padding:16px;display:grid;gap:6px;align-content:start}
+.prices .pro{border-top-color:var(--orange)}
+.prices h3{font-size:1.35rem;margin:0}.prices .sub{color:var(--muted);margin:0 0 4px}
+.prices .usd{font-family:var(--display);font-size:1.25rem;margin:0;color:var(--fg)}
+.prices .af{margin:0;font-weight:600}.prices .fine{margin:6px 0 0;color:var(--muted);font-size:.92rem}
+.after{margin-top:14px;background:var(--soft);border-radius:12px;padding:14px 16px}.after p{margin:4px 0 0;color:var(--muted)}
 @media (max-width:760px){.shots{grid-template-columns:minmax(0,1fr)}}
 @media (max-width:520px){.proof b{font-size:2rem}}
 </style>
@@ -476,8 +483,10 @@ html[lang=sw] .nums div{display:flex;flex-direction:column-reverse;justify-conte
 <li>Cada gol conferido no vídeo do jogo antes de o clipe entrar no ar.</li>
 <li>Tudo em quatro idiomas, e nada provisório publicado.</li>
 </ol></section>
+<section class="s" id="pay"><div class="s-head"><p class="eyebrow">Como os organizadores pagam</p><h2>Suas equipes cobrem o custo, os olheiros acompanham de graça</h2><p>A maioria dos organizadores inclui a central na taxa de inscrição de cada equipe e cobra junto com a inscrição, então o torneio se paga sozinho. Olheiros, treinadores e clubes acompanham a central de graça, e é isso que os leva até os seus jogadores. Mande uma mensagem e receba um orçamento para o seu torneio.</p></div></section>
 <section class="s" id="who"><div class="s-head"><p class="eyebrow">Para quem é</p><h2>Feito para quem organiza um torneio de futebol</h2><p>Da base ao profissional, masculino e feminino, do amador ao internacional.</p></div>
 <div class="who">
+<div><b>Showcases de base de elite</b><p>Jogadores que miram o futebol universitário, a MLS NEXT e a MLS, vistos pelos técnicos universitários e olheiros que os recrutam.</p></div>
 <div><b>Organizadores de torneios</b><p>Um torneio que clubes e olheiros acompanham, e um registro que traz os times de volta no ano seguinte.</p></div>
 <div><b>Federações</b><p>Seus jogadores vistos por clubes do exterior, com as evidências numa só página.</p></div>
 <div><b>Confederações</b><p>Uma central para cada seleção da sua competição, nos idiomas que seus membros leem.</p></div>
@@ -488,7 +497,7 @@ html[lang=sw] .nums div{display:flex;flex-direction:column-reverse;justify-conte
 <div><b>Municípios e regiões</b><p>Um torneio municipal ou regional que clubes e olheiros podem acompanhar de qualquer lugar.</p></div>
 <div><b>Torneios amadores e comunitários</b><p>A mesma cobertura das grandes competições, para os torneios onde a maioria dos jogadores começa.</p></div>
 </div>
-<div class="offer"><div><b>Mande uma mensagem e peça um orçamento</b><p>Conte qual é o torneio, as datas, o número de times e como os jogos são filmados. Respondemos com o que a sua central cobriria e quando pode entrar no ar.</p></div><a class="wa" href="https://wa.me/qr/JU7PO5B5ADCOI1" rel="noopener" target="_blank">Agende um briefing pelo WhatsApp</a></div>
+<div class="offer"><div><b>Pronto para incluir uma central no seu torneio?</b><p>Conte o torneio, as datas, o número de equipes e como os jogos são filmados. Confirmamos a central certa, o preço e quando ela pode entrar no ar.</p></div><a class="wa" href="https://wa.me/qr/JU7PO5B5ADCOI1" rel="noopener" target="_blank">Agende um briefing pelo WhatsApp</a></div>
 </section>
 </main>
 <footer><div class="wrap">© Afritech Sports Technology and Innovation Group Limited. O método da central do torneio Afritech.<br/>Cobertura independente da Afritech. Sem vínculo ou aval da FIFA.<br/><a href="../qatar-u17-2026/">Ver a central ao vivo</a></div></footer>

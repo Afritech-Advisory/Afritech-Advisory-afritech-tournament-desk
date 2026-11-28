@@ -3,7 +3,8 @@
 Four Sentences: who (anyone running a football tournament at any level: youth to senior, men's and women's, grassroots,
 schools, colleges, universities, counties, clubs, academies, leagues, federations and confederations),
 what they get (a live desk like this one), why believe (this desk is the live proof: its real numbers are computed
-here at build time from the same data files), one action (WhatsApp: Book a briefing). No prices, no email address
+here at build time from the same data files), one action (WhatsApp: Book a briefing). No public prices (Andrew, 27 Nov 2026): prices stay internal; the page sends organisers to a briefing or a message.
+The organiser pays and bills it on to each team's entry fee; scouts follow free. "Resume" for US readers, "CV" everywhere else. No email address
 or phone number in plain text, no data files linked, and the method described as outcomes, not as a recipe.
 The product is shown with the desk's own components rendered from live data, not stock images."""
 import json, html as H
@@ -45,6 +46,13 @@ CSS = """
 .steps{counter-reset:s;display:grid;gap:10px;padding:0;list-style:none}
 .steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px 12px 52px;position:relative}
 .steps li::before{content:counter(s);position:absolute;left:14px;top:12px;width:26px;height:26px;border-radius:50%;background:var(--teal);color:#fff;font:700 .9rem var(--body);display:grid;place-items:center}
+.prices{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.prices div{background:var(--card);border:1px solid var(--line);border-top:5px solid var(--teal);border-radius:12px;padding:16px;display:grid;gap:6px;align-content:start}
+.prices .pro{border-top-color:var(--orange)}
+.prices h3{font-size:1.35rem;margin:0}.prices .sub{color:var(--muted);margin:0 0 4px}
+.prices .usd{font-family:var(--display);font-size:1.25rem;margin:0;color:var(--fg)}
+.prices .af{margin:0;font-weight:600}.prices .fine{margin:6px 0 0;color:var(--muted);font-size:.92rem}
+.after{margin-top:14px;background:var(--soft);border-radius:12px;padding:14px 16px}.after p{margin:4px 0 0;color:var(--muted)}
 @media (max-width:760px){.shots{grid-template-columns:minmax(0,1fr)}}
 @media (max-width:520px){.proof b{font-size:2rem}}
 """
@@ -171,8 +179,11 @@ def build(root, fonts, emblem, flags):
   <li>All of it in four languages, and nothing provisional published.</li>
 </ol></section>
 
+<section class="s" id="pay"><div class="s-head"><p class="eyebrow">How organisers pay for it</p><h2>Your teams cover it, scouts follow free</h2><p>Most organisers add the desk to each team's entry fee and collect it with registration, so the tournament pays for itself. Scouts, coaches and clubs follow the desk free, and that is what brings them to your players. Message us for a quote for your tournament.</p></div></section>
+
 <section class="s" id="who"><div class="s-head"><p class="eyebrow">Who it is for</p><h2>Built for anyone who runs a football tournament</h2><p>Youth to senior, men's and women's, grassroots to international.</p></div>
 <div class="who">
+  <div><b>Elite youth showcases</b><p>Players aiming at college soccer, MLS NEXT and MLS, seen by the college coaches and scouts who recruit them.</p></div>
   <div><b>Tournament organisers</b><p>A tournament that clubs and scouts follow, and a record that brings teams back next year.</p></div>
   <div><b>Federations</b><p>Your players seen by clubs abroad, with the evidence on one page.</p></div>
   <div><b>Confederations</b><p>One desk for every nation in your competition, in the languages your members read.</p></div>
@@ -183,7 +194,7 @@ def build(root, fonts, emblem, flags):
   <div><b>Counties and regions</b><p>A county or regional tournament that clubs and scouts can follow from anywhere.</p></div>
   <div><b>Grassroots and community tournaments</b><p>The same coverage the big competitions get, for the tournaments where most players start.</p></div>
 </div>
-<div class="offer"><div><b>Message us for a quote</b><p>Tell us the tournament, the dates, the number of teams and how the matches are filmed. We reply with what your desk would cover and when it can go live.</p></div><a class="wa" href="{WA}" target="_blank" rel="noopener">Book a briefing on WhatsApp</a></div>
+<div class="offer"><div><b>Ready to add a desk to your tournament?</b><p>Tell us the tournament, the dates, the number of teams and how the matches are filmed. We confirm the right desk, the price and when it can go live.</p></div><a class="wa" href="{WA}" target="_blank" rel="noopener">Book a briefing on WhatsApp</a></div>
 </section>
 </main>
 

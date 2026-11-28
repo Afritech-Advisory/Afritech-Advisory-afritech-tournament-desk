@@ -396,6 +396,13 @@ html[lang=sw] .nums div{display:flex;flex-direction:column-reverse;justify-conte
 .steps{counter-reset:s;display:grid;gap:10px;padding:0;list-style:none}
 .steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px 12px 52px;position:relative}
 .steps li::before{content:counter(s);position:absolute;left:14px;top:12px;width:26px;height:26px;border-radius:50%;background:var(--teal);color:#fff;font:700 .9rem var(--body);display:grid;place-items:center}
+.prices{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.prices div{background:var(--card);border:1px solid var(--line);border-top:5px solid var(--teal);border-radius:12px;padding:16px;display:grid;gap:6px;align-content:start}
+.prices .pro{border-top-color:var(--orange)}
+.prices h3{font-size:1.35rem;margin:0}.prices .sub{color:var(--muted);margin:0 0 4px}
+.prices .usd{font-family:var(--display);font-size:1.25rem;margin:0;color:var(--fg)}
+.prices .af{margin:0;font-weight:600}.prices .fine{margin:6px 0 0;color:var(--muted);font-size:.92rem}
+.after{margin-top:14px;background:var(--soft);border-radius:12px;padding:14px 16px}.after p{margin:4px 0 0;color:var(--muted)}
 @media (max-width:760px){.shots{grid-template-columns:minmax(0,1fr)}}
 @media (max-width:520px){.proof b{font-size:2rem}}
 </style>
@@ -476,8 +483,10 @@ html[lang=sw] .nums div{display:flex;flex-direction:column-reverse;justify-conte
 <li>Kila bao hukaguliwa kwenye video ya mechi kabla klipu yake haijawekwa hewani.</li>
 <li>Yote kwa lugha nne, na hakuna kinachochapishwa kabla ya kuthibitishwa.</li>
 </ol></section>
+<section class="s" id="pay"><div class="s-head"><p class="eyebrow">Jinsi waandaaji wanavyolilipia</p><h2>Timu zako zinalilipia, maskauti wanafuatilia bure</h2><p>Waandaaji wengi huongeza dawati kwenye ada ya usajili ya kila timu na kuikusanya pamoja na usajili, hivyo mashindano yanajilipia yenyewe. Maskauti, makocha na klabu hulifuatilia dawati bure, na hilo ndilo linalowaleta kwa wachezaji wako. Tutumie ujumbe upate bei ya mashindano yako.</p></div></section>
 <section class="s" id="who"><div class="s-head"><p class="eyebrow">Ni kwa ajili ya nani</p><h2>Imejengwa kwa ajili ya yeyote anayeendesha mashindano ya soka</h2><p>Kuanzia vijana hadi wakubwa, wanaume na wanawake, mashinani hadi kimataifa.</p></div>
 <div class="who">
+<div><b>Mashindano ya maonyesho ya vijana bora</b><p>Wachezaji wanaolenga soka la vyuo, MLS NEXT na MLS, wakionekana na makocha wa vyuo na maskauti wanaowasajili.</p></div>
 <div><b>Waandaaji wa mashindano</b><p>Mashindano ambayo klabu na maskauti huyafuatilia, na kumbukumbu inayozirudisha timu mwaka unaofuata.</p></div>
 <div><b>Mashirikisho</b><p>Wachezaji wako wanaonekana na klabu za nje, na ushahidi kwenye ukurasa mmoja.</p></div>
 <div><b>Mashirikisho ya kanda</b><p>Dawati moja kwa kila taifa katika mashindano yako, kwa lugha ambazo wanachama wako wanasoma.</p></div>
@@ -488,7 +497,7 @@ html[lang=sw] .nums div{display:flex;flex-direction:column-reverse;justify-conte
 <div><b>Kaunti na kanda</b><p>Mashindano ya kaunti au ya kanda ambayo klabu na maskauti wanaweza kuyafuatilia kutoka popote.</p></div>
 <div><b>Mashindano ya mashinani na ya jamii</b><p>Uangalizi ule ule wanaopata mashindano makubwa, kwa mashindano ambako wachezaji wengi huanzia.</p></div>
 </div>
-<div class="offer"><div><b>Tutumie ujumbe upate bei</b><p>Tuambie mashindano, tarehe, idadi ya timu na jinsi mechi zinavyorekodiwa. Tunakujibu na kile dawati lako litakachoripoti na lini linaweza kuwekwa hewani.</p></div><a class="wa" href="https://wa.me/qr/JU7PO5B5ADCOI1" rel="noopener" target="_blank">Panga mazungumzo kupitia WhatsApp</a></div>
+<div class="offer"><div><b>Uko tayari kuongeza dawati kwenye mashindano yako?</b><p>Tuambie mashindano, tarehe, idadi ya timu na jinsi mechi zinavyorekodiwa. Tunathibitisha dawati linalofaa, bei na lini linaweza kuwa hewani.</p></div><a class="wa" href="https://wa.me/qr/JU7PO5B5ADCOI1" rel="noopener" target="_blank">Panga mazungumzo kupitia WhatsApp</a></div>
 </section>
 </main>
 <footer><div class="wrap">© Afritech Sports Technology and Innovation Group Limited. Mbinu ya dawati la mashindano la Afritech.<br/>Ufuatiliaji huru wa Afritech. Hauhusiani wala kuidhinishwa na FIFA.<br/><a href="../qatar-u17-2026/">Tazama dawati la moja kwa moja</a></div></footer>
