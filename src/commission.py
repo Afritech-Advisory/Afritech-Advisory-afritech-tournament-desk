@@ -3,8 +3,8 @@
 Four Sentences: who (anyone running a football tournament at any level: youth to senior, men's and women's, grassroots,
 schools, colleges, universities, counties, clubs, academies, leagues, federations and confederations),
 what they get (a live desk like this one), why believe (this desk is the live proof: its real numbers are computed
-here at build time from the same data files), one action (WhatsApp: Book a briefing). Prices approved by Andrew on 27 Nov 2026 (Gatekeeper 1D): organiser pays, bills it on
-to each team's entry fee; scouts follow free. "Resume" for US readers, "CV" everywhere else. No email address
+here at build time from the same data files), one action (WhatsApp: Book a briefing). No public prices (Andrew, 27 Nov 2026): prices stay internal; the page sends organisers to a briefing or a message.
+The organiser pays and bills it on to each team's entry fee; scouts follow free. "Resume" for US readers, "CV" everywhere else. No email address
 or phone number in plain text, no data files linked, and the method described as outcomes, not as a recipe.
 The product is shown with the desk's own components rendered from live data, not stock images."""
 import json, html as H
@@ -127,7 +127,7 @@ def build(root, fonts, emblem, flags):
 <body>
 <header class="bar"><div class="wrap">
   <a class="brand" href="../"><img src="{emblem}" alt="Afritech Sports emblem" width="36" height="39">Tournament Desk</a>
-  <nav aria-label="Sections"><a href="#get">What you get</a><a href="#need">What we need</a><a href="#see">See it</a><a href="#who">Who it is for</a><a href="#price">Pricing</a><a href="../qatar-u17-2026/">Live desk</a><a class="cta" href="{WA}" target="_blank" rel="noopener">Book a briefing</a></nav>
+  <nav aria-label="Sections"><a href="#get">What you get</a><a href="#need">What we need</a><a href="#see">See it</a><a href="#who">Who it is for</a><a href="../qatar-u17-2026/">Live desk</a><a class="cta" href="{WA}" target="_blank" rel="noopener">Book a briefing</a></nav>
 </div></header>
 
 <section class="hero" id="top"><div class="wrap">
@@ -179,15 +179,7 @@ def build(root, fonts, emblem, flags):
   <li>All of it in four languages, and nothing provisional published.</li>
 </ol></section>
 
-<section class="s" id="price"><div class="s-head"><p class="eyebrow">Pricing</p><h2>Pick the desk that fits your tournament</h2><p>You add the desk to each team's entry fee and collect it with registration. A full tournament covers our fee and leaves you a margin. Scouts, coaches and clubs follow the desk free, and that is what brings them to your players.</p></div>
-<div class="prices">
-  <div><h3 translate="no">Desk Starter</h3><p class="sub">Up to 16 teams, built from the highlights of every match.</p><p class="usd">USA and rest of the world: US$3,000</p><p class="af">Africa: US$1,500</p><p class="fine">Suggested add-on: US$250 per team (Africa: US$125). Sixteen teams bring in US$4,000 (Africa: US$2,000).</p></div>
-  <div class="pro"><h3 translate="no">Desk Pro</h3><p class="sub">Up to 48 teams and full matches: a scout card on every standout, animated radars, updates every matchday in four languages and a top-10 talent list after the final.</p><p class="usd">USA and rest of the world: US$9,000</p><p class="af">Africa: US$4,500</p><p class="fine">Suggested add-on: US$250 per team (Africa: US$125). Forty-eight teams bring in US$12,000 (Africa: US$6,000).</p></div>
-  <div><h3>Custom desk</h3><p class="sub">Your own brand and web address, a private tracker for your staff, and the same desk again every edition.</p><p class="usd">USA and rest of the world: from US$25,000</p><p class="af">Africa: from US$12,000</p><p class="fine">You set the add-on per team.</p></div>
-  <div><h3>Desk between editions</h3><p class="sub">Your desk stays live and searchable until the next edition, so clubs can keep finding your players.</p><p class="usd">USA and rest of the world: US$500 a month</p><p class="af">Africa: US$250 a month</p></div>
-</div>
-<div class="after"><b>After the tournament, for players and families</b><p>A Player Evidence Pack with a player's clips and numbers: US$400 (Africa: US$200).</p><p>A place on our player desk: a resume for players heading to US college soccer, a CV everywhere else.</p></div>
-</section>
+<section class="s" id="pay"><div class="s-head"><p class="eyebrow">How organisers pay for it</p><h2>Your teams cover it, scouts follow free</h2><p>Most organisers add the desk to each team's entry fee and collect it with registration, so the tournament pays for itself. Scouts, coaches and clubs follow the desk free, and that is what brings them to your players. Message us for a quote for your tournament.</p></div></section>
 
 <section class="s" id="who"><div class="s-head"><p class="eyebrow">Who it is for</p><h2>Built for anyone who runs a football tournament</h2><p>Youth to senior, men's and women's, grassroots to international.</p></div>
 <div class="who">
